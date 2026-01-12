@@ -1,0 +1,480 @@
+{
+  "subjects": {
+    "medical_exam": [
+      "akutmedicin",
+      "allmanmedicin",
+      "diabetologi",
+      "endokrinologi",
+      "gastroenterologi",
+      "hematologi",
+      "hepatologi",
+      "internmedicin",
+      "kardiologi",
+      "kirurgi",
+      "klinisk_farmakologi",
+      "lungmedicin",
+      "neurologi",
+      "njurmedicin",
+      "oron_nasa_hals",
+      "ortopedi",
+      "psykiatri"
+    ]
+  },
+  "questions": [
+    {
+      "id": "med-cardio-001",
+      "type": "multiple_choice",
+      "tags": [
+        "Arytmi",
+        "Farmakologi"
+      ],
+      "question": "Vilket l\u00e4kemedel \u00e4r kontraindicerat hos stabila patienter med tydligt Wolff-Parkinson-White (WPW) syndrom och f\u00f6rmaksflimmer?",
+      "image": null,
+      "options": [
+        {
+          "text": "Adenosin",
+          "correct": true,
+          "feedback": "Blockerar AV-noden, vilket kan tvinga \u00f6verledning via den snabba extrabanan -> risk f\u00f6r VF."
+        },
+        {
+          "text": "Prokainamid",
+          "correct": false,
+          "feedback": "Fel. Anv\u00e4nds ofta vid WPW d\u00e5 det bromsar \u00f6verledningen i extrabanan."
+        },
+        {
+          "text": "Amiodaron",
+          "correct": false,
+          "feedback": "Fel. Generellt s\u00e4krare, men komplex verkningsmekanism i akutskedet."
+        },
+        {
+          "text": "Ibutilid",
+          "correct": false,
+          "feedback": "Fel. Anv\u00e4nds prim\u00e4rt f\u00f6r konvertering av fladder/flimmer."
+        }
+      ],
+      "explanation": "Vid WPW med f\u00f6rmaksflimmer kommer blockering av AV-noden (Adenosin, Betablockad, Ca-antagonister) att driva impulserna via den snabba extrabanan, vilket kan leda till ventrikelflimmer. Prokainamid \u00e4r att f\u00f6redra.",
+      "source": "medical_exam/kardiologi"
+    },
+    {
+      "id": "med-cardio-002",
+      "type": "multiple_choice",
+      "tags": [
+        "Anatomi"
+      ],
+      "question": "Vilket kransk\u00e4rl f\u00f6rs\u00f6rjer oftast SA-noden?",
+      "image": null,
+      "options": [
+        {
+          "text": "H\u00f6ger kransk\u00e4rl (RCA)",
+          "correct": true,
+          "feedback": "F\u00f6rs\u00f6rjer SA-noden hos ~60% av befolkningen."
+        },
+        {
+          "text": "Circumflexa (LCx)",
+          "correct": false,
+          "feedback": "F\u00f6rs\u00f6rjer SA-noden hos ~40% av befolkningen."
+        },
+        {
+          "text": "LAD (Left Anterior Descending)",
+          "correct": false,
+          "feedback": "F\u00f6rs\u00f6rjer framv\u00e4ggen/septum, s\u00e4llan SA-noden."
+        },
+        {
+          "text": "Posterior Descending Artery (PDA)",
+          "correct": false,
+          "feedback": "Avg\u00f6r k\u00e4rldominans, men \u00e4r inte prim\u00e4r f\u00f6rs\u00f6rjning till SA."
+        }
+      ],
+      "explanation": "Art\u00e4ren till SA-noden avg\u00e5r fr\u00e5n RCA hos cirka 60% av befolkningen och fr\u00e5n LCx hos 40%.",
+      "source": "medical_exam/kardiologi"
+    },
+    {
+      "type": "multiple_choice",
+      "tags": [
+        "Koronarsjukdom",
+        "Trombosprofylax"
+      ],
+      "question": "Vilken medicinering skrivs en tidigare frisk patient vanligen ut med efter PCI-behandlad, okomplicerad hj\u00e4rtinfarkt?",
+      "image": null,
+      "options": [
+        {
+          "text": "Acetylsalisylsyra + warfarin + statin + nitrospray",
+          "correct": false,
+          "feedback": "Fel \u2014 Warfarin (antikoagulantia) ges inte rutinm\u00e4ssigt efter PCI utan samtidig indikation som f\u00f6rmaksflimmer eller ventrikul\u00e4r trombos."
+        },
+        {
+          "text": "P2Y12 h\u00e4mmare + DOAK + statin + nitrospray",
+          "correct": false,
+          "feedback": "Fel \u2014 DOAK (direktverkande antikoagulantia) anv\u00e4nds endast vid samtidig indikation; rutinbehandling \u00e4r inte kombination med antikoagulantia."
+        },
+        {
+          "text": "Acetylsalisylsyra + DOAK + statin + nitrospray",
+          "correct": false,
+          "feedback": "Fel \u2014 Kombinera ASA med DOAK \u00e4r inte standard efter okomplicerad PCI utan annan indikation."
+        },
+        {
+          "text": "P2Y12 h\u00e4mmare + Waran+ statin+ nitrospray",
+          "correct": false,
+          "feedback": "Fel \u2014 Waran kr\u00e4ver s\u00e4rskild indikation och \u00e4r inte rutin efter PCI; dess anv\u00e4ndning \u00f6kar bl\u00f6dningsrisk n\u00e4r den l\u00e4ggs till trombocyth\u00e4mning."
+        },
+        {
+          "text": "Acetylsalisylsyra + P2Y12 h\u00e4mmare + statin + nitrospray",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 Dubbelt trombocyth\u00e4mmande (ASA + P2Y12-h\u00e4mmare), h\u00f6gintensiv statin och nitroglycerin vid behov \u00e4r standard efter okomplicerad PCI."
+        }
+      ],
+      "explanation": "Efter PCI f\u00f6r okomplicerad hj\u00e4rtinfarkt ges vanligen dubbel trombocyth\u00e4mning (acetylsalicylsyra + P2Y12-h\u00e4mmare) plus h\u00f6gintensiv statin och nitrospray f\u00f6r symtomlindring. Antikoagulantia (warfarin eller DOAK) anv\u00e4nds endast om det finns samtidig indikation som f\u00f6rmaksflimmer eller v\u00e4nsterkammarthrombos.",
+      "id": "med-kar-663ec4",
+      "source": "medical_exam/kardiologi"
+    },
+    {
+      "type": "multiple_choice",
+      "tags": [
+        "Sekund\u00e4rprevention",
+        "Blodtryck",
+        "Lipider"
+      ],
+      "question": "Vilka sekund\u00e4rpreventiva m\u00e5l g\u00e4ller efter en hj\u00e4rtinfarkt hos en person under 70 \u00e5r?",
+      "image": null,
+      "options": [
+        {
+          "text": "Blodtryck < 140 / < 90 mmHg och LDL < 1.8 mmol/L",
+          "correct": false,
+          "feedback": "Fel \u2014 b\u00e5de blodtrycks- och LDL-m\u00e5len \u00e4r f\u00f6r h\u00f6gre \u00e4n rekommenderat f\u00f6r sekund\u00e4rprevention efter infarkt."
+        },
+        {
+          "text": "Blodtryck < 130 / < 80 mmHg och LDL < 1.4 mmol/L",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 detta \u00e4r de rekommenderade, mer aggressiva m\u00e5len f\u00f6r patienter <70 \u00e5r efter hj\u00e4rtinfarkt."
+        },
+        {
+          "text": "Blodtryck < 140 / < 80 mmHg och LDL < 1.4 mmol/L",
+          "correct": false,
+          "feedback": "Fel \u2014 LDL-m\u00e5let \u00e4r korrekt men det systoliska blodtrycket <140 mmHg \u00e4r f\u00f6r gener\u00f6st j\u00e4mf\u00f6rt med rekommenderat <130 mmHg."
+        },
+        {
+          "text": "Blodtryck < 120 / < 70 mmHg och LDL < 1.8 mmol/L",
+          "correct": false,
+          "feedback": "Fel \u2014 blodtrycket \u00e4r on\u00f6digt l\u00e5gt och kan \u00f6ka risk f\u00f6r hypotension, samtidigt \u00e4r LDL-m\u00e5let f\u00f6r h\u00f6gt."
+        },
+        {
+          "text": "Blodtryck < 130 / < 80 mmHg och LDL < 1.8 mmol/L",
+          "correct": false,
+          "feedback": "Fel \u2014 blodtrycksm\u00e5let \u00e4r korrekt men LDL-m\u00e5let \u00e4r f\u00f6r h\u00f6gt; rekommenderat LDL f\u00f6r <70 \u00e5r \u00e4r <1,4 mmol/L."
+        }
+      ],
+      "explanation": "Efter hj\u00e4rtinfarkt hos patienter under 70 rekommenderas blodtryck <130/80 mmHg och LDL-kolesterol <1,4 mmol/L f\u00f6r b\u00e4sta sekund\u00e4rprevention. H\u00f6gre m\u00e5l ger s\u00e4mre riskreduktion, medan mycket l\u00e5ga blodtrycksm\u00e5l kan medf\u00f6ra hypotensionsrisk.",
+      "id": "med-kar-381baa",
+      "source": "medical_exam/kardiologi"
+    },
+    {
+      "type": "multiple_choice",
+      "tags": [
+        "Hj\u00e4rtsvikt",
+        "Farmakoterapi"
+      ],
+      "question": "Vilket av f\u00f6ljande p\u00e5st\u00e5enden om behandling av patienter med hj\u00e4rtsvikt \u00e4r INTE korrekt?",
+      "image": null,
+      "options": [
+        {
+          "text": "Regelbunden fysisk tr\u00e4ning f\u00f6rb\u00e4ttrar fysisk kapacitet hos hj\u00e4rtsviktspatienter men har inte visats minska mortaliteten.",
+          "correct": false,
+          "feedback": "R\u00e4tt \u2014 tr\u00e4ning f\u00f6rb\u00e4ttrar kondition och livskvalitet men det finns ingen entydig evidens f\u00f6r s\u00e4nkt mortalitet."
+        },
+        {
+          "text": "Angiotensin\u2011receptorblockerande l\u00e4kemedel (ARB) \u00e4r mindre effektiva \u00e4n ACE\u2011h\u00e4mmare avseende reduktion av mortalitet hos patienter med hj\u00e4rtsvikt och nedsatt ejektionsfraktion.",
+          "correct": true,
+          "feedback": "Fel \u2014 ARB anses i praktiken ha likv\u00e4rdig mortalitetsnytta och anv\u00e4nds ofta som alternativ vid ACE\u2011h\u00e4mmarintolerans."
+        },
+        {
+          "text": "Spironolakton minskar mortaliteten hos patienter med hj\u00e4rtsvikt och nedsatt ejektionsfraktion.",
+          "correct": false,
+          "feedback": "R\u00e4tt \u2014 mineralokortikoidreceptorantagonister som spironolakton har visats reducera mortalitet hos utvalda patienter med nedsatt EF."
+        },
+        {
+          "text": "Digoxin p\u00e5verkar inte mortaliteten hos patienter med hj\u00e4rtsvikt och nedsatt ejektionsfraktion men kan minska symtom och sjukhusinl\u00e4ggningar.",
+          "correct": false,
+          "feedback": "R\u00e4tt \u2014 digoxin f\u00f6rb\u00e4ttrar symptomkontroll och kan minska hospitaliseringar men har ingen klar effekt p\u00e5 \u00f6verlevnad."
+        },
+        {
+          "text": "ACE\u2011h\u00e4mmare \u00e4r indicerade f\u00f6r patienter med hj\u00e4rtsvikt och nedsatt ejektionsfraktion oavsett NYHA\u2011klass (om ej kontraindicerade).",
+          "correct": false,
+          "feedback": "R\u00e4tt \u2014 ACE\u2011h\u00e4mmare rekommenderas vid nedsatt EF oavsett symtomgrad om patienten tolererar behandlingen."
+        }
+      ],
+      "explanation": "Behandling av systolisk hj\u00e4rtsvikt inkluderar ACE\u2011h\u00e4mmare (eller ARB vid intolerans), beta\u2011blockerare och MRA f\u00f6r mortalitetsreduktion; digoxin f\u00f6rb\u00e4ttrar symtom men inte \u00f6verlevnad, och fysisk tr\u00e4ning \u00f6kar kapacitet utan klar mortalitetsvinst. ARB anses ha likv\u00e4rdig mortalitetsnytta som ACE\u2011h\u00e4mmare och \u00e4r ett alternativ vid biverkningar.",
+      "id": "med-kar-dcf41e",
+      "source": "medical_exam/kardiologi"
+    },
+    {
+      "type": "multiple_choice",
+      "tags": [
+        "Infarkt",
+        "EKG"
+      ],
+      "question": "65-\u00e5rig man kommer till akutmottagningen med br\u00f6stsm\u00e4rta i en timme, illam\u00e5ende och kr\u00e4kningar. EKG visar ST\u2011h\u00f6jning i de inferiora avledningarna (II, III, aVF). Vilket kransk\u00e4rl \u00e4r mest sannolikt ockluderat?",
+      "image": null,
+      "options": [
+        {
+          "text": "LCX (ramus circumflexus)",
+          "correct": false,
+          "feedback": "LCX kan ge inferiora f\u00f6r\u00e4ndringar vid v\u00e4nster dominans men \u00e4r mindre sannolik \u00e4n RCA vid klassisk inferior ST\u2011h\u00f6jning."
+        },
+        {
+          "text": "OM (obtuse marginalis)",
+          "correct": false,
+          "feedback": "OM \u00e4r en gren fr\u00e5n LCX och ger oftare laterala \u00e4n rena inferiora f\u00f6r\u00e4ndringar; inte den vanligaste orsaken till isolerad inferior ST\u2011h\u00f6jning."
+        },
+        {
+          "text": "RCA (h\u00f6ger kransk\u00e4rl)",
+          "correct": true,
+          "feedback": "RCA\u2011ocklusion ger klassiskt ST\u2011h\u00f6jning i II, III och aVF och \u00e4r den vanligaste orsaken till inferiorinfarkt."
+        },
+        {
+          "text": "LAD (left anterior descending, fr\u00e4mre ned\u00e5tg\u00e5ende)",
+          "correct": false,
+          "feedback": "LAD\u2011ocklusion ger typiskt anteriort m\u00f6nster med ST\u2011h\u00f6jning i V1\u2013V4, inte inferiora avledningar."
+        },
+        {
+          "text": "Huvudstam (left main)",
+          "correct": false,
+          "feedback": "Left main\u2011ocklusion ger ofta omfattande och utbredda ST\u2011f\u00f6r\u00e4ndringar snarare \u00e4n isolerad inferior ST\u2011h\u00f6jning."
+        }
+      ],
+      "explanation": "ST\u2011h\u00f6jning i II, III och aVF talar f\u00f6r inferiorv\u00e4ggsinfarkt, vilket hos de flesta patienter orsakas av ocklusion i h\u00f6ger koronarart\u00e4r (RCA). LCX/OM kan orsaka liknande m\u00f6nster vid v\u00e4nster dominans, medan LAD ger anteriort m\u00f6nster och v\u00e4nster huvudstam ger mer utbredd ischemi.",
+      "id": "med-kar-85c378",
+      "source": "medical_exam/kardiologi"
+    },
+    {
+      "type": "multiple_choice",
+      "tags": [
+        "Hj\u00e4rtsvikt",
+        "Lung\u00f6dem",
+        "Akutmedicin"
+      ],
+      "question": "En 73\u2011\u00e5rig kvinna med ischemisk hj\u00e4rtsvikt (EF 35%) inkommer med successivt f\u00f6rv\u00e4rrad dyspn\u00e9 och nattlig hosta. Status: samtalsdyspn\u00e9, SpO2 92% p\u00e5 5 L syrgas, AF 100\u2013110/min, BT 140/80, rassel upp till hilus bilateralt, halsvenstas och varm perifer cirkulation. EKG visar f\u00f6rmaksflimmer utan tecken till p\u00e5g\u00e5ende ischemi. Vilken av f\u00f6ljande utg\u00f6r f\u00f6rstahandsbehandling?",
+      "image": null,
+      "options": [
+        {
+          "text": "Intraven\u00f6s Betablockad samt Furosemid.",
+          "correct": false,
+          "feedback": "Fel \u2014 betablockad b\u00f6r ofta s\u00e4ttas ut eller undvikas vid akut dekompenserad hj\u00e4rtsvikt; furosemid kan vara indicerat men betablockad \u00e4r ol\u00e4mpligt initialt."
+        },
+        {
+          "text": "Intraven\u00f6st Milrinon (inotropi-st\u00f6d) samt CPAP-behandling.",
+          "correct": false,
+          "feedback": "Fel \u2014 milrinon och andra inotropa l\u00e4kemedel anv\u00e4nds vid hypotension eller kardiogen chock, inte som f\u00f6rstahandsval hos en varm, hemodynamiskt stabil patient."
+        },
+        {
+          "text": "Intraven\u00f6st Digoxin samt CPAP-behandling.",
+          "correct": false,
+          "feedback": "Fel \u2014 digoxin har l\u00e5ngsammare effekt och ger inte snabb preload/afterload\u2011reduktion; CPAP kan vara korrekt men digoxin \u00e4r inte first\u2011line f\u00f6r akut avlastning."
+        },
+        {
+          "text": "Elkonvertering akut",
+          "correct": false,
+          "feedback": "Fel \u2014 akut elkonvertering indikeras vid hemodynamisk instabilitet; patienten \u00e4r f\u00f6rh\u00e5llandevis stabil med BT 140/80 och beh\u00f6ver inte omedelbar elkonvertering."
+        },
+        {
+          "text": "Intraven\u00f6st Nitroglycerin samt CPAP-behandling.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 IV nitroglycerin ger snabb ven\u00f6s och arteriell dilatation (minskar preload/afterload) och CPAP f\u00f6rb\u00e4ttrar syres\u00e4ttning och minskar ven\u00f6st \u00e5terfl\u00f6de, vilket snabbt avlastar akut lung\u00f6dem."
+        }
+      ],
+      "explanation": "Akut v\u00e4nsterkammarsvikt med lung\u00f6dem behandlas initialt med syrgas/CPAP f\u00f6r att f\u00f6rb\u00e4ttra syres\u00e4ttning och minska preload samt med snabb vasodilatation (IV nitroglycerin) f\u00f6r att avlasta hj\u00e4rtat. Diuretika anv\u00e4nds ofta tidigt, medan betablockerare b\u00f6r undvikas vid akut dekompensation och inotropa droger reserveras f\u00f6r hypotension eller chock.",
+      "id": "med-kar-52ade8",
+      "source": "medical_exam/kardiologi"
+    },
+    {
+      "type": "multiple_choice",
+      "tags": [
+        "Kardiomyopati",
+        "Alkohol",
+        "Hj\u00e4rtsvikt"
+      ],
+      "question": "52\u2011\u00e5rig man med 3 m\u00e5naders progressiv tr\u00f6tthet, dyspn\u00e9 och ortopn\u00e9. Ingen br\u00f6stsm\u00e4rta. Hypertoni i 10 \u00e5r, behandlad med bisoprolol 5 mg och hydroklortiazid, r\u00f6ker \u00bd paket/dag. Uppger daglig alkoholkonsumtion (whisky socialt + 1\u20132 martinis till lunch). Status: AF 20/min, lungor med bilaterala rassel basalt, hj\u00e4rta regelbunden, puls 104/min, systoliskt bl\u00e5sljud grad 2/6 vid apex. EKG sinus utan ischemiska f\u00f6r\u00e4ndringar. BT 135/85. Lungr\u00f6ntgen visar f\u00f6rstorad hj\u00e4rta och l\u00e4tt kardiogen stas. Vilken \u00e4r den mest sannolika orsaken till patientens hj\u00e4rtsvikt?",
+      "image": null,
+      "options": [
+        {
+          "text": "Alkoholkardiomyopati",
+          "correct": true,
+          "feedback": "Kroniskt dagligt alkoholintag kan ge dilaterad kardiomyopati med kardiomegali och hj\u00e4rtsviktssymptom, vilket st\u00e4mmer med fynden h\u00e4r."
+        },
+        {
+          "text": "F\u00f6r h\u00f6g dos betablockad",
+          "correct": false,
+          "feedback": "Betablockads\u00f6verdos ger vanligen bradykardi och hypotension, inte takykardi och dilatation med kardiomegali."
+        },
+        {
+          "text": "Kransk\u00e4rlssjukdom",
+          "correct": false,
+          "feedback": "Ischemisk kardiomyopati \u00e4r m\u00f6jlig men mindre sannolik d\u00e5 patienten saknar br\u00f6stsm\u00e4rtor, ischemiska EKG\u2011f\u00f6r\u00e4ndringar och typisk anamnes."
+        },
+        {
+          "text": "Hypertrofisk kardiomyopati",
+          "correct": false,
+          "feedback": "Hypertrof kardiomyopati ger oftast septalhypertrofi och diastolisk dysfunktion snarare \u00e4n dilatation och uttalad kardiomegali."
+        },
+        {
+          "text": "Hypertoni",
+          "correct": false,
+          "feedback": "Kronisk obehandlad hypertoni kan ge hj\u00e4rtsvikt men patientens blodtryck \u00e4r v\u00e4lkontrollerat och ger oftare v\u00e4nsterkammarhypertrofi snarare \u00e4n dilatation."
+        }
+      ],
+      "explanation": "Kronisk alkoholmissbruk kan orsaka dilaterad kardiomyopati med nedsatt systolisk funktion, kardiomegali och tecken p\u00e5 v\u00e4nsterkammarsvikt. Avsaknad av ischemiska tecken, br\u00f6stsm\u00e4rta och v\u00e4lreglerat blodtryck g\u00f6r alkoholkardiomyopati mest sannolik i detta fall.",
+      "id": "med-kar-0d3e23",
+      "source": "medical_exam/kardiologi"
+    },
+    {
+      "type": "multiple_choice",
+      "tags": [
+        "Aortastenos",
+        "Diagnostik"
+      ],
+      "question": "55\u2011\u00e5rig asymptomatisk man med hyperlipidemi och hypertoni utreds med ekokardiografi efter bl\u00e5sljud. Transthorakal ekokardiografi visar l\u00e4tt v\u00e4nsterkammarhypertrofi med bevarad systolisk funktion, f\u00f6rkalkad aortaklaff med maximal aortagradient 31 mmHg, samt lindrig mitralisinsufficiens och PA\u2011tryck 34 mmHg. Blodtryck 132/79 mmHg. Hur b\u00f6r aortastenos handl\u00e4ggas i nul\u00e4get?",
+      "image": null,
+      "options": [
+        {
+          "text": "Transesofageal ekokardiografi (TEE).",
+          "correct": false,
+          "feedback": "Fel \u2014 TEE beh\u00f6vs inte f\u00f6r bed\u00f6mning av en sannolikt mild\u2013m\u00e5ttlig aortastenos; transthorakal ekokardiografi ger oftast tillr\u00e4cklig information."
+        },
+        {
+          "text": "Ekokardiografisk kontroll om ca ett \u00e5r.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 asymptomatisk patient med bevarad systolisk funktion och maxgrad ~31 mmHg b\u00f6r f\u00f6ljas med upprepad ekokardiografi efter cirka ett \u00e5r f\u00f6r att bevaka progression."
+        },
+        {
+          "text": "Kraftigare blodtryckss\u00e4nkandebehandling med diuretika.",
+          "correct": false,
+          "feedback": "Fel \u2014 intensifierad antihypertensiv behandling eller diuretika \u00e4r inte indicerat endast pga bl\u00e5sljudet och kan vara ol\u00e4mpligt utan annan indikation."
+        },
+        {
+          "text": "Koronarangiografi och presentation p\u00e5 thoraxkonferensen inf\u00f6r st\u00e4llningstagande till klaffoperation.",
+          "correct": false,
+          "feedback": "Fel \u2014 invasiv angiografi och operationsbed\u00f6mning \u00e4r inte motiverat utan symtom eller tecken p\u00e5 sv\u00e5r aortastenos eller kammarp\u00e5verkan."
+        }
+      ],
+      "explanation": "En maximal aortagradient p\u00e5 31 mmHg hos en asymptomatisk patient med bevarad v\u00e4nsterkammarfunktion tyder p\u00e5 mild\u2013m\u00e5ttlig aortastenos, vilket vanligen f\u00f6ljas med klinisk uppf\u00f6ljning och upprepad ekokardiografi (\u224812 m\u00e5n). Invasiva eller kirurgiska \u00e5tg\u00e4rder och avancerad bilddiagnostik \u00f6verv\u00e4gs f\u00f6rst vid symptom, snabb progress eller tecken p\u00e5 kammarp\u00e5verkan.",
+      "id": "med-kar-e02389",
+      "source": "medical_exam/kardiologi"
+    },
+    {
+      "type": "multiple_choice",
+      "tags": [
+        "Klaffsjukdom",
+        "Ekokardiografi"
+      ],
+      "question": "En 74\u2011\u00e5rig kvinna med osteoporos och v\u00e4lbehandlad hypertoni remitterades f\u00f6r ekokardiografi inf\u00f6r en h\u00f6ftoperation. Unders\u00f6kningen visade normalstor v\u00e4nsterkammare, LVEF 60 %, f\u00f6rkalkad aortaklaff med maxgradient 14 mmHg (l\u00e4tt aortastenos), mitralisinsufficiens grad 1/3 och lindrig trikuspidalisinsufficiens. Maxgradient \u00f6ver trikuspidalis 21 mmHg. Vad \u00e4r l\u00e4mplig handl\u00e4ggning av dessa klaffvitier?",
+      "image": null,
+      "options": [
+        {
+          "text": "Transesofageal ekokardiografi f\u00f6r b\u00e4ttre kartl\u00e4ggning av klaffarna.",
+          "correct": false,
+          "feedback": "Inte indicerat \u2014 TEE \u00e4r mer invasiv och anv\u00e4nds n\u00e4r transthorakal ekokardiografi \u00e4r otillr\u00e4cklig eller vid misstanke om endokardit/komplexa klafflesioner, vilket saknas h\u00e4r."
+        },
+        {
+          "text": "\u00c5rliga ekokardiografiska kontroller.",
+          "correct": false,
+          "feedback": "\u00d6verbehandling \u2014 m\u00e5ttliga, hemodynamiskt obetydliga f\u00f6r\u00e4ndringar utan symtom kr\u00e4ver inte rutinm\u00e4ssiga \u00e5rliga ekon."
+        },
+        {
+          "text": "Ingen ekokardiografisk uppf\u00f6ljning. Remiss till prim\u00e4rv\u00e5rden f\u00f6r uppf\u00f6ljning av hypertoni.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 fynden \u00e4r lindriga och hemodynamiskt insignifikanta; fortsatt prim\u00e4rv\u00e5rdsuppf\u00f6ljning och behandling av riskfaktorer \u00e4r l\u00e4mpligt."
+        },
+        {
+          "text": "Arbets\u2011EKG.",
+          "correct": false,
+          "feedback": "Inte indicerat \u2014 arbetsprov g\u00f6rs vid misstanke om ischemisk hj\u00e4rtsjukdom eller symptom p\u00e5 kransk\u00e4rlssjukdom, vilket inte f\u00f6religger h\u00e4r."
+        },
+        {
+          "text": "CT\u2011angiografi f\u00f6r kartl\u00e4ggning av kransk\u00e4rlen inf\u00f6r klaffoperation.",
+          "correct": false,
+          "feedback": "Inte relevant \u2014 ingen klaffoperation planeras och det finns inga tecken p\u00e5 koronarsjukdom som motiverar CT\u2011koronarangiografi."
+        }
+      ],
+      "explanation": "L\u00e4tta, asymtomatiska klafff\u00f6r\u00e4ndringar med normal v\u00e4nsterkammarfunktion kr\u00e4ver normalt ingen s\u00e4rskild kardiologisk uppf\u00f6ljning utan hanteras i prim\u00e4rv\u00e5rden med kontroll av riskfaktorer. Ytterligare bilddiagnostik eller funktionstester \u00e4r endast indicerade vid symtom, progression eller misstanke om samtidig kransk\u00e4rlssjukdom.",
+      "id": "med-kar-677bbf",
+      "source": "medical_exam/kardiologi"
+    },
+    {
+      "type": "multiple_choice",
+      "tags": [
+        "Aortarotsaneurysm",
+        "Bikuspid aortaklaff"
+      ],
+      "question": "50-\u00e5rig normotensiv kvinna med astma utreds med ekokardiografi efter kort episod med f\u00f6rmaksflimmer. Eko: normalstor v\u00e4lfungerande VK (EF 60%), bikuspid aortaklaff med central insufficiens grad 1/3, vidgad aortarot \u224859 mm, MI 1/3, normalt v\u00e4nster f\u00f6rmak, PA-tryck \u224823 mmHg. Hur handl\u00e4gger du detta efter fynden?",
+      "image": null,
+      "options": [
+        {
+          "text": "MR hj\u00e4rta f\u00f6r n\u00e4rmare kartl\u00e4ggning av klaffarna och aortan.",
+          "correct": false,
+          "feedback": "Fel \u2014 MR kan ge klaff- och v\u00e4vnadsinformation men CT ger b\u00e4ttre anatomisk detalj f\u00f6r aortarot och m\u00f6jligg\u00f6r samtidig koronarbed\u00f6mning inf\u00f6r kirurgi."
+        },
+        {
+          "text": "Uppf\u00f6ljande ekokardiografi (UCG) om 6 m\u00e5nader.",
+          "correct": false,
+          "feedback": "Fel \u2014 med aortarot \u224859 mm \u00f6verskrids sedvanliga operationsgr\u00e4nser och aktiv utredning/handl\u00e4ggning b\u00f6r p\u00e5b\u00f6rjas snarare \u00e4n v\u00e4ntas."
+        },
+        {
+          "text": "Best\u00e4lla CT aorta och kransk\u00e4rlsr\u00f6ntgen samt remittera patienten f\u00f6r aortarotskirurgi.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 aortarot omkring 59 mm kr\u00e4ver vidare anatomisk kartl\u00e4ggning med CT (inkl. koronarbilder) och snabb kirurgisk konsultation f\u00f6r planering."
+        },
+        {
+          "text": "Remiss till f\u00f6rmaksflimmerablation.",
+          "correct": false,
+          "feedback": "Fel \u2014 ablation kan \u00f6verv\u00e4gas senare, men f\u00f6rst ska den stora aortarotsdilatationen utredas och \u00e5tg\u00e4rdas d\u00e5 den \u00e4r akut prioriterad."
+        }
+      ],
+      "explanation": "Aortarotdiameter ~59 mm hos patient med bikuspid aortaklaff \u00f6verstiger vanliga operationsgr\u00e4nser och kr\u00e4ver snabb vidareutredning och kirurgisk bed\u00f6mning. CT aorta med koronarskattning \u00e4r l\u00e4mplig f\u00f6r preoperativ planering; ekokardiografi eller MR ensam \u00e4r otillr\u00e4ckliga i detta skede.",
+      "id": "med-kar-3079f0",
+      "source": "medical_exam/kardiologi"
+    },
+    {
+      "type": "multiple_choice",
+      "tags": [
+        "Takykardi",
+        "EKG",
+        "Supraventrikul\u00e4r takykardi"
+      ],
+      "question": "Sara, 39 \u00e5r, s\u00f6ker f\u00f6r hj\u00e4rtklappning sedan tv\u00e5 timmar. Hon har haft liknande episodier tidigare men inte s\u00e5 ih\u00e5llande. EKG visar en regelbunden takykardi med smala QRS-komplex och inga tydliga P\u2011v\u00e5gor f\u00f6re varje QRS. Vad visar EKG?",
+      "image": null,
+      "options": [
+        {
+          "text": "Regelbunden supraventrikul\u00e4r takykardi",
+          "correct": true,
+          "feedback": "Korrekt \u2014 regelbunden smal\u2011komplex takykardi utan tydliga P\u2011v\u00e5gor och pl\u00f6tslig debut talar f\u00f6r SVT (t.ex. AVNRT/AVRT)."
+        },
+        {
+          "text": "Sinustakykardi",
+          "correct": false,
+          "feedback": "Fel \u2014 sinustakykardi har normalt P\u2011v\u00e5gor f\u00f6re varje QRS och gradvis debut relaterad till fysiologisk stress eller feber."
+        },
+        {
+          "text": "F\u00f6rmaksflimmer",
+          "correct": false,
+          "feedback": "Fel \u2014 f\u00f6rmaksflimmer ger en irregularly irregular rytm med varierande R\u2011R\u2011intervall, inte en regelbunden takykardi."
+        },
+        {
+          "text": "Kammartakykardi",
+          "correct": false,
+          "feedback": "Fel \u2014 kammartakykardi ger ofta breda QRS\u2011komplex (>120 ms) och indikerar ventrikul\u00e4r fokus, inte smal supraventrikul\u00e4r takykardi."
+        },
+        {
+          "text": "F\u00f6rmaksfladder",
+          "correct": false,
+          "feedback": "Fel \u2014 f\u00f6rmaksfladder visar ofta 's\u00e5gtandsm\u00f6nster' av flutterv\u00e5gor och kan ge regelbundna blockeringar (t.ex. 2:1), men flutterv\u00e5gor brukar kunna identifieras."
+        }
+      ],
+      "explanation": "Supraventrikul\u00e4r takykardi (SVT) k\u00e4nnetecknas av pl\u00f6tslig debut av regelbunden, smal\u2011komplex takykardi utan tydliga P\u2011v\u00e5gor; vanliga orsaker \u00e4r AVNRT och AVRT. Initial behandling \u00e4r vagala man\u00f6vrer och vid utebliven effekt adenosin, med elkonvertering vid instabilitet.",
+      "id": "med-kar-465654",
+      "source": "medical_exam/kardiologi"
+    }
+  ],
+  "meta": {
+    "total_questions": 12,
+    "generated_at": 0.0
+  }
+}

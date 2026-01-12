@@ -1,0 +1,227 @@
+- type: multiple_choice
+  tags:
+  - Frontallob
+  - Neuroanatomi
+  question: Vilka av följande funktioner brukar huvudsakligen förläggas till frontalloben?
+  image: null
+  options:
+  - text: Minne, hörsel, lukt
+    correct: false
+    feedback: Fel — dessa funktioner är främst lokaliserade i temporalloben (minne,
+      hörsel) och luktbulben/mediala temporala strukturer.
+  - text: Rumslig uppfattningsförmåga, känselupplevelser, räkneförmåga
+    correct: false
+    feedback: Fel — detta beskriver parietallobens funktioner (rumslig perception,
+      somatosensorik, numerisk bearbetning).
+  - text: Personlighet, styrning av viljemässig motorisk aktivitet, impulskontroll
+    correct: true
+    feedback: Rätt — frontalloben (särskilt prefrontala cortex och motorområden) ansvarar
+      för personlighet, exekutiva funktioner och viljemässig motorik.
+  - text: Syn, balans, koordination
+    correct: false
+    feedback: Fel — synprocessning ligger i occipitalloben och balans/koordination
+      involverar cerebellum och vestibulära system.
+  - text: Vaken- och sömncykel samt minne
+    correct: false
+    feedback: Fel — vakenhetsreglering styrs av hjärnstammens retikulära formation
+      medan minne främst kopplas till temporalloben och hippocampus.
+  explanation: Frontalloben styr exekutiva funktioner, personlighetsdrag och viljemässig
+    motorik genom prefrontala cortex och motorområden. Andra funktioner i alternativen
+    hör i huvudsak hemma i temporalloben (minne, hörsel), parietalloben (somatosensorik,
+    rumslig förmåga), occipitalloben (syn) eller cerebellum/hjärnstam (balans, vakenhet).
+  id: med-neu-7e42db
+- type: multiple_choice
+  tags:
+  - Tiaminbrist
+  - Wernicke-Korsakoff
+  question: Vad är den primära orsaken till Wernicke-Korsakoffs syndrom hos alkoholister?
+  image: null
+  options:
+  - text: Zinkoverskott
+    correct: false
+    feedback: Fel — zinköverskott ger andra kliniska problem, inte den typiska Wernicke‑encefalopatin.
+  - text: Folatbrist
+    correct: false
+    feedback: Fel — folatbrist orsakar främst makrocytär anemi och ger inte karakteristiska
+      Wernicke‑Korsakoff‑symtom.
+  - text: Tiaminbrist (vitamin B₁)
+    correct: true
+    feedback: Rätt — tiaminbrist leder till akut Wernickes encefalopati och kan utvecklas
+      till kronisk Korsakoffs amnesi, särskilt vid alkoholmissbruk.
+  - text: Järnbrist
+    correct: false
+    feedback: Fel — järnbrist ger järnbristanemi och trötthet, inte Wernicke‑Korsakoff.
+  - text: Proteinbrist
+    correct: false
+    feedback: Fel — proteinbrist orsakar malnutrition och muskelförluster men förklarar
+      inte de typiska hjärnskadorna vid Wernicke‑Korsakoff.
+  explanation: Wernicke‑Korsakoffs syndrom orsakas primärt av tiaminbrist, ofta förvärrad
+    av alkoholmissbruk som ger dåligt näringsintag och nedsatt upptag. Akut Wernickes
+    encefalopati (konfusion, ataxi, okulomotoriusstörningar) kan, om obehandlad, övergå
+    i kronisk Korsakoffs amnesi med uttalad minnesstörning och konfabulering.
+  id: med-neu-a8e757
+- type: multiple_choice
+  tags:
+  - Alzheimer
+  - Patogenes
+  - Neurodegeneration
+  question: Vilket av följande är INTE associerat med Alzheimers sjukdom?
+  image: null
+  options:
+  - text: Tau
+    correct: false
+    feedback: Fel — Hyperfosforylerat tau bildar neurofibrillära trassel och är centralt
+      i Alzheimers patologi.
+  - text: Apolipoprotein E
+    correct: false
+    feedback: Fel — ApoE, särskilt ε4-allelen, ökar risken och påverkar beta-amyloid-aggregation
+      och rensning.
+  - text: Litium
+    correct: false
+    feedback: Fel — Litium har visats påverka tau-fosforylering och undersökts för
+      potentiella neuroprotektiva effekter vid Alzheimer.
+  - text: Beta-amyloid
+    correct: false
+    feedback: Fel — Beta-amyloid bildar extracellulära plack som är ett av de karakteristiska
+      patologiska dragen vid Alzheimer.
+  - text: Ghrelin
+    correct: true
+    feedback: Rätt — Ghrelin är en aptithormonsignal och är inte känd som en del av
+      Alzheimers patogenes.
+  explanation: Alzheimers sjukdom kännetecknas av extracellulära beta-amyloidplack
+    och intracellulära neurofibrillära trassel av hyperfosforylerat tau; ApoE ε4 ökar
+    risken och påverkar amyloidhantering. Lithium har studerats för sina effekter
+    på tau och potentiell neuroprotektion, medan ghrelin inte är etablerad i sjukdomens
+    patogenes.
+  id: med-neu-898664
+- type: multiple_choice
+  tags:
+  - Apraxi
+  - Frontoparietallob
+  - Motorisk planering
+  question: Vilken del av hjärnan är vanligen skadad vid klassisk apraxi?
+  image: null
+  options:
+  - text: Höger temporallob
+    correct: false
+    feedback: Ger främst problem med hörsel, minne och språkförståelse på höger sida
+      snarare än praxisstörning.
+  - text: Hjärnstammen
+    correct: false
+    feedback: Påverkar vitala funktioner och kranialnerver; orsakar inte selektiv
+      svårighet att utföra viljestyrda handlingar (apraxi).
+  - text: Lillhjärnan
+    correct: false
+    feedback: Lillhjärnan ger koordinations- och balansstörningar (ataxi), inte typisk
+      apraxi.
+  - text: Vänster fronto-parietallob
+    correct: true
+    feedback: Korrekt — denna region innehåller motorisk planering och representationssystem
+      för praxis, och skada ger typiskt apraxi.
+  - text: Vänster occipitallob
+    correct: false
+    feedback: Occipitalloben är huvudsakligen visuell; skada där ger syndefekter snarare
+      än praxisproblem.
+  explanation: Klassisk apraxi beror oftast på skada i vänster fronto-parietallob
+    där motorisk planering och praxisrepresentation finns. Patienten kan förstå uppgiften
+    och ha intakta motoriska möjligheter men kan inte utföra viljemässiga komplexa
+    handlingar.
+  id: med-neu-26bb23
+- type: multiple_choice
+  tags:
+  - Demens
+  - Neuropatologi
+  question: Vilket av följande ämnen är inte associerat med Alzheimers sjukdom?
+  image: null
+  options:
+  - text: Beta-amyloid
+    correct: false
+    feedback: Fel — Beta-amyloid bildar extracellulära plack och är centralt i Alzheimers
+      patologi.
+  - text: Tau
+    correct: false
+    feedback: Fel — Tau-protein bildar intracellulära neurofibrillära trådar (tangles)
+      som är karakteristiska för sjukdomen.
+  - text: Apolipoprotein E
+    correct: false
+    feedback: Fel — APOE, särskilt ε4-allelen, ökar risken för Alzheimers och påverkar
+      amyloidhantering.
+  - text: Leptin
+    correct: true
+    feedback: Rätt — Leptin är ett hormon som reglerar aptit och energi och är inte
+      en etablerad patogen komponent i Alzheimers sjukdom.
+  - text: Neurofibrillära trådar
+    correct: false
+    feedback: Fel — Neurofibrillära trådar består av hyperfosforylerat tau och är
+      ett histopatologiskt kännetecken vid Alzheimers.
+  explanation: Alzheimers sjukdom kännetecknas av extracellulära beta-amyloid-plack
+    och intracellulära neurofibrillära tangles av tau; APOE ε4 påverkar risken och
+    amyloidmetabolismen. Leptin är ett aptit- och energireglerande hormon och ingår
+    inte i de klassiska patogenetiska mekanismerna.
+  id: med-neu-ec7eb2
+- type: multiple_choice
+  tags:
+  - Tiaminbrist
+  - Wernicke-Korsakoff
+  - Behandling
+  question: Vilken behandling är förstahandsåtgärd vid misstänkt Wernicke-Korsakoff-syndrom?
+  image: null
+  options:
+  - text: Antiepileptika
+    correct: false
+    feedback: Behandlar inte den bakomliggande tiaminbristen; kan vara aktuellt vid
+      kramper men är inte första åtgärd.
+  - text: Tiamin i injektionsform
+    correct: true
+    feedback: Rätt — parenteralt tiamin ska ges snarast för att stoppa och förebygga
+      fortsatt neurologisk skada vid Wernicke.
+  - text: Neuroleptika i depotform
+    correct: false
+    feedback: Behandlar inte tiaminbristen och är olämplig som akut behandling eftersom
+      effekt är långsam och icke-specifik.
+  - text: ECT
+    correct: false
+    feedback: Elektrisk stimulering påverkar inte tiaminbristen; används för vissa
+      psykiatriska tillstånd, inte för Wernicke-Korsakoff.
+  - text: Intravenös lorazepam (temesta)
+    correct: false
+    feedback: Kan ge sedation men behandlar inte tiaminbrist och riskerar att förvilla
+      bilden samt fördröja korrekt behandling.
+  explanation: Wernicke-Korsakoff orsakas av tiaminbrist och kräver omedelbart parenteralt
+    tiamintillskott för att begränsa neurologisk skada. Ge tiamin före eller samtidigt
+    som glukos för att undvika förvärring av symtomen.
+  id: med-neu-e56a1d
+- type: multiple_choice
+  tags:
+  - Neglekt
+  - Icke-dominant hemisfär
+  question: Du träffar en patient med skada i den ickedominanta (vanligen högra) hjärnhalvan.
+    Vilket av följande bör du vara särskilt noggrann med att undersöka om patienten
+    har?
+  image: null
+  options:
+  - text: Ataxi
+    correct: false
+    feedback: Fel — ataxi tyder på cerebellär skada eller skador i cerebellära banor,
+      inte typiskt för cortical ickedominant hemisfär.
+  - text: Svårigheter med inövade rörelsemönster (apraxi)
+    correct: false
+    feedback: Fel — apraxi är oftare kopplat till skador i dominant hemisfär (vanligen
+      vänster) som påverkar planering av motorik.
+  - text: Sväljningssvårigheter (dysfagi)
+    correct: false
+    feedback: Fel — dysfagi ses mer vid hjärnstamslesioner eller bilaterala motorbaneskador
+      och är inte ett typiskt tecken på ickedominant cortical skada.
+  - text: Språksvårigheter (afasi)
+    correct: false
+    feedback: Fel — afasi uppstår vid skador i dominant hemisfär (vanligen vänster)
+      och är därför mindre sannolik vid enbart ickedominant skada.
+  - text: Oförmåga att tolka intryck från vänstra kroppshalvan (neglekt)
+    correct: true
+    feedback: Rätt — skada i ickedominant (ofta höger) hemisfär ger ofta unilateral
+      negllekt med försummelse av vänstersidiga intryck.
+  explanation: Skada i ickedominant (vanligen höger) hjärnhalva ger typiskt unilateral
+    spatial negllekt där patienten inte uppmärksammar stimuli på vänster sida. Afasi
+    och apraxi förknippas istället med dominant hemisfär, ataxi med cerebellum och
+    dysfagi med hjärnstam eller motorbanor.
+  id: med-neu-7bdeee

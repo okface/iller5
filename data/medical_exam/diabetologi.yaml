@@ -1,0 +1,519 @@
+- type: multiple_choice
+  tags:
+  - Diabetes
+  - Symptom
+  question: Vad betyder begreppet "polyfagi"?
+  image: null
+  options:
+  - text: Förhöjd hunger och ätande
+    correct: true
+    feedback: Rätt — polyfagi innebär ökad aptit och ökat matintag.
+  - text: Frekvent urinering
+    correct: false
+    feedback: Fel — det beskriver polyuri (frekvent urinering), inte polyfagi.
+  - text: Förhöjda blodsockernivåer
+    correct: false
+    feedback: Fel — förhöjda blodsockernivåer kallas hyperglykemi, inte polyfagi.
+  - text: Förhöjd törst
+    correct: false
+    feedback: Fel — det beskriver polydipsi (ökad törst), inte polyfagi.
+  - text: Viktnedgång
+    correct: false
+    feedback: Fel — viktnedgång kan följa okontrollerad diabetes men är inte synonymt
+      med polyfagi.
+  explanation: Polyfagi betyder ökade hunger- och ätbeteenden och ses bland annat
+    vid diabetes mellitus. Närstående termer är polyuri (frekvent urinering), polydipsi
+    (ökad törst) och hyperglykemi (förhöjt blodsocker).
+  id: med-dia-23dc1a
+- type: multiple_choice
+  tags:
+  - Typ 1-diabetes
+  - Autoimmunitet
+  question: 'Typ 1-diabetes är:'
+  image: null
+  options:
+  - text: Orsakas av bakteriella infektioner
+    correct: false
+    feedback: Fel — Typ 1-diabetes orsakas inte av bakterieinfektioner utan av autoimmun
+      förstörelse av betaceller.
+  - text: Bestäms av förhållandet mellan olika tarmbakterier
+    correct: false
+    feedback: Fel — Tarmflora kan påverka risk men bestämmer inte ensam om sjukdomens
+      uppkomst.
+  - text: Orsakas av avsaknad av D-vitamin
+    correct: false
+    feedback: Fel — D-vitaminbrist kan vara en riskfaktor men är inte ensam orsak
+      till typ 1-diabetes.
+  - text: Mer utbredd hos män än hos kvinnor
+    correct: false
+    feedback: Fel — Prevalensen varierar med ålder och region; det är inte korrekt
+      att generellt påstå att den är tydligt mer utbredd hos män.
+  - text: En autoimmun sjukdom
+    correct: true
+    feedback: Rätt — Typ 1-diabetes är en autoimmun sjukdom där immunförsvaret förstör
+      insulinproducerande betaceller i pankreas.
+  explanation: Typ 1-diabetes innebär autoimmun destruktion av pankreas betaceller
+    och leder till absolut insulinbrist. Genetiska faktorer och miljöutlösare (t.ex.
+    virus, näringsstatus eller tarmflora) kan påverka risken men är inte ensamma orsaker;
+    behandling kräver insulinersättning.
+  id: med-dia-e01bbf
+- type: multiple_choice
+  tags:
+  - Typ 2-diabetes
+  - Insulinresistens
+  - Betacellsdysfunktion
+  question: Vilket av följande påståenden om typ 2‑diabetes är korrekt?
+  image: null
+  options:
+  - text: Orsakas av virusinfektioner
+    correct: false
+    feedback: Nej — virusutlöst autoimmun förstörelse av betaceller är typiskt för
+      typ 1, inte typ 2.
+  - text: Kan involvera insulinresistens
+    correct: true
+    feedback: Ja — typ 2 karakteriseras i huvudsak av perifer insulinresistens ofta
+      i kombination med relativ insulinbrist pga betacellsdysfunktion.
+  - text: Involverar en överproduktion av insulin
+    correct: false
+    feedback: Fel — även om kompensatorisk hyperinsulinemi kan ses tidigt vid insulinresistens
+      är sjukdomen inte definierad av överproduktion och övergår ofta till relativ
+      insulinbrist.
+  - text: Orsakas av en minskning av antalet betaceller
+    correct: false
+    feedback: Inte primärt — betacellsfunktion och ibland mängd kan försämras över
+      tid, men sjukdomens kärna är insulinresistens och betacellsdysfunktion snarare
+      än en initial primär reduktion av cellantal.
+  - text: Är förknippad med sänkta fasteglukosnivåer
+    correct: false
+    feedback: Fel — typ 2 ger vanligen förhöjda fasteglukosvärden på grund av insulinresistens
+      och relativ insulinbrist.
+  explanation: Typ 2‑diabetes orsakas främst av insulinresistens och en progressiv
+    dysfunktion i betacellerna som leder till relativ insulinbrist och hyperglykemi.
+    Det är inte primärt virusinducerat och kännetecknas vanligtvis av förhöjda, inte
+    sänkta, fasteglukosnivåer.
+  id: med-dia-0fd44d
+- type: multiple_choice
+  tags:
+  - Diabetes typ 2
+  - Antidiabetika
+  - Biverkningar
+  question: Vilket av följande påståenden om läkemedel som används för att behandla
+    typ 2‑diabetes är FALSKT?
+  image: null
+  options:
+  - text: Metformin är kontraindicerat hos patienter med eGFR < 60 ml/min/1,73 m2
+    correct: true
+    feedback: Falskt — metformin är inte absolut kontraindicerat vid eGFR <60; dosjustering
+      och ökad övervakning rekommenderas, medan det vanligtvis undviks vid eGFR <30.
+  - text: Natrium‑glukos‑kotransportör 2 (SGLT2)‑hämmare kan orsaka hypovolemi och
+      akut njurskada
+    correct: false
+    feedback: Sant — SGLT2‑hämmare kan ge ökad diures och volymförlust vilket i vissa
+      situationer kan bidra till hypovolemi och försämrad njurfunktion.
+  - text: Sulfonylurea minskar både mikrovaskulära och makrovaskulära komplikationer
+      av diabetes
+    correct: false
+    feedback: Delvis sant — sulfonylureor sänker glukos och minskar främst mikrovaskulära
+      risker; bevisen för tydlig makrovaskulär nytta är svagare.
+  - text: Både glukagonliknande peptid‑1 (GLP‑1)‑receptoragonister och dipeptidylpeptidas‑4
+      (DPP‑4)‑hämmare förknippas med akut pankreatit
+    correct: false
+    feedback: Sant — det finns rapporter och säkerhetssignaler för pankreatit med
+      båda läkemedelsgrupperna, även om kausalitet inte är entydigt fastställd.
+  - text: Metformin skall sättas ut vid risk för dehydrering och akut njursvikt
+    correct: false
+    feedback: Sant — metformin bör avbrytas vid uttalad dehydrering eller akut njursvikt
+      för att minska risken för laktacidos.
+  explanation: Metformin är inte absolut kontraindicerat vid eGFR <60 utan kräver
+    dosanpassning och monitorering; det undviks oftast först vid eGFR <30. SGLT2‑hämmare
+    kan ge volymförlust och påverka njurfunktionen, GLP‑1‑RA och DPP‑4‑hämmare har
+    rapporterats i samband med pankreatit, och sulfonylureor minskar främst mikrovaskulära
+    komplikationer medan makrovaskulär nytta är osäkrare.
+  id: med-dia-f372c5
+- type: multiple_choice
+  tags:
+  - Diabetes
+  - Sekundär diabetes
+  question: Vilket av dessa tillstånd brukar man inte anse orsakar sekundär diabetes?
+  image: null
+  options:
+  - text: Alkoholorsakad pankreatit
+    correct: false
+    feedback: Fel — Kronisk alkoholrelaterad pankreatit skadar pankreas och betaceller,
+      vilket kan leda till insulinbrist och sekundär diabetes.
+  - text: Behandling med vitamin B6
+    correct: true
+    feedback: Rätt — Behandling med pyridoxin (vitamin B6) orsakar normalt inte hyperglykemi
+      eller sekundär diabetes.
+  - text: Behandling med högdos kortison vid behandling av malign sjukdom
+    correct: false
+    feedback: Fel — Högdos glukokortikoider ger insulinresistens och ökad glukoneogenes,
+      vilket ofta utlöser steroidinducerad hyperglykemi.
+  - text: Cushings sjukdom eller syndrom
+    correct: false
+    feedback: Fel — Förhöjda kortisolnivåer vid Cushing ger insulinresistens och kan
+      orsaka sekundär diabetes.
+  - text: Resektion av pankreas efter tumörsjukdom
+    correct: false
+    feedback: Fel — Partiell eller total pankreasresektion minskar betacellsmassan
+      och kan leda till insulinbrist och sekundär diabetes.
+  explanation: Sekundär diabetes uppstår när en annan sjukdom eller behandling påverkar
+    insulinproduktion eller insulinverkan, exempelvis pankreasskada eller glukokortikoidbehandling.
+    Vanliga orsaker är pankreatit, pankreasresektion och långvarig högdos kortison;
+    vitamin B6 är inte en etablerad orsak.
+  id: med-dia-c214b1
+- type: multiple_choice
+  tags:
+  - Hypoglykemi
+  - Riskfaktorer
+  question: Vilket av följande ökar risken för utveckling av hypoglykemi (lågt blodsocker)?
+  image: null
+  options:
+  - text: Alkoholkonsumtion
+    correct: true
+    feedback: Rätt — alkohol hämmar leverns glukoneogenes och kan utlösa hypoglykemi,
+      särskilt vid insulin/sulfonylurea eller otillräckligt födointag.
+  - text: Hypertyreos
+    correct: false
+    feedback: Fel — hypertyreos ökar metabolism och glukosproduktion och tenderar
+      att höja blodsockret.
+  - text: Feber
+    correct: false
+    feedback: Fel — feber ökar stresshormoner och glukosproduktion och leder oftast
+      till förhöjt blodsocker.
+  - text: Kortisonbehandling
+    correct: false
+    feedback: Fel — glukokortikoider ger insulinresistens och höjer blodsockret.
+  - text: Stress
+    correct: false
+    feedback: Fel — stress frisätter adrenalin och kortisol som ökar glukosnivåerna.
+  explanation: Alkohol ökar risken för hypoglykemi genom hämning av leverns glukoneogenes,
+    vilket är särskilt farligt vid samtidig insulin- eller sulfonylureabehandling
+    och vid dåligt födointag. Hypertyreos, feber, stress och kortisonbehandling tenderar
+    i stället att öka blodsockret via ökad glukosproduktion eller insulinresistens.
+  id: med-dia-28624d
+- type: multiple_choice
+  tags:
+  - Diabetes
+  - Pankreasresektion
+  question: Anders, 65 år, tidigare frisk förutom hypertoni och övervikt (BMI 29),
+    har genomgått resektion av bukspottkörteln för en tumör och utvecklat stigande
+    glukosnivåer som nu behandlas med insulin till måltider och på natten. Vilken
+    typ av diabetes har han mest sannolikt utvecklat?
+  image: null
+  options:
+  - text: Sekundär
+    correct: true
+    feedback: Rätt — pankreasskada/resektion minskar betacellsfunktion och ger sekundär
+      diabetes som debuterar efter operationen.
+  - text: Typ 2-diabetes
+    correct: false
+    feedback: Fel — även om han har riskfaktorer för typ 2 debuterade hyperglykemin
+      efter pankreasresektionen, vilket talar för sekundär orsak.
+  - text: LADA
+    correct: false
+    feedback: Fel — LADA är en autoimmun, långsamt progredierande typ 1-liknande diabetes
+      och uppstår inte akut efter kirurgisk pankreasskada.
+  - text: MODY
+    correct: false
+    feedback: Fel — MODY är monogen och debuterar vanligen i yngre ålder, inte nytt
+      i hög ålder efter pankreasresektion.
+  - text: Typ 1-diabetes
+    correct: false
+    feedback: Fel — typ 1 är autoimmun och ofta debut i yngre ålder med annan klinisk
+      bild, inte typisk efter kirurgisk förlust av pankreasvävnad.
+  explanation: Denna patient har sannolikt sekundär diabetes till följd av resektion
+    av bukspottkörteln som minskat insulinproducerande betaceller. Debut av hyperglykemi
+    efter operation och snabbt behov av insulin talar för sekundär diabetes snarare
+    än primära former som typ 2, LADA, MODY eller typ 1.
+  id: med-dia-4bda47
+- type: multiple_choice
+  tags:
+  - Diabetologi
+  - Hypoglykemi
+  question: Martin, 25 år med typ 1‑diabetes, gjorde en 16 km löptur under dagen,
+    åt och drack alkohol sent på kvällen och hade glukosvärden 15–20 mmol/L. På natten
+    hittade sambon honom med krampanfall och Freestyle Libre visade värde under mätarens
+    detektionsgräns. Vilken är den mest sannolika bakomliggande orsaken?
+  image: null
+  options:
+  - text: Krampanfall orsakat av alkoholintoxikation
+    correct: false
+    feedback: Alkoholintoxikation kan ge medvetslöshet men isolerat krampanfall från
+      alkohol utan hypoglykemi är mindre sannolikt här eftersom mätaren visade mycket
+      lågt glukos och träning+alkohol förklarar hypoglykemin bättre.
+  - text: Tagit dubbel dos basinsulin
+    correct: false
+    feedback: En dubbel dos basinsulin skulle ofta leda till hypoglykemi tidigare
+      eller kräva att patienten erkänt dosfelet; kontexten med träning och alkohol
+      gör detta mindre sannolikt.
+  - text: Minskat insulinbehov på natten av alkoholintaget och muskelträning
+    correct: true
+    feedback: Rätt — intensiv träning tömmer glykogen och alkohol hämmar leverns glukoneogenes,
+      så ordinarie basinsulin blir relativt för starkt och kan ge sena nattliga hypoglykemier
+      med kramper.
+  - text: Tagit extra snabbinsulin på kvällen
+    correct: false
+    feedback: Extra snabbinsulin skulle sannolikt ge hypoglykemi tidigare efter måltiden
+      snarare än flera timmar senare under sömnen.
+  - text: Felaktiga värden från Freestyle Libre
+    correct: false
+    feedback: Sensorfel kan förekomma men ett kliniskt krampanfall tillsammans med
+      mycket lågt sensorvärde talar snarare för verklig hypoglykemi än enbart mätarfel.
+  explanation: Kraftig uthållighetsträning tömmer muskel- och leverglykogen, och alkohol
+    hämmar leverns glukoneogenes vilket ger ökad risk för sena nattliga hypoglykemier
+    hos insulinbehandlade. Hos patienter som tagit basalinsulin utan kompensation
+    kan detta leda till svår hypoglykemi och neurologiska symtom som kramper.
+  id: med-dia-b907b5
+- type: multiple_choice
+  tags:
+  - Euglykemisk ketoacidos
+  - Akututredning
+  question: Lennart, 65 år med typ 2‑diabetes i 15 år (komplikationer i ögon, njurar
+    och nerver), behandlad med metformin 1000 mg x3, SGLT2‑hämmare dagligen och GLP‑1‑agonist
+    veckovis, söker akut för 3 dygns trötthet, illamående och bukobehag. Vilken åtgärd
+    rekommenderar du initialt?
+  image: null
+  options:
+  - text: Kontrollera EKG, troponin och en blodgas
+    correct: true
+    feedback: Rätt — utesluter akut koronarsyndrom och ger snabb syra‑bas‑/ketonstatus
+      för att upptäcka euglykemisk DKA hos patienter på SGLT2‑hämmare.
+  - text: Kontroller serum-etanol och PEth (fosfatidyletanol)
+    correct: false
+    feedback: Fel — alkoholutredning kan vara relevant men är inte prioritet; akut
+      hjärtischemi och euglykemisk DKA måste först utvärderas.
+  - text: Minska dosen metformin
+    correct: false
+    feedback: Fel — dosjustering av metformin är inte en omedelbar åtgärd utan baseras
+      på specifika laboratoriefynd som njurfunktion eller laktat.
+  - text: Avsluta behandling med GLP-1-receptoragonist
+    correct: false
+    feedback: Fel — GLP‑1‑agonist ger ibland illamående men akut seponering är inte
+      indicerad utan klar orsak; utred de livshotande differentialdiagnoserna först.
+  - text: Ultraljudsundersökning av buken
+    correct: false
+    feedback: Fel — bukultraljud kan vara indicerat vid fokal buksmärta men är inte
+      förstahands för att utesluta ACS eller euglykemisk DKA.
+  explanation: Vid akut trötthet, illamående och bukobehag hos en patient på SGLT2‑hämmare
+    är det viktigt att snabbt utesluta akut koronarsyndrom och euglykemisk ketoacidos.
+    EKG, troponin och blodgas (inklusive ketoner, glukos och elektrolyter) ger snabb
+    vägledning om livshotande orsaker; övriga åtgärder anpassas efter fynd.
+  id: med-dia-3a3213
+- type: multiple_choice
+  tags:
+  - Diabetes
+  - Diagnostik
+  - Behandling
+  question: Cirka 5 % av befolkningen i Sverige har diabetes och av dessa har cirka
+    85 % typ 2‑diabetes. Vilket påstående stämmer bäst om typ 2‑diabetes?
+  image: null
+  options:
+  - text: Behandlingsråd för yngre och äldre personer med typ‑2‑diabetes är identiska
+    correct: false
+    feedback: Fel — behandlingsmål och rådgivning måste individualiseras utifrån ålder,
+      komorbiditet och funktionsnivå.
+  - text: Viktiga riskfaktorer att utveckla sjukdomen är ärftlighet, graviditetsdiabetes
+      och sömnapné
+    correct: false
+    feedback: Delvis korrekt men ofullständigt — ärftlighet, graviditetsdiabetes och
+      sömnapné är riskfaktorer, men fetma och fysisk inaktivitet är centrala och bör
+      nämnas.
+  - text: Målvärdet för blodtrycket vid typ‑2‑diabetes är 140/85
+    correct: false
+    feedback: Fel — blodtrycksmål ska individualiseras; vanliga mål är ofta <140/90
+      mmHg och lägre mål kan övervägas vid hög kardiovaskulär risk.
+  - text: Diagnos ställs med faste‑P‑glukos ≥7,0 mmol/L, glukosbelastning (2h)* ≥12,2
+      mmol/L (kapillärt), (2h)* ≥11,1 mmol/L (venöst) eller HbA1c ≥48 mmol/mol. Patologiskt
+      prov ska upprepas om patienten saknar tydliga symtom på diabetes
+    correct: true
+    feedback: Rätt — dessa är korrekta diagnostiska cut‑offs och ett patologiskt värde
+      bör upprepas om patienten inte har tydliga symtom.
+  - text: Om sex månaders intensiv behandling med nyttig kost och fysisk aktivitet
+      inte lett till en klar förbättring av blodsockervärdena ska metformin sättas
+      in
+    correct: false
+    feedback: Fel — metformin bör övervägas tidigt vid kvarstående hyperglykemi och
+      kan ofta insättas tidigare än efter sex månader.
+  explanation: Typ‑2‑diabetes diagnostiseras med faste‑P‑glukos ≥7,0 mmol/L, 2‑timmars
+    venöst glukos ≥11,1 mmol/L eller HbA1c ≥48 mmol/mol; om patienten är asymptomatisk
+    bör patologiskt prov upprepas. Behandling inkluderar livsstilsåtgärder och ofta
+    tidig farmakologisk behandling (vanligen metformin), och mål måste individualiseras
+    utifrån ålder, komorbiditet och riskfaktorer som fetma och fysisk inaktivitet.
+  id: med-dia-41334e
+- type: multiple_choice
+  tags:
+  - Diabetes
+  - Farmakoterapi
+  question: Bengt, 62 år, nyligen diagnosticerad med typ 2‑diabetes har HbA1c 55 mmol/mol,
+    inga andra sjukdomar, BMI 24 och blodtryck 130/80 mm Hg. Vilken är den rekommenderade
+    initiala farmakologiska behandlingen?
+  image: null
+  options:
+  - text: Metformin
+    correct: true
+    feedback: Rätt — Metformin är förstahandsval vid nyupptäckt typ 2‑diabetes tack
+      vare god glukossänkning, låg hypoglykemirisken och gynnsam viktprofil.
+  - text: DPP‑4‑hämmare
+    correct: false
+    feedback: Fel — Har måttlig effekt och används ofta som tillägg eller när metformin
+      är kontraindicerat, inte som rutinmässigt förstahandsval.
+  - text: SGLT2‑hämmare
+    correct: false
+    feedback: Fel — Kan vara lämpliga vid kardiovaskulär eller renal nytta eller som
+      tillägg, men inte standardförsta steg hos patienter utan komorbiditet.
+  - text: GLP‑1‑receptoragonist
+    correct: false
+    feedback: Fel — Effektiva och orsakar viktnedgång men används vanligen som tillägg
+      eller vid särskilda indikationer; ofta inte förstahandsval vid nydiagnos.
+  - text: Insulin
+    correct: false
+    feedback: Fel — Reserveras för uttalad hyperglykemi, ketos eller när peroral behandling
+      är otillräcklig eller kontraindicerad.
+  explanation: Nationella riktlinjer rekommenderar metformin som första läkemedel
+    vid typ 2‑diabetes om det inte finns kontraindikationer, eftersom det effektivt
+    sänker glykemi, har låg hypoglykemirisken och en neutral eller viktsänkande effekt.
+    Övriga läkemedel används som tillägg eller vid särskilda kliniska indikationer.
+  id: med-dia-851ab2
+- type: multiple_choice
+  tags:
+  - SGLT2
+  - Diabetes
+  - Farmakologi
+  question: Vilken av dessa effekter brukar man inte tillskriva hämning av SGLT2 (natrium-glukostransportprotein
+    2)?
+  image: null
+  options:
+  - text: Glukosuri
+    correct: false
+    feedback: Fel — SGLT2‑hämmare minskar tubulärt glukosåterupptag och ger därför
+      glukosuri.
+  - text: Osmotisk diures
+    correct: false
+    feedback: Fel — den ökade glukosurin leder till osmotisk diures på grund av osmotiskt
+      aktivt glukos i tubuli.
+  - text: Reduktion av HbA1c
+    correct: false
+    feedback: Fel — genom minskad medelglukos ger SGLT2‑hämmare en måttlig sänkning
+      av HbA1c.
+  - text: Viktminskning
+    correct: false
+    feedback: Fel — kaloriförlust via glukosuri medför ofta en liten men tydlig viktminskning.
+  - text: Hypoglykemi
+    correct: true
+    feedback: Rätt — signifikant hypoglykemi är ovanligt med SGLT2‑hämmare i monoterapi
+      och uppstår främst vid samtidig insulin- eller sulfonylureabehandling.
+  explanation: SGLT2‑hämmare blockerar njurens återupptag av glukos i proximala tubuli,
+    vilket ger glukosuri, osmotisk diures, kaloriförlust och därmed sänkt medelglukos/HbA1c
+    och ofta viss viktminskning. Eftersom mekanismen inte ökar insulinsekretion är
+    uttalad hypoglykemi ovanlig utan samtidig insulin- eller sulfonylurea‑behandling.
+  id: med-dia-00939e
+- type: multiple_choice
+  tags:
+  - Retinopati
+  - Riskfaktorer
+  - Diabeteskontroll
+  question: Retinopati är en allvarlig komplikation vid diabetes. Vilken av följande
+    riskfaktorer bedöms vara minst viktig för att förebygga diabetisk retinopati?
+  image: null
+  options:
+  - text: God blodtryckskontroll
+    correct: false
+    feedback: Mycket viktig — blodtrycksbehandling minskar progressionen av diabetisk
+      retinopati.
+  - text: God blodsockerkontroll
+    correct: false
+    feedback: Avgörande — långsiktig glykemisk kontroll är den starkaste skyddande
+      faktorn mot retinopati.
+  - text: Att inte röka (rökstopp)
+    correct: false
+    feedback: Relevant — rökning ökar kärlskador och är associerat med ökad risk för
+      retinopati.
+  - text: Hög grad av fysisk aktivitet
+    correct: true
+    feedback: Minst viktig i detta sammanhang — fysisk aktivitet är hälsosamt men
+      har svagare och mindre direkt evidens för att förebygga retinopati jämfört med
+      de andra faktorerna.
+  - text: Kontroll på blodfetter (lipidsänkning)
+    correct: false
+    feedback: Betydelsefull — dyslipidemi bidrar till vaskulära komplikationer och
+      lipidsänkning har visats påverka retinopatiförloppet.
+  explanation: Diabetisk retinopati påverkas främst av långvarig hyperglykemi och
+    förhöjt blodtryck; rökning och dyslipidemi bidrar också till risken. Fysisk aktivitet
+    är viktig för generell kardiometabol hälsa men har svagare direkt evidens för
+    att förebygga retinopati jämfört med glukos-, blodtrycks- och lipidkontroll.
+  id: med-dia-d2e700
+- type: multiple_choice
+  tags:
+  - Steroidinducerad hyperglykemi
+  - Insulinbehandling
+  question: Kalle, 70 år, behandlas med höga doser morgonkortison för nyupptäckt polymyalgia
+    rheumatica. På morgonen är faste‑glukos 7–9 mmol/L men på eftermiddagarna är värdena
+    15–17 mmol/L. Han planeras för hemgång. Vilken behandling föreslår du för hyperglykemin?
+  image: null
+  options:
+  - text: Du rekommenderar metformin med snabb upptrappning
+    correct: false
+    feedback: Metformin har för långsamt insättande effekt för att hantera uttalade
+      eftermiddagstoppar och är därför inte lämpligt som akut förstahandsval vid steroidutlöst
+      hyperglykemi.
+  - text: Du rekommenderar ingen behandling eftersom blodsockervärdena på morgonen
+      är bra
+    correct: false
+    feedback: Fel — de kraftigt förhöjda eftermiddagsvärdena (15–17 mmol/L) kräver
+      behandling för att minska risk för akut och subakut hyperglykemi.
+  - text: Du rekommenderar medellångverkande (NPH) insulin i en dos på morgonen som
+      sedan kan justeras utifrån blodsockermätningar om kortisondosen justeras
+    correct: true
+    feedback: Rätt — morgonadministrerat NPH täcker typiska steroidinducerade eftermiddagstoppar
+      och dosen kan enkelt anpassas i takt med förändrad kortisondos.
+  - text: Du rekommenderar SGLT-2 hämmare eftersom det kan skydda hjärtat också
+    correct: false
+    feedback: Fel — SGLT2‑hämmare är inte lämpliga för akut steroidutlöst hyperglykemi
+      och kan öka risken för dehydrering och euglykemisk ketoacidos.
+  - text: Du rekommenderar behandling med GLP1-analog eftersom det kan doseras veckovis
+    correct: false
+    feedback: Fel — GLP‑1‑analogier har för långsam och olämplig insättande verkan
+      för att snabbt kontrollera uttalade eftermiddagspikar.
+  explanation: Kortikosteroider ger ofta förhöjda eftermiddags- och kvällsglukosvärden.
+    Medellångverkande (NPH) insulin givet på morgonen täcker dessa toppar och kan
+    enkelt trappas ned i takt med minskad kortisondos, med bas i regelbunden blodsockermätning.
+  id: med-dia-1cfdf4
+- type: multiple_choice
+  tags:
+  - Typ 1-diabetes
+  - Perioperativ vård
+  - Insulinpump
+  question: Fatima, 23 år, kommer till akuten med appendicit och planeras för operation.
+    Hon har typ 1-diabetes och använder en insulinpump som måste tas bort inför operation
+    eftersom den sitter i vägen. Vad är viktigast att göra direkt när pumpen tas bort?
+  image: null
+  options:
+  - text: Ge insulin direkt subkutant eller intravenöst för att undvika insulinbrist
+      och ketonbildning.
+    correct: true
+    feedback: Korrekt — kontinuerlig insulinleverans måste omedelbart ersättas för
+      att förebygga snabb hyperglykemi och ketoacidos.
+  - text: Ordinerar blodsockermätning var 3:e timme eftersom sockret kommer stiga.
+    correct: false
+    feedback: Fel — intermittent mätning är otillräcklig; insulin måste ersättas omedelbart
+      då ketonbildning kan utvecklas snabbt.
+  - text: Ser till att hon kan fortsätta använda sin glukossensor eftersom det underlättar
+      glukoskontrollen om hon kan mäta kontinuerligt.
+    correct: false
+    feedback: Fel — sensor ger värdefull data men ersätter inte behovet av kontinuerlig
+      insulinleverans.
+  - text: Ordinerar Ringer-Acetat-dropp eftersom hon ska fasta inför operation.
+    correct: false
+    feedback: Fel — vätskebehandling är viktig men kompenserar inte insulinbrist eller
+      förhindrar ketoacidos.
+  - text: Avvaktar med insulin tills blodsockret är över 15 mmol/L för att undvika
+      hypoglykemi.
+    correct: false
+    feedback: Fel — att vänta riskerar snabb utveckling av hyperglykemi och ketoacidos;
+      insulin ska ges omedelbart när pump tas bort.
+  explanation: Personer med typ 1-diabetes är beroende av kontinuerlig insulinleverans;
+    när en pump tas bort måste insulin snabbt ersättas subkutant eller intravenöst
+    för att förhindra hyperglykemi och ketoacidos. Glukos- och ketonövervakning samt
+    vätsketillförsel kompletterar behandlingen men ersätter inte insulin.
+  id: med-dia-6f10e6

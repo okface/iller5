@@ -1,0 +1,563 @@
+- type: multiple_choice
+  tags:
+  - Andningssvikt
+  - Blodgaser
+  - Diagnostik
+  question: Hur lyder definitionen av andningssvikt (arteriell blodgas)?
+  image: null
+  options:
+  - text: pO2 < 8 kPa och/eller pCO2 > 6,5 kPa.
+    correct: true
+    feedback: Rätt — detta är den vedertagna gränsen som fångar både hypoxemisk och
+      hyperkapnisk andningssvikt.
+  - text: pO2 > 8 kPa eller pCO2 > 6,5 kPa.
+    correct: false
+    feedback: Fel — pO2 > 8 kPa är normalt/icke-hypoxemiskt; definitionen kräver pO2
+      < 8 kPa för hypoxemi.
+  - text: pO2 < 8 kPa och pCO2 > 6,5 kPa.
+    correct: false
+    feedback: Fel — detta kräver båda tillstånden samtidigt, medan andningssvikt kan
+      vara antingen hypoxemisk eller hyperkapnisk ("och/eller").
+  - text: pO2 < 8 kPa och/eller pCO2 < 6,5 kPa.
+    correct: false
+    feedback: Fel — lågt pCO2 indikerar hyperventilation, inte hyperkapni; gränsen
+      för hyperkapni är pCO2 > 6,5 kPa.
+  - text: pO2 > 8 kPa och/eller pCO2 < 6,5 kPa.
+    correct: false
+    feedback: Fel — både villkoren anger normala eller överdrivna värden, inte andningssvikt.
+  explanation: Andningssvikt definieras som arteriell hypoxemi (pO2 < 8 kPa) och/eller
+    hyperkapni (pCO2 > 6,5 kPa). Detta täcker typ I (hypoxemisk) och typ II (hyperkapnisk)
+    andningssvikt och används kliniskt vid bedömning av blodgaser.
+  id: med-lun-943338
+- type: multiple_choice
+  tags:
+  - Astma
+  - Allergi
+  - Patofysiologi
+  question: Vilken term beskriver bronkospasm som uppstår vid exponering för ett allergen
+    och beror på IgE-medierad mastcellsdegranulation med kronisk luftvägsinflammation?
+  image: null
+  options:
+  - text: Anafylaxi
+    correct: false
+    feedback: Fel — anafylaxi är en akut systemisk IgE‑medierad reaktion med multipla
+      organsymtom, inte en kronisk allergisk astmatyp.
+  - text: Icke-atopisk astma
+    correct: false
+    feedback: Fel — icke‑atopisk astma saknar ofta IgE‑medierad allergi och är inte
+      primärt utlöst av allergen‑inducerad mastcellsdegranulation.
+  - text: Atopisk astma
+    correct: true
+    feedback: Rätt — atopisk astma är IgE‑medierad överkänslighet där allergen utlöser
+      mastcellsdegranulation med bronkospasm och kronisk inflammation.
+  - text: Kroniskt obstruktiv lungsjukdom
+    correct: false
+    feedback: Fel — KOL är en icke‑allergisk kronisk obstruktiv sjukdom, oftast relaterad
+      till rökning och annan patogenes än IgE‑medierad allergi.
+  - text: Eosinofil astma
+    correct: false
+    feedback: Fel — eosinofil astma karakteriseras av hög eosinofil inflammation och
+      kan vara icke‑IgE‑beroende, inte nödvändigtvis atopisk.
+  explanation: Atopisk astma orsakas av IgE‑medierad överkänslighet mot allergen där
+    mastcellsdegranulation frisätter mediatorer som ger bronkospasm och kronisk luftvägsinflammation.
+    Andra astmatyper och sjukdomar som KOL och anafylaxi har annan patofysiologi och
+    klinisk bild.
+  id: med-lun-f7f218
+- type: multiple_choice
+  tags:
+  - Pneumothorax
+  - Akutmedicin
+  question: En 25‑årig lång och smal man spelade brännboll kl. 19.30 när han plötsligt
+    kände ett smäll i övre delen av höger lunga och fick smärta. Röntgen kl. 20 visade
+    en högersidig apikal pneumothorax på cirka 2 cm. Han var stabil vid bedömning
+    kl. 20.30. Vilken handläggning är bäst?
+  image: null
+  options:
+  - text: Remiss till vårdcentral och rekommendera kontrollröntgen om en vecka.
+    correct: false
+    feedback: Fel — uppföljning inom en vecka är för sen; risk för expansion kräver
+      snabbare kontroll inom 24–48 timmar.
+  - text: Be thoraxkirurgen utföra VATS (torakoskopi) och lägga drän.
+    correct: false
+    feedback: Fel — överbehandling för en stabil liten primär pneumothorax; invasiva
+      åtgärder krävs endast vid stor pneumothorax eller klinisk försämring.
+  - text: Exspektans med observation; patient kan åka hem men ska återvända till akuten
+      för kontrollröntgen nästa morgon.
+    correct: true
+    feedback: Rätt — stabil, liten primär pneumothorax kan ofta hanteras konservativt
+      med observation och tidig röntgenkontroll.
+  - text: Skicka hem utan uppföljning eftersom denna typ av pneumothorax alltid läker.
+    correct: false
+    feedback: Fel — att avstå från återbesök riskerar att missa expansion eller försämring
+      som kräver behandling.
+  explanation: Vid primär spontan pneumothorax hos en stabil ung patient är konservativ
+    behandling och observation lämpligt om pneumothorax är liten (≈2 cm). Kontrollröntgen
+    inom 24–48 timmar säkerställer att den inte expanderar; drän eller kirurgi reserveras
+    för större pneumothorax eller klinisk försämring.
+  id: med-lun-b0f1bc
+- type: multiple_choice
+  tags:
+  - KOL
+  - Exacerbation
+  - Behandling
+  question: En äldre man med långvarig rökning och känd KOL söker akuten för en veckas
+    ökad andfåddhet och slemhosta med gulgrönt slem. Ingen feber. CRP kapillärt 5
+    mg/L, saturation 93 % på luft, vaken och sinustakykardisk utan tecken till ischemi.
+    Hur vill du initialt behandla denna KOL-exacerbation?
+  image: null
+  options:
+  - text: Ge nebuliserad ipratropiumbromid 0,5 mg + salbutamol 2,5 mg och låt patienten
+      åka hem med råd och poliklinisk uppföljning.
+    correct: true
+    feedback: Rätt — mild exacerbation utan hypoxi eller tecken på bakteriell infektion
+      behandlas främst med bronkdilaterare och ambulant uppföljning.
+  - text: Som ovan men lägg till peroralt 25 mg prednisolon i 5–7 dagar och peroral
+      amoxicillin 500 mg x3.
+    correct: false
+    feedback: Fel — systemiska kortikosteroider och antibiotika är inte indicerade
+      vid en mild exacerbation utan tecken på bakteriell infektion eller försämrad
+      gasutbyte.
+  - text: Ge nebuliserade bronkdilaterare och ordinera en engångsdos furosemid 40
+      mg samt peroral prednisolon 25 mg i 5 dagar.
+    correct: false
+    feedback: Fel — diuretika saknas indikation utan tecken på vätskeretention/ödem;
+      steroider överbehandlar vid denna milda presentation.
+  - text: Ge nebuliserade bronkdilaterare och lägg in patienten på medicinavdelning
+      samt kalla narkosläkare för intubationsberedskap.
+    correct: false
+    feedback: Fel — överdriven åtgärd; patienten är vaken med acceptabel saturation
+      och saknar tecken på respiratorisk insufficiens som kräver intubationsberedskap.
+  explanation: Mild KOL-exacerbation behandlas initialt med snabba bronkdilaterare
+    (beta-2-agonist ± antikolinergikum). Systemiska kortikosteroider och antibiotika
+    används vid mer uttalad dyspné, hypoxi/respiratorisk påverkan eller misstänkt
+    bakteriell infektion; inläggning krävs vid svår andningspåverkan, hypoxi eller
+    komplicerande faktorer.
+  id: med-lun-fcb289
+- type: multiple_choice
+  tags:
+  - KOL
+  - Andningssvikt
+  - NIV
+  question: 'En patient med känd KOL inkommer med ökad andfåddhet och bedöms ha exacerbation.
+    Patienten är trött och andas långsammare. Arteriell blodgas: pH 7,25 (7,35–7,45),
+    pO2 6,1 kPa (10–13), pCO2 9,5 kPa (4,6–6,0), S‑HCO3− 25 mmol/L (22–27). Vilken
+    åtgärd är mest korrekt utifrån blodgasen?'
+  image: null
+  options:
+  - text: Sätt in 5 liter syrgas och lägg in patienten på avdelning.
+    correct: false
+    feedback: Fel — för hög syrgas kan förvärra hyperkapnin hos KOL-patienter; behandlingen
+      måste vara kontrollerad och fokusera på ventilation.
+  - text: Ge 10 liter syrgas och be patienten djupandas i BA‑tub, lägg in på avdelning.
+    correct: false
+    feedback: Fel — högflödesoxygenering och uppmaning till djupandning är olämpligt;
+      för mycket syrgas riskerar att öka pCO2 och BA‑tub hjälper inte vid uttalad
+      respiratorisk acidos.
+  - text: Sätt in 1–2 liter syrgas och starta akut BiPAP (icke‑invasivt ventilationsstöd),
+      lägg in patienten.
+    correct: true
+    feedback: Rätt — kontrollerad lågflödesoxygenering tillsammans med akut NIV (BiPAP)
+      förbättrar ventilationen och sänker pCO2 vid hyperkapnisk respiratorisk acidos.
+  - text: Sätt in 1–2 liter syrgas och ordinera CPAP mot koldioxidstegringen, lägg
+      in patienten.
+    correct: false
+    feedback: Fel — CPAP förbättrar syresättning men ger inte det ventilationsstöd
+      som krävs för att sänka pCO2 vid hyperkapni.
+  - text: Fortsätt med inhalationer och kortison på akuten i 4 timmar och skicka hem
+      patienten med kortisonkur.
+    correct: false
+    feedback: Fel — uttalad respiratorisk acidos och hög pCO2 kräver omedelbar ventilationsstöd
+      och inläggning, hemgång är olämpligt.
+  explanation: Blodgasen visar hypoxisk och uttalad hyperkapnisk respiratorisk acidos
+    (lågt pH, mycket förhöjt pCO2). Behandlingen är försiktig lågflödesoxygenering
+    (1–2 L) för att undvika ytterligare CO2‑retention och snabbt icke‑invasivt ventilationsstöd
+    (BiPAP) för att förbättra alveolär ventilation; CPAP eller högflödesoxygen kan
+    vara otillräckligt eller skadligt vid betydande hyperkapni.
+  id: med-lun-6c0289
+- type: multiple_choice
+  tags:
+  - Pleurautredning
+  - Exsudat
+  - Diagnostik
+  question: Vid pleuratappning visar pleuravätskeprotein 39 g/L. Med detta provsvar
+    i åtanke, vilken av nedanstående orsaker är mest sannolik?
+  image: null
+  options:
+  - text: Malignitet, infektion eller kollagenos.
+    correct: true
+    feedback: Rätt — pleuraprotein ~39 g/L talar för exsudat, vilket ofta beror på
+      malignitet, infektion eller inflammatoriska/kollagena sjukdomar.
+  - text: Hjärtsvikt, njursvikt eller leversvikt.
+    correct: false
+    feedback: Fel — dessa tillstånd ger vanligen transudat med lågt pleuraprotein,
+      inte ett protein på ~39 g/L.
+  - text: Malignitet, njursvikt, kollagenos.
+    correct: false
+    feedback: Fel — även om malignitet och kollagenos kan ge exsudat, är njursvikt
+      typiskt associerad med transudat och därmed mindre sannolikt vid högt pleuraprotein.
+  - text: Reumatisk sjukdom, njursvikt eller infektion.
+    correct: false
+    feedback: Fel — reumatisk sjukdom (kollagenos) och infektion kan ge exsudat, men
+      njursvikt ger oftast transudat, så kombinationen gör detta mindre sannolikt
+      än alternativ 1.
+  - text: Ascites, infektion, reumatisk sjukdom.
+    correct: false
+    feedback: Fel — ascites är vätska i buken och inte en orsak till pleuralt exsudat;
+      dessutom blandar detta transudativa och exsudativa orsaker.
+  explanation: Ett pleuravätskeprotein kring 39 g/L tyder på exsudat (vanligt gränsvärde
+    ~30 g/L för absolut pleuraprotein). Exsudat orsakas i första hand av malignitet,
+    infektion eller inflammatoriska/kollagena sjukdomar, medan hjärtsvikt, leversvikt
+    och njursvikt typiskt ger transudat.
+  id: med-lun-c3cef0
+- type: multiple_choice
+  tags:
+  - Pleuraplack
+  - Asbestexposition
+  - Radiologi
+  question: Bengt är en 64‑årig före detta rökare och anläggningsarbetare med tidigare
+    asbestexponering. Vid en hälsoundersökning utförs lungröntgen där pilarna pekar
+    på välavgränsade pleurala förtjockningar, delvis förkalkade. Vilken typ av förändringar
+    pekar pilarna mest sannolikt på?
+  image: null
+  options:
+  - text: Malignitet
+    correct: false
+    feedback: Fel — malignitet ger oftare oregelbundna massor eller infiltrationer;
+      pleuraplack är välavgränsade och kroniska förändringar vid asbestexponering.
+  - text: Pneumothorax
+    correct: false
+    feedback: Fel — pneumothorax visar luftspalt utan lungmarkeringar och lungkollaps,
+      inte pleurala förtjockningar eller förkalkningar.
+  - text: Pleuraplack
+    correct: true
+    feedback: Rätt — typiskt för asbestexponering; skarpa, tunna pleurala förtjockningar
+      som ofta kan förkalkas syns på lungröntgen.
+  - text: Pneumoniska infiltrat
+    correct: false
+    feedback: Fel — pneumoniska infiltrat är parenkymala konsolidationer och inte
+      tunna, välavgränsade pleurala plack.
+  - text: Empyem
+    correct: false
+    feedback: Fel — empyem ger ofta pleurautgjutning med vätskenivå och inflammatorisk
+      förtjockning, vanligtvis med kliniska symtom som feber.
+  explanation: Pleuraplack är fibrösa förtjockningar av parietalpleuran som ofta uppstår
+    efter asbestexponering; de är lokaliserade pleurala avlagringar som kan kalkas
+    och syns som välavgränsade skuggor på lungröntgen. De skiljer sig radiologiskt
+    och kliniskt från parenkymala infiltrat, pneumothorax och empyem.
+  id: med-lun-122568
+- type: multiple_choice
+  tags:
+  - Bronkiektasier
+  - Infektion
+  - Antibiotika
+  question: Bronkiektasier är vanligare än man tror. Vad gäller både för sjukdomen
+    och för dess behandling hos en person som enbart har bronkiektasier? Ett alternativ
+    är rätt.
+  image: null
+  options:
+  - text: Orsakas ofta av infektioner som förstör bronkerna och vidgar dem. Vanligt
+      att svampinfektioner tillstöter; förutom antibiotika, lägg till antimykotika
+      i samband med infektion.
+    correct: false
+    feedback: Fel — svampinfektioner är inte vanliga vid enkel bronkiektasi och antimykotika
+      ges inte rutinmässigt.
+  - text: Orsakas ofta av infektioner som förstör bronkerna och vidgar dem. Antibiotika
+      10–14 dagar vid infektion.
+    correct: true
+    feedback: Rätt — bronkiektasier följer ofta upprepade infektioner och bakteriella
+      exacerbationer behandlas vanligen med antibiotika i 10–14 dagar.
+  - text: Orsakas ofta av infektioner som förstör bronkerna och vidgar dem. Antibiotika
+      10–14 dagar vid infektion samt en per oral kortisonkur.
+    correct: false
+    feedback: Fel — peroral kortison är inte standardbehandling vid isolerad bronkiektasi
+      utan används främst vid samtidig inflammatorisk komorbiditet.
+  - text: Orsakas av skrumpning i parenkymet som vidgar bronkerna. Antibiotika 10–14
+      dagar vid infektion.
+    correct: false
+    feedback: Fel — patogenesen är bronkdestruktion och dilatation efter infektion,
+      inte skrumpling av parenkymet.
+  - text: Orsakas av skrumpning i parenkymet som vidgar bronkerna. Vanligt att svampinfektioner
+      tillstöter; förutom antibiotika, lägg till antimykotika i samband med infektion.
+    correct: false
+    feedback: Fel — både patogenesbeskrivningen och påståendet om vanliga svampinfektioner
+      är felaktiga; antimykotika är inte rutin.
+  explanation: Bronkiektasier brukar bero på upprepade eller svåra infektioner som
+    leder till irreversibel bronkvidgning och slemretention. Behandling innefattar
+    främst luftvägsclearance och vid bakteriell exacerbation antibiotika vanligen
+    i 10–14 dagar; antimykotika och peroral kortison är inte rutinåtgärder vid isolerad
+    bronkiektasi.
+  id: med-lun-d22975
+- type: multiple_choice
+  tags:
+  - Mykobakterier
+  - Tuberkulos
+  question: Siv Karlsson, med KOL, insjuknar efter resa i feber och purulent hosta.
+    Sputum skickas för odling och TB-odling; nästa dag rapporterar laboratoriet att
+    syrafasta stavar påvisats i direktmikroskopi. Vilket påstående och handläggande
+    är helt korrekt?
+  image: null
+  options:
+  - text: Oklart vilken mykobakterie det rör sig om. Be henne i avvaktan på ytterligare
+      provsvar ej ha kontakt med sonsonen.
+    correct: true
+    feedback: Rätt — syrafasta stavar kan vara M. tuberculosis eller icke-tuberkulösa
+      mykobakterier; tills artbestämning/PCR finns bör försiktighetsåtgärder och undvikande
+      av nära kontakt med spädbarn rekommenderas.
+  - text: Siv har insjuknat i miljömykobakterios eftersom hon redan har en KOL-sjukdom.
+      Remiss till lungklinik för behandling av miljömykobakteriosen.
+    correct: false
+    feedback: Fel — man kan inte avgöra art eller diagnos (NTM vs TB) enbart utifrån
+      KOL och sputum-syrafasta; behandling av NTM kräver kultur, artbestämning och
+      kliniska kriterier.
+  - text: Siv har insjuknat i lungtuberkulos. Provtagande läkare ansvarig för att
+      utfärda smittskyddsanmälan.
+    correct: false
+    feedback: Felaktig slutsats — syrafasta stavar indikerar möjlig TB men bekräftas
+      först med PCR/culture; ansvar för smittskyddsanmälan finns, men diagnosen ska
+      inte fastslås enbart på mikroskopi.
+  - text: Siv har insjuknat i lungtuberkulos. Akut remiss till infektionsklinik.
+    correct: false
+    feedback: Fel — man bör initiera smittskyddsåtgärder och vidare provtagning, men
+      det är fel att definitivt deklarera TB och rutinmässigt skicka akutremiss utan
+      att först komplettera utredningen enligt lokala rutiner.
+  - text: För att utesluta lungtuberkulos görs en lungröntgen akut. Om inga infiltrat/kaverner
+      påvisas föreligger ingen smittsam lungtuberkulos.
+    correct: false
+    feedback: Fel — lungröntgen är viktig men kan vara normal vid aktiv TB; frånvaro
+      av infiltrat utesluter inte smittsam sjukdom, särskilt vid syrafasta stavar
+      i sputum.
+  explanation: Syrafasta stavar i sputum visar mykobakterier men skiljer inte mellan
+    M. tuberculosis och icke-tuberkulösa mykobakterier. Ytterligare analyser (PCR,
+    artbestämning och odling) samt klinisk bedömning avgör diagnos, behandling och
+    smittskyddsåtgärder; tills svar finns bör försiktighetsåtgärder och begränsad
+    nära kontakt med sårbara personer vidtas.
+  id: med-lun-6aac66
+- type: multiple_choice
+  tags:
+  - Sarkoidos
+  - Löfgrensyndrom
+  question: Lovisa Persson, 27 år, är nyss hemkommen från Island. Fyra dagar efter
+    hemkomsten insjuknar hon i feber och hosta. Samtidigt fick hon värk och svullnad
+    runt båda malleolerna. Lungröntgen visar bilateral hilusförstoring. Vilket tillstånd
+    talar anamnesen och röntgenbilden mest för?
+  image: null
+  options:
+  - text: Allergisk alveolit (hypersensitivitetspneumonit)
+    correct: false
+    feedback: Fel — ger typiskt diffus interstitiell reaktion efter exponering för
+      organiskt damm, inte unilateral/fokal fotledsartrit och bilateral hiluslymfadenopati.
+  - text: Astmaskov relaterat till infektion
+    correct: false
+    feedback: Fel — astma ger expiratorisk obstruktion, wheeze och variabel dyspné,
+      inte bilateral hilär förstorning med samtidig malleolartrit.
+  - text: KOL-exacerbation
+    correct: false
+    feedback: Fel — KOL ses vanligen hos äldre med långvarig tobaksrökning och kroniska
+      obstruktiva besvär, inte akut debuterande feber med bilateral hilusadenopati
+      och ankelsmärta.
+  - text: Bronkopulmonell aspergillos
+    correct: false
+    feedback: Fel — denna sjukdom ses främst hos astmatiker eller cystisk fibros-patienter
+      med slemhosta och flyktiga infiltrat, inte Löfgrens triad med bilateral hilusförstoring
+      och fotledsartrit.
+  - text: Akut sarkoidos
+    correct: true
+    feedback: Rätt — akut sarkoidos (Löfgrens syndrom) karakteriseras av erytema nodosum,
+      symmetrisk anklartrit och bilateral hiluslymfadenopati.
+  explanation: Akut sarkoidos (Löfgrens syndrom) är en form av sarkoidos som ger triaden
+    erytema nodosum, oligoartrit i anklarna och bilateral hiluslymfadenopati, ofta
+    med feber och hosta. Diagnos baseras på klinik och röntgen; prognosen är ofta
+    god och många tillfrisknar spontant eller efter kort steroidbehandling.
+  id: med-lun-1f5a60
+- type: multiple_choice
+  tags:
+  - Astma
+  - Diagnostik
+  - Inflammation
+  question: Vilket av följande påståenden om astma är korrekt?
+  image: null
+  options:
+  - text: Alla astmatiker har inte en eosinofil typ av inflammation.
+    correct: true
+    feedback: Rätt — astma är heterogen; inflammation kan vara eosinofil, neutrofil,
+      paucigranulocytär eller blandad, vilket påverkar behandling och prognos.
+  - text: Bronkoskopi med slemhinnebiopsier är en bra metod för att kunna ställa astmadiagnos
+      om det är svårbedömt.
+    correct: false
+    feedback: Fel — bronkoskopi är invasiv och används sällan i rutindiagnostik för
+      astma; kliniska tester och funktionstester är förstahandsmetoder.
+  - text: En normal spirometri utesluter astma.
+    correct: false
+    feedback: Fel — normal spirometri utesluter inte astma eftersom luftvägsvariabilitet
+      kan vara intermittent; provokationstester eller reversibilitetsbedömning kan
+      behövas.
+  - text: Typ 1 astma är den vanligaste orsaken till astma.
+    correct: false
+    feedback: Fel — IgE‑medierad (typ I) allergi är en vanlig orsak men långt ifrån
+      ensam; flera fenotyper och mekanismer förekommer.
+  - text: Allergi som dominerande eller bidragande orsak till astma ses hos 20% av
+      alla barn.
+    correct: false
+    feedback: Fel — andelen barn där allergi bidrar är ofta betydligt högre än 20%
+      i många studier.
+  explanation: Astma är en heterogen sjukdom med olika inflammationsmönster och flera
+    fenotyper. Diagnos grundas på typiska symtom och dokumenterad variabilitet i luftvägsmotstånd
+    (spirometri med reversibilitet, provokationstester, FeNO och allergiutredning);
+    invasiva metoder som biopsi används sällan.
+  id: med-lun-3d8312
+- type: multiple_choice
+  tags:
+  - Spirometri
+  - Obstruktiv lungsjukdom
+  - KOL
+  question: 'På din vårdcentral kommer en 73-årig man med dyspné som har genomgått
+    spirometri: FVC 2,6 L, FEV1 1,7 L, FEV1/FVC 65%. Ingen reversibilitet efter bronkdilatation,
+    utförandet var gott. Vilka tre tillstånd är mest förenliga med denna spirometri?'
+  image: null
+  options:
+  - text: Ålder. KOL. Utttalade bronkiektasier.
+    correct: true
+    feedback: Rätt – FEV1/FVC 65% utan reversibilitet talar för obstruktion som ses
+      vid KOL och bronkiektasier; ålder ger fysiologisk sänkning av kvoten.
+  - text: KOL. Astma. Idiopatisk lungfibros.
+    correct: false
+    feedback: Fel – astma visar oftast reversibilitet efter bronkdilatation, och idiopatisk
+      lungfibros ger en restriktiv bild med normal/förhöjd FEV1/FVC.
+  - text: Kronisk sarkoidos. Idiopatisk lungfibros. Uttalade bronkiektasier.
+    correct: false
+    feedback: Fel – sarkoidos och idiopatisk lungfibros är i regel restriktiva med
+      normal eller förhöjd kvot, vilket inte stämmer med den obstruktiva spirometrin.
+  - text: Idiopatisk lungfibros. Ålder. KOL
+    correct: false
+    feedback: Fel – idiopatisk lungfibros ger restriktion och normalt eller förhöjt
+      FEV1/FVC, vilket motsäger den observerade sänkta kvoten.
+  - text: Kronisk sarkoidos. Astma. Uttalade bronkiektasier.
+    correct: false
+    feedback: Fel – astma brukar visa reversibilitet och sarkoidos ger restriktiv
+      bild; endast bronkiektasier av dessa ger typiskt obstruktion.
+  explanation: Ett FEV1/FVC på 65% indikerar obstruktiv ventilationsnedsättning. Avsaknad
+    av reversibilitet talar mot astma och mer för KOL eller bronkiektasier, medan
+    restriktiva sjukdomar som idiopatisk lungfibros och sarkoidos normalt har normal
+    eller förhöjd kvot.
+  id: med-lun-3ee373
+- type: multiple_choice
+  tags:
+  - Kortison
+  - Pneumoni
+  - Akutbehandling
+  question: För vilket av nedanstående alternativ är peroral kortisonbehandling ett
+    bra behandlingsalternativ för alla de tre uppräknade sjukdomarna (även om annan
+    medicinering/behandling kan förekomma)?
+  image: null
+  options:
+  - text: Kryptogen organiserad pneumoni. Pneumokockpneumoni. KOL-exacerbation.
+    correct: false
+    feedback: Fel — pneumokockpneumoni behandlas primärt med antibiotika och peroralt
+      kortison är inte ett generellt förstahandsval för bakteriell pneumoni.
+  - text: Vena cava superior-syndrom. Miljömykobakterier i lungan. Eosinofil pneumoni.
+    correct: false
+    feedback: Fel — mykobakterieinfektioner kräver specifik antimikrobiell behandling
+      och systemisk kortison kan förvärra infektionen.
+  - text: Eosinofil pneumoni. Vena cava superior-syndrom. Kryptogen organiserad pneumoni.
+    correct: true
+    feedback: Rätt — eosinofil pneumoni och kryptogen organiserande pneumoni svarar
+      ofta väl på systemisk kortison, och kortison kan snabbt minska tumöroffekt/ödem
+      vid vena cava superior‑syndrom.
+  - text: Eosinofil pneumoni. Underhållsbehandling av KOL. Kryptogen organiserad pneumoni.
+    correct: false
+    feedback: Fel — peroralt kortison är inte rekommenderat som rutinmässig underhållsbehandling
+      vid KOL (inhalationssteroider kan förekomma), så inte alla tre indikationerna
+      är korrekta.
+  - text: KOL-exacerbation. Kryptogen organiserad pneumoni. Underhållsbehandling av
+      KOL.
+    correct: false
+    feedback: Fel — även om peroralt kortison används vid KOL-exacerbation är det
+      inte lämpligt som underhållsbehandling för KOL, så alla tre uppfylls inte.
+  explanation: Systemiska kortikosteroider är indicerade vid eosinofil pneumoni och
+    vid kryptogen organiserande pneumoni (COP) där de ofta ger tydlig förbättring.
+    Vid vena cava superior‑syndrom kan kortison snabbt minska tumörrelaterat ödem
+    och lindra symtom, medan bakteriella pneumonier och mykobakteriella infektioner
+    primärt kräver antimikrobiell behandling och långvarig peroral kortison kan vara
+    skadligt.
+  id: med-lun-b20b74
+- type: multiple_choice
+  tags:
+  - Pneumothorax
+  - Akutvård
+  question: Hampus, 20 år, fick plötslig smärta i övre högra bröstkorgen kl 16.30.
+    Lungröntgen kl 21.45 visar en 2 cm högersidig, apikalt belägen pneumothorax. Du
+    träffar honom på akuten kl 22. Vilken handläggning är mest lämplig?
+  image: null
+  options:
+  - text: Akutläkaren lokaliserar luftspalten med ultraljud och exsufflerar luften
+      med en 500 ml spruta; Hampus åker hem och kommer tillbaka nästa dag för kontrollröntgen.
+    correct: false
+    feedback: Onödig och riskabel procedur; exsufflation med spruta är inte standardbehandling
+      för en liten, stabil pneumothorax.
+  - text: Thoraxjouren lägger in ett drän med elsug och Hampus läggs in på avdelning;
+      ny lungröntgen nästa morgon.
+    correct: false
+    feedback: Överbehandling för en liten, stabil apikal pneumothorax; drän krävs
+      endast vid större eller symtomatiska pneumothoraxer eller vid försämring.
+  - text: Hampus får gå hem med råd att återkomma vid försämring eftersom han mår
+      väl; ordnad kontroll-lungröntgen nästa dag.
+    correct: true
+    feedback: Korrekt; liten (2 cm) unilateral apikal pneumothorax hos stabil patient
+      kan följas konservativt med hemgång och kontrollröntgen.
+  - text: Hampus skickas hem med råd att höra av sig vid försämring och ska återkomma
+      nästa dag efter en planerad magnetkameraundersökning.
+    correct: false
+    feedback: MRI är irrelevant för akut handläggning av pneumothorax och fördröjer
+      uppföljning utan nytta.
+  - text: Han får en remiss till Södersjukhuset i Stockholm eftersom han bor där och
+      ska flyga hem nästa morgon; uppmanas återkomma till Sahlgrenska vid försämring.
+    correct: false
+    feedback: Felaktigt och olämpligt; flygning vid pågående pneumothorax är kontraindicerat
+      och remiss/transport är inte indicerat här.
+  explanation: En liten, unilateral och apikalt belägen pneumothorax hos en stabil
+    patient kan oftast handläggas konservativt med hemgång och ordnad kontrollröntgen
+    nästa dag. Invasiva åtgärder (exsufflation eller drän) är reserverade för större
+    pneumothoraxer, uttalade symptom, klinisk försämring eller hemodynamisk instabilitet;
+    flygning är kontraindicerat tills pneumothorax är löst.
+  id: med-lun-8618a4
+- type: multiple_choice
+  tags:
+  - Pneumokonios
+  - Restriktiv lungsjukdom
+  question: Pneumokonioser (dammlungor) är ovanliga men viktiga att känna till. Vilket
+    av nedanstående påståenden om pneumokonioser stämmer fullt ut?
+  image: null
+  options:
+  - text: Orsakas av inhalerat oorganiskt damm såsom kisel. Ger en restriktiv bild
+      med nedsatt gasutbytesfunktion. Det viktigaste är att undvika exponering.
+    correct: true
+    feedback: Rätt — pneumokonioser beror på oorganiskt damm (t.ex. kisel/asbest),
+      ger oftast restriktiv spirometri och minskat gasutbyte; primär åtgärd är att
+      stoppa exponering.
+  - text: Orsakas av inhalerat oorganiskt damm såsom kisel. Detta leder till en restriktiv
+      bild. I avancerade fall leder detta till en pneumothorax.
+    correct: false
+    feedback: Fel — pneumothorax kan uppstå sällsynt som komplikation men är inte
+      ett typiskt eller vanligt slutstadium för pneumokonios.
+  - text: Orsakas av inhalerat oorganiskt damm såsom kisel. Detta leder till växt
+      av aspergillus och miljömykobakterier. Profylaxbehandling mot aspergillus och
+      miljömykobakterier rekommenderas vid avancerade tillstånd.
+    correct: false
+    feedback: Fel — pneumokonioser är inte primärt associerade med aspergillus- eller
+      mykobakterietillväxt och profylax mot dessa rekommenderas inte som rutin.
+  - text: Orsakas av inhalerat organiskt damm såsom aspergillus. Ger en restriktiv
+      bild med nedsatt gasutbytesfunktion. Det viktigaste är att undvika exponering.
+    correct: false
+    feedback: Fel — organiska damm/aspergillus ger andra tillstånd (t.ex. hypersensitivitetspneumonit),
+      inte klassiska pneumokonioser som orsakas av oorganiska partiklar.
+  - text: Orsakas av inhalerat organiskt damm såsom aspergillus. Detta leder till
+      en restriktiv bild. I avancerade fall leder detta till en pneumothorax.
+    correct: false
+    feedback: Fel — liknande felaktig etiologi som ovan; pneumothorax är inte ett
+      typiskt progressivt resultat av organisk dammsexponering.
+  explanation: Pneumokonioser orsakas av inandning av oorganiska dammpartiklar (t.ex.
+    kisel, asbest) vilket leder till lungfibros och en restriktiv ventilationsstörning
+    med nedsatt gasutbyte. Viktigaste åtgärden är att avlägsna eller minimera fortsatt
+    exponering; sekundära infektioner kan förekomma men är inte definierande och profylax
+    mot svamp/mykobakterier är inte rutin.
+  id: med-lun-706b54

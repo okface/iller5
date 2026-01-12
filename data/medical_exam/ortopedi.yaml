@@ -1,0 +1,134 @@
+- type: multiple_choice
+  tags:
+  - HLA-B27
+  - Spondylartrit
+  question: Vilket sjukdomstillstånd är starkt associerat med HLA‑B27?
+  image: null
+  options:
+  - text: Psoriasisartrit
+    correct: false
+    feedback: Fel — psoriasisartrit kan ibland kopplas till HLA‑B27, särskilt vid
+      axial involvering, men associationen är inte så stark eller konsekvent.
+  - text: Sjögrens syndrom
+    correct: false
+    feedback: Fel — Sjögrens är inte associerat med HLA‑B27 utan har andra immunogenetiska
+      markörer och autoantikroppar.
+  - text: Systemisk skleros
+    correct: false
+    feedback: Fel — systemisk skleros har inte en stark koppling till HLA‑B27 utan
+      ofta andra HLA-typer och autoantikroppar.
+  - text: Reumatoid artrit
+    correct: false
+    feedback: Fel — reumatoid artrit är främst kopplad till HLA‑DRB1 ("shared epitope"),
+      inte HLA‑B27.
+  - text: Ankyloserande spondylit
+    correct: true
+    feedback: Rätt — ankyloserande spondylit har en stark genetisk association med
+      HLA‑B27 och karakteriseras av sakroiliit och axial inflammation.
+  explanation: HLA‑B27 är starkt associerat med ankyloserande spondylit och andra
+    spondylartriter, vilket ökar risken för axial involvering och sacroiliit. Andra
+    reumatiska sjukdomar har i allmänhet andra HLA- eller autoantikroppsassociationer
+    och därför saknar samma starka HLA‑B27-koppling.
+  id: med-ort-40ec38
+- type: multiple_choice
+  tags:
+  - Daktylit
+  - Psoriasisartrit
+  question: Vad kallas tillståndet när ett finger är svullet över hela dess längd
+    och ser 'korvliknande' ut (se pilen)?
+  image: null
+  options:
+  - text: Raynaud fenomen
+    correct: false
+    feedback: Fel — Raynaud ger episodiska färgförändringar och kärlspasm i fingrar,
+      inte diffus korvliknande svullnad.
+  - text: Entesit
+    correct: false
+    feedback: Fel — Entesit är inflammation vid senfästen och ger lokal smärta, inte
+      generell svullnad av hela fingret.
+  - text: Artros
+    correct: false
+    feedback: Fel — Artros ger degenerativa förändringar i lederna och lokaliserade
+      knölar, inte diffus hela-finger-svullnad.
+  - text: Synovit
+    correct: false
+    feedback: Fel — Synovit innebär ledinflammation som ger lednära svullnad, men
+      inte typiskt en korvformad svullnad av hela fingret.
+  - text: Daktylit
+    correct: true
+    feedback: Rätt — Daktylit är diffus svullnad av hela ett finger eller en tå och
+      ger det karakteristiska 'korvfingret'.
+  explanation: Daktylit är en jämn, diffus svullnad av ett helt finger eller tå som
+    ger ett 'korvliknande' utseende. Det ses oftast vid psoriasisartrit och andra
+    spondylartriter och beror på inflammatoriska förändringar i leder, senor och mjukdelar.
+  id: med-ort-8825af
+- type: multiple_choice
+  tags:
+  - Artros
+  - Diagnostik
+  - Knä
+  question: Äldre kvinna med kronisk, bilateral knäsmärta som förvärras vid aktivitet
+    och förbättras i vila. Knäna är lätt svullna och ömma. Vilken diagnos är mest
+    sannolik?
+  image: null
+  options:
+  - text: Reumatoid artrit
+    correct: false
+    feedback: Fel — RA ger oftare symmetriska småledssymtom, uttalad morgonstelhet
+      och systemiska tecken snarare än en ren mekanisk knäartropati.
+  - text: Psoriasisartrit
+    correct: false
+    feedback: Fel — psoriasisartrit är ofta kopplat till hudpsoriasis och kan ha annan
+      ledfördelning eller entesopatier, inte typiskt bilateral belastningssmärta i
+      knän hos äldre.
+  - text: Gikt
+    correct: false
+    feedback: Fel — gikt ger vanligen en akut, intensiv monoartrit med plötslig svullnad
+      och smärta, inte en långsamt förlöpande bilateral mekanisk smärta.
+  - text: Septisk artrit
+    correct: false
+    feedback: Fel — septisk artrit ger oftast akut svår lokal smärta och allmänpåverkan/feber
+      och är inte en kronisk, belastningsberoende process.
+  - text: Osteoartrit
+    correct: true
+    feedback: Rätt — artros är en degenerativ ledsjukdom som ger belastningsberoende
+      smärta, förbättring i vila och är vanlig i knä hos äldre.
+  explanation: Osteoartrit (artros) är en degenerativ ledsjukdom som ger mekanisk,
+    belastningsberoende smärta och ibland måttlig svullnad, särskilt i knä och höft
+    hos äldre. Diagnosen baseras främst på klinisk bild och kompletteras med röntgen;
+    behandling är i första hand konservativ (träning, viktminskning, analgetika) med
+    kirurgi vid svåra besvär.
+  id: med-ort-973407
+- type: multiple_choice
+  tags:
+  - Psoriasisartrit
+  - Spondyloartrit
+  - Entesit
+  question: Psoriasisartrit är en inflammatorisk ledsjukdom associerad med psoriasis.
+    Vilket av nedanstående förknippas med psoriasisartrit?
+  image: null
+  options:
+  - text: Entesit
+    correct: false
+    feedback: Fel — entesit är typiskt för psoriasisartrit, men det är inte det mest
+      fullständiga svaret; "Alla ovanstående" är korrekt.
+  - text: Daktylit
+    correct: false
+    feedback: Fel — daktylit ("korvfinger/tå") förekommer vid psoriasisartrit, men
+      inte det bästa enskilda svaret eftersom "Alla ovanstående" omfattar detta.
+  - text: Artit i DIP och/eller PIP-leder fingrar/tår
+    correct: false
+    feedback: Fel — perifer DIP-engagemang är typiskt och skiljer från RA, men inte
+      det bästa svaret ensam; välj "Alla ovanstående".
+  - text: Inflammatorisk ryggvärk som förbättras av aktivitet och försämras i vila
+    correct: false
+    feedback: Fel — axial involvering med inflammatorisk ryggvärk förekommer vid psoriasisartrit,
+      men rätt alternativ är "Alla ovanstående".
+  - text: Alla ovanstående
+    correct: true
+    feedback: Rätt — psoriasisartrit kan ge entesit, daktylit, perifer artrit (ofta
+      DIP) och axial sjukdom med inflammatorisk ryggvärk.
+  explanation: Psoriasisartrit är en form av spondyloartrit som kan ge både perifer
+    och axial involvering, inklusive entesit och daktylit. Till skillnad från RA drabbas
+    ofta DIP-leder och senfästen, och inflammatorisk ryggvärk förbättras vid aktivitet.
+  id: med-ort-c6425c

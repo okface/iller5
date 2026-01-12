@@ -1,0 +1,39 @@
+- type: multiple_choice
+  tags:
+  - Akut otitis media
+  - Diagnostik
+  - Pediatrik
+  question: Akut otitis media (AOM) är en infektion i mellanörat, vanligast hos små
+    barn. Vilket påstående stämmer bäst för diagnos och initial handläggning av AOM?
+  image: null
+  options:
+  - text: Om antibiotikabehandling inte hjälpt efter tre dygn ska patienten remitteras
+      akut till öronläkare
+    correct: false
+    feedback: Fel — Akut remiss efter 3 dygn antibiotika är inte rutin; remiss övervägs
+      vid komplikationer eller utebliven förbättring efter klinisk bedömning.
+  - text: Diagnos AOM ställs vid varig flytning ur mellanörat, eller när trumhinnan
+      buktar och är färgförändrad (ogenomskinglig eller chagrinerad) och orörlig
+    correct: true
+    feedback: Rätt — Varig otorré eller utspänd, färgförändrad och orörlig trumhinna
+      visar på mellanöreinflammation med exsudat och ger diagnosen AOM.
+  - text: Barn i åldrarna 1–12 år ska alltid behandlas med antibiotika på grund av
+      risk för mastoidit
+    correct: false
+    feedback: Fel — Barn i denna åldersgrupp behandlas inte alltid; många fall spontanläker
+      och behandlingsindikation beror på ålder, svårighetsgrad och klinisk status.
+  - text: Diagnos AOM ställs när hela trumhinnan är röd
+    correct: false
+    feedback: Fel — Enbart röd trumhinna är ospecifikt och kan ses vid flera tillstånd;
+      tecken på exsudat/utspänd och orörlig trumhinna är mer diagnostiska.
+  - text: Vuxna ska inte behandlas med antibiotika men rekommenderas återbesök efter
+      en vecka
+    correct: false
+    feedback: Fel — Vuxna med uttalade symtom eller riskfaktorer kan behöva antibiotika;
+      rutinmässigt avstå och endast återbesök är inte korrekt handläggning.
+  explanation: AOM diagnostiseras vid varig flytning ur mellanörat eller när trumhinnan
+    är utspänd, färgförändrad och orörlig, vilket indikerar mellanöreinflammation
+    med exsudat. Behandling styrs av ålder, symtom och svårighetsgrad; många fall
+    kan avvakta medan andra kräver antibiotika eller uppföljning. Remiss till öronläkare
+    görs vid komplikationer eller vid utebliven förbättring efter klinisk bedömning.
+  id: med-oro-0fb7fd
