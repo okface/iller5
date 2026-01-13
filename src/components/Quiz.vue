@@ -168,18 +168,18 @@ const getOptionClass = (index, option) => {
   <div v-if="currentQuestion" class="max-w-2xl mx-auto pb-20">
     
     <!-- Top Bar -->
-    <div class="flex justify-between items-center mb-3 text-xs text-gray-500">
+    <div class="flex justify-between items-center mb-3 text-xs text-stone-600">
       <button @click="store.view = 'dashboard'" class="hover:text-gray-900">&larr; Quit</button>
-      <span class="font-mono bg-gray-100 px-2 py-1 rounded">{{ progressText }}</span>
+      <span class="font-mono bg-stone-100/70 px-2 py-1 rounded">{{ progressText }}</span>
     </div>
 
     <!-- Sticky Question Header -->
-    <div ref="questionHeaderRef" class="sticky top-0 z-10 bg-white pb-2 border-b border-gray-100">
+    <div ref="questionHeaderRef" class="sticky top-0 z-10 bg-stone-50/90 backdrop-blur pb-2 border-b border-stone-200">
       <div class="pt-2">
         <div v-if="sourceLabel" class="text-sm font-semibold text-slate-800 mb-1">
           {{ sourceLabel }}
         </div>
-        <span v-for="tag in currentQuestion.tags" :key="tag" class="inline-block text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded mr-2 mb-1">
+        <span v-for="tag in currentQuestion.tags" :key="tag" class="inline-block text-[11px] font-bold text-amber-800 bg-amber-50/80 px-2 py-0.5 rounded mr-2 mb-1">
           {{ tag }}
         </span>
       </div>
@@ -222,9 +222,9 @@ const getOptionClass = (index, option) => {
     </div>
 
     <!-- General Explanation (Always appears after answer) -->
-    <div v-if="answered" class="p-3 bg-blue-50 border border-blue-100 rounded-lg mb-14 animate-fade-in">
-      <h3 class="text-sm font-bold text-blue-800 mb-1 uppercase tracking-wider">Explanation</h3>
-      <p class="text-blue-900 text-sm leading-relaxed">
+    <div v-if="answered" class="p-3 bg-stone-50/70 border border-stone-200 rounded-lg mb-14 animate-fade-in">
+      <h3 class="text-xs font-bold text-stone-700 mb-1 uppercase tracking-wider">Explanation</h3>
+      <p class="text-stone-800 text-sm leading-relaxed">
         {{ currentQuestion.explanation }}
       </p>
     </div>
@@ -233,7 +233,7 @@ const getOptionClass = (index, option) => {
     <div v-if="answered" class="fixed bottom-0 left-0 right-0 p-2 bg-white border-t border-gray-200 flex justify-center pb-3 sm:pb-2 md:static md:bg-transparent md:border-0 md:p-0 md:justify-end">
       <button 
         @click="nextQuestion"
-        class="bg-indigo-600 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-indigo-700 transition w-full md:w-auto"
+        class="bg-slate-900 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-slate-950 transition w-full md:w-auto"
       >
         {{ store.currentIndex < store.currentSession.length - 1 ? 'Next Question &rarr;' : 'Finish Session' }}
       </button>

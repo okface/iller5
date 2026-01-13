@@ -157,35 +157,35 @@ const focusSelected = (count) => {
     <section>
       <button
         @click="showStatsDetails = !showStatsDetails"
-        class="w-full text-left p-4 rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white hover:border-slate-300 transition"
+        class="w-full text-left p-4 rounded-xl border border-stone-200 bg-gradient-to-br from-stone-50 to-amber-50/40 hover:border-stone-300 transition"
       >
         <div class="flex items-start justify-between gap-3">
           <div>
-            <div class="text-sm text-slate-500">Progress</div>
-            <div class="text-lg font-bold text-slate-900">Medical Exam</div>
+            <div class="text-sm text-stone-600">Progress</div>
+            <div class="text-lg font-bold text-stone-900">Medical Exam</div>
           </div>
-          <div class="text-xs text-slate-500 mt-1">{{ showStatsDetails ? 'Hide' : 'Details' }}</div>
+          <div class="text-xs text-stone-500 mt-1">{{ showStatsDetails ? 'Hide' : 'Details' }}</div>
         </div>
 
         <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-2">
-          <div class="p-3 rounded-lg bg-white border border-slate-200">
-            <div class="text-xs text-slate-500">Unanswered</div>
-            <div class="text-lg font-bold text-slate-900">{{ unansweredCount }} / {{ totalQuestions }}</div>
+          <div class="p-3 rounded-lg bg-white/70 border border-stone-200">
+            <div class="text-xs text-stone-600">Unanswered</div>
+            <div class="text-lg font-bold text-stone-900">{{ unansweredCount }} / {{ totalQuestions }}</div>
           </div>
-          <div class="p-3 rounded-lg bg-white border border-slate-200">
-            <div class="text-xs text-slate-500">Not correct yet</div>
-            <div class="text-lg font-bold text-slate-900">{{ remainingToCorrectOnce }} / {{ totalQuestions }}</div>
+          <div class="p-3 rounded-lg bg-white/70 border border-stone-200">
+            <div class="text-xs text-stone-600">Not correct yet</div>
+            <div class="text-lg font-bold text-stone-900">{{ remainingToCorrectOnce }} / {{ totalQuestions }}</div>
           </div>
-          <div class="p-3 rounded-lg bg-white border border-slate-200">
-            <div class="text-xs text-slate-500">Accuracy today</div>
-            <div class="text-lg font-bold text-slate-900">{{ todayAccuracy === null ? '—' : (todayAccuracy + '%') }}</div>
+          <div class="p-3 rounded-lg bg-white/70 border border-stone-200">
+            <div class="text-xs text-stone-600">Accuracy today</div>
+            <div class="text-lg font-bold text-stone-900">{{ todayAccuracy === null ? '—' : (todayAccuracy + '%') }}</div>
           </div>
         </div>
 
-        <div v-if="showStatsDetails" class="mt-3 text-sm text-slate-600">
-          <div>Incorrect (ever): <span class="font-bold text-slate-900">{{ incorrectEverCount }} / {{ totalQuestions }}</span></div>
-          <div>Total accuracy: <span class="font-bold text-slate-900">{{ totalAccuracy === null ? '—' : (totalAccuracy + '%') }}</span></div>
-          <div class="text-xs text-slate-500 mt-1">Today resets automatically at local midnight.</div>
+        <div v-if="showStatsDetails" class="mt-3 text-sm text-stone-700">
+          <div>Incorrect (ever): <span class="font-bold text-stone-900">{{ incorrectEverCount }} / {{ totalQuestions }}</span></div>
+          <div>Total accuracy: <span class="font-bold text-stone-900">{{ totalAccuracy === null ? '—' : (totalAccuracy + '%') }}</span></div>
+          <div class="text-xs text-stone-500 mt-1">Today resets automatically at local midnight.</div>
         </div>
       </button>
     </section>
@@ -197,18 +197,16 @@ const focusSelected = (count) => {
         
         <button 
           @click="store.startSession('quick5')"
-          class="p-5 rounded-xl border border-indigo-100 bg-indigo-50 text-indigo-950 hover:bg-indigo-100/60 transition"
+          class="p-5 rounded-xl border border-rose-100 bg-rose-50/70 text-rose-950 hover:bg-rose-100/60 transition"
         >
           <div class="text-2xl font-bold mb-1">5 Questions</div>
-          <div class="text-xs mt-1 text-indigo-800/80">SRS weighted</div>
         </button>
 
         <button 
           @click="store.startSession('quick10')"
-          class="p-5 rounded-xl border border-slate-200 bg-slate-50 text-slate-950 hover:bg-slate-100/70 transition"
+          class="p-5 rounded-xl border border-amber-100 bg-amber-50/70 text-amber-950 hover:bg-amber-100/60 transition"
         >
           <div class="text-2xl font-bold mb-1">10 Questions</div>
-          <div class="text-xs mt-1 text-slate-600">SRS weighted</div>
         </button>
 
         <button 
@@ -234,13 +232,13 @@ const focusSelected = (count) => {
         <button
           v-if="!showCategoryPicker"
           @click="openCategoryPicker"
-          class="w-full p-4 bg-gradient-to-br from-indigo-50 to-slate-50 border border-indigo-100 rounded-xl hover:border-indigo-200 transition text-left"
+          class="w-full p-4 bg-gradient-to-br from-stone-50 to-rose-50/50 border border-stone-200 rounded-xl hover:border-stone-300 transition text-left"
         >
           <div class="font-bold text-gray-800">Study specific categories</div>
           <div class="text-sm text-gray-500 mt-1">Pick one or more categories</div>
         </button>
 
-        <div v-else class="bg-white border border-gray-200 rounded-xl p-4">
+        <div v-else class="bg-white/70 backdrop-blur border border-stone-200 rounded-xl p-4">
           <div class="flex items-center justify-between mb-3">
             <div class="font-bold text-gray-800">Select categories</div>
             <button @click="closeCategoryPicker" class="text-sm text-gray-500 hover:text-gray-900">Cancel</button>
