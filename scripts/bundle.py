@@ -2,6 +2,7 @@ import os
 import yaml
 import json
 import glob
+from datetime import datetime, timezone
 
 # Constants
 DATA_DIR = 'data'
@@ -60,7 +61,7 @@ def bundle():
         "questions": all_questions,
         "meta": {
             "total_questions": len(all_questions),
-            "generated_at": os.times()[4] # timestamp
+            "generated_at": datetime.now(timezone.utc).isoformat() # ISO 8601 UTC
         }
     }
     

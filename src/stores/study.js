@@ -1,6 +1,33 @@
 import { defineStore } from 'pinia';
 import { useStorage } from '@vueuse/core';
 
+const randomFloat = () => {
+  if (globalThis.crypto && typeof globalThis.crypto.getRandomValues === 'function') {
+    const buf = new Uint32Array(1);
+    globalThis.crypto.getRandomValues(buf);
+    return buf[0] / 0x100000000;
+  }
+  return Math.random();
+};
+
+const randomInt = (maxExclusive) => {
+  if (maxExclusive <= 0) return 0;
+  return Math.floor(randomFloat() * maxExclusive);
+};
+
+const shuffleInPlace = (arr) => {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = randomInt(i + 1);
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+};
+
+const takeRandom = (arr) => {
+  const idx = randomInt(arr.length);
+  return arr.splice(idx, 1)[0];
+};
+
 export const useStudyStore = defineStore('study', {
   state: () => ({
     loading: true,
@@ -28,9 +55,17 @@ export const useStudyStore = defineStore('study', {
         // Use BASE_URL to handle GitHub Pages subdirectories correctly
         const baseUrl = import.meta.env.BASE_URL;
         // Ensure standard slash behavior
-        const path = baseUrl.endsWith('/') ? `${baseUrl}content.json` : `${baseUrl}/content.json`;
+        const basePath = baseUrl.endsWith('/') ? `${baseUrl}content.json` : `${baseUrl}/content.json`;
+
+        // Cache busting: GitHub Pages/static CDNs + browsers may cache content.json aggressively.
+        // By varying the URL per deployment, we can fetch new questions without users clearing
+        // site data (which would also wipe localStorage progress).
+        const buildTag = (typeof __ILLER5_BUILD_TIME__ !== 'undefined' && __ILLER5_BUILD_TIME__)
+          ? __ILLER5_BUILD_TIME__
+          : `${Date.now()}`;
+        const path = `${basePath}?v=${encodeURIComponent(buildTag)}`;
         
-        const response = await fetch(path);
+        const response = await fetch(path, { cache: 'no-store' });
         if (!response.ok) throw new Error("Failed to load content.json");
         
         const data = await response.json();
@@ -45,7 +80,7 @@ export const useStudyStore = defineStore('study', {
       }
     },
 
-    startSession(mode, target = null) {
+    startSession(mode, target = null, countOverride = null) {
       // mode: 'quick5', 'quick10', 'worst10', 'specific'
       // target: filename (for 'specific') or nil
       
@@ -55,6 +90,9 @@ export const useStudyStore = defineStore('study', {
         // Filter by source filename or folder "Folder/File" logic
         // The bundler should probably attach 'source' metadata to questions
         candidateQuestions = this.questions.filter(q => q.source === target);
+      } else if (mode === 'multi' && Array.isArray(target) && target.length > 0) {
+        const selected = new Set(target);
+        candidateQuestions = this.questions.filter(q => selected.has(q.source));
       } else {
         // All questions
         candidateQuestions = this.questions;
@@ -65,7 +103,9 @@ export const useStudyStore = defineStore('study', {
         return;
       }
 
-      const count = (mode === 'quick5') ? 5 : 10;
+      const count = (typeof countOverride === 'number' && Number.isFinite(countOverride))
+        ? Math.max(1, Math.floor(countOverride))
+        : ((mode === 'quick5') ? 5 : 10);
       this.currentSession = this.selectQuestionsSRS(candidateQuestions, count);
       this.currentIndex = 0;
       this.sessionAnswers = {};
@@ -73,7 +113,7 @@ export const useStudyStore = defineStore('study', {
     },
 
     selectQuestionsSRS(candidates, count) {
-      if (candidates.length <= count) return candidates;
+      if (candidates.length <= count) return shuffleInPlace([...candidates]);
 
       // Group by buckets
       const buckets = { A: [], B: [], C: [] };
@@ -87,44 +127,38 @@ export const useStudyStore = defineStore('study', {
         }
       });
 
-      // Target counts based on weights 70/20/10
-      // We fill the session list until full
-      let selected = [];
-      const targets = {
-        A: Math.round(count * 0.7),
-        B: Math.round(count * 0.2),
-        C: Math.round(count * 0.1)
-      };
+      // Weighted draw (70/20/10) per slot for a more natural/random session order.
+      // Still heavily favors Bucket A, but avoids "sticky" ordering from sort-random shuffles.
+      const weights = { A: 0.7, B: 0.2, C: 0.1 };
 
-      // Helper to pick random items
-      const pick = (arr, n) => {
-        const shuffled = [...arr].sort(() => 0.5 - Math.random());
-        return shuffled.slice(0, n);
-      };
+      const selected = [];
+      while (selected.length < count) {
+        const available = ['A', 'B', 'C'].filter(k => buckets[k].length > 0);
+        if (available.length === 0) break;
 
-      // 1. Fill A
-      const pickedA = pick(buckets.A, targets.A);
-      selected = selected.concat(pickedA);
-      
-      // 2. Fill B
-      const pickedB = pick(buckets.B, targets.B);
-      selected = selected.concat(pickedB);
+        const totalWeight = available.reduce((sum, k) => sum + weights[k], 0);
+        let r = randomFloat() * totalWeight;
+        let chosen = available[0];
+        for (const k of available) {
+          r -= weights[k];
+          if (r <= 0) {
+            chosen = k;
+            break;
+          }
+        }
 
-      // 3. Fill C
-      const pickedC = pick(buckets.C, targets.C);
-      selected = selected.concat(pickedC);
+        selected.push(takeRandom(buckets[chosen]));
+      }
 
-      // 4. Backfill if we didn't meet the count (e.g. not enough C items, pull from A)
-      // For simplicity, just pool remaining and fill
+      // Backfill if needed (should only happen if candidates were mutated unexpectedly)
       if (selected.length < count) {
         const alreadySelectedIds = new Set(selected.map(q => q.id));
         const remaining = candidates.filter(q => !alreadySelectedIds.has(q.id));
-        const needed = count - selected.length;
-        selected = selected.concat(pick(remaining, needed));
+        shuffleInPlace(remaining);
+        selected.push(...remaining.slice(0, count - selected.length));
       }
 
-      // Shuffle final result so buckets aren't clustered
-      return selected.sort(() => 0.5 - Math.random());
+      return selected;
     },
 
     recordAnswer(questionId, isCorrect) {

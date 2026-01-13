@@ -1,8 +1,11 @@
 <script setup>
-import { computed } from 'vue';
+import { computed, ref } from 'vue';
 import { useStudyStore } from '@/stores/study';
 
 const store = useStudyStore();
+
+const showCategoryPicker = ref(false);
+const selectedSources = ref(new Set());
 
 // Group subjects for display
 // store.subjects is { folder: [file1, file2] }
@@ -13,6 +16,21 @@ const subjectsList = computed(() => {
   }));
 });
 
+const allSources = computed(() => {
+  const items = [];
+  subjectsList.value.forEach(sub => {
+    sub.topics.forEach(topic => {
+      items.push({
+        source: `${sub.name}/${topic}`,
+        subject: sub.name,
+        topic,
+        label: `${formatName(sub.name)} — ${formatName(topic)}`,
+      });
+    });
+  });
+  return items;
+});
+
 // Format folder names (e.g. medical_exam -> Medical Exam)
 const formatName = (str) => {
   return str.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
@@ -20,6 +38,32 @@ const formatName = (str) => {
 
 const startSpecific = (subject, topic) => {
   store.startSession('specific', `${subject}/${topic}`); // matches the 'source' field we added in bundle.py
+};
+
+const openCategoryPicker = () => {
+  selectedSources.value = new Set();
+  showCategoryPicker.value = true;
+};
+
+const closeCategoryPicker = () => {
+  showCategoryPicker.value = false;
+};
+
+const toggleSource = (source) => {
+  const next = new Set(selectedSources.value);
+  if (next.has(source)) next.delete(source);
+  else next.add(source);
+  selectedSources.value = next;
+};
+
+const startSelected = (count) => {
+  const sources = Array.from(selectedSources.value);
+  if (sources.length === 0) {
+    alert('Select at least one category.');
+    return;
+  }
+  store.startSession('multi', sources, count);
+  showCategoryPicker.value = false;
 };
 </script>
 
@@ -60,33 +104,66 @@ const startSpecific = (subject, topic) => {
       </div>
     </section>
 
-    <!-- Library Browser -->
+    <!-- Category Picker (multi-select) -->
     <section>
-      <h2 class="text-2xl font-bold mb-4 text-gray-800">Library</h2>
-      
+      <h2 class="text-2xl font-bold mb-3 text-gray-800">Categories</h2>
+
       <div v-if="subjectsList.length === 0" class="text-gray-500 italic">
         No content found. Please add content to /data folder.
       </div>
 
-      <div v-for="sub in subjectsList" :key="sub.name" class="mb-6">
-        <h3 class="font-bold text-lg text-gray-700 mb-2 border-b border-gray-200 pb-1">
-          {{ formatName(sub.name) }}
-        </h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <button 
-            v-for="topic in sub.topics" 
-            :key="topic"
-            @click="startSpecific(sub.name, topic)"
-            class="flex items-center p-3 bg-white border border-gray-200 rounded-lg hover:bg-gray-50 hover:border-indigo-300 transition text-left"
-          >
-            <span class="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center mr-3">
-              <!-- Icon placeholder -->
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-              </svg>
-            </span>
-            <span class="font-medium text-gray-700">{{ formatName(topic) }}</span>
-          </button>
+      <div v-else class="space-y-3">
+        <button
+          v-if="!showCategoryPicker"
+          @click="openCategoryPicker"
+          class="w-full p-4 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-indigo-300 transition text-left"
+        >
+          <div class="font-bold text-gray-800">Study specific categories</div>
+          <div class="text-sm text-gray-500 mt-1">Pick one or more categories (checkbox grid)</div>
+        </button>
+
+        <div v-else class="bg-white border border-gray-200 rounded-xl p-4">
+          <div class="flex items-center justify-between mb-3">
+            <div class="font-bold text-gray-800">Select categories</div>
+            <button @click="closeCategoryPicker" class="text-sm text-gray-500 hover:text-gray-900">Cancel</button>
+          </div>
+
+          <div class="text-xs text-gray-500 mb-3">Selected: {{ selectedSources.size }}</div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-80 overflow-y-auto pr-1">
+            <label
+              v-for="item in allSources"
+              :key="item.source"
+              class="flex items-center gap-2 p-2 rounded-lg border border-gray-200 hover:border-indigo-300 hover:bg-gray-50 cursor-pointer"
+            >
+              <input
+                type="checkbox"
+                class="h-4 w-4"
+                :checked="selectedSources.has(item.source)"
+                @change="toggleSource(item.source)"
+              />
+              <span class="text-sm text-gray-800">{{ item.label }}</span>
+            </label>
+          </div>
+
+          <div class="mt-4 flex gap-2">
+            <button
+              @click="startSelected(5)"
+              class="flex-1 py-2 px-3 rounded-lg bg-indigo-600 text-white font-bold hover:bg-indigo-700 transition"
+            >
+              Start 5
+            </button>
+            <button
+              @click="startSelected(10)"
+              class="flex-1 py-2 px-3 rounded-lg bg-indigo-600 text-white font-bold hover:bg-indigo-700 transition"
+            >
+              Start 10
+            </button>
+          </div>
+
+          <div class="mt-3 text-xs text-gray-500">
+            Tip: you can pick across subjects.
+          </div>
         </div>
       </div>
     </section>

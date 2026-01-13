@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, watch } from 'vue';
+import { ref, computed, watch, nextTick } from 'vue';
 import { useStudyStore } from '@/stores/study';
 
 const store = useStudyStore();
@@ -8,12 +8,48 @@ const store = useStudyStore();
 const answered = ref(false);
 const selectedOptionIndex = ref(null); 
 const revealedOptions = ref(new Set()); // Track which options user clicked AFTER answering
+const optionOrder = ref([]); // Array of original option indices, shuffled per question
+const questionHeaderRef = ref(null);
+
+const randomInt = (maxExclusive) => {
+  if (maxExclusive <= 0) return 0;
+  if (globalThis.crypto && typeof globalThis.crypto.getRandomValues === 'function') {
+    const buf = new Uint32Array(1);
+    globalThis.crypto.getRandomValues(buf);
+    return buf[0] % maxExclusive;
+  }
+  return Math.floor(Math.random() * maxExclusive);
+};
+
+const shuffleInPlace = (arr) => {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = randomInt(i + 1);
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+};
 
 // Current Question Data
 const currentQuestion = computed(() => {
   if (!store.currentSession || store.currentSession.length === 0) return null;
   return store.currentSession[store.currentIndex];
 });
+
+const displayOptions = computed(() => {
+  if (!currentQuestion.value) return [];
+  const opts = currentQuestion.value.options || [];
+  if (!Array.isArray(opts) || opts.length === 0) return [];
+  if (!Array.isArray(optionOrder.value) || optionOrder.value.length !== opts.length) {
+    return opts;
+  }
+  return optionOrder.value.map(i => opts[i]);
+});
+
+const scrollQuestionIntoView = async () => {
+  await nextTick();
+  // Instant jump (no smooth) to avoid weird mid-transition positions.
+  questionHeaderRef.value?.scrollIntoView({ block: 'start', behavior: 'auto' });
+};
 
 // Progress
 const progressText = computed(() => {
@@ -29,6 +65,11 @@ watch(currentQuestion, () => {
   answered.value = false;
   selectedOptionIndex.value = null;
   revealedOptions.value = new Set();
+
+  const n = currentQuestion.value?.options?.length || 0;
+  optionOrder.value = shuffleInPlace(Array.from({ length: n }, (_, i) => i));
+
+  scrollQuestionIntoView();
 });
 
 // Actions
@@ -46,7 +87,8 @@ const selectOption = (index) => {
   answered.value = true;
   
   // Check correctness
-  const isCorrect = currentQuestion.value.options[index].correct;
+  const originalIndex = optionOrder.value[index] ?? index;
+  const isCorrect = currentQuestion.value.options[originalIndex].correct;
   
   // Record in store
   store.recordAnswer(currentQuestion.value.id, isCorrect);
@@ -55,6 +97,8 @@ const selectOption = (index) => {
 const nextQuestion = () => {
   if (store.currentIndex < store.currentSession.length - 1) {
     store.currentIndex++;
+    // scroll handled by watcher, but keep this for extra safety
+    scrollQuestionIntoView();
   } else {
     // End session
     store.view = 'dashboard';
@@ -65,7 +109,7 @@ const nextQuestion = () => {
 
 // Styles for options
 const getOptionClass = (index, option) => {
-  const base = "w-full p-4 mb-3 text-left border rounded-lg transition-all duration-200 relative ";
+  const base = "w-full p-3 mb-2 text-left border rounded-lg transition-all duration-200 relative ";
   
   if (!answered.value) {
     return base + "bg-white border-gray-200 hover:border-indigo-500 hover:bg-gray-50";
@@ -95,17 +139,19 @@ const getOptionClass = (index, option) => {
   <div v-if="currentQuestion" class="max-w-2xl mx-auto pb-20">
     
     <!-- Top Bar -->
-    <div class="flex justify-between items-center mb-6 text-sm text-gray-500">
+    <div class="flex justify-between items-center mb-3 text-xs text-gray-500">
       <button @click="store.view = 'dashboard'" class="hover:text-gray-900">&larr; Quit</button>
       <span class="font-mono bg-gray-100 px-2 py-1 rounded">{{ progressText }}</span>
     </div>
 
-    <!-- Question -->
-    <div class="mb-6">
-      <span v-for="tag in currentQuestion.tags" :key="tag" class="inline-block text-xs font-bold text-indigo-500 bg-indigo-50 px-2 py-0.5 rounded mr-2 mb-2">
-        {{ tag }}
-      </span>
-      <h2 class="text-xl font-bold text-gray-900 leading-snug">{{ currentQuestion.question }}</h2>
+    <!-- Sticky Question Header -->
+    <div ref="questionHeaderRef" class="sticky top-0 z-10 bg-white pb-2 border-b border-gray-100">
+      <div class="pt-2">
+        <span v-for="tag in currentQuestion.tags" :key="tag" class="inline-block text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded mr-2 mb-1">
+          {{ tag }}
+        </span>
+      </div>
+      <h2 class="text-lg font-bold text-gray-900 leading-snug">{{ currentQuestion.question }}</h2>
     </div>
 
     <!-- Image (if any) -->
@@ -114,9 +160,9 @@ const getOptionClass = (index, option) => {
     </div>
 
     <!-- Options -->
-    <div class="mb-8">
+    <div class="mb-5">
       <button 
-        v-for="(opt, idx) in currentQuestion.options" 
+        v-for="(opt, idx) in displayOptions" 
         :key="idx"
         @click="selectOption(idx)"
         :class="getOptionClass(idx, opt)"
@@ -144,7 +190,7 @@ const getOptionClass = (index, option) => {
     </div>
 
     <!-- General Explanation (Always appears after answer) -->
-    <div v-if="answered" class="p-5 bg-blue-50 border border-blue-100 rounded-xl mb-24 animate-fade-in">
+    <div v-if="answered" class="p-3 bg-blue-50 border border-blue-100 rounded-lg mb-14 animate-fade-in">
       <h3 class="text-sm font-bold text-blue-800 mb-1 uppercase tracking-wider">Explanation</h3>
       <p class="text-blue-900 text-sm leading-relaxed">
         {{ currentQuestion.explanation }}
@@ -152,10 +198,10 @@ const getOptionClass = (index, option) => {
     </div>
 
     <!-- Next Button (Floating Bottom) -->
-    <div v-if="answered" class="fixed bottom-0 left-0 right-0 p-4 bg-white border-t border-gray-200 flex justify-center pb-8 sm:pb-4 md:static md:bg-transparent md:border-0 md:p-0 md:justify-end">
+    <div v-if="answered" class="fixed bottom-0 left-0 right-0 p-2 bg-white border-t border-gray-200 flex justify-center pb-3 sm:pb-2 md:static md:bg-transparent md:border-0 md:p-0 md:justify-end">
       <button 
         @click="nextQuestion"
-        class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-bold shadow-lg hover:bg-indigo-700 transition w-full md:w-auto transform hover:-translate-y-1"
+        class="bg-indigo-600 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-indigo-700 transition w-full md:w-auto"
       >
         {{ store.currentIndex < store.currentSession.length - 1 ? 'Next Question &rarr;' : 'Finish Session' }}
       </button>
