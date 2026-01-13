@@ -6,6 +6,7 @@ const store = useStudyStore();
 
 const showCategoryPicker = ref(false);
 const selectedSources = ref(new Set());
+const showStatsDetails = ref(false);
 
 // Group subjects for display
 // store.subjects is { folder: [file1, file2] }
@@ -14,6 +15,56 @@ const subjectsList = computed(() => {
     name: folder,
     topics: store.subjects[folder]
   }));
+});
+
+const totalQuestions = computed(() => store.questions?.length || 0);
+const answeredCount = computed(() => {
+  let n = 0;
+  for (const q of store.questions || []) {
+    const p = store.progress?.[q.id];
+    if (Number(p?.seen || 0) > 0) n += 1;
+  }
+  return n;
+});
+
+const correctOnceCount = computed(() => {
+  let n = 0;
+  for (const q of store.questions || []) {
+    const p = store.progress?.[q.id];
+    if (Number(p?.correct || 0) > 0) n += 1;
+  }
+  return n;
+});
+
+const unansweredCount = computed(() => Math.max(0, totalQuestions.value - answeredCount.value));
+const remainingToCorrectOnce = computed(() => Math.max(0, totalQuestions.value - correctOnceCount.value));
+
+const incorrectEverCount = computed(() => {
+  let n = 0;
+  for (const q of store.questions || []) {
+    const p = store.progress?.[q.id];
+    if (Number(p?.wrong || 0) > 0) n += 1;
+  }
+  return n;
+});
+
+const totalAccuracy = computed(() => {
+  let seen = 0;
+  let correct = 0;
+  for (const q of store.questions || []) {
+    const p = store.progress?.[q.id];
+    seen += Number(p?.seen || 0);
+    correct += Number(p?.correct || 0);
+  }
+  if (seen <= 0) return null;
+  return Math.round((correct / seen) * 100);
+});
+
+const todayAccuracy = computed(() => {
+  const seen = Number(store.daily?.seen || 0);
+  const correct = Number(store.daily?.correct || 0);
+  if (seen <= 0) return null;
+  return Math.round((correct / seen) * 100);
 });
 
 const allSources = computed(() => {
@@ -29,7 +80,7 @@ const allSources = computed(() => {
         subject: sub.name,
         topic,
         count,
-        label: showSubject ? `${formatName(sub.name)} — ${formatName(topic)}` : `${formatName(topic)}`,
+        label: showSubject ? `${formatName(sub.name)} — ${prettyTopic(topic)}` : `${prettyTopic(topic)}`,
       });
     });
   });
@@ -46,6 +97,17 @@ const allSources = computed(() => {
 // Format folder names (e.g. medical_exam -> Medical Exam)
 const formatName = (str) => {
   return str.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+};
+
+// Display overrides (filenames stay ASCII, UI can be Swedish)
+const topicDisplayOverrides = {
+  allmanmedicin: 'Allmänmedicin',
+  oron_nasa_hals: 'Öron-näsa-hals',
+};
+
+const prettyTopic = (topic) => {
+  const key = String(topic || '').replace(/\.ya?ml$/i, '');
+  return topicDisplayOverrides[key] || formatName(key);
 };
 
 const startSpecific = (subject, topic) => {
@@ -91,6 +153,43 @@ const focusSelected = (count) => {
 
 <template>
   <div class="space-y-8 p-4">
+    <!-- Progress Snapshot -->
+    <section>
+      <button
+        @click="showStatsDetails = !showStatsDetails"
+        class="w-full text-left p-4 rounded-xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white hover:border-slate-300 transition"
+      >
+        <div class="flex items-start justify-between gap-3">
+          <div>
+            <div class="text-sm text-slate-500">Progress</div>
+            <div class="text-lg font-bold text-slate-900">Medical Exam</div>
+          </div>
+          <div class="text-xs text-slate-500 mt-1">{{ showStatsDetails ? 'Hide' : 'Details' }}</div>
+        </div>
+
+        <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <div class="p-3 rounded-lg bg-white border border-slate-200">
+            <div class="text-xs text-slate-500">Unanswered</div>
+            <div class="text-lg font-bold text-slate-900">{{ unansweredCount }} / {{ totalQuestions }}</div>
+          </div>
+          <div class="p-3 rounded-lg bg-white border border-slate-200">
+            <div class="text-xs text-slate-500">Not correct yet</div>
+            <div class="text-lg font-bold text-slate-900">{{ remainingToCorrectOnce }} / {{ totalQuestions }}</div>
+          </div>
+          <div class="p-3 rounded-lg bg-white border border-slate-200">
+            <div class="text-xs text-slate-500">Accuracy today</div>
+            <div class="text-lg font-bold text-slate-900">{{ todayAccuracy === null ? '—' : (todayAccuracy + '%') }}</div>
+          </div>
+        </div>
+
+        <div v-if="showStatsDetails" class="mt-3 text-sm text-slate-600">
+          <div>Incorrect (ever): <span class="font-bold text-slate-900">{{ incorrectEverCount }} / {{ totalQuestions }}</span></div>
+          <div>Total accuracy: <span class="font-bold text-slate-900">{{ totalAccuracy === null ? '—' : (totalAccuracy + '%') }}</span></div>
+          <div class="text-xs text-slate-500 mt-1">Today resets automatically at local midnight.</div>
+        </div>
+      </button>
+    </section>
+
     <!-- Quick Actions -->
     <section>
       <h2 class="text-2xl font-bold mb-4 text-gray-800">Quick Study</h2>
@@ -98,26 +197,26 @@ const focusSelected = (count) => {
         
         <button 
           @click="store.startSession('quick5')"
-          class="p-5 bg-gradient-to-br from-slate-700 to-slate-900 rounded-xl shadow text-white hover:from-slate-800 hover:to-slate-950 transition"
+          class="p-5 rounded-xl border border-indigo-100 bg-indigo-50 text-indigo-950 hover:bg-indigo-100/60 transition"
         >
           <div class="text-2xl font-bold mb-1">5 Questions</div>
-          <div class="text-xs mt-1 opacity-80">SRS weighted</div>
+          <div class="text-xs mt-1 text-indigo-800/80">SRS weighted</div>
         </button>
 
         <button 
           @click="store.startSession('quick10')"
-          class="p-5 bg-gradient-to-br from-indigo-600 to-indigo-800 rounded-xl shadow text-white hover:from-indigo-700 hover:to-indigo-900 transition"
+          class="p-5 rounded-xl border border-slate-200 bg-slate-50 text-slate-950 hover:bg-slate-100/70 transition"
         >
           <div class="text-2xl font-bold mb-1">10 Questions</div>
-          <div class="text-xs mt-1 opacity-80">SRS weighted</div>
+          <div class="text-xs mt-1 text-slate-600">SRS weighted</div>
         </button>
 
         <button 
           @click="store.startSession('focus', null, 10)"
-          class="p-5 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-xl shadow text-white hover:from-emerald-700 hover:to-emerald-900 transition"
+          class="p-5 rounded-xl border border-emerald-100 bg-emerald-50 text-emerald-950 hover:bg-emerald-100/60 transition"
         >
           <div class="text-2xl font-bold mb-1">Focus</div>
-          <div class="text-sm opacity-90">Study what you got wrong</div>
+          <div class="text-sm text-emerald-800/80">Study what you got wrong</div>
         </button>
 
       </div>

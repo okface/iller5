@@ -46,6 +46,10 @@ export const useStudyStore = defineStore('study', {
     // User Progress (Persisted in localStorage)
     // Structure: { questionId: { bucket: 'A'|'B'|'C', consecutiveCorrect: 0, lastSeen: timestamp, seen: 0, correct: 0, wrong: 0, lastWasCorrect: true|false } }
     progress: useStorage('iller5-progress', {}),
+
+    // Daily accuracy tracking (local day)
+    // Structure: { date: 'YYYY-MM-DD', seen: 0, correct: 0 }
+    daily: useStorage('iller5-daily', { date: '', seen: 0, correct: 0 }),
   }),
 
   getters: {
@@ -60,6 +64,27 @@ export const useStudyStore = defineStore('study', {
   },
 
   actions: {
+    ensureDaily() {
+      const now = new Date();
+      const yyyy = String(now.getFullYear());
+      const mm = String(now.getMonth() + 1).padStart(2, '0');
+      const dd = String(now.getDate()).padStart(2, '0');
+      const today = `${yyyy}-${mm}-${dd}`;
+
+      if (!this.daily || typeof this.daily !== 'object') {
+        this.daily = { date: today, seen: 0, correct: 0 };
+        return;
+      }
+
+      if (this.daily.date !== today) {
+        this.daily.date = today;
+        this.daily.seen = 0;
+        this.daily.correct = 0;
+      }
+
+      if (typeof this.daily.seen !== 'number') this.daily.seen = 0;
+      if (typeof this.daily.correct !== 'number') this.daily.correct = 0;
+    },
     async loadContent() {
       this.loading = true;
       try {
@@ -234,6 +259,11 @@ export const useStudyStore = defineStore('study', {
       if (typeof p.correct !== 'number') p.correct = 0;
       if (typeof p.wrong !== 'number') p.wrong = 0;
       if (typeof p.lastWasCorrect !== 'boolean') p.lastWasCorrect = true;
+
+      // Daily stats
+      this.ensureDaily();
+      this.daily.seen += 1;
+      if (isCorrect) this.daily.correct += 1;
       
       if (isCorrect) {
         p.consecutiveCorrect += 1;

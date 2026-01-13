@@ -49,13 +49,24 @@ const formatName = (str) => {
   return String(str || '').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 };
 
+const topicDisplayOverrides = {
+  allmanmedicin: 'Allmänmedicin',
+  oron_nasa_hals: 'Öron-näsa-hals',
+};
+
+const prettyTopic = (topic) => {
+  const key = String(topic || '');
+  return topicDisplayOverrides[key] || formatName(key);
+};
+
 const sourceLabel = computed(() => {
   const src = currentQuestion.value?.source;
   if (!src) return '';
   const parts = String(src).split('/');
   // If the app currently has only one subject folder, just show the topic.
   const hasMultipleSubjects = Object.keys(store.subjects || {}).length > 1;
-  if (!hasMultipleSubjects && parts.length >= 2) return formatName(parts.slice(1).join('/'));
+  if (!hasMultipleSubjects && parts.length >= 2) return prettyTopic(parts.slice(1).join('/'));
+  if (parts.length >= 2) return `${formatName(parts[0])} / ${prettyTopic(parts.slice(1).join('/'))}`;
   return formatName(parts.join(' / '));
 });
 
@@ -75,7 +86,9 @@ const isFinished = computed(() => {
 });
 
 // Watch for question change to reset local state
-watch(currentQuestion, () => {
+watch(
+  () => currentQuestion.value?.id,
+  () => {
   answered.value = false;
   selectedOptionIndex.value = null;
   revealedOptions.value = new Set();
@@ -84,7 +97,9 @@ watch(currentQuestion, () => {
   optionOrder.value = shuffleInPlace(Array.from({ length: n }, (_, i) => i));
 
   scrollQuestionIntoView();
-});
+  },
+  { immediate: true }
+);
 
 // Actions
 const selectOption = (index) => {
@@ -161,7 +176,7 @@ const getOptionClass = (index, option) => {
     <!-- Sticky Question Header -->
     <div ref="questionHeaderRef" class="sticky top-0 z-10 bg-white pb-2 border-b border-gray-100">
       <div class="pt-2">
-        <div v-if="sourceLabel" class="text-[11px] text-gray-500 mb-1">
+        <div v-if="sourceLabel" class="text-sm font-semibold text-slate-800 mb-1">
           {{ sourceLabel }}
         </div>
         <span v-for="tag in currentQuestion.tags" :key="tag" class="inline-block text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded mr-2 mb-1">

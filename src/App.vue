@@ -26,14 +26,6 @@ onMounted(() => {
     </div>
 
     <div v-else class="max-w-2xl mx-auto min-h-screen bg-white shadow-xl flex flex-col relative">
-      <!-- Header -->
-      <header class="bg-slate-900 text-white px-4 py-3 flex justify-between items-center sticky top-0 z-20 shadow-md">
-        <h1 class="font-bold text-lg cursor-pointer flex items-center gap-2" @click="store.view = 'dashboard'">
-          <span>Iller5</span>
-        </h1>
-        <div class="text-xs text-slate-300">Local & Private</div>
-      </header>
-
       <!-- Main Content Area -->
       <main class="flex-grow p-4 md:p-6 overflow-y-auto">
         <transition name="fade" mode="out-in">
