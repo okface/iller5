@@ -12,7 +12,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-gradient-to-b from-stone-100 via-stone-50 to-rose-50 text-slate-900 font-sans">
+  <div class="min-h-screen bg-gradient-to-b from-stone-100 via-amber-50/40 to-rose-100/40 text-slate-900 font-sans">
     <div v-if="store.loading" class="flex items-center justify-center h-screen">
       <div class="text-xl animate-pulse text-indigo-600 font-bold">Loading Iller5...</div>
     </div>
@@ -25,7 +25,7 @@ onMounted(() => {
       </div>
     </div>
 
-    <div v-else class="max-w-2xl mx-auto min-h-screen bg-white/70 backdrop-blur shadow-xl border border-stone-200 flex flex-col relative">
+    <div v-else class="max-w-2xl mx-auto min-h-screen bg-stone-50/70 backdrop-blur shadow-xl border border-stone-200 flex flex-col relative">
       <!-- Main Content Area -->
       <main class="flex-grow p-4 md:p-6 overflow-y-auto">
         <transition name="fade" mode="out-in">

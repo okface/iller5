@@ -197,14 +197,14 @@ const focusSelected = (count) => {
         
         <button 
           @click="store.startSession('quick5')"
-          class="p-5 rounded-xl border border-rose-100 bg-rose-50/70 text-rose-950 hover:bg-rose-100/60 transition"
+          class="p-5 rounded-xl border border-indigo-100 bg-indigo-50/70 text-indigo-950 hover:bg-indigo-100/60 transition"
         >
           <div class="text-2xl font-bold mb-1">5 Questions</div>
         </button>
 
         <button 
           @click="store.startSession('quick10')"
-          class="p-5 rounded-xl border border-amber-100 bg-amber-50/70 text-amber-950 hover:bg-amber-100/60 transition"
+          class="p-5 rounded-xl border border-indigo-100 bg-indigo-50/70 text-indigo-950 hover:bg-indigo-100/60 transition"
         >
           <div class="text-2xl font-bold mb-1">10 Questions</div>
         </button>
@@ -214,7 +214,7 @@ const focusSelected = (count) => {
           class="p-5 rounded-xl border border-emerald-100 bg-emerald-50 text-emerald-950 hover:bg-emerald-100/60 transition"
         >
           <div class="text-2xl font-bold mb-1">Focus</div>
-          <div class="text-sm text-emerald-800/80">Study what you got wrong</div>
+          <div class="text-sm text-emerald-950/90">Study what you got wrong</div>
         </button>
 
       </div>
