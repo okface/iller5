@@ -225,3 +225,150 @@
     och apraxi förknippas istället med dominant hemisfär, ataxi med cerebellum och
     dysfagi med hjärnstam eller motorbanor.
   id: med-neu-7bdeee
+- id: med-gen-b01b-001
+  type: multiple_choice
+  tags:
+  - Tiaminbrist
+  - Wernicke-Korsakoff
+  - Neuroanatomi
+  question: Vid misstänkt Wernickeencefalopati, vilka hjärnstrukturer är klassiskt
+    påverkade och förklarar den akuta triaden (ataxi, okulomotoriska störningar, konfusion)?
+  image: null
+  options:
+  - text: Mammillarkropparna och mediala dorsala nucleus i thalamus.
+    correct: true
+    feedback: Rätt — dessa strukturer är typiskt skadade vid tiaminbrist och förklarar
+      kliniken.
+  - text: Hippocampus och entorhinalcortex.
+    correct: false
+    feedback: Fel — hippocampus drabbas vid Alzheimer men är inte det typiska målet
+      i akut Wernicke.
+  - text: Basala gangliernas putamen och globus pallidus.
+    correct: false
+    feedback: Fel — basalganglierna påverkas vid andra toxiska/metabola tillstånd,
+      ej typiskt Wernicke.
+  - text: Cerebellära hemisfärer (purkinjeceller) primärt.
+    correct: false
+    feedback: Fel — cerebellär degeneration kan ge ataxi men är inte kärnlokalisationen
+      för Wernicke.
+  explanation: Wernickeencefalopati orsakas av tiaminbrist med typiska lesioner i
+    mammillarkropparna, mediala dorsalnukleus i thalamus och periaqueductal grå substans.
+    Dessa strukturer ingår i Papez-circuiten och förklarar kombinationen av ögonmotorikstörningar,
+    ataxi och konfusion.
+- id: med-gen-b01b-002
+  type: multiple_choice
+  tags:
+  - Wernicke-Korsakoff
+  - Patogenes
+  - Neurodegeneration
+  question: Vilken patofysiologisk mekanism förklarar bäst den påtagliga anterograda
+    amnesin vid Korsakoffs syndrom?
+  image: null
+  options:
+  - text: Disruption av Papez'-kretsen (inklusive mammillarkroppar och mediala dorsala
+      thalamus) med sekundär nätverksdysfunktion.
+    correct: true
+    feedback: Rätt — skador i dessa strukturer stör konsolidering av episodiska minnen.
+  - text: Primär neuronell degeneration i neocortex (prefrontalt cortex) utan limbisk
+      påverkan.
+    correct: false
+    feedback: Fel — prefrontal skada ger exekutiva problem men inte typisk korsakoff-anterograd
+      amnesi.
+  - text: Autoimmun mediaterad synaptisk dysfunktion i hippocampus.
+    correct: false
+    feedback: Fel — autoimmun hippocampal encefalit har annan klinisk bild och förlopp.
+  - text: Generaliserad demyelinisering i centrum semiovale.
+    correct: false
+    feedback: Fel — demyelinisering ger utbredda konduktionsstörningar men förklarar
+      inte selektiv episodisk amnesi.
+  explanation: Korsakoffs syndrom beror huvudsakligen på strukturell skada i Papez'-kretsen
+    (mammillarkroppar, medial dorsal thalamus) som stör överföring och lagring av
+    nya minnen. Resultatet är klassisk anterograd amnesi med konfabulering då patienterna
+    försöker fylla luckor i episodiskt minne.
+- id: med-gen-b01b-003
+  type: multiple_choice
+  tags:
+  - Neglekt
+  - Icke-dominant hemisfär
+  - Frontoparietallob
+  question: Vilken lokalisation är mest sannolik vid ett kliniskt komplett hemispatialt
+    neglekt (patienten ignorerar vänstersidan)?
+  image: null
+  options:
+  - text: Höger inferiöra parietalloben/temporoparietala övergången (TPJ).
+    correct: true
+    feedback: Rätt — höger TPJ är klassiskt associerad med svåra neglektfenomen.
+  - text: Vänster primär somatosensorisk cortex (S1).
+    correct: false
+    feedback: Fel — S1-skada ger sensorisk bortfall snarare än global neglekt.
+  - text: Bilaterala frontala ögonfält utan parietal påverkan.
+    correct: false
+    feedback: Fel — frontala ögonfält ger oftast blickdeviation och motorisk neglect
+      men inte fullständigt spatialt neglekt.
+  - text: Vänster temporallob (medial).
+    correct: false
+    feedback: Fel — vänster temporallob ger språkliga/minnessymtom men ej typiskt
+      höger-hemisfär neglekt.
+  explanation: Hemispatialt neglekt uppstår oftast efter skada i den icke-dominanta
+    (vanligen högra) inferiöra parietalloben och temporoparietala övergången, områden
+    viktiga för uppmärksamhetsfördelning i rummet. Skada där rubbar representationen
+    av den kontralaterala hemisfären vilket leder till att stimuli på den vänstra
+    sidan förbises.
+- id: med-gen-b01b-004
+  type: multiple_choice
+  tags:
+  - Apraxi
+  - Motorisk planering
+  - Frontoparietallob
+  question: Vilket kliniskt fynd skiljer ideomotorisk apraxi från ideationell apraxi?
+  image: null
+  options:
+  - text: Patienten kan använda föremål spontant i vardagen men kan inte utföra motsvarande
+      gest på kommando.
+    correct: true
+    feedback: Rätt — detta är typiskt för ideomotorisk apraxi där utförandet på begäran
+      sviktar.
+  - text: Oförmåga att förstå föremålets funktion och sekvensering av handlingar.
+    correct: false
+    feedback: Fel — detta beskriver ideationell apraxi, inte ideomotorisk.
+  - text: Ren motorisk svaghet i en extremitet utan störd praxis.
+    correct: false
+    feedback: Fel — motorisk svaghet är ej apraxi utan pares.
+  - text: Selektiv affektion av finmotorik i båda händerna men normal grovmotorik.
+    correct: false
+    feedback: Fel — detta mönstret talar ej för typisk ideomotorisk eller ideationell
+      apraxi.
+  explanation: Ideomotorisk apraxi karakteriseras av en dissociation där patienten
+    ofta kan använda ett verktyg automatiskt men inte efter verbal instruktion eller
+    imitation, vilket visar störd översättning av motorplan till handling. Ideationell
+    apraxi innebär istället bristande konceptuell förståelse och sekvensering av multipelstegshandlingar.
+- id: med-gen-b01b-005
+  type: multiple_choice
+  tags:
+  - Alzheimer
+  - Neurodegeneration
+  - Neuropatologi
+  question: Vilken neuropatologisk markör korrelerar bäst med grad av kognitiv nedsättning
+    vid Alzheimer sjukdom?
+  image: null
+  options:
+  - text: Utbredning och mängd av neurofibrillära tangles (tau-patologi) i hippocampus
+      och neocortex.
+    correct: true
+    feedback: Rätt — tau-pathologi korrelerar starkast med klinisk kognitiv svikt.
+  - text: Total mängd extracellulära amyloida plack i neocortex.
+    correct: false
+    feedback: Fel — amyloidförekomst predikterar sjukdomsprocess men korrelerar svagare
+      med klinisk grad.
+  - text: Grad av vaskulär amyloidinlagring i leptomeningerna.
+    correct: false
+    feedback: Fel — cerebral amyloid angiopati ger blödningsrisk och vaskulära symtom
+      men inte primärt grad av kognitiv störning.
+  - text: Antal Lewy-kroppar i limbiska strukturer.
+    correct: false
+    feedback: Fel — Lewy-kroppar indikerar Lewy body-demens, en annan patologi med
+      annan klinik.
+  explanation: Studier visar att spridning och belastning av tau-bundna neurofibrillära
+    tangles korrelerar bättre med demensens svårighetsgrad än mängden amyloidplack.
+    Amyloidos kan initiera sjukdomsprocessen men det är tau-patologins spridning i
+    hippocampus och neocortex som bäst relaterar till minnes- och kognitiva bortfall.

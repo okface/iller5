@@ -1,4 +1,5 @@
 import os
+import sys
 import yaml
 import json
 import uuid
@@ -17,12 +18,17 @@ DATA_DIR = 'data'
 # -------------------------------------------------------------------------
 # PYDANTIC MODELS (Structured Output 2025/2026 Standard)
 # -------------------------------------------------------------------------
-class Option(BaseModel):
+
+# Helper for OpenAI Strict Mode (requires additionalProperties: false)
+class StrictBaseModel(BaseModel):
+    model_config = {"extra": "forbid"}
+
+class Option(StrictBaseModel):
     text: str = Field(..., description="Svarsalternativets text")
     correct: bool = Field(..., description="True om detta är rätt svar, annars False")
     feedback: str = Field(..., description="Mycket koncis feedback (1 mening) om varför detta är rätt eller fel")
 
-class Question(BaseModel):
+class Question(StrictBaseModel):
     id: str = Field(..., description="Ett unikt ID, t.ex 'med-gen-ab12'")
     type: str = Field("multiple_choice", description="Alltid 'multiple_choice'")
     tags: List[str] = Field(..., description="1-3 korta taggar på svenska (t.ex 'Anatomi')")
@@ -31,8 +37,74 @@ class Question(BaseModel):
     options: List[Option]
     explanation: str = Field(..., description="Övergripande koncis förklaring (2-3 meningar)")
 
-class QuestionBatch(BaseModel):
+class QuestionBatch(StrictBaseModel):
     questions: List[Question]
+
+
+def build_question_batch_schema():
+    # OpenAI Structured Outputs "strict" requires JSON Schema where:
+    # - every object has `type: object`
+    # - `required` exists and includes every key in `properties`
+    # - `additionalProperties: false`
+    # Optional fields must still be required, but can allow `null`.
+    option_schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "text": {"type": "string", "description": "Svarsalternativets text"},
+            "correct": {"type": "boolean", "description": "True om detta är rätt svar, annars False"},
+            "feedback": {
+                "type": "string",
+                "description": "Mycket koncis feedback (1 mening) om varför detta är rätt eller fel",
+            },
+        },
+        "required": ["text", "correct", "feedback"],
+    }
+
+    question_schema = {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "id": {"type": "string", "description": "Ett unikt ID, t.ex 'med-gen-ab12'"},
+            "type": {"type": "string", "enum": ["multiple_choice"], "description": "Alltid 'multiple_choice'"},
+            "tags": {
+                "type": "array",
+                "items": {"type": "string"},
+                "minItems": 1,
+                "maxItems": 3,
+                "description": "1-3 korta taggar på svenska (t.ex 'Anatomi')",
+            },
+            "question": {"type": "string", "description": "Själva frågetexten"},
+            "image": {
+                "type": ["string", "null"],
+                "description": "Filename i assets eller null",
+            },
+            "options": {
+                "type": "array",
+                "items": option_schema,
+                "minItems": 4,
+                "maxItems": 6,
+            },
+            "explanation": {
+                "type": "string",
+                "description": "Övergripande koncis förklaring (2-3 meningar)",
+            },
+        },
+        "required": ["id", "type", "tags", "question", "image", "options", "explanation"],
+    }
+
+    return {
+        "type": "object",
+        "additionalProperties": False,
+        "properties": {
+            "questions": {
+                "type": "array",
+                "items": question_schema,
+                "minItems": 1,
+            }
+        },
+        "required": ["questions"],
+    }
 
 # -------------------------------------------------------------------------
 # PROMPTS
@@ -142,7 +214,13 @@ def main():
     
     # 4. Config
     use_images = input("Generate Image-based questions? (y/N): ").lower().strip() == 'y'
-    count_req = 5
+    
+    try:
+        c_in = input("How many questions to generate? (Default 5): ").strip()
+        count_req = int(c_in) if c_in else 5
+    except ValueError:
+        print("Invalid number, defaulting to 5.")
+        count_req = 5
     
     if use_images:
         print("  NOTE: You must manually add images to public/assets/ matching the generated IDs.")
@@ -177,7 +255,7 @@ def main():
                 "type": "json_schema",
                 "json_schema": {
                     "name": "question_batch",
-                    "schema": QuestionBatch.model_json_schema(),
+                    "schema": build_question_batch_schema(),
                     "strict": True
                 }
             }
