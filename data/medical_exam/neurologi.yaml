@@ -32,7 +32,7 @@
   id: med-neu-7e42db
 - type: multiple_choice
   tags:
-  - Tiaminbrist
+  - Alkoholism
   - Wernicke-Korsakoff
   question: Vad är den primära orsaken till Wernicke-Korsakoffs syndrom hos alkoholister?
   image: null
@@ -161,7 +161,6 @@
   id: med-neu-ec7eb2
 - type: multiple_choice
   tags:
-  - Tiaminbrist
   - Wernicke-Korsakoff
   - Behandling
   question: Vilken behandling är förstahandsåtgärd vid misstänkt Wernicke-Korsakoff-syndrom?
@@ -228,7 +227,6 @@
 - id: med-gen-b01b-001
   type: multiple_choice
   tags:
-  - Tiaminbrist
   - Wernicke-Korsakoff
   - Neuroanatomi
   question: Vid misstänkt Wernickeencefalopati, vilka hjärnstrukturer är klassiskt

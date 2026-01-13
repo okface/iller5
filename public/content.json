@@ -9025,7 +9025,7 @@
     {
       "type": "multiple_choice",
       "tags": [
-        "Tiaminbrist",
+        "Alkoholism",
         "Wernicke-Korsakoff"
       ],
       "question": "Vad \u00e4r den prim\u00e4ra orsaken till Wernicke-Korsakoffs syndrom hos alkoholister?",
@@ -9183,7 +9183,6 @@
     {
       "type": "multiple_choice",
       "tags": [
-        "Tiaminbrist",
         "Wernicke-Korsakoff",
         "Behandling"
       ],
@@ -9263,7 +9262,6 @@
       "id": "med-gen-b01b-001",
       "type": "multiple_choice",
       "tags": [
-        "Tiaminbrist",
         "Wernicke-Korsakoff",
         "Neuroanatomi"
       ],
@@ -12078,6 +12076,6 @@
   ],
   "meta": {
     "total_questions": 307,
-    "generated_at": "2026-01-13T11:01:04.313878+00:00"
+    "generated_at": "2026-01-13T12:17:05.649348+00:00"
   }
 }

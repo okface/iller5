@@ -17,18 +17,30 @@ const subjectsList = computed(() => {
 });
 
 const allSources = computed(() => {
+  const counts = store.sourceCounts || {};
+  const showSubject = subjectsList.value.length > 1;
   const items = [];
   subjectsList.value.forEach(sub => {
     sub.topics.forEach(topic => {
+      const source = `${sub.name}/${topic}`;
+      const count = counts[source] || 0;
       items.push({
-        source: `${sub.name}/${topic}`,
+        source,
         subject: sub.name,
         topic,
-        label: `${formatName(sub.name)} — ${formatName(topic)}`,
+        count,
+        label: showSubject ? `${formatName(sub.name)} — ${formatName(topic)}` : `${formatName(topic)}`,
       });
     });
   });
-  return items;
+
+  // Non-empty first; empty at bottom (greyed out)
+  return items.sort((a, b) => {
+    const aEmpty = a.count === 0;
+    const bEmpty = b.count === 0;
+    if (aEmpty !== bEmpty) return aEmpty ? 1 : -1;
+    return a.label.localeCompare(b.label, 'sv');
+  });
 });
 
 // Format folder names (e.g. medical_exam -> Medical Exam)
@@ -65,6 +77,16 @@ const startSelected = (count) => {
   store.startSession('multi', sources, count);
   showCategoryPicker.value = false;
 };
+
+const focusSelected = (count) => {
+  const sources = Array.from(selectedSources.value);
+  if (sources.length === 0) {
+    alert('Select at least one category.');
+    return;
+  }
+  store.startSession('focus', sources, count);
+  showCategoryPicker.value = false;
+};
 </script>
 
 <template>
@@ -76,29 +98,26 @@ const startSelected = (count) => {
         
         <button 
           @click="store.startSession('quick5')"
-          class="p-6 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl shadow-lg text-white hover:from-blue-600 hover:to-blue-700 transition transform hover:scale-105"
+          class="p-5 bg-gradient-to-br from-slate-700 to-slate-900 rounded-xl shadow text-white hover:from-slate-800 hover:to-slate-950 transition"
         >
-          <div class="text-3xl font-bold mb-1">5</div>
-          <div class="font-medium opacity-90">Quick Cards</div>
-          <div class="text-xs mt-2 opacity-75">SRS Weighted</div>
+          <div class="text-2xl font-bold mb-1">5 Questions</div>
+          <div class="text-xs mt-1 opacity-80">SRS weighted</div>
         </button>
 
         <button 
           @click="store.startSession('quick10')"
-          class="p-6 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl shadow-lg text-white hover:from-indigo-600 hover:to-indigo-700 transition transform hover:scale-105"
+          class="p-5 bg-gradient-to-br from-indigo-600 to-indigo-800 rounded-xl shadow text-white hover:from-indigo-700 hover:to-indigo-900 transition"
         >
-          <div class="text-3xl font-bold mb-1">10</div>
-          <div class="font-medium opacity-90">Standard Set</div>
-           <div class="text-xs mt-2 opacity-75">SRS Weighted</div>
+          <div class="text-2xl font-bold mb-1">10 Questions</div>
+          <div class="text-xs mt-1 opacity-80">SRS weighted</div>
         </button>
 
         <button 
-          @click="store.startSession('worst10')"
-          class="p-6 bg-gradient-to-br from-rose-500 to-rose-600 rounded-xl shadow-lg text-white hover:from-rose-600 hover:to-rose-700 transition transform hover:scale-105"
+          @click="store.startSession('focus', null, 10)"
+          class="p-5 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-xl shadow text-white hover:from-emerald-700 hover:to-emerald-900 transition"
         >
-          <div class="text-3xl font-bold mb-1">Worst</div>
-          <div class="font-medium opacity-90">Focus Weakness</div>
-           <div class="text-xs mt-2 opacity-75">Lowest Stats</div>
+          <div class="text-2xl font-bold mb-1">Focus</div>
+          <div class="text-sm opacity-90">Study what you got wrong</div>
         </button>
 
       </div>
@@ -116,10 +135,10 @@ const startSelected = (count) => {
         <button
           v-if="!showCategoryPicker"
           @click="openCategoryPicker"
-          class="w-full p-4 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 hover:border-indigo-300 transition text-left"
+          class="w-full p-4 bg-gradient-to-br from-indigo-50 to-slate-50 border border-indigo-100 rounded-xl hover:border-indigo-200 transition text-left"
         >
           <div class="font-bold text-gray-800">Study specific categories</div>
-          <div class="text-sm text-gray-500 mt-1">Pick one or more categories (checkbox grid)</div>
+          <div class="text-sm text-gray-500 mt-1">Pick one or more categories</div>
         </button>
 
         <div v-else class="bg-white border border-gray-200 rounded-xl p-4">
@@ -134,15 +153,19 @@ const startSelected = (count) => {
             <label
               v-for="item in allSources"
               :key="item.source"
-              class="flex items-center gap-2 p-2 rounded-lg border border-gray-200 hover:border-indigo-300 hover:bg-gray-50 cursor-pointer"
+              class="flex items-center gap-2 p-2 rounded-lg border border-gray-200 cursor-pointer"
+              :class="item.count === 0 ? 'opacity-50 cursor-not-allowed bg-gray-50' : 'hover:border-indigo-300 hover:bg-gray-50'"
             >
               <input
                 type="checkbox"
                 class="h-4 w-4"
                 :checked="selectedSources.has(item.source)"
+                :disabled="item.count === 0"
                 @change="toggleSource(item.source)"
               />
               <span class="text-sm text-gray-800">{{ item.label }}</span>
+              <span class="ml-auto text-xs text-gray-500" v-if="item.count !== 0">{{ item.count }}</span>
+              <span class="ml-auto text-xs text-gray-400" v-else>0</span>
             </label>
           </div>
 
@@ -158,6 +181,15 @@ const startSelected = (count) => {
               class="flex-1 py-2 px-3 rounded-lg bg-indigo-600 text-white font-bold hover:bg-indigo-700 transition"
             >
               Start 10
+            </button>
+          </div>
+
+          <div class="mt-2">
+            <button
+              @click="focusSelected(10)"
+              class="w-full py-2 px-3 rounded-lg bg-emerald-700 text-white font-bold hover:bg-emerald-800 transition"
+            >
+              Focus (10)
             </button>
           </div>
 

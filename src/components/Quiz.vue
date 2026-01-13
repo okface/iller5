@@ -45,6 +45,20 @@ const displayOptions = computed(() => {
   return optionOrder.value.map(i => opts[i]);
 });
 
+const formatName = (str) => {
+  return String(str || '').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+};
+
+const sourceLabel = computed(() => {
+  const src = currentQuestion.value?.source;
+  if (!src) return '';
+  const parts = String(src).split('/');
+  // If the app currently has only one subject folder, just show the topic.
+  const hasMultipleSubjects = Object.keys(store.subjects || {}).length > 1;
+  if (!hasMultipleSubjects && parts.length >= 2) return formatName(parts.slice(1).join('/'));
+  return formatName(parts.join(' / '));
+});
+
 const scrollQuestionIntoView = async () => {
   await nextTick();
   // Instant jump (no smooth) to avoid weird mid-transition positions.
@@ -147,6 +161,9 @@ const getOptionClass = (index, option) => {
     <!-- Sticky Question Header -->
     <div ref="questionHeaderRef" class="sticky top-0 z-10 bg-white pb-2 border-b border-gray-100">
       <div class="pt-2">
+        <div v-if="sourceLabel" class="text-[11px] text-gray-500 mb-1">
+          {{ sourceLabel }}
+        </div>
         <span v-for="tag in currentQuestion.tags" :key="tag" class="inline-block text-[11px] font-bold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded mr-2 mb-1">
           {{ tag }}
         </span>

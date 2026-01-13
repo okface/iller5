@@ -44,9 +44,20 @@ export const useStudyStore = defineStore('study', {
     sessionAnswers: {}, // { questionId: { selected: 1, isCorrect: true } }
     
     // User Progress (Persisted in localStorage)
-    // Structure: { questionId: { bucket: 'A'|'B'|'C', consecutiveCorrect: 0, lastSeen: timestamp } }
+    // Structure: { questionId: { bucket: 'A'|'B'|'C', consecutiveCorrect: 0, lastSeen: timestamp, seen: 0, correct: 0, wrong: 0, lastWasCorrect: true|false } }
     progress: useStorage('iller5-progress', {}),
   }),
+
+  getters: {
+    sourceCounts: (state) => {
+      const counts = {};
+      for (const q of state.questions) {
+        if (!q?.source) continue;
+        counts[q.source] = (counts[q.source] || 0) + 1;
+      }
+      return counts;
+    },
+  },
 
   actions: {
     async loadContent() {
@@ -81,20 +92,17 @@ export const useStudyStore = defineStore('study', {
     },
 
     startSession(mode, target = null, countOverride = null) {
-      // mode: 'quick5', 'quick10', 'worst10', 'specific'
-      // target: filename (for 'specific') or nil
+      // mode: 'quick5', 'quick10', 'focus', 'specific', 'multi'
+      // target: string source (e.g. 'medical_exam/kardiologi') or array of sources
       
       let candidateQuestions = [];
 
-      if (mode === 'specific' && target) {
-        // Filter by source filename or folder "Folder/File" logic
-        // The bundler should probably attach 'source' metadata to questions
+      if (typeof target === 'string' && target) {
         candidateQuestions = this.questions.filter(q => q.source === target);
-      } else if (mode === 'multi' && Array.isArray(target) && target.length > 0) {
+      } else if (Array.isArray(target) && target.length > 0) {
         const selected = new Set(target);
         candidateQuestions = this.questions.filter(q => selected.has(q.source));
       } else {
-        // All questions
         candidateQuestions = this.questions;
       }
 
@@ -106,7 +114,10 @@ export const useStudyStore = defineStore('study', {
       const count = (typeof countOverride === 'number' && Number.isFinite(countOverride))
         ? Math.max(1, Math.floor(countOverride))
         : ((mode === 'quick5') ? 5 : 10);
-      this.currentSession = this.selectQuestionsSRS(candidateQuestions, count);
+
+      this.currentSession = (mode === 'focus')
+        ? this.selectQuestionsFocus(candidateQuestions, count)
+        : this.selectQuestionsSRS(candidateQuestions, count);
       this.currentIndex = 0;
       this.sessionAnswers = {};
       this.view = 'quiz';
@@ -161,12 +172,73 @@ export const useStudyStore = defineStore('study', {
       return selected;
     },
 
+    selectQuestionsFocus(candidates, count) {
+      // Focus mode: prefer questions the user got wrong (especially last time),
+      // then backfill with SRS if there aren't enough.
+      const now = Date.now();
+
+      const scored = candidates.map(q => {
+        const p = this.progress[q.id];
+        const seen = Number(p?.seen || 0);
+        const wrong = Number(p?.wrong || 0);
+        const correct = Number(p?.correct || 0);
+        const lastWasCorrect = (typeof p?.lastWasCorrect === 'boolean') ? p.lastWasCorrect : null;
+        const lastSeen = Number(p?.lastSeen || 0);
+        const wrongRate = seen > 0 ? (wrong / seen) : 0;
+        const recentBoost = lastSeen > 0 ? Math.max(0, 1 - (now - lastSeen) / (1000 * 60 * 60 * 24 * 14)) : 0;
+
+        // Large base for having any wrong history; extra for being wrong last time.
+        let score = 0;
+        if (seen > 0) score += 1;
+        if (wrong > 0) score += 1000;
+        score += wrongRate * 200;
+        if (lastWasCorrect === false) score += 250;
+        score += recentBoost * 50;
+
+        // Tie-breaker jitter so the same "worst" set doesn't always start identical.
+        score += randomFloat() * 0.5;
+
+        return { q, score, wrong, seen, correct };
+      });
+
+      // Prefer questions with wrong history first.
+      scored.sort((a, b) => b.score - a.score);
+      const focusPool = scored
+        .filter(x => (x.seen > 0 && x.wrong > 0) || (this.progress[x.q.id]?.lastWasCorrect === false))
+        .map(x => x.q);
+
+      const picked = focusPool.slice(0, Math.min(count, focusPool.length));
+      if (picked.length >= count) return picked;
+
+      // Backfill with SRS selection from remaining candidates.
+      const already = new Set(picked.map(q => q.id));
+      const remaining = candidates.filter(q => !already.has(q.id));
+      const backfill = this.selectQuestionsSRS(remaining, count - picked.length);
+      return picked.concat(backfill);
+    },
+
     recordAnswer(questionId, isCorrect) {
       // Update Progress
-      let p = this.progress[questionId] || { bucket: 'A', consecutiveCorrect: 0, lastSeen: 0 };
+      let p = this.progress[questionId] || {
+        bucket: 'A',
+        consecutiveCorrect: 0,
+        lastSeen: 0,
+        seen: 0,
+        correct: 0,
+        wrong: 0,
+        lastWasCorrect: true,
+      };
+
+      // Normalize older entries
+      if (typeof p.seen !== 'number') p.seen = 0;
+      if (typeof p.correct !== 'number') p.correct = 0;
+      if (typeof p.wrong !== 'number') p.wrong = 0;
+      if (typeof p.lastWasCorrect !== 'boolean') p.lastWasCorrect = true;
       
       if (isCorrect) {
         p.consecutiveCorrect += 1;
+        p.correct += 1;
+        p.lastWasCorrect = true;
         // Promote logic
         // A -> Correct once -> B
         // B -> Correct again (total 2) -> C
@@ -177,7 +249,11 @@ export const useStudyStore = defineStore('study', {
         // Wrong -> Back to A
         p.bucket = 'A';
         p.consecutiveCorrect = 0;
+        p.wrong += 1;
+        p.lastWasCorrect = false;
       }
+
+      p.seen += 1;
       
       p.lastSeen = Date.now();
       this.progress[questionId] = p;

@@ -19,6 +19,12 @@ DATA_DIR = 'data'
 # PYDANTIC MODELS (Structured Output 2025/2026 Standard)
 # -------------------------------------------------------------------------
 
+# Note:
+# - The Pydantic models validate the model output we receive (Python-side safety).
+# - OpenAI Structured Outputs requires an explicit JSON Schema (response_format json_schema).
+#   We keep a separate schema builder to guarantee strict requirements like
+#   additionalProperties=false across all nested objects.
+
 # Helper for OpenAI Strict Mode (requires additionalProperties: false)
 class StrictBaseModel(BaseModel):
     model_config = {"extra": "forbid"}
@@ -31,7 +37,7 @@ class Option(StrictBaseModel):
 class Question(StrictBaseModel):
     id: str = Field(..., description="Ett unikt ID, t.ex 'med-gen-ab12'")
     type: str = Field("multiple_choice", description="Alltid 'multiple_choice'")
-    tags: List[str] = Field(..., description="1-3 korta taggar på svenska (t.ex 'Anatomi')")
+    tags: List[str] = Field(..., description="1-3 korta taggar på svenska (t.ex 'Anatomi') OBS: Taggar ska inte ge bort svaret.")
     question: str = Field(..., description="Själva frågetexten")
     image: Optional[str] = Field(None, description="Filename i assets eller null")
     options: List[Option]
@@ -55,7 +61,7 @@ def build_question_batch_schema():
             "correct": {"type": "boolean", "description": "True om detta är rätt svar, annars False"},
             "feedback": {
                 "type": "string",
-                "description": "Mycket koncis feedback (1 mening) om varför detta är rätt eller fel",
+                "description": "Mycket koncis feedback (1 mening) om varför detta är rätt eller fel, i relation till frågan och övriga alternativ.",
             },
         },
         "required": ["text", "correct", "feedback"],
@@ -72,7 +78,7 @@ def build_question_batch_schema():
                 "items": {"type": "string"},
                 "minItems": 1,
                 "maxItems": 3,
-                "description": "1-3 korta taggar på svenska (t.ex 'Anatomi')",
+                "description": "1-3 korta taggar på svenska (t.ex 'Anatomi') OBS: Taggar ska inte ge bort svaret.",
             },
             "question": {"type": "string", "description": "Själva frågetexten"},
             "image": {
@@ -163,6 +169,36 @@ def analyze_existing_content(questions):
     summary = {tag: count for tag, count in tag_counts.most_common(50)}
     return summary, len(questions)
 
+
+def analyze_tag_usage_across_subject(subject: str):
+    """Counts tag usage across all topics within a subject folder."""
+    tag_counts = collections.Counter()
+    total_questions = 0
+
+    subject_path = os.path.join(DATA_DIR, subject)
+    if not os.path.isdir(subject_path):
+        return {}, 0
+
+    for fname in os.listdir(subject_path):
+        if not (fname.endswith('.yaml') or fname.endswith('.yml')):
+            continue
+        full_path = os.path.join(subject_path, fname)
+        questions = load_existing(full_path)
+        if not isinstance(questions, list):
+            continue
+
+        for q in questions:
+            if not isinstance(q, dict):
+                continue
+            tags = q.get('tags', [])
+            if isinstance(tags, list):
+                for t in tags:
+                    tag_counts[t] += 1
+            total_questions += 1
+
+    summary = {tag: count for tag, count in tag_counts.most_common(100)}
+    return summary, total_questions
+
 def main():
     print("--- Iller5 Content Factory (Structured v2026) ---")
     
@@ -209,6 +245,7 @@ def main():
     # 3. Analyze Context
     existing = load_existing(filepath)
     tag_summary, total_count = analyze_existing_content(existing)
+    subject_tag_summary, subject_total_count = analyze_tag_usage_across_subject(subject)
     
     print(f"  Loaded {total_count} existing questions.")
     
@@ -232,14 +269,19 @@ def main():
     Ämne: {subject}
     Topic: {filename.replace('.yaml', '')}
     Bilder: {'JA' if use_images else 'NEJ'}
-    
-    NULÄGESANALYS:
-    Vi har totalt {total_count} frågor.
-    Tagg-frekvens: {json.dumps(tag_summary, ensure_ascii=False)}
-    
+
+    NULÄGE / KONTEXT:
+    - I denna topic-fil finns {total_count} frågor.
+    - I hela ämnesmappen ({subject}) finns {subject_total_count} frågor.
+
+    TAGGAR (använd detta för att förstå vad som redan täcks och vad som saknas):
+    - Tagg-frekvens (denna topic): {json.dumps(tag_summary, ensure_ascii=False)}
+    - Tagg-frekvens (hela ämnet): {json.dumps(subject_tag_summary, ensure_ascii=False)}
+
     UPPGIFT:
     Generera {count_req} nya frågor.
-    - FYLL LUCKOR i ämnet.
+    - FYLL LUCKOR i ämnet: skapa frågor som kompletterar det som saknas.
+    - Återanvänd gärna existerande taggar när det passar; introducera nya endast om nödvändigt.
     - Generera unika IDn med format ex: "med-gen-{uuid.uuid4().hex[:4]}-..."
     """
     

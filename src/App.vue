@@ -12,7 +12,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="min-h-screen bg-gray-100 text-gray-900 font-sans">
+  <div class="min-h-screen bg-slate-50 text-slate-900 font-sans">
     <div v-if="store.loading" class="flex items-center justify-center h-screen">
       <div class="text-xl animate-pulse text-indigo-600 font-bold">Loading Iller5...</div>
     </div>
@@ -27,11 +27,11 @@ onMounted(() => {
 
     <div v-else class="max-w-2xl mx-auto min-h-screen bg-white shadow-xl flex flex-col relative">
       <!-- Header -->
-      <header class="bg-indigo-600 text-white p-4 flex justify-between items-center sticky top-0 z-20 shadow-md">
+      <header class="bg-slate-900 text-white px-4 py-3 flex justify-between items-center sticky top-0 z-20 shadow-md">
         <h1 class="font-bold text-lg cursor-pointer flex items-center gap-2" @click="store.view = 'dashboard'">
           <span>Iller5</span>
         </h1>
-        <div class="text-xs opacity-75">Local & Private</div>
+        <div class="text-xs text-slate-300">Local & Private</div>
       </header>
 
       <!-- Main Content Area -->
