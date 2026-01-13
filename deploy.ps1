@@ -27,4 +27,4 @@ git push origin main
 
 Write-Host "--- Success! ---" -ForegroundColor Green
 Write-Host "GitHub Actions will now build and deploy your site."
-Write-Host "Check progress here: https://github.com/YOUR_USERNAME/YOUR_REPO/actions"
+Write-Host "Check progress here: https://github.com/okface/iller5/actions" -ForegroundColor Cyan
