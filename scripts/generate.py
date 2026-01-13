@@ -1,59 +1,54 @@
 import os
 import yaml
-import argparse
-import sys
+import json
+import uuid
+import collections
+from typing import List, Optional
+from pydantic import BaseModel, Field
 from openai import OpenAI
 
 # -------------------------------------------------------------------------
 # SETUP
 # -------------------------------------------------------------------------
-# You can set the API key in env var OPENAI_API_KEY
-# or hardcode it here (not recommended for git repos).
-client = OpenAI(
-    # api_key=os.environ.get("OPENAI_API_KEY"),
-)
+client = OpenAI() 
 
 DATA_DIR = 'data'
+
+# -------------------------------------------------------------------------
+# PYDANTIC MODELS (Structured Output 2025/2026 Standard)
+# -------------------------------------------------------------------------
+class Option(BaseModel):
+    text: str = Field(..., description="Svarsalternativets text")
+    correct: bool = Field(..., description="True om detta är rätt svar, annars False")
+    feedback: str = Field(..., description="Mycket koncis feedback (1 mening) om varför detta är rätt eller fel")
+
+class Question(BaseModel):
+    id: str = Field(..., description="Ett unikt ID, t.ex 'med-gen-ab12'")
+    type: str = Field("multiple_choice", description="Alltid 'multiple_choice'")
+    tags: List[str] = Field(..., description="1-3 korta taggar på svenska (t.ex 'Anatomi')")
+    question: str = Field(..., description="Själva frågetexten")
+    image: Optional[str] = Field(None, description="Filename i assets eller null")
+    options: List[Option]
+    explanation: str = Field(..., description="Övergripande koncis förklaring (2-3 meningar)")
+
+class QuestionBatch(BaseModel):
+    questions: List[Question]
 
 # -------------------------------------------------------------------------
 # PROMPTS
 # -------------------------------------------------------------------------
 
 SYSTEM_PROMPT = """
-You are an expert tutor creating high-quality, advanced flashcard questions for a study app.
-Your goal is to generate tough, precise, and educational multiple-choice questions.
+Du är en expertlärare som skapar högkvalitativa, avancerade flashcards-frågor.
+Ditt mål är att generera svåra, precisa och pedagogiska flervalsfrågor PÅ SVENSKA.
 
-STRICT FORMATTING RULES:
-1. Return ONLY raw YAML. No markdown blocks (```yaml), no introductory text.
-2. The YAML must be a list of objects.
-3. Tags should be 1-3 short strings.
-4. "feedback" for each option must be concise (1 sentence).
-5. "explanation" should be the "Why" feature: concise synthesis of why the correct is correct and others wrong.
+Språk: Svenska.
+Ton: Professionell, akademisk med.
 
-YAML SCHEMA:
-- id: "unique-string-id" # You must generate this
-  type: "multiple_choice"
-  tags: ["Tag1", "Tag2"]
-  question: "The question text?"
-  image: null
-  options:
-    - text: "Option A text"
-      correct: false
-      feedback: "Concise reason why A is wrong."
-    - text: "Option B text" (The correct one)
-      correct: true
-      feedback: "Concise reason why B is correct."
-    - text: "Option C text"
-      correct: false
-      feedback: "Concise reason why C is wrong."
-    - text: "Option D text"
-      correct: false
-      feedback: "Concise reason why D is wrong."
-  explanation: "General explanation text."
-
-CRITICAL: 
-- Do NOT output duplicates of provided existing questions.
-- Focus on concepts not yet covered if possible.
+INNEHÅLLSKRAV:
+1. Feedback MÅSTE vara koncis (1 mening).
+2. Explanation MÅSTE vara syntes-orienterad (2-3 meningar).
+3. Svårighetsgrad: Läkarexamen / Specialistnivå.
 """
 
 # -------------------------------------------------------------------------
@@ -61,16 +56,20 @@ CRITICAL:
 # -------------------------------------------------------------------------
 
 def get_subjects():
-    """Returns a list of folders in data/"""
-    return [d for d in os.listdir(DATA_DIR) if os.path.isdir(os.path.join(DATA_DIR, d))]
+    """Returns a list of folders in data/ excluding hidden/utility folders."""
+    return [d for d in os.listdir(DATA_DIR) 
+            if os.path.isdir(os.path.join(DATA_DIR, d)) 
+            and not d.startswith('.') 
+            and d != 'incorrectly_formatted_questions']
 
 def get_topics(subject):
     """Returns list of .yaml filenames in data/subject/"""
     path = os.path.join(DATA_DIR, subject)
+    if not os.path.exists(path): return []
     return [f for f in os.listdir(path) if f.endswith('.yaml')]
 
 def load_existing(filepath):
-    """Loads existing YAML to get IDs and Questions to avoid dupes"""
+    """Loads existing YAML."""
     if not os.path.exists(filepath):
         return []
     with open(filepath, 'r', encoding='utf-8') as f:
@@ -79,33 +78,54 @@ def load_existing(filepath):
         except:
             return []
 
+def analyze_existing_content(questions):
+    """Summary of existing Tags for the prompt."""
+    tag_counts = collections.Counter()
+    
+    for q in questions:
+        tags = q.get('tags', [])
+        if isinstance(tags, list):
+            for t in tags:
+                tag_counts[t] += 1
+                
+    summary = {tag: count for tag, count in tag_counts.most_common(50)}
+    return summary, len(questions)
+
 def main():
-    print("--- Iller5 Content Factory ---")
+    print("--- Iller5 Content Factory (Structured v2026) ---")
     
     # 1. Select Subject
     subjects = get_subjects()
     if not subjects:
-        print("No subjects found in data/. Create a folder first.")
+        print("No subjects found in data/.")
         sys.exit(1)
         
     print("\nSubjects:")
     for i, s in enumerate(subjects):
         print(f"{i+1}. {s}")
         
-    s_idx = int(input("\nSelect Subject (Number): ")) - 1
-    subject = subjects[s_idx]
+    try:
+        s_idx = int(input("\nSelect Subject (Number): ")) - 1
+        subject = subjects[s_idx]
+    except (ValueError, IndexError):
+        print("Invalid selection.")
+        sys.exit(1)
     
-    # 2. Select Topic (or create new)
+    # 2. Select Topic
     topics = get_topics(subject)
     print(f"\nTopics in {subject}:")
     for i, t in enumerate(topics):
         print(f"{i+1}. {t}")
     print(f"{len(topics)+1}. [New Topic]")
     
-    t_idx = int(input("\nSelect Topic (Number): ")) - 1
+    try:
+        t_idx = int(input("\nSelect Topic (Number): ")) - 1
+    except (ValueError, IndexError):
+        print("Invalid selection.")
+        sys.exit(1)
     
     if t_idx == len(topics):
-        new_name = input("Enter new topic name (e.g. 'pharmacology'): ").strip()
+        new_name = input("Enter new topic name (e.g. 'fysiologi'): ").strip()
         if not new_name.endswith('.yaml'):
             new_name += '.yaml'
         filename = new_name
@@ -114,54 +134,75 @@ def main():
         
     filepath = os.path.join(DATA_DIR, subject, filename)
     
-    # 3. Load Context
+    # 3. Analyze Context
     existing = load_existing(filepath)
-    print(f"Loaded {len(existing)} existing questions.")
+    tag_summary, total_count = analyze_existing_content(existing)
     
-    # Extract context for LLM
-    # We send ID and Question text to avoid dupes
-    existing_summary = [{"id": q['id'], "q": q['question']} for q in existing]
+    print(f"  Loaded {total_count} existing questions.")
     
-    # 4. Image Check
+    # 4. Config
     use_images = input("Generate Image-based questions? (y/N): ").lower().strip() == 'y'
+    count_req = 5
     
+    if use_images:
+        print("  NOTE: You must manually add images to public/assets/ matching the generated IDs.")
+
     # 5. Call LLM
-    print("\nContacting OpenAI (GPT-5.2 placeholder)...")
+    print(f"\nContacting OpenAI (gpt-5-mini) via Structured Outputs...")
     
     user_prompt = f"""
-    Subject: {subject}
+    Ämne: {subject}
     Topic: {filename.replace('.yaml', '')}
-    Use Images: {use_images}
-    Existing Questions (Do NOT duplicate): {json.dumps(existing_summary)}
+    Bilder: {'JA' if use_images else 'NEJ'}
     
-    Generate 5 new high-quality questions.
+    NULÄGESANALYS:
+    Vi har totalt {total_count} frågor.
+    Tagg-frekvens: {json.dumps(tag_summary, ensure_ascii=False)}
+    
+    UPPGIFT:
+    Generera {count_req} nya frågor.
+    - FYLL LUCKOR i ämnet.
+    - Generera unika IDn med format ex: "med-gen-{uuid.uuid4().hex[:4]}-..."
     """
     
     try:
-        response = client.chat.completions.create(
-            model="gpt-5-mini",
+        # Standard Structured Outputs (Non-Beta)
+        completion = client.chat.completions.create(
+            model="gpt-5-mini", 
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": user_prompt}
             ],
-            temperature=0.7,
+            response_format={
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "question_batch",
+                    "schema": QuestionBatch.model_json_schema(),
+                    "strict": True
+                }
+            }
         )
         
-        content = response.choices[0].message.content
+        # Manually parse the strict JSON response
+        raw_json = completion.choices[0].message.content
+        batch = QuestionBatch.model_validate_json(raw_json)
         
-        # Strip markdown codes if present
-        clean_content = content.replace("```yaml", "").replace("```", "").strip()
-        
-        new_questions = yaml.safe_load(clean_content)
-        
-        if not new_questions:
-            print("Error: No questions generated/parsed.")
+        if not batch or not batch.questions:
+            print("Error: No questions generated.")
             return
 
-        print(f"\nGenerated {len(new_questions)} questions.")
+        print(f"\nGenerated {len(batch.questions)} questions successfully.")
         
+        # Convert Pydantic models back to dicts for YAML saving
+        new_data = [q.model_dump() for q in batch.questions]
+
+        # Ensure IDs are truly unique if LLM failed (double check)
+        for q in new_data:
+            if 'med-gen' not in q['id']:
+                 q['id'] = f"med-gen-{uuid.uuid4().hex[:6]}"
+
         # Append to file
-        all_data = existing + new_questions
+        all_data = existing + new_data
         
         with open(filepath, 'w', encoding='utf-8') as f:
             yaml.dump(all_data, f, sort_keys=False, allow_unicode=True)
@@ -170,6 +211,9 @@ def main():
         
     except Exception as e:
         print(f"Error during generation: {e}")
+        # Fallback debug
+        if hasattr(e, 'body'):
+             print(e.body)
 
 if __name__ == '__main__':
     main()
