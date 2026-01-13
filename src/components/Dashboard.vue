@@ -6,7 +6,6 @@ const store = useStudyStore();
 
 const showCategoryPicker = ref(false);
 const selectedSources = ref(new Set());
-const showStatsDetails = ref(false);
 
 // Group subjects for display
 // store.subjects is { folder: [file1, file2] }
@@ -58,6 +57,11 @@ const totalAccuracy = computed(() => {
   }
   if (seen <= 0) return null;
   return Math.round((correct / seen) * 100);
+});
+
+const correctOncePercent = computed(() => {
+  if (totalQuestions.value <= 0) return null;
+  return Math.round((correctOnceCount.value / totalQuestions.value) * 100);
 });
 
 const todayAccuracy = computed(() => {
@@ -153,89 +157,76 @@ const focusSelected = (count) => {
 
 <template>
   <div class="space-y-8 p-4">
-    <!-- Progress Snapshot -->
-    <section>
-      <button
-        @click="showStatsDetails = !showStatsDetails"
-        class="w-full text-left p-4 rounded-xl border border-stone-200 bg-gradient-to-br from-stone-50 to-amber-50/40 hover:border-stone-300 transition"
-      >
-        <div class="flex items-start justify-between gap-3">
-          <div>
-            <div class="text-sm text-stone-600">Progress</div>
-            <div class="text-lg font-bold text-stone-900">Medical Exam</div>
-          </div>
-          <div class="text-xs text-stone-500 mt-1">{{ showStatsDetails ? 'Hide' : 'Details' }}</div>
-        </div>
-
-        <div class="mt-3 grid grid-cols-1 sm:grid-cols-3 gap-2">
-          <div class="p-3 rounded-lg bg-white/70 border border-stone-200">
-            <div class="text-xs text-stone-600">Unanswered</div>
-            <div class="text-lg font-bold text-stone-900">{{ unansweredCount }} / {{ totalQuestions }}</div>
-          </div>
-          <div class="p-3 rounded-lg bg-white/70 border border-stone-200">
-            <div class="text-xs text-stone-600">Not correct yet</div>
-            <div class="text-lg font-bold text-stone-900">{{ remainingToCorrectOnce }} / {{ totalQuestions }}</div>
-          </div>
-          <div class="p-3 rounded-lg bg-white/70 border border-stone-200">
-            <div class="text-xs text-stone-600">Accuracy today</div>
-            <div class="text-lg font-bold text-stone-900">{{ todayAccuracy === null ? '—' : (todayAccuracy + '%') }}</div>
+    <!-- Compact stats + quick actions (mobile-first) -->
+    <section class="space-y-3">
+      <div class="flex gap-2">
+        <div class="flex-1 rounded-2xl border border-stone-200 bg-white/60 backdrop-blur px-4 py-3">
+          <div class="text-xs text-stone-500">Correct at least once</div>
+          <div class="mt-1 flex items-baseline gap-2">
+            <div class="text-2xl font-extrabold text-emerald-700">
+              {{ correctOncePercent === null ? '—' : (correctOncePercent + '%') }}
+            </div>
+            <div class="text-xs text-stone-500">
+              {{ correctOnceCount }} / {{ totalQuestions }}
+            </div>
           </div>
         </div>
 
-        <div v-if="showStatsDetails" class="mt-3 text-sm text-stone-700">
-          <div>Incorrect (ever): <span class="font-bold text-stone-900">{{ incorrectEverCount }} / {{ totalQuestions }}</span></div>
-          <div>Total accuracy: <span class="font-bold text-stone-900">{{ totalAccuracy === null ? '—' : (totalAccuracy + '%') }}</span></div>
-          <div class="text-xs text-stone-500 mt-1">Today resets automatically at local midnight.</div>
+        <div class="flex-1 rounded-2xl border border-stone-200 bg-white/60 backdrop-blur px-4 py-3">
+          <div class="text-xs text-stone-500">Today</div>
+          <div class="mt-1 flex items-baseline gap-2">
+            <div class="text-2xl font-extrabold text-stone-900">
+              {{ todayAccuracy === null ? '—' : (todayAccuracy + '%') }}
+            </div>
+            <div class="text-xs text-stone-500" v-if="totalAccuracy !== null">
+              total {{ totalAccuracy }}%
+            </div>
+          </div>
         </div>
-      </button>
-    </section>
+      </div>
 
-    <!-- Quick Actions -->
-    <section>
-      <h2 class="text-2xl font-bold mb-4 text-gray-800">Quick Study</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        
-        <button 
+      <div class="grid grid-cols-3 gap-2">
+        <button
           @click="store.startSession('quick5')"
-          class="p-5 rounded-xl border border-indigo-100 bg-indigo-50/70 text-indigo-950 hover:bg-indigo-100/60 transition"
+          class="rounded-2xl border border-indigo-100 bg-indigo-50/70 text-indigo-950 hover:bg-indigo-100/60 transition px-3 py-3"
         >
-          <div class="text-2xl font-bold mb-1">5 Questions</div>
+          <div class="text-lg font-extrabold">5Q</div>
+          <div class="text-[11px] text-indigo-900/70">5 questions</div>
         </button>
 
-        <button 
+        <button
           @click="store.startSession('quick10')"
-          class="p-5 rounded-xl border border-indigo-100 bg-indigo-50/70 text-indigo-950 hover:bg-indigo-100/60 transition"
+          class="rounded-2xl border border-indigo-100 bg-indigo-50/70 text-indigo-950 hover:bg-indigo-100/60 transition px-3 py-3"
         >
-          <div class="text-2xl font-bold mb-1">10 Questions</div>
+          <div class="text-lg font-extrabold">10Q</div>
+          <div class="text-[11px] text-indigo-900/70">10 questions</div>
         </button>
 
-        <button 
+        <button
           @click="store.startSession('focus', null, 10)"
-          class="p-5 rounded-xl border border-emerald-100 bg-emerald-50 text-emerald-950 hover:bg-emerald-100/60 transition"
+          class="rounded-2xl border border-emerald-100 bg-emerald-50/70 text-emerald-950 hover:bg-emerald-100/60 transition px-3 py-3"
         >
-          <div class="text-2xl font-bold mb-1">Focus</div>
-          <div class="text-sm text-emerald-950/90">Study what you got wrong</div>
+          <div class="text-lg font-extrabold">Focus</div>
+          <div class="text-[11px] text-emerald-900/70">wrong-first</div>
         </button>
-
       </div>
     </section>
 
     <!-- Category Picker (multi-select) -->
-    <section>
-      <h2 class="text-2xl font-bold mb-3 text-gray-800">Categories</h2>
+    <section class="pt-1">
 
       <div v-if="subjectsList.length === 0" class="text-gray-500 italic">
         No content found. Please add content to /data folder.
       </div>
 
-      <div v-else class="space-y-3">
+      <div v-else class="space-y-2">
         <button
           v-if="!showCategoryPicker"
           @click="openCategoryPicker"
           class="w-full p-4 bg-gradient-to-br from-stone-50 to-rose-50/50 border border-stone-200 rounded-xl hover:border-stone-300 transition text-left"
         >
           <div class="font-bold text-gray-800">Study specific categories</div>
-          <div class="text-sm text-gray-500 mt-1">Pick one or more categories</div>
+          <div class="text-sm text-gray-500 mt-1">Pick categories</div>
         </button>
 
         <div v-else class="bg-white/70 backdrop-blur border border-stone-200 rounded-xl p-4">
