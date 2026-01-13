@@ -229,8 +229,8 @@ const getOptionClass = (index, option) => {
       </p>
     </div>
 
-    <!-- Next Button (Floating Bottom) -->
-    <div v-if="answered" class="fixed bottom-0 left-0 right-0 p-2 bg-white border-t border-gray-200 flex justify-center pb-3 sm:pb-2 md:static md:bg-transparent md:border-0 md:p-0 md:justify-end">
+    <!-- Next Button (Sticky Bottom) -->
+    <div v-if="answered" class="sticky bottom-0 left-0 right-0 p-2 bg-stone-50/90 backdrop-blur border-t border-stone-200 flex justify-center pb-3">
       <button 
         @click="nextQuestion"
         class="bg-slate-900 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-slate-950 transition w-full md:w-auto"
