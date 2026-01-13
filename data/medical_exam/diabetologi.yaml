@@ -517,3 +517,377 @@
     för att förhindra hyperglykemi och ketoacidos. Glukos- och ketonövervakning samt
     vätsketillförsel kompletterar behandlingen men ersätter inte insulin.
   id: med-dia-6f10e6
+- id: med-gen-1a3f-hhsdk
+  type: multiple_choice
+  tags:
+  - Diabetes
+  - Akutmedicin
+  question: Vilket av följande laboratoriefynd talar mest för hyperosmolärt hyperglykemiskt
+    tillstånd (HHS) snarare än för diabetisk ketoacidos (DKA)?
+  image: null
+  options:
+  - text: Plasmaglukos > 30 mmol/L med serumosmolalitet > 320 mOsm/kg och frånvaro
+      av signifikanta ketoner
+    correct: true
+    feedback: HHS karakteriseras av extrem hyperglykemi och hög osmolalitet med ringa
+      ketonemi.
+  - text: Artärblodgas med pH < 7,25 och förhöjd anjongap
+    correct: false
+    feedback: Lågt pH och hög anjongap talar snarare för DKA än för HHS.
+  - text: Svår hypokalemi (K+ < 3,0 mmol/L) utan acidos
+    correct: false
+    feedback: Hypokalemi kan förekomma i båda tillstånden men är inte diagnostiskt
+      för HHS.
+  - text: Hyponatremi (s-K < 125 mmol/L) med normal plasmaosmolalitet
+    correct: false
+    feedback: Hyponatremi med normal osmolalitet utesluter inte DKA/HHS men är inte
+      typiskt för HHS.
+  explanation: HHS karakteriseras av mycket hög plasmaglukos och ökad serumosmolalitet
+    (>320 mOsm/kg) med minimal ketonbildning och ofta relativt normal syrabasstatus.
+    DKA å andra sidan har uttalad ketos och metabol acidos med sänkt pH och ökad anjongap.
+- id: med-gen-2b7c-gestdiag
+  type: multiple_choice
+  tags:
+  - Diabetes
+  - Gestation
+  question: Vilket uttalande om screening och diagnostik av graviditetsdiabetes (GDM)
+    i Sverige är mest korrekt enligt nuvarande praxis?
+  image: null
+  options:
+  - text: Alla gravida bör erbjudas 75 g oral glukostoleranstest (OGTT) i graviditetsvecka
+      24–28 och diagnos ställs vid någon av trösklarna fasting ≥5,1 mmol/L, 1 h ≥10,0
+      mmol/L eller 2 h ≥8,5 mmol/L.
+    correct: true
+    feedback: Nuvarande internationella kriterier (IADPSG/WORLD) används ofta och
+      inkluderar dessa trösklar i v 24–28.
+  - text: Screening via fasting-glukos på rutin i vecka 12 är tillräckligt för att
+      fånga majoriteten av GDM.
+    correct: false
+    feedback: Fasting i vecka 12 identifierar tidig diabetes men saknar känslighet
+      för GDM uppkommer senare; OGTT i v24–28 är standard.
+  - text: Endast kvinnor med BMI >35 eller tidigare GDM bör genomgå OGTT under graviditet.
+    correct: false
+    feedback: Selektiv screening används i vissa riktlinjer men universal OGTT i v24–28
+      rekommenderas ofta för att inte missa fall.
+  - text: Diagnos kräver förhöjt fastingvärde endast eftersom postprandiella värden
+      inte påverkar graviditetsutfallet.
+    correct: false
+    feedback: Postprandiella värden korrelerar starkt med komplikationsrisk och ingår
+      därför i diagnoskriterierna.
+  explanation: Internationella och svenska rutiner rekommenderar ofta 75 g OGTT i
+    graviditetsvecka 24–28 med trösklar enligt IADPSG (fasting ≥5,1, 1h ≥10,0, 2h
+    ≥8,5 mmol/L). Tidig fasting-glukos fångar preexisterande eller tidig manifest
+    diabetes men räcker inte för att upptäcka GDM som utvecklas senare.
+- id: med-gen-3c9d-glp1cv
+  type: multiple_choice
+  tags:
+  - Diabetes
+  - Farmakoterapi
+  - GLP-1
+  question: Vilken mekanism är mest sannolik för att förklara de kardiovaskulära fördelarna
+    som observerats med vissa GLP‑1 receptoragonister hos patienter med typ 2‑diabetes?
+  image: null
+  options:
+  - text: Direkt antiinflammatorisk effekt i kärlväggen kombinerat med förbättrad
+      glykemisk kontroll och viktminskning
+    correct: true
+    feedback: GLP‑1‑agonister ger metabol påverkan och har visats ha direkta vaskulära
+      och antiinflammatoriska effekter som sannolikt bidrar till CV‑nytta.
+  - text: Renodlad blodtryckssänkning till följd av perifer vasodilatation hos alla
+      patienter
+    correct: false
+    feedback: GLP‑1 ger måttlig blodtryckssänkning men det förklarar inte helt den
+      observerade CV‑effekten.
+  - text: Ökad natriures via hämning av SGLT2 i proximala tubuli
+    correct: false
+    feedback: GLP‑1‑agonister påverkar inte SGLT2‑mediär natriures; det är SGLT2‑hämmare
+      som har den effekten.
+  - text: Primärt antikoagulerande effekt vilket minskar trombosrisk
+    correct: false
+    feedback: Ingen tydlig antikoagulerande mekanism för GLP‑1‑agonister har visats
+      i stora studier.
+  explanation: Kardiovaskulära fördelar med vissa GLP‑1‑agonister tros bero på en
+    kombination av bättre glykemisk kontroll, viktminskning och direkta positiva effekter
+    på kärlväggens inflammation och funktion. Denna multifaktoriella mekanism skiljer
+    sig från SGLT2‑hämmarnas främst hemodynamiska/renal skyddande effekter.
+- id: med-gen-4d2e-sglt2preop
+  type: multiple_choice
+  tags:
+  - Diabetes
+  - SGLT2
+  - Behandling
+  question: Vad är mest korrekt rekommendation för hantering av SGLT2‑hämmare inför
+    planerad elektiv kirurgi för att minska risken för euglykemisk ketoacidos?
+  image: null
+  options:
+  - text: Sätta ut SGLT2‑hämmaren 3 dagar före elektiv operation (5 dagar vid läkemedel
+      med lång halvering) och återinsätta först när patient äter och dricker normalt.
+    correct: true
+    feedback: Offentliga rekommendationer förespråkar utsättning flera dagar före
+      operation och återinsättning efter normal oral intake för att minska euglykemisk
+      DKA‑risk.
+  - text: Fortsätta SGLT2‑hämmaren fram till operationsdagen eftersom den minskar
+      perioperativ kardiovaskulär risk.
+    correct: false
+    feedback: Perioperativ fortsatt behandling ökar risken för euglykemisk ketoacidos
+      och rekommenderas ej.
+  - text: Sätta ut endast vid kritisk sjukdom eller vid behov av lång fasta; annars
+      kan medicinen fortsätta.
+    correct: false
+    feedback: Rutinmässig utsättning flera dagar före elektiv kirurgi rekommenderas
+      oberoende av planerad fasta.
+  - text: Byta till metformin dagarna före operation för att undvika DKA‑risk.
+    correct: false
+    feedback: Metformin byts inte in för att förebygga euglykemisk DKA och har egna
+      perioperativa överväganden (laktatacidos).
+  explanation: SGLT2‑hämmare bör vanligen sättas ut flera dagar före elektiv kirurgi
+    (vanligen 3 dagar, längre för vissa preparat) och inte återinsättas förrän patienten
+    har stabil oral intag och normal hemodynamik. Detta minskar risken för euglykemisk
+    ketoacidos som kan uppstå vid fasta/stress.
+- id: med-gen-5e6f-footom
+  type: multiple_choice
+  tags:
+  - Diabetes
+  - Komplikationer
+  - Infektion
+  question: En 62‑årig man med diabetes har ett sår på stortån och misstanke om djup
+    infektion/osteomyelit. Vilket av följande är mest lämpligt som nästa steg för
+    att utreda osteomyelit?
+  image: null
+  options:
+  - text: Magnetkameraundersökning (MRI) av foten för att påvisa benengagemang
+    correct: true
+    feedback: MRI har hög sensitivitet och specificitet för osteomyelit i foten och
+      är förstahandsval vid osäkerhet.
+  - text: Röntgen av foten är tillräckligt för att utesluta osteomyelit tidigt i förloppet
+    correct: false
+    feedback: Röntgen visar ofta först sena förändringar och saknar känslighet tidigt
+      för osteomyelit.
+  - text: Blododlingar räcker för att diagnostisera osteomyelit eftersom bakterier
+      alltid ses i blodet vid skelettinfektion
+    correct: false
+    feedback: Blododlingar kan vara positiva men är ofta negativa vid lokal osteomyelit
+      och räcker inte för diagnos.
+  - text: Amputation bör omedelbart utföras vid allt sår med misstänkt osteomyelit
+      hos diabetiker
+    correct: false
+    feedback: Amputation är överdriven utan bilddiagnostik och multidisciplinär bedömning.
+  explanation: MRI är det mest känsliga och specifika bilddiagnostiska verktyget för
+    att påvisa osteomyelit i foten och rekommenderas när klinik eller probe‑to‑bone
+    test tyder på benengagemang. Röntgen har låg sensitivitet tidigt, blododlingar
+    kan vara negativa och kirurgisk beslut kräver bild- och mikrobiologiskt underlag.
+- id: med-gen-6f1a-cgmtr
+  type: multiple_choice
+  tags:
+  - Diabetes
+  - Diagnostik
+  - CGM
+  question: Vilket påstående om kontinuerlig glukosmonitorering (CGM) och 'time in
+    range' (TIR) är mest korrekt för patienter med typ 1‑diabetes?
+  image: null
+  options:
+  - text: Målet är generellt ≥70 % TIR (3,9–10 mmol/L) eftersom detta korrelerar med
+      HbA1c ≈7 % (53 mmol/mol) och minskad komplikationsrisk.
+    correct: true
+    feedback: 70 % TIR i 3,9–10 mmol/L motsvarar ungefär ett HbA1c omkring 7 % och
+      är ett vedertaget mål för många vuxna med T1D.
+  - text: TIR är ointressant kliniskt eftersom HbA1c är tillräckligt för att bedöma
+      glykemisk kontroll.
+    correct: false
+    feedback: TIR tillför dynamisk information om hypoglykemi och glukosvariabilitet
+      som HbA1c inte fångar.
+  - text: Målet bör vara ≥90 % TIR för alla patienter för att undvika komplikationer.
+    correct: false
+    feedback: 90 % är ett orealistiskt mål för de flesta vuxna och inte nödvändigt
+      för att minska komplikationer.
+  - text: TIR definieras som andel tid under 3,0 mmol/L och är primärt ett mått på
+      hypoglykemirisk.
+    correct: false
+    feedback: TIR avser oftast tid i targetintervallet (t.ex. 3,9–10 mmol/L), inte
+      endast tid under 3,0 mmol/L.
+  explanation: Time in range (vanligtvis 3,9–10 mmol/L) är ett användbart CGM‑mått;
+    mål omkring ≥70 % korrelerar med HbA1c nära 7 % och är associerat med lägre risk
+    för komplikationer. TIR kompletterar HbA1c genom att fånga hypoglykemier och glukosvariabilitet.
+- id: med-gen-7a8b-pumpdka
+  type: multiple_choice
+  tags:
+  - Insulinbehandling
+  - Diabetes
+  question: En patient med typ 1‑diabetes använder insulinpump (snabbverkande analog).
+    Pumpen slutar helt leverera insulin p.g.a. infusionssetoklusion. Ungefär hur lång
+    tid till kliniskt signifikant ketos/DKA kan uppstå om inget åtgärdas?
+  image: null
+  options:
+  - text: Cirka 4–8 timmar beroende på glykogenlager och exogen insulin kvar i subkutan
+      vävnad
+    correct: true
+    feedback: Vid avbrott i snabbverkande insulin kan ketonbildning utvecklas inom
+      några timmar, ofta 4–8 timmar, hos insulinberoende patienter.
+  - text: Vanligtvis >48 timmar eftersom ketos kräver långvarig insulinbrist
+    correct: false
+    feedback: Detta underskattar risken; DKA kan utvecklas snabbt i total insulinbrist.
+  - text: Aldrig eftersom depotreserver av endogent insulin skyddar mot DKA
+    correct: false
+    feedback: Typ 1‑patienter saknar tillförlitlig endogen insulinproduktion och kan
+      snabbt utveckla DKA.
+  - text: Inom 30–60 minuter eftersom ketoner bildas omedelbart vid insulinavbrott
+    correct: false
+    feedback: Ketoacidos utvecklas inte så snabbt; det tar några timmar innan signifikant
+      ketonemi och acidos uppstår.
+  explanation: Vid abrupt avbrott i subkutant snabbverkande insulin hos typ 1‑diabetiker
+    kan ketonbildning och progress till DKA ske relativt snabbt, ofta inom 4–8 timmar
+    beroende på individuella faktorer. Därför krävs tidig upptäckt och åtgärd vid
+    pumpfel.
+- id: med-gen-8b4c-nefro
+  type: multiple_choice
+  tags:
+  - Diabetes
+  - Njurmedicin
+  question: Vilket av följande fynd är mest indicerande för att initiera ACE‑hämmare
+    (eller ARB) som förstahandsval vid diabetesrelaterad njurpåverkan för att bromsa
+    progression?
+  image: null
+  options:
+  - text: U-albumin/kreatininkvot (U‑ACR) ≥30 mg/g (mikroalbuminuri) eller högre vid
+      två av tre prover
+    correct: true
+    feedback: Mikroalbuminuri (U‑ACR ≥30 mg/g) är en etablerad indikation för att
+      initiera ACE‑hämmare för nefroprotektion.
+  - text: Isolerad lätt sänkning av eGFR till 55 ml/min utan albuminuri
+    correct: false
+    feedback: Sänkt eGFR utan albuminuri kräver utredning men är inte i sig en automatisk
+      indikation för ACE‑hämmare.
+  - text: Normalt U‑ACR men två års svängande HbA1c över 9 %
+    correct: false
+    feedback: Dålig glykemisk kontroll är viktig att åtgärda men utgör inte i sig
+      indikationen för ACE‑hämmare utan albuminuri.
+  - text: Urinmikroskop med röda celler som tecken på glomerulonefrit
+    correct: false
+    feedback: Misstanke om annan glomerulär sjukdom kräver speciell utredning innan
+      rutinmässig ACE‑hämmarstart.
+  explanation: Start av ACE‑hämmare eller ARB rekommenderas vid mikro‑ eller makroalbuminuri
+    (U‑ACR ≥30 mg/g vid upprepade prov) för att minska albuminuri och sakta njurprogression.
+    Isolerad minskad eGFR utan albuminuri kräver vidare utredning och individuell
+    bedömning.
+- id: med-gen-9c2d-hypounaw
+  type: multiple_choice
+  tags:
+  - Diabetes
+  - Hypoglykemi
+  question: Vilken intervention har bäst evidens för att återställa hypoglykemimedvetenhet
+    hos en person med typ 1‑diabetes och dokumenterad hypoglykemisk omedvetenhet?
+  image: null
+  options:
+  - text: Strukturerad utbildning och målinriktad undvikande av hypoglykemier under
+      2–3 veckor (hypoglykemirestriktion)
+    correct: true
+    feedback: Undvikande av hypoglykemier via intensiv utbildning och justering av
+      behandling kan återställa symptomigenkänning på veckor.
+  - text: Fortlöpande höjning av långtids‑HbA1c till >9 % för att minska hypoglykemier
+    correct: false
+    feedback: Att avsiktligt acceptera mycket högt HbA1c är skadligt och ej rekommenderat
+      som behandling för hypoglykemimedvetenhet.
+  - text: Daglig behandling med beta‑2‑agonist för att öka adrenerga symtom vid lågt
+      blodsocker
+    correct: false
+    feedback: Beta‑agonister är inte evidensbaserat för återställande av hypoglykemimedvetenhet.
+  - text: Pacemakerimplantation för att öka symtom vid hypoglykemi
+    correct: false
+    feedback: Pacemaker har ingen roll i behandling av hypoglykemimedvetenhet.
+  explanation: Systematisk undvikande av hypoglykemier genom patientutbildning, CGM‑användning
+    och behandlingsjustering under några veckor har visat sig återställa hypoglykemimedvetenhet
+    hos många patienter. Strategin minskar adrenerga och autonoma adaptationer som
+    annars dämpar symptom.
+- id: med-gen-aa7d-bariatricrem
+  type: multiple_choice
+  tags:
+  - Diabetes
+  - Kirurgi
+  - Behandling
+  question: Vilket av följande är den starkaste prediktorn för långsiktig remission
+    av typ 2‑diabetes efter bariatrisk kirurgi?
+  image: null
+  options:
+  - text: Kort duration av diabetes (<5 år) och bevarad C‑peptidproduktion
+    correct: true
+    feedback: Kort sjukdomsduration och intakt beta‑cellsfunktion (högt C‑peptid)
+      är viktiga prediktorer för remission.
+  - text: Hög startålder (>65 år) oberoende av andra faktorer
+    correct: false
+    feedback: Hög ålder är oftast associerad med sämre remission, inte bättre.
+  - text: Lång historia av insulinbehandling innan operation
+    correct: false
+    feedback: Långvarig insulinbehandling antyder uttömd betacellsreserv och lägre
+      sannolikhet till remission.
+  - text: Enbart hög BMI (>50 kg/m²) utan hänsyn till metabol profil
+    correct: false
+    feedback: Hög BMI ökar sannolikheten för viktförlust men är inte ensam bästa prediktorn
+      för glykemisk remission.
+  explanation: Bästa prediktorer för remission efter metabol kirurgi är kort diabetesduration
+    och kvarvarande endogen insulinproduktion (hög C‑peptid). Långvarig sjukdom och
+    behov av insulin före operation minskar chansen för långsiktig remission.
+- id: med-gen-bb9e-cvdstatins
+  type: multiple_choice
+  tags:
+  - Diabetes
+  - Riskfaktorer
+  question: Vilket uttalande om sekundär prevention av kardiovaskulär sjukdom hos
+    patienter med diabetes är mest korrekt?
+  image: null
+  options:
+  - text: Hos diabetespatienter med etablerad aterosklerotisk kardiovaskulär sjukdom
+      är högintensiv statinbehandling indicerad oberoende av LDL‑nivå.
+    correct: true
+    feedback: Högintensiva statiner rekommenderas vid etablerad ASCVD hos diabetiker
+      för att minska återinsjuknande.
+  - text: Statinbehandling kan utelämnas om HbA1c är väl kontrollerat (<7 %).
+    correct: false
+    feedback: Glykemisk kontroll förändrar inte indiceringen för statin vid etablerad
+      ASCVD.
+  - text: ACE‑hämmare är kontraindicerade som sekundärprevention efter hjärtinfarkt
+      hos diabetiker.
+    correct: false
+    feedback: ACE‑hämmare har ofta hjärt‑ och njurprotektiva effekter och är inte
+      kontraindicerade i detta sammanhang.
+  - text: Aspirin bör aldrig användas vid sekundärprevention hos diabetespatienter
+      på grund av blödningsrisk.
+    correct: false
+    feedback: Aspirin är indicerat för sekundärprevention hos patienter med manifest
+      aterosklerotisk sjukdom om inga kontraindikationer föreligger.
+  explanation: Vid etablerad aterosklerotisk hjärt-kärlsjukdom rekommenderas högintensiv
+    statinbehandling oberoende av LDL‑nivå hos patienter med diabetes för att reducera
+    återinsjuknande och mortalitet. Glykemi och statinindikation är separata behandlingsmål
+    i sekundär prevention.
+- id: med-gen-cc0f-sterbeh
+  type: multiple_choice
+  tags:
+  - Diabetes
+  - Biverkningar
+  - Farmakologi
+  question: Vilket av följande biverkningsmönster är mest förknippat med SGLT2‑hämmare
+    och kräver särskild vaksamhet snarare än vanligt insulin‑relaterad hypoglykemi?
+  image: null
+  options:
+  - text: Ökad risk för genital svampinfektioner och vulvovaginit/ balanitis samt
+      risk för euglykemisk ketoacidos i särskilda situationer
+    correct: true
+    feedback: SGLT2‑hämmare ökar glukos i urin och är associerade med genitala mykoser
+      och sällan euglykemisk DKA.
+  - text: Signifikant ökad frekvens av svåra hypoglykemier oberoende av konkomittant
+      insulin
+    correct: false
+    feedback: SGLT2‑hämmare ger låg hypoglykemirisk om de inte kombineras med insulin
+      eller sulfonylurea.
+  - text: Vanligtvis orsakar de akut pankreatit hos majoriteten av patienter
+    correct: false
+    feedback: Pankreatit har primärt associerats med vissa GLP‑1‑agonister, inte SGLT2‑hämmare
+      i stor utsträckning.
+  - text: Orsakar typiskt signifikant levertoxicitet med förhöjda transaminaser hos
+      de flesta
+    correct: false
+    feedback: SGLT2‑hämmare ger inte typiskt massiv leverpåverkan hos majoriteten
+      av användare.
+  explanation: SGLT2‑hämmare ökar glukosutsöndring i urin vilket leder till högre
+    risk för genital svampinfektion och i speciella situationer, särskilt vid kirurgi/fasta
+    eller insulinbrist, risk för euglykemisk ketoacidos. Hypoglykemi är ovanligt om
+    behandlingen inte kombineras med insulin eller sulfonylurea.

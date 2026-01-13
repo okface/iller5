@@ -370,3 +370,598 @@
     tangles korrelerar bättre med demensens svårighetsgrad än mängden amyloidplack.
     Amyloidos kan initiera sjukdomsprocessen men det är tau-patologins spridning i
     hippocampus och neocortex som bäst relaterar till minnes- och kognitiva bortfall.
+- id: med-gen-65a2-0001
+  type: multiple_choice
+  tags:
+  - Stroke
+  - Akutbehandling
+  question: Vilket fynd hos en patient med akut ischemisk stroke talar starkast för
+    att hen är en kandidat för mekanisk trombektomi (endovaskulär trombektomi)?
+  image: null
+  options:
+  - text: Symtomdebut för 10 timmar sedan, NIHSS 18 och CT-angio visar proximalt ockluderat
+      M1-segment med synbar penumbra på perfusions-CT.
+    correct: true
+    feedback: Rätt — proximalt storkärlsocklusion med penumbra inom behandlingsfönstret
+      indikerar trombektomi.
+  - text: Symtomdebut för 16 timmar sedan, NIHSS 6 och CT normal utan perfusionsdefekt.
+    correct: false
+    feedback: Fel — lång tid från debut och låg NIHSS utan penumbra talar inte för
+      trombektomi.
+  - text: Symtomdebut för 2 timmar sedan, NIHSS 4 och CT-angio visar distal småkärlsocklusion
+      i en lobär gren.
+    correct: false
+    feedback: Fel — distal småkärlsocklusion med låg NIHSS är generellt inte indikation
+      för trombektomi.
+  - text: Symtomdebut för 8 timmar sedan, patient på warfarin med INR 3,0 och CT visar
+      stor ischemi i hela MCA-territoriet utan penumbra.
+    correct: false
+    feedback: Fel — stor etablerad infarkt utan penumbra och hög blödningsrisk gör
+      trombektomi olämplig.
+  explanation: Mekanisk trombektomi är framför allt indicerat vid akut storkärlsocklusion
+    i anteriora cirkulationen (t.ex. M1) med uttalad neurologisk påverkan och påvisbar
+    penumbra, även upp till 6–24 timmar beroende på imaging. Avsaknad av penumbra,
+    låg NIHSS eller distal ocklusion minskar sannolikheten för nytta, och etablerad
+    stor infarkt eller hög blödningsrisk är kontraindikationer.
+- id: med-gen-65a2-0002
+  type: multiple_choice
+  tags:
+  - Stroke
+  - Neuroanatomi
+  question: En patient har plötslig hemianopsi med bevarat pupillreflex och oförändrad
+    medvetandenivå — vilken kärlterritoriumsskada är mest sannolik?
+  image: null
+  options:
+  - text: Ockipitalisloben ipsilateralt, oftast PCA-ocklusion.
+    correct: true
+    feedback: Rätt — PCA-infarkt ger klassiskt homonym hemianopsi med bevarad motorik
+      och pupillreflexer.
+  - text: Basilarisocklusion i pons.
+    correct: false
+    feedback: Fel — basilaris/ponsskada ger ofta hjärnstamsmärken som påverkar medvetande
+      eller kranialnerver.
+  - text: Anterior cerebralarterie-infarkt.
+    correct: false
+    feedback: Fel — ACA-infarkt ger främst motoriska och frontala symptom, inte isolerad
+      hemianopsi.
+  - text: Subaraknoidalblödning i cirkumferensen.
+    correct: false
+    feedback: Fel — SAH ger oftare akut huvudvärk och meningeal status, inte isolerad
+      hemianopsi.
+  explanation: Homonym hemianopsi utan påverkan av pupillreflexer eller medvetande
+    tyder på lokaliserad occipitalcortex-påverkan, oftast orsakad av posterior cerebral
+    artery-ocklusion. Hjärnstams- eller cerebellära lesioner brukar ge kranialnervspåverkan,
+    medvetslöshet eller ataxi snarare än isolerad synfältsdefekt.
+- id: med-gen-65a2-0003
+  type: multiple_choice
+  tags:
+  - Subaraknoidalblödning
+  - Neurovaskulär
+  question: Vilket provfynd efter en lumbalpunktion är mest diagnostiskt för subaraknoidalblödning
+    när CT är negativ?
+  image: null
+  options:
+  - text: Xantokromi i cerebrospinalvätskan (CSF) utan röd blodkroppsnedbrytning vid
+      centrífugering.
+    correct: true
+    feedback: Rätt — xantokromi indikerar äkta subaraknoidalblödning snarare än traumatisk
+      punktion.
+  - text: Högt antal röda blodkroppar som minskar markant efter centrífugering.
+    correct: false
+    feedback: Fel — minskning efter centrifugering talar för traumatiskt LP, inte
+      SAH.
+  - text: Högt albumin utan pleocytos.
+    correct: false
+    feedback: Fel — isolerat förhöjt albumin är icke-specifikt och inte diagnostiskt
+      för SAH.
+  - text: Lågt glukos i CSF jämfört med serum.
+    correct: false
+    feedback: Fel — lågt CSF-glukos ses vid bakteriell meningit, inte SAH.
+  explanation: När CT inte visar blödning kan xantokromi i CSF (gulbrun färg från
+    hemoglobinmetaboliter) efter centrifugering bekräfta subaraknoidalblödning och
+    skilja detta från ett blodigt prov p.g.a. traumatisk LP. Andra förändringar som
+    högt RBC-antal utan kvarvarande xantokromi talar för provkontamination snarare
+    än SAH.
+- id: med-gen-65a2-0004
+  type: multiple_choice
+  tags:
+  - Meningit
+  - Akutbehandling
+  question: Vilket kliniskt scenario kräver att man ger empirisk antibiotikabehandling
+    före bilddiagnostik och lumbalpunktion vid misstänkt bakteriell meningit?
+  image: null
+  options:
+  - text: Patient med hög feber, nackstyvhet och snabbt tilltagande medvetandepåverkan
+      (somnolens) och fokala neurologiska bortfall.
+    correct: true
+    feedback: 'Rätt — tecken på ökat intrakraniellt tryck eller fokalitet motiverar
+      antibiotika före LP och bild. '
+  - text: Patient med feber och endast lätt huvudvärk utan neurologiska fynd.
+    correct: false
+    feedback: Fel — stabil patient utan fokalitet kan utredas med LP före antibiotika
+      om ingen fördröjning i vård uppstår.
+  - text: Patient med influensaliknande symtom utan meningeala tecken eller feber.
+    correct: false
+    feedback: Fel — låg misstanke för bakteriell meningit och antibiotika före LP
+      är inte indicerat.
+  - text: Patient med kronisk huvudvärk i flera månader utan feber eller nylig infektion.
+    correct: false
+    feedback: Fel — kronisk presentation talar inte för akut bakteriell meningit och
+      empirisk antibiotika är inte motiverad.
+  explanation: Vid misstanke om bakteriell meningit ska bilddiagnostik utföras före
+    LP om det finns fokala neurologiska tecken, papillödem eller nedsatt medvetande,
+    och om sådan bildning fördröjer LP ska empirisk antibiotika ges omedelbart. Snabb
+    behandling minskar mortalitet; stabila patienter utan dessa tecken kan genomgå
+    LP innan antibiotika.
+- id: med-gen-65a2-0005
+  type: multiple_choice
+  tags:
+  - Guillain-Barré
+  - Neuroimmunologi
+  question: Vilket av följande fynd är mest karaktäristiskt för Guillain–Barré-syndrom
+    (GBS) i akutfasen?
+  image: null
+  options:
+  - text: Snabbt progredierande symmetrisk distal pares med hyporeflexi och albuminocytologisk
+      dissociation i CSF.
+    correct: true
+    feedback: Rätt — symmetrisk svaghet med nedsatta reflexer och förhöjt albumin
+      utan pleocytos är typiskt för GBS.
+  - text: Asymmetrisk spastisk pares med hyperreflexi och Babinskis tecken.
+    correct: false
+    feedback: Fel — spasticitet och hyperreflexi tyder på central skada, inte GBS.
+  - text: Myoklonier och EEG med generaliserade spike-and-wave-utsändningar.
+    correct: false
+    feedback: Fel — dessa fynd är förenliga med epilepsi/status, inte perifert demyeliniserande
+      GBS.
+  - text: Fluktuerande muskelsvaghet förbättrad efter repetitiv aktivitetstestning.
+    correct: false
+    feedback: Fel — fluktuerande svaghet förbättrad vid aktivitet beskriver Lambert-Eaton
+      syndrom, inte GBS.
+  explanation: GBS är ett akut inflammatoriskt demyeliniserande polyneuropatiskt tillstånd
+    med snabbt progredierande, symmetrisk nedre > övre extremitetssvaghet, minskade/uteslutna
+    reflexer och förhöjt protein i CSF utan motsvarande cellökning (albuminocytologisk
+    dissociation). Elektrofysiologi visar ofta demyeliniserande förändringar som långsamma
+    ledningshastigheter.
+- id: med-gen-65a2-0006
+  type: multiple_choice
+  tags:
+  - Neuromuskulär
+  - Myasthenia gravis
+  question: Vilket test är mest användbart för att differentiera myasthenia gravis
+    (MG) från Lambert-Eaton myasthetiskt syndrom (LEMS)?
+  image: null
+  options:
+  - text: Fysiologisk provning med repetitiv nervstimulering och mätning av summatorisk
+      muskelrespons (increment vs decrement).
+    correct: true
+    feedback: Rätt — LEMS visar increment vid högfrekvent stimulering och MG visar
+      decrement vid lågfrekvent stimulering.
+  - text: Serologi med anti-AChR-antikroppar; negativt test utesluter LEMS.
+    correct: false
+    feedback: Fel — anti-AChR-antikroppar är ofta positiva vid MG men är inte tillförlitliga
+      för att utesluta LEMS.
+  - text: Uttalad pupilldilatation efter edrofoniumtest.
+    correct: false
+    feedback: Fel — edrofoniumtest påverkar muskelsvagheten men är inte ett bra sätt
+      att särskilja MG från LEMS via pupiller.
+  - text: Motorisk ledningsundersökning som visar förlängd distal latens i medianusnerven.
+    correct: false
+    feedback: Fel — sådan förlängd latens tyder på perifer neuropati eller entrapment,
+      inte differentiering mellan MG och LEMS.
+  explanation: Repetitiv nervstimulering visar klassisk decremental respons vid lågfrekvent
+    stimulering i MG, medan LEMS karaktäriseras av en förbättrad (incremental) respons
+    efter högfrekvent stimulering eller maximal frivillig kontraktion. Serologi och
+    klinik kompletterar diagnostiken men elektrofysiologi är oftast avgörande för
+    differentiering.
+- id: med-gen-65a2-0007
+  type: multiple_choice
+  tags:
+  - Parkinson
+  - Neurodegeneration
+  question: Vilken patologisk förändring i centrala nervsystemet är mest direkt kopplad
+    till Parkinsons sjukdoms motoriska kärnsymptom?
+  image: null
+  options:
+  - text: Förlust av dopaminerga neuron i substantia nigra pars compacta och Lewy-kroppar
+      bestående av alfa-synuklein.
+    correct: true
+    feedback: Rätt — dopamineri degeneration i SNc och alfa-synuklein-inkorporerade
+      Lewy-kroppar är Parkinsons kännetecken.
+  - text: Prionprotein-ackumulering i kortex och basalganglier.
+    correct: false
+    feedback: Fel — prionackumulering ger prionsjukdomar, inte Parkinsons sjukdom.
+  - text: Beta-amyloid plaque och neurofibrillära tangles i hippocampus.
+    correct: false
+    feedback: Fel — detta beskriver Alzheimers patologi snarare än Parkinsons.
+  - text: Amyloid angiopati i meningeala kärl.
+    correct: false
+    feedback: Fel — amyloid angiopati kopplas till lobära blödningar och demens, inte
+      primärt till Parkinsons motorik.
+  explanation: Parkinsons sjukdom innebär selektiv degeneration av dopaminerga neuron
+    i substantia nigra pars compacta med förekomst av Lewy-kroppar innehållande alfa-synuklein.
+    Denna förlust minskar nigrostriatala dopaminerga projektioner och leder till de
+    klassiska extrapyramidala motoriska symptomen.
+- id: med-gen-65a2-0008
+  type: multiple_choice
+  tags:
+  - Parkinson
+  - Differentialdiagnos
+  question: Vilket kliniskt tecken talar mest för progressiv supranukleär pares (PSP)
+    snarare än idiopatisk Parkinsons sjukdom?
+  image: null
+  options:
+  - text: Tidigt postural instabilitet med återkommande fall och vertikal blickpares,
+      särskilt nedåt.
+    correct: true
+    feedback: Rätt — tidiga fall och supranukleär blickpares är typiskt för PSP.
+  - text: God initial respons på levodopa med tydlig förbättring av tremor och rigiditet.
+    correct: false
+    feedback: Fel — god levodoparespons är vanligare vid idiopatisk Parkinsons sjukdom
+      än vid PSP.
+  - text: Enbart unilateral vilotremor utan tutande gångsvårigheter.
+    correct: false
+    feedback: Fel — unilateral vilotremor utan tidiga fall talar mer för idiopatisk
+      Parkinsons sjukdom.
+  - text: Prominent autonom dysfunktion med snabb progression till ansträngningssynkope.
+    correct: false
+    feedback: Fel — uttalad autonom dysfunktion i tidigt stadium pekar snarare mot
+      MSA än PSP.
+  explanation: PSP kännetecknas av tidig postural instabilitet med frekventa fall
+    och supranukleära blickpareser (ofta nedsatt nedåtblick). Till skillnad från idiopatisk
+    Parkinsons får PSP-patienter ofta dålig eller kortvarig respons på levodopa och
+    visar mer frontala/exekutiva symptom.
+- id: med-gen-65a2-0009
+  type: multiple_choice
+  tags:
+  - Epilepsi
+  - Akutbehandling
+  question: Vid generaliserat tonisk-kloniskt status epilepticus som inte svarat på
+    initiala bensodiazepiner, vilket läkemedel är lämpligast som nästa steg enligt
+    vanliga riktlinjer?
+  image: null
+  options:
+  - text: Levetiracetam intravenöst eller fosfenytoin/fenytoin som andra linjens terapi.
+    correct: true
+    feedback: Rätt — levetiracetam eller fosfenytoin är etablerade andralinjealternativ
+      vid benzodiazepinresistent status.
+  - text: Sätt patienten i djup hypotermi för att minska cerebralt metabolt behov.
+    correct: false
+    feedback: Fel — hypotermi är inte standardbehandling för status epilepticus.
+  - text: Ge enteral valproat via sond som primärt nästa steg i akutrummet.
+    correct: false
+    feedback: Fel — enteraltadministration är olämpligt i aktivt status och intravenöst
+      valproat eller andra IV-alternativ används istället.
+  - text: Administrera naloxon som antidot för eventuell opiatöverdos.
+    correct: false
+    feedback: Fel — naloxon adresserar opiatöverdos, inte benzodiazepinresistent epileptisk
+      aktivitet.
+  explanation: Efter att ett bensodiazepin (t.ex. IV lorazepam) har givits och status
+    kvarstår rekommenderas i akut skede intravenöst antiepileptikum såsom levetiracetam,
+    fosfenytoin/fenytoin eller valproat beroende på kontraindikationer. Valet styrs
+    av säkerhetsprofil, interaktioner och klinisk rutin, men enteral behandling är
+    inte lämplig i oåtkomlig luftväg eller pågående kramper.
+- id: med-gen-65a2-0010
+  type: multiple_choice
+  tags:
+  - ICP
+  - Akutbehandling
+  question: Vilken åtgärd har snabbast effekt för att transientt sänka förhöjt intrakraniellt
+    tryck (ICP) hos en patient med akut neurologisk försämring?
+  image: null
+  options:
+  - text: Intravenös mannitol eller hyperton NaCl (3%) som osmotisk behandling.
+    correct: true
+    feedback: Rätt — osmotiska diuretika sänker snabbt ICP genom att dra ut vätska
+      från hjärnparenkymet.
+  - text: Långsam infusion av glukos för att förbättra hjärnmetabolismen.
+    correct: false
+    feedback: Fel — glukostillförsel påverkar inte ICP akut och kan förvärra cerebral
+      ödem i vissa fall.
+  - text: Långsam höjning av PaCO2 med minskad ventilation.
+    correct: false
+    feedback: Fel — hyperkapni ökar cerebralt blodflöde och höjer ICP, inte sänker
+      det.
+  - text: Tidigt intravenöst steroidbehandlingsprotokoll för alla typer av hjärnödem.
+    correct: false
+    feedback: Fel — steroider är indicerade vid tumörrelaterat eller vasogent ödem
+      men har inte snabb effekt vid cytotoxiskt ödem eller trauma.
+  explanation: Osmotiska medel som mannitol eller hyperton NaCl ger snabb sänkning
+    av intrakraniellt tryck genom att skapa en osmotisk gradient som minskar hjärnvolym.
+    Hyperkapni ökar och hypocapni minskar ICP (kortvarigt), men avsiktlig hyperkapni
+    är kontraindicerat; steroider har selektiv indikation och är inte en akut universalåtgärd.
+- id: med-gen-65a2-0011
+  type: multiple_choice
+  tags:
+  - Hydrocefalus
+  - Geriatrik
+  question: Vilken klinisk triad är klassisk för normaltryckshydrocefalus (NPH) och
+    vad är den diagnostiska utredningen för att förutse benägenhet för shuntrespons?
+  image: null
+  options:
+  - text: 'Gångstörning, demens och urininkontinens; diagnostiskt test: stor ventrikelvidgning
+      på CT/MR och förbättring efter lägesbetingad spinaltap (stortalpunkt).'
+    correct: true
+    feedback: Rätt — triaden och spinaltap-test används för att selektera shuntkandidater.
+  - text: 'Ataxi, ljuskänslighet och synnedsättning; diagnostiskt test: EEG som visar
+      specifika vågmönster.'
+    correct: false
+    feedback: Fel — dessa tecken och EEG är inte typiska eller diagnostiska för NPH.
+  - text: 'Huvudvärk, illamående och kräkningar; diagnostiskt test: angiografi för
+      att hitta venös obstruktion.'
+    correct: false
+    feedback: Fel — dessa symtom beskriver mer förhöjt ICP eller masslesion, inte
+      NPH.
+  - text: 'Progredierande perifer neuropati, viktminskning och nattsvettningar; diagnostiskt
+      test: lumbalpunktion som visar bakteriell infektion.'
+    correct: false
+    feedback: Fel — detta passar inte med NPH-kliniken eller diagnostiken.
+  explanation: Normaltryckshydrocefalus karakteriseras av den klassiska triaden gångstörning
+    (vanligtvis bredbasig), kognitiv svikt och urininkontinens tillsammans med ventrikelvidgning
+    på bild. Ett stort tapp (stortalpunkt) eller testspinaltap som ger temporär förbättring
+    i gångfunktion används kliniskt för att förutse sannolik shuntrespons.
+- id: med-gen-65a2-0012
+  type: multiple_choice
+  tags:
+  - Polyneuropati
+  - Diabetes
+  question: Vilket mönster vid nervledningsundersökning (ENG) är mest förenligt med
+    distal symmetrisk sensorimotorisk polyneuropati vid diabetes?
+  image: null
+  options:
+  - text: Symmetrisk minskad amplitud och förlängd distal latens i nedre extremiteter
+      med axonal dominans.
+    correct: true
+    feedback: Rätt — diabetisk polyneuropati är oftast axonal och börjar distalt med
+      lägre amplituder.
+  - text: Markant reduktion i ledningshastighet med block och temporal dispersion
+      över flera nerver, tyder på demyelinisering.
+    correct: false
+    feedback: Fel — uttalad demyeliniserande bild är mer typisk för CIDP/ärftliga
+      demyeliniserande neuropatier.
+  - text: Isolerad mononeuropati i n. peroneus med normal övrig konduktion.
+    correct: false
+    feedback: Fel — isolerad mononeuropati talar för kompression eller lokal skada,
+      inte diffus diabetisk polyneuropati.
+  - text: Ren autonom neuropati med normalt sensoriskt och motoriskt ENG.
+    correct: false
+    feedback: Fel — autonom neuropati kan förekomma men klassisk diabetisk polyneuropati
+      ger sensorimotoriska ENG-förändringar.
+  explanation: Diabetisk distal symmetrisk polyneuropati är oftast en distal axonal
+    neuropati som visar nedsatta amplituder och ibland mild förlängd distal latens,
+    mest uttalat i nedre extremiteter. Demyeliniserande mönster med block och kraftig
+    hastighetsminskning pekar istället mot CIDP eller ärftliga neuropatier.
+- id: med-gen-65a2-0013
+  type: multiple_choice
+  tags:
+  - TIA
+  - Riskfaktorer
+  question: Vilket uttalande om TIA (transitorisk ischemisk attack) och sekundärprevention
+    är mest korrekt?
+  image: null
+  options:
+  - text: Patienter med TIA bör utredas omedelbart och får ofta ASA + klopidogrel
+      kortvarigt om non-cardioembolic orsak misstänks.
+    correct: true
+    feedback: Rätt — snabba utredningar och dubbel trombocythämning kort tid efter
+      högrisk-TIA kan minska återfall.
+  - text: Warfarin är förstahandsprevention efter alla TIA för att förebygga recidiv.
+    correct: false
+    feedback: Fel — antikoagulantia indikeras främst vid kardioembolisk etiologi (t.ex.
+      förmaksflimmer), inte rutinmässigt vid alla TIA.
+  - text: Statinbehandling bör undvikas efter TIA om LDL är normalt.
+    correct: false
+    feedback: Fel — statiner rekommenderas ofta oavsett LDL-nivå för sekundärprevention
+      av cerebrovaskulär sjukdom.
+  - text: Blodtrycksbehandling bör utsättas akut efter en TIA för att förhindra hypoperfusion.
+    correct: false
+    feedback: Fel — adekvat blodtryckskontroll är viktig för sekundärprevention och
+      bör normalt inte utsättas utan särskild anledning.
+  explanation: Vid TIA krävs snabb diagnostik och riskstratifiering; för non-cardioembolisk
+    hög risk kan kortvarig dubbel trombocythämmning (ASA + klopidogrel) övervägas
+    de första veckorna. Antikoagulantia används främst vid påvisad kardioembolisk
+    källa, statiner rekommenderas för sekundärprevention oavsett initialt LDL och
+    blodtrycket bör kontrolleras, inte abrupt sänkas.
+- id: med-gen-65a2-0014
+  type: multiple_choice
+  tags:
+  - Cerebral venös trombos
+  - Neurovaskulär
+  question: Vilket kliniskt fynd är särskilt suggestivt för cerebral venös sinus-trombos
+    (CVST)?
+  image: null
+  options:
+  - text: Subakut huvudvärk ofta med fokalneurologiska bortfall eller kramper hos
+      en yngre kvinna på p-piller.
+    correct: true
+    feedback: Rätt — CVST ger ofta huvudvärk och kan förena sig med fokala symptom
+      eller epileptiska anfall, särskilt hos unga kvinnor.
+  - text: Plötslig, svår ensidig nacksmärta vid rotation och palpabel pulsation över
+      karotisstudie.
+    correct: false
+    feedback: Fel — detta beskriver snarare karotisdissektion-relaterade fynd.
+  - text: Bilaterala handdomningar och sensorisk nivå vid bröstkorgen.
+    correct: false
+    feedback: Fel — detta tyder på cervikal ryggmärgspåverkan och inte CVST.
+  - text: Isolerad anterograd amnesi utan huvudvärk eller krampanfall.
+    correct: false
+    feedback: Fel — isolerad amnesi är mindre typisk för CVST.
+  explanation: Cerebral venös trombos uppträder ofta med subakut, progressiv huvudvärk
+    och kan ge fokala neurologiska symptom eller kramper; riskfaktorer inkluderar
+    p-piller, graviditet, postpartumperiod och hyperkoagulabilitet. Diagnosen bekräftas
+    genom MR venografi eller CT venografi.
+- id: med-gen-65a2-0015
+  type: multiple_choice
+  tags:
+  - Kranialnerv
+  - Neuroanatomi
+  question: En patient har diplopi och ptos med pupilpåverkan (stor, ljusstel pupill)
+    och ögonmotorikspares i alla riktningar — vilken lesion är mest sannolik?
+  image: null
+  options:
+  - text: Oculomotoriuspares sekundärt till aneurysm i posterior communicating-arterien
+      (PCom).
+    correct: true
+    feedback: Rätt — aneurysm i PCom kan ge extern oculomotoriuspares inklusive pupilpåverkan.
+  - text: Facialispares (VII) perifer orsak.
+    correct: false
+    feedback: Fel — facialispares ger inte direkt påverkan på ögonmotoriken eller
+      pupillstorlek i denna omfattning.
+  - text: Lesion i abducensnerven (VI) enkelsidigt.
+    correct: false
+    feedback: Fel — VI-pares ger enbart abduceringssvaghet, inte ptos och pupilpåverkan.
+  - text: Skada på synnerven (II) intracerebralt.
+    correct: false
+    feedback: Fel — n. II-påverkan ger synfältsdefekter men inte ptos och bred pupill
+      med ögonmotorikspares.
+  explanation: En komplett oculomotoriuspares med ptos, utåtställd ögonställning och
+    en dilaterad, ljusstel pupill är klassiskt för perifer tredje kranialnervspåverkan,
+    och ett posterior communicating-aneurysm kan komprimera parasympatiska fibrer
+    extern till nerven och ge pupillpåverkan. Centrala lesioner ger ofta andra kombinationer
+    och sparar ibland pupillen.
+- id: med-gen-65a2-0016
+  type: multiple_choice
+  tags:
+  - MS
+  - Neuroimmunologi
+  question: Vilket fynd i spinalvätskan är mest specifikt för multipel skleros (MS)?
+  image: null
+  options:
+  - text: Oligoklonala IgG-band i CSF som inte finns i serum.
+    correct: true
+    feedback: Rätt — oligoklonala IgG-band i CSF är ett typiskt fynd vid MS.
+  - text: Hög neutrofilt antal och lågt glukos i CSF.
+    correct: false
+    feedback: Fel — sådana fynd talar för bakteriell meningit, inte MS.
+  - text: Högt antal röda blodkroppar utan xantokromi.
+    correct: false
+    feedback: Fel — röda blodkroppar utan xantokromi tyder på traumatiskt LP eller
+      blödning i provet.
+  - text: Negativ oligoklonala band men klart förhöjt Laktat i CSF.
+    correct: false
+    feedback: Fel — förhöjt laktat och avsaknad av oligoklonala band pekar inte specifikt
+      på MS och kan tyda på mitochondrial metabolismstörning.
+  explanation: Oligoklonala IgG-band i CSF som saknas i serum är ett kännetecken för
+    intratekal immunoglobulinsyntes och ses hos majoriteten av patienter med MS. Detta
+    fynd är inte helt patognomontiskt men är starkt stödjande i kombination med klinik
+    och MRI-fynd.
+- id: med-gen-65a2-0017
+  type: multiple_choice
+  tags:
+  - Cerebellum
+  - Neuroanatomi
+  question: Vilket kliniskt mönster talar främst för en cerebellär hemisfärsskada
+    snarare än en vermis-lesion?
+  image: null
+  options:
+  - text: Ipsilateral extremitetsataxi och dysmetri med intakt balans och gång.
+    correct: true
+    feedback: Rätt — hemisfärsskada ger ipsilateral koordinationstörning i extremiteter
+      medan vermis påverkar balans.
+  - text: Bredspårig gång och truncal ataxi utan uttalad extremitetsdysmetri.
+    correct: false
+    feedback: Fel — dessa symtom är typiska för vermis-påverkan.
+  - text: Ren vertikal nystagmus utan ataxi.
+    correct: false
+    feedback: Fel — isolerad nystagmus kan komma från vestibulärt system eller flocculonodulära
+      loben, inte enbart cerebellär hemisfär.
+  - text: Bilaterala handdysmetrier med bevarad finmotorik i benen.
+    correct: false
+    feedback: Fel — bilateral handdysmetri utan benpåverkan är osannolikt vid unilateral
+      hemisfärsskada.
+  explanation: En cerebellär hemisfärslokalisation ger oftast ipsilaterala koordinationstörningar
+    i arm och ben (dysmetri, dysdiadokokinesi), medan vermis- eller flocculonodulär
+    skada främst påverkar balans och gång och ger truncal ataxi. Klinisk undersökning
+    av extremitetskoordination och gångprofil hjälper lokalisera skadan.
+- id: med-gen-65a2-0018
+  type: multiple_choice
+  tags:
+  - Apraxi
+  - Frontoparietallob
+  question: Vilket av följande fynd tyder mest på ideatorisk apraxi och var sitter
+    lesionen oftast?
+  image: null
+  options:
+  - text: Oförmåga att utföra en serie multistegsliga uppgifter (t.ex. förbereda en
+      kopp te) trots intakt motorik och förståelse; lesion i vänster parietallob/inferior
+      parietal lobule.
+    correct: true
+    feedback: Rätt — ideatorisk apraxi ger problem med sekvenser av handlingar och
+      är kopplat till dominant parietallob.
+  - text: Oförmåga att imitera enkla handrörelser med båda händerna, bedöms som ideomotorisk
+      apraxi och lokaliseras till högra frontalloben.
+    correct: false
+    feedback: Fel — ideomotorisk apraxi handlar om imitation/gest och associeras oftare
+      med vänster (dominant) parietal/frontal cortex.
+  - text: Förlust av proprioception i handen utan apraxi; lesion i baksträngarna.
+    correct: false
+    feedback: Fel — proprioceptiv förlust är sensorisk och skiljer sig från apraxi
+      som är en motorplaneringsstörning.
+  - text: Patologisk spegling av rörelser i den kontra laterala extremiteten; lesion
+      i cerebellum.
+    correct: false
+    feedback: Fel — sådan spegling och cerebellär patologik är inte typisk för ideatorisk
+      apraxi.
+  explanation: Ideatorisk apraxi innebär förlust av förmågan att planera och genomföra
+    komplexa sekvenser av målmedvetna handlingar trots intakt motorik och förståelse,
+    och är ofta lokaliserad till dominant (vänster) parietallob eller temporoparietala
+    övergången. Skillnad mot ideomotorisk apraxi (gest- och imitation) kräver specifika
+    prövningar.
+- id: med-gen-65a2-0019
+  type: multiple_choice
+  tags:
+  - Neurotoxikologi
+  - Toxikologi
+  question: Vilken neurologisk komplikation är mest sannolik vid kronisk tungmetallförgiftning
+    med bly?
+  image: null
+  options:
+  - text: Perifer neuropati med motorisk svaghet, ofta i extensorer särskilt i övre
+      extremiteter (wrist drop).
+    correct: true
+    feedback: Rätt — kronisk blyförgiftning ger ofta motorisk neuropati med wrist
+      drop.
+  - text: Rapid-onset demens med tidig ataxi och myoklonier.
+    correct: false
+    feedback: Fel — dessa fynd är mer typiska för prion- eller vissa neurodegenerativa
+      sjukdomar.
+  - text: Isolerad perifer neuropati med ren sensorisk förlust i fötterna utan motorisk
+      påverkan.
+    correct: false
+    feedback: Fel — bly ger ofta motoriska symtom snarare än enbart sensorisk neuropati.
+  - text: Subakut utveckling av neuromuskulär junction blockad med förbättring efter
+      kolinesterashämmare.
+    correct: false
+    feedback: Fel — detta beskriver farmakologisk påverkan vid myastenia gravis/kolinesterasförgiftning,
+      inte blyförgiftning.
+  explanation: Kronisk blyförgiftning är associerad med en motorisk perifer neuropati
+    som ofta drabbar extensormuskler i övre extremiteter och leder till tecken som
+    'wrist drop'. Sensoriska symtom kan förekomma men motoriska bortfall är karakteristiska.
+- id: med-gen-65a2-0020
+  type: multiple_choice
+  tags:
+  - Metabol encefalopati
+  - Delirium
+  question: Vilket laboratoriefynd är viktigast att åtgärda omedelbart vid en patient
+    med akut förvirring och misstänkt metabol encefalopati?
+  image: null
+  options:
+  - text: Allvarlig hypernatremi eller hyponatremi med snabb förändring i osmolalitet.
+    correct: true
+    feedback: Rätt — akut stor natriumrubbning kan orsaka eller förvärra encefalopati
+      och kräver snabb men kontrollerad åtgärd.
+  - text: Lätt förhöjt leverenzym ALAT utan tecken på leversvikt.
+    correct: false
+    feedback: Fel — måttlig ALAT-stegring är ofta mindre akut och inte primär orsak
+      till delirium i avsaknad av leversvikt.
+  - text: Lätt anemi Hb 11 g/dL hos en äldre patient utan tecken på blödning.
+    correct: false
+    feedback: Fel — mild anemi är osannolikt att orsaka akut förvirring i sig.
+  - text: Kalknormalitet i serology utan elektrolytstörningar.
+    correct: false
+    feedback: Fel — normal kalcium är inte en akut handlingskrävande orsak till encefalopati
+      i detta scenario.
+  explanation: Akuta störningar i serumnatrium och osmolalitet kan snabbt påverka
+    hjärnans volym och medvetandenivå; både svår hyper- och hyponatremi är viktiga
+    och kräver snabb men kontrollerad korrigering. Andra labbavvikelser kan bidra
+    till encefalopati men är oftare sekundära eller mindre omedelbart farliga.

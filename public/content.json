@@ -3608,6 +3608,420 @@
       "source": "medical_exam/diabetologi"
     },
     {
+      "id": "med-gen-1a3f-hhsdk",
+      "type": "multiple_choice",
+      "tags": [
+        "Diabetes",
+        "Akutmedicin"
+      ],
+      "question": "Vilket av f\u00f6ljande laboratoriefynd talar mest f\u00f6r hyperosmol\u00e4rt hyperglykemiskt tillst\u00e5nd (HHS) snarare \u00e4n f\u00f6r diabetisk ketoacidos (DKA)?",
+      "image": null,
+      "options": [
+        {
+          "text": "Plasmaglukos > 30 mmol/L med serumosmolalitet > 320 mOsm/kg och fr\u00e5nvaro av signifikanta ketoner",
+          "correct": true,
+          "feedback": "HHS karakteriseras av extrem hyperglykemi och h\u00f6g osmolalitet med ringa ketonemi."
+        },
+        {
+          "text": "Art\u00e4rblodgas med pH < 7,25 och f\u00f6rh\u00f6jd anjongap",
+          "correct": false,
+          "feedback": "L\u00e5gt pH och h\u00f6g anjongap talar snarare f\u00f6r DKA \u00e4n f\u00f6r HHS."
+        },
+        {
+          "text": "Sv\u00e5r hypokalemi (K+ < 3,0 mmol/L) utan acidos",
+          "correct": false,
+          "feedback": "Hypokalemi kan f\u00f6rekomma i b\u00e5da tillst\u00e5nden men \u00e4r inte diagnostiskt f\u00f6r HHS."
+        },
+        {
+          "text": "Hyponatremi (s-K < 125 mmol/L) med normal plasmaosmolalitet",
+          "correct": false,
+          "feedback": "Hyponatremi med normal osmolalitet utesluter inte DKA/HHS men \u00e4r inte typiskt f\u00f6r HHS."
+        }
+      ],
+      "explanation": "HHS karakteriseras av mycket h\u00f6g plasmaglukos och \u00f6kad serumosmolalitet (>320 mOsm/kg) med minimal ketonbildning och ofta relativt normal syrabasstatus. DKA \u00e5 andra sidan har uttalad ketos och metabol acidos med s\u00e4nkt pH och \u00f6kad anjongap.",
+      "source": "medical_exam/diabetologi"
+    },
+    {
+      "id": "med-gen-2b7c-gestdiag",
+      "type": "multiple_choice",
+      "tags": [
+        "Diabetes",
+        "Gestation"
+      ],
+      "question": "Vilket uttalande om screening och diagnostik av graviditetsdiabetes (GDM) i Sverige \u00e4r mest korrekt enligt nuvarande praxis?",
+      "image": null,
+      "options": [
+        {
+          "text": "Alla gravida b\u00f6r erbjudas 75 g oral glukostoleranstest (OGTT) i graviditetsvecka 24\u201328 och diagnos st\u00e4lls vid n\u00e5gon av tr\u00f6sklarna fasting \u22655,1 mmol/L, 1 h \u226510,0 mmol/L eller 2 h \u22658,5 mmol/L.",
+          "correct": true,
+          "feedback": "Nuvarande internationella kriterier (IADPSG/WORLD) anv\u00e4nds ofta och inkluderar dessa tr\u00f6sklar i v 24\u201328."
+        },
+        {
+          "text": "Screening via fasting-glukos p\u00e5 rutin i vecka 12 \u00e4r tillr\u00e4ckligt f\u00f6r att f\u00e5nga majoriteten av GDM.",
+          "correct": false,
+          "feedback": "Fasting i vecka 12 identifierar tidig diabetes men saknar k\u00e4nslighet f\u00f6r GDM uppkommer senare; OGTT i v24\u201328 \u00e4r standard."
+        },
+        {
+          "text": "Endast kvinnor med BMI >35 eller tidigare GDM b\u00f6r genomg\u00e5 OGTT under graviditet.",
+          "correct": false,
+          "feedback": "Selektiv screening anv\u00e4nds i vissa riktlinjer men universal OGTT i v24\u201328 rekommenderas ofta f\u00f6r att inte missa fall."
+        },
+        {
+          "text": "Diagnos kr\u00e4ver f\u00f6rh\u00f6jt fastingv\u00e4rde endast eftersom postprandiella v\u00e4rden inte p\u00e5verkar graviditetsutfallet.",
+          "correct": false,
+          "feedback": "Postprandiella v\u00e4rden korrelerar starkt med komplikationsrisk och ing\u00e5r d\u00e4rf\u00f6r i diagnoskriterierna."
+        }
+      ],
+      "explanation": "Internationella och svenska rutiner rekommenderar ofta 75 g OGTT i graviditetsvecka 24\u201328 med tr\u00f6sklar enligt IADPSG (fasting \u22655,1, 1h \u226510,0, 2h \u22658,5 mmol/L). Tidig fasting-glukos f\u00e5ngar preexisterande eller tidig manifest diabetes men r\u00e4cker inte f\u00f6r att uppt\u00e4cka GDM som utvecklas senare.",
+      "source": "medical_exam/diabetologi"
+    },
+    {
+      "id": "med-gen-3c9d-glp1cv",
+      "type": "multiple_choice",
+      "tags": [
+        "Diabetes",
+        "Farmakoterapi",
+        "GLP-1"
+      ],
+      "question": "Vilken mekanism \u00e4r mest sannolik f\u00f6r att f\u00f6rklara de kardiovaskul\u00e4ra f\u00f6rdelarna som observerats med vissa GLP\u20111 receptoragonister hos patienter med typ 2\u2011diabetes?",
+      "image": null,
+      "options": [
+        {
+          "text": "Direkt antiinflammatorisk effekt i k\u00e4rlv\u00e4ggen kombinerat med f\u00f6rb\u00e4ttrad glykemisk kontroll och viktminskning",
+          "correct": true,
+          "feedback": "GLP\u20111\u2011agonister ger metabol p\u00e5verkan och har visats ha direkta vaskul\u00e4ra och antiinflammatoriska effekter som sannolikt bidrar till CV\u2011nytta."
+        },
+        {
+          "text": "Renodlad blodtryckss\u00e4nkning till f\u00f6ljd av perifer vasodilatation hos alla patienter",
+          "correct": false,
+          "feedback": "GLP\u20111 ger m\u00e5ttlig blodtryckss\u00e4nkning men det f\u00f6rklarar inte helt den observerade CV\u2011effekten."
+        },
+        {
+          "text": "\u00d6kad natriures via h\u00e4mning av SGLT2 i proximala tubuli",
+          "correct": false,
+          "feedback": "GLP\u20111\u2011agonister p\u00e5verkar inte SGLT2\u2011medi\u00e4r natriures; det \u00e4r SGLT2\u2011h\u00e4mmare som har den effekten."
+        },
+        {
+          "text": "Prim\u00e4rt antikoagulerande effekt vilket minskar trombosrisk",
+          "correct": false,
+          "feedback": "Ingen tydlig antikoagulerande mekanism f\u00f6r GLP\u20111\u2011agonister har visats i stora studier."
+        }
+      ],
+      "explanation": "Kardiovaskul\u00e4ra f\u00f6rdelar med vissa GLP\u20111\u2011agonister tros bero p\u00e5 en kombination av b\u00e4ttre glykemisk kontroll, viktminskning och direkta positiva effekter p\u00e5 k\u00e4rlv\u00e4ggens inflammation och funktion. Denna multifaktoriella mekanism skiljer sig fr\u00e5n SGLT2\u2011h\u00e4mmarnas fr\u00e4mst hemodynamiska/renal skyddande effekter.",
+      "source": "medical_exam/diabetologi"
+    },
+    {
+      "id": "med-gen-4d2e-sglt2preop",
+      "type": "multiple_choice",
+      "tags": [
+        "Diabetes",
+        "SGLT2",
+        "Behandling"
+      ],
+      "question": "Vad \u00e4r mest korrekt rekommendation f\u00f6r hantering av SGLT2\u2011h\u00e4mmare inf\u00f6r planerad elektiv kirurgi f\u00f6r att minska risken f\u00f6r euglykemisk ketoacidos?",
+      "image": null,
+      "options": [
+        {
+          "text": "S\u00e4tta ut SGLT2\u2011h\u00e4mmaren 3 dagar f\u00f6re elektiv operation (5 dagar vid l\u00e4kemedel med l\u00e5ng halvering) och \u00e5terins\u00e4tta f\u00f6rst n\u00e4r patient \u00e4ter och dricker normalt.",
+          "correct": true,
+          "feedback": "Offentliga rekommendationer f\u00f6respr\u00e5kar uts\u00e4ttning flera dagar f\u00f6re operation och \u00e5terins\u00e4ttning efter normal oral intake f\u00f6r att minska euglykemisk DKA\u2011risk."
+        },
+        {
+          "text": "Forts\u00e4tta SGLT2\u2011h\u00e4mmaren fram till operationsdagen eftersom den minskar perioperativ kardiovaskul\u00e4r risk.",
+          "correct": false,
+          "feedback": "Perioperativ fortsatt behandling \u00f6kar risken f\u00f6r euglykemisk ketoacidos och rekommenderas ej."
+        },
+        {
+          "text": "S\u00e4tta ut endast vid kritisk sjukdom eller vid behov av l\u00e5ng fasta; annars kan medicinen forts\u00e4tta.",
+          "correct": false,
+          "feedback": "Rutinm\u00e4ssig uts\u00e4ttning flera dagar f\u00f6re elektiv kirurgi rekommenderas oberoende av planerad fasta."
+        },
+        {
+          "text": "Byta till metformin dagarna f\u00f6re operation f\u00f6r att undvika DKA\u2011risk.",
+          "correct": false,
+          "feedback": "Metformin byts inte in f\u00f6r att f\u00f6rebygga euglykemisk DKA och har egna perioperativa \u00f6verv\u00e4ganden (laktatacidos)."
+        }
+      ],
+      "explanation": "SGLT2\u2011h\u00e4mmare b\u00f6r vanligen s\u00e4ttas ut flera dagar f\u00f6re elektiv kirurgi (vanligen 3 dagar, l\u00e4ngre f\u00f6r vissa preparat) och inte \u00e5terins\u00e4ttas f\u00f6rr\u00e4n patienten har stabil oral intag och normal hemodynamik. Detta minskar risken f\u00f6r euglykemisk ketoacidos som kan uppst\u00e5 vid fasta/stress.",
+      "source": "medical_exam/diabetologi"
+    },
+    {
+      "id": "med-gen-5e6f-footom",
+      "type": "multiple_choice",
+      "tags": [
+        "Diabetes",
+        "Komplikationer",
+        "Infektion"
+      ],
+      "question": "En 62\u2011\u00e5rig man med diabetes har ett s\u00e5r p\u00e5 stort\u00e5n och misstanke om djup infektion/osteomyelit. Vilket av f\u00f6ljande \u00e4r mest l\u00e4mpligt som n\u00e4sta steg f\u00f6r att utreda osteomyelit?",
+      "image": null,
+      "options": [
+        {
+          "text": "Magnetkameraunders\u00f6kning (MRI) av foten f\u00f6r att p\u00e5visa benengagemang",
+          "correct": true,
+          "feedback": "MRI har h\u00f6g sensitivitet och specificitet f\u00f6r osteomyelit i foten och \u00e4r f\u00f6rstahandsval vid os\u00e4kerhet."
+        },
+        {
+          "text": "R\u00f6ntgen av foten \u00e4r tillr\u00e4ckligt f\u00f6r att utesluta osteomyelit tidigt i f\u00f6rloppet",
+          "correct": false,
+          "feedback": "R\u00f6ntgen visar ofta f\u00f6rst sena f\u00f6r\u00e4ndringar och saknar k\u00e4nslighet tidigt f\u00f6r osteomyelit."
+        },
+        {
+          "text": "Blododlingar r\u00e4cker f\u00f6r att diagnostisera osteomyelit eftersom bakterier alltid ses i blodet vid skelettinfektion",
+          "correct": false,
+          "feedback": "Blododlingar kan vara positiva men \u00e4r ofta negativa vid lokal osteomyelit och r\u00e4cker inte f\u00f6r diagnos."
+        },
+        {
+          "text": "Amputation b\u00f6r omedelbart utf\u00f6ras vid allt s\u00e5r med misst\u00e4nkt osteomyelit hos diabetiker",
+          "correct": false,
+          "feedback": "Amputation \u00e4r \u00f6verdriven utan bilddiagnostik och multidisciplin\u00e4r bed\u00f6mning."
+        }
+      ],
+      "explanation": "MRI \u00e4r det mest k\u00e4nsliga och specifika bilddiagnostiska verktyget f\u00f6r att p\u00e5visa osteomyelit i foten och rekommenderas n\u00e4r klinik eller probe\u2011to\u2011bone test tyder p\u00e5 benengagemang. R\u00f6ntgen har l\u00e5g sensitivitet tidigt, blododlingar kan vara negativa och kirurgisk beslut kr\u00e4ver bild- och mikrobiologiskt underlag.",
+      "source": "medical_exam/diabetologi"
+    },
+    {
+      "id": "med-gen-6f1a-cgmtr",
+      "type": "multiple_choice",
+      "tags": [
+        "Diabetes",
+        "Diagnostik",
+        "CGM"
+      ],
+      "question": "Vilket p\u00e5st\u00e5ende om kontinuerlig glukosmonitorering (CGM) och 'time in range' (TIR) \u00e4r mest korrekt f\u00f6r patienter med typ 1\u2011diabetes?",
+      "image": null,
+      "options": [
+        {
+          "text": "M\u00e5let \u00e4r generellt \u226570 % TIR (3,9\u201310 mmol/L) eftersom detta korrelerar med HbA1c \u22487 % (53 mmol/mol) och minskad komplikationsrisk.",
+          "correct": true,
+          "feedback": "70 % TIR i 3,9\u201310 mmol/L motsvarar ungef\u00e4r ett HbA1c omkring 7 % och \u00e4r ett vedertaget m\u00e5l f\u00f6r m\u00e5nga vuxna med T1D."
+        },
+        {
+          "text": "TIR \u00e4r ointressant kliniskt eftersom HbA1c \u00e4r tillr\u00e4ckligt f\u00f6r att bed\u00f6ma glykemisk kontroll.",
+          "correct": false,
+          "feedback": "TIR tillf\u00f6r dynamisk information om hypoglykemi och glukosvariabilitet som HbA1c inte f\u00e5ngar."
+        },
+        {
+          "text": "M\u00e5let b\u00f6r vara \u226590 % TIR f\u00f6r alla patienter f\u00f6r att undvika komplikationer.",
+          "correct": false,
+          "feedback": "90 % \u00e4r ett orealistiskt m\u00e5l f\u00f6r de flesta vuxna och inte n\u00f6dv\u00e4ndigt f\u00f6r att minska komplikationer."
+        },
+        {
+          "text": "TIR definieras som andel tid under 3,0 mmol/L och \u00e4r prim\u00e4rt ett m\u00e5tt p\u00e5 hypoglykemirisk.",
+          "correct": false,
+          "feedback": "TIR avser oftast tid i targetintervallet (t.ex. 3,9\u201310 mmol/L), inte endast tid under 3,0 mmol/L."
+        }
+      ],
+      "explanation": "Time in range (vanligtvis 3,9\u201310 mmol/L) \u00e4r ett anv\u00e4ndbart CGM\u2011m\u00e5tt; m\u00e5l omkring \u226570 % korrelerar med HbA1c n\u00e4ra 7 % och \u00e4r associerat med l\u00e4gre risk f\u00f6r komplikationer. TIR kompletterar HbA1c genom att f\u00e5nga hypoglykemier och glukosvariabilitet.",
+      "source": "medical_exam/diabetologi"
+    },
+    {
+      "id": "med-gen-7a8b-pumpdka",
+      "type": "multiple_choice",
+      "tags": [
+        "Insulinbehandling",
+        "Diabetes"
+      ],
+      "question": "En patient med typ 1\u2011diabetes anv\u00e4nder insulinpump (snabbverkande analog). Pumpen slutar helt leverera insulin p.g.a. infusionssetoklusion. Ungef\u00e4r hur l\u00e5ng tid till kliniskt signifikant ketos/DKA kan uppst\u00e5 om inget \u00e5tg\u00e4rdas?",
+      "image": null,
+      "options": [
+        {
+          "text": "Cirka 4\u20138 timmar beroende p\u00e5 glykogenlager och exogen insulin kvar i subkutan v\u00e4vnad",
+          "correct": true,
+          "feedback": "Vid avbrott i snabbverkande insulin kan ketonbildning utvecklas inom n\u00e5gra timmar, ofta 4\u20138 timmar, hos insulinberoende patienter."
+        },
+        {
+          "text": "Vanligtvis >48 timmar eftersom ketos kr\u00e4ver l\u00e5ngvarig insulinbrist",
+          "correct": false,
+          "feedback": "Detta underskattar risken; DKA kan utvecklas snabbt i total insulinbrist."
+        },
+        {
+          "text": "Aldrig eftersom depotreserver av endogent insulin skyddar mot DKA",
+          "correct": false,
+          "feedback": "Typ 1\u2011patienter saknar tillf\u00f6rlitlig endogen insulinproduktion och kan snabbt utveckla DKA."
+        },
+        {
+          "text": "Inom 30\u201360 minuter eftersom ketoner bildas omedelbart vid insulinavbrott",
+          "correct": false,
+          "feedback": "Ketoacidos utvecklas inte s\u00e5 snabbt; det tar n\u00e5gra timmar innan signifikant ketonemi och acidos uppst\u00e5r."
+        }
+      ],
+      "explanation": "Vid abrupt avbrott i subkutant snabbverkande insulin hos typ 1\u2011diabetiker kan ketonbildning och progress till DKA ske relativt snabbt, ofta inom 4\u20138 timmar beroende p\u00e5 individuella faktorer. D\u00e4rf\u00f6r kr\u00e4vs tidig uppt\u00e4ckt och \u00e5tg\u00e4rd vid pumpfel.",
+      "source": "medical_exam/diabetologi"
+    },
+    {
+      "id": "med-gen-8b4c-nefro",
+      "type": "multiple_choice",
+      "tags": [
+        "Diabetes",
+        "Njurmedicin"
+      ],
+      "question": "Vilket av f\u00f6ljande fynd \u00e4r mest indicerande f\u00f6r att initiera ACE\u2011h\u00e4mmare (eller ARB) som f\u00f6rstahandsval vid diabetesrelaterad njurp\u00e5verkan f\u00f6r att bromsa progression?",
+      "image": null,
+      "options": [
+        {
+          "text": "U-albumin/kreatininkvot (U\u2011ACR) \u226530 mg/g (mikroalbuminuri) eller h\u00f6gre vid tv\u00e5 av tre prover",
+          "correct": true,
+          "feedback": "Mikroalbuminuri (U\u2011ACR \u226530 mg/g) \u00e4r en etablerad indikation f\u00f6r att initiera ACE\u2011h\u00e4mmare f\u00f6r nefroprotektion."
+        },
+        {
+          "text": "Isolerad l\u00e4tt s\u00e4nkning av eGFR till 55 ml/min utan albuminuri",
+          "correct": false,
+          "feedback": "S\u00e4nkt eGFR utan albuminuri kr\u00e4ver utredning men \u00e4r inte i sig en automatisk indikation f\u00f6r ACE\u2011h\u00e4mmare."
+        },
+        {
+          "text": "Normalt U\u2011ACR men tv\u00e5 \u00e5rs sv\u00e4ngande HbA1c \u00f6ver 9 %",
+          "correct": false,
+          "feedback": "D\u00e5lig glykemisk kontroll \u00e4r viktig att \u00e5tg\u00e4rda men utg\u00f6r inte i sig indikationen f\u00f6r ACE\u2011h\u00e4mmare utan albuminuri."
+        },
+        {
+          "text": "Urinmikroskop med r\u00f6da celler som tecken p\u00e5 glomerulonefrit",
+          "correct": false,
+          "feedback": "Misstanke om annan glomerul\u00e4r sjukdom kr\u00e4ver speciell utredning innan rutinm\u00e4ssig ACE\u2011h\u00e4mmarstart."
+        }
+      ],
+      "explanation": "Start av ACE\u2011h\u00e4mmare eller ARB rekommenderas vid mikro\u2011 eller makroalbuminuri (U\u2011ACR \u226530 mg/g vid upprepade prov) f\u00f6r att minska albuminuri och sakta njurprogression. Isolerad minskad eGFR utan albuminuri kr\u00e4ver vidare utredning och individuell bed\u00f6mning.",
+      "source": "medical_exam/diabetologi"
+    },
+    {
+      "id": "med-gen-9c2d-hypounaw",
+      "type": "multiple_choice",
+      "tags": [
+        "Diabetes",
+        "Hypoglykemi"
+      ],
+      "question": "Vilken intervention har b\u00e4st evidens f\u00f6r att \u00e5terst\u00e4lla hypoglykemimedvetenhet hos en person med typ 1\u2011diabetes och dokumenterad hypoglykemisk omedvetenhet?",
+      "image": null,
+      "options": [
+        {
+          "text": "Strukturerad utbildning och m\u00e5linriktad undvikande av hypoglykemier under 2\u20133 veckor (hypoglykemirestriktion)",
+          "correct": true,
+          "feedback": "Undvikande av hypoglykemier via intensiv utbildning och justering av behandling kan \u00e5terst\u00e4lla symptomigenk\u00e4nning p\u00e5 veckor."
+        },
+        {
+          "text": "Fortl\u00f6pande h\u00f6jning av l\u00e5ngtids\u2011HbA1c till >9 % f\u00f6r att minska hypoglykemier",
+          "correct": false,
+          "feedback": "Att avsiktligt acceptera mycket h\u00f6gt HbA1c \u00e4r skadligt och ej rekommenderat som behandling f\u00f6r hypoglykemimedvetenhet."
+        },
+        {
+          "text": "Daglig behandling med beta\u20112\u2011agonist f\u00f6r att \u00f6ka adrenerga symtom vid l\u00e5gt blodsocker",
+          "correct": false,
+          "feedback": "Beta\u2011agonister \u00e4r inte evidensbaserat f\u00f6r \u00e5terst\u00e4llande av hypoglykemimedvetenhet."
+        },
+        {
+          "text": "Pacemakerimplantation f\u00f6r att \u00f6ka symtom vid hypoglykemi",
+          "correct": false,
+          "feedback": "Pacemaker har ingen roll i behandling av hypoglykemimedvetenhet."
+        }
+      ],
+      "explanation": "Systematisk undvikande av hypoglykemier genom patientutbildning, CGM\u2011anv\u00e4ndning och behandlingsjustering under n\u00e5gra veckor har visat sig \u00e5terst\u00e4lla hypoglykemimedvetenhet hos m\u00e5nga patienter. Strategin minskar adrenerga och autonoma adaptationer som annars d\u00e4mpar symptom.",
+      "source": "medical_exam/diabetologi"
+    },
+    {
+      "id": "med-gen-aa7d-bariatricrem",
+      "type": "multiple_choice",
+      "tags": [
+        "Diabetes",
+        "Kirurgi",
+        "Behandling"
+      ],
+      "question": "Vilket av f\u00f6ljande \u00e4r den starkaste prediktorn f\u00f6r l\u00e5ngsiktig remission av typ 2\u2011diabetes efter bariatrisk kirurgi?",
+      "image": null,
+      "options": [
+        {
+          "text": "Kort duration av diabetes (<5 \u00e5r) och bevarad C\u2011peptidproduktion",
+          "correct": true,
+          "feedback": "Kort sjukdomsduration och intakt beta\u2011cellsfunktion (h\u00f6gt C\u2011peptid) \u00e4r viktiga prediktorer f\u00f6r remission."
+        },
+        {
+          "text": "H\u00f6g start\u00e5lder (>65 \u00e5r) oberoende av andra faktorer",
+          "correct": false,
+          "feedback": "H\u00f6g \u00e5lder \u00e4r oftast associerad med s\u00e4mre remission, inte b\u00e4ttre."
+        },
+        {
+          "text": "L\u00e5ng historia av insulinbehandling innan operation",
+          "correct": false,
+          "feedback": "L\u00e5ngvarig insulinbehandling antyder utt\u00f6md betacellsreserv och l\u00e4gre sannolikhet till remission."
+        },
+        {
+          "text": "Enbart h\u00f6g BMI (>50 kg/m\u00b2) utan h\u00e4nsyn till metabol profil",
+          "correct": false,
+          "feedback": "H\u00f6g BMI \u00f6kar sannolikheten f\u00f6r viktf\u00f6rlust men \u00e4r inte ensam b\u00e4sta prediktorn f\u00f6r glykemisk remission."
+        }
+      ],
+      "explanation": "B\u00e4sta prediktorer f\u00f6r remission efter metabol kirurgi \u00e4r kort diabetesduration och kvarvarande endogen insulinproduktion (h\u00f6g C\u2011peptid). L\u00e5ngvarig sjukdom och behov av insulin f\u00f6re operation minskar chansen f\u00f6r l\u00e5ngsiktig remission.",
+      "source": "medical_exam/diabetologi"
+    },
+    {
+      "id": "med-gen-bb9e-cvdstatins",
+      "type": "multiple_choice",
+      "tags": [
+        "Diabetes",
+        "Riskfaktorer"
+      ],
+      "question": "Vilket uttalande om sekund\u00e4r prevention av kardiovaskul\u00e4r sjukdom hos patienter med diabetes \u00e4r mest korrekt?",
+      "image": null,
+      "options": [
+        {
+          "text": "Hos diabetespatienter med etablerad aterosklerotisk kardiovaskul\u00e4r sjukdom \u00e4r h\u00f6gintensiv statinbehandling indicerad oberoende av LDL\u2011niv\u00e5.",
+          "correct": true,
+          "feedback": "H\u00f6gintensiva statiner rekommenderas vid etablerad ASCVD hos diabetiker f\u00f6r att minska \u00e5terinsjuknande."
+        },
+        {
+          "text": "Statinbehandling kan utel\u00e4mnas om HbA1c \u00e4r v\u00e4l kontrollerat (<7 %).",
+          "correct": false,
+          "feedback": "Glykemisk kontroll f\u00f6r\u00e4ndrar inte indiceringen f\u00f6r statin vid etablerad ASCVD."
+        },
+        {
+          "text": "ACE\u2011h\u00e4mmare \u00e4r kontraindicerade som sekund\u00e4rprevention efter hj\u00e4rtinfarkt hos diabetiker.",
+          "correct": false,
+          "feedback": "ACE\u2011h\u00e4mmare har ofta hj\u00e4rt\u2011 och njurprotektiva effekter och \u00e4r inte kontraindicerade i detta sammanhang."
+        },
+        {
+          "text": "Aspirin b\u00f6r aldrig anv\u00e4ndas vid sekund\u00e4rprevention hos diabetespatienter p\u00e5 grund av bl\u00f6dningsrisk.",
+          "correct": false,
+          "feedback": "Aspirin \u00e4r indicerat f\u00f6r sekund\u00e4rprevention hos patienter med manifest aterosklerotisk sjukdom om inga kontraindikationer f\u00f6religger."
+        }
+      ],
+      "explanation": "Vid etablerad aterosklerotisk hj\u00e4rt-k\u00e4rlsjukdom rekommenderas h\u00f6gintensiv statinbehandling oberoende av LDL\u2011niv\u00e5 hos patienter med diabetes f\u00f6r att reducera \u00e5terinsjuknande och mortalitet. Glykemi och statinindikation \u00e4r separata behandlingsm\u00e5l i sekund\u00e4r prevention.",
+      "source": "medical_exam/diabetologi"
+    },
+    {
+      "id": "med-gen-cc0f-sterbeh",
+      "type": "multiple_choice",
+      "tags": [
+        "Diabetes",
+        "Biverkningar",
+        "Farmakologi"
+      ],
+      "question": "Vilket av f\u00f6ljande biverkningsm\u00f6nster \u00e4r mest f\u00f6rknippat med SGLT2\u2011h\u00e4mmare och kr\u00e4ver s\u00e4rskild vaksamhet snarare \u00e4n vanligt insulin\u2011relaterad hypoglykemi?",
+      "image": null,
+      "options": [
+        {
+          "text": "\u00d6kad risk f\u00f6r genital svampinfektioner och vulvovaginit/ balanitis samt risk f\u00f6r euglykemisk ketoacidos i s\u00e4rskilda situationer",
+          "correct": true,
+          "feedback": "SGLT2\u2011h\u00e4mmare \u00f6kar glukos i urin och \u00e4r associerade med genitala mykoser och s\u00e4llan euglykemisk DKA."
+        },
+        {
+          "text": "Signifikant \u00f6kad frekvens av sv\u00e5ra hypoglykemier oberoende av konkomittant insulin",
+          "correct": false,
+          "feedback": "SGLT2\u2011h\u00e4mmare ger l\u00e5g hypoglykemirisk om de inte kombineras med insulin eller sulfonylurea."
+        },
+        {
+          "text": "Vanligtvis orsakar de akut pankreatit hos majoriteten av patienter",
+          "correct": false,
+          "feedback": "Pankreatit har prim\u00e4rt associerats med vissa GLP\u20111\u2011agonister, inte SGLT2\u2011h\u00e4mmare i stor utstr\u00e4ckning."
+        },
+        {
+          "text": "Orsakar typiskt signifikant levertoxicitet med f\u00f6rh\u00f6jda transaminaser hos de flesta",
+          "correct": false,
+          "feedback": "SGLT2\u2011h\u00e4mmare ger inte typiskt massiv leverp\u00e5verkan hos majoriteten av anv\u00e4ndare."
+        }
+      ],
+      "explanation": "SGLT2\u2011h\u00e4mmare \u00f6kar glukosuts\u00f6ndring i urin vilket leder till h\u00f6gre risk f\u00f6r genital svampinfektion och i speciella situationer, s\u00e4rskilt vid kirurgi/fasta eller insulinbrist, risk f\u00f6r euglykemisk ketoacidos. Hypoglykemi \u00e4r ovanligt om behandlingen inte kombineras med insulin eller sulfonylurea.",
+      "source": "medical_exam/diabetologi"
+    },
+    {
       "type": "multiple_choice",
       "tags": [
         "Binjure",
@@ -9433,6 +9847,686 @@
       "source": "medical_exam/neurologi"
     },
     {
+      "id": "med-gen-65a2-0001",
+      "type": "multiple_choice",
+      "tags": [
+        "Stroke",
+        "Akutbehandling"
+      ],
+      "question": "Vilket fynd hos en patient med akut ischemisk stroke talar starkast f\u00f6r att hen \u00e4r en kandidat f\u00f6r mekanisk trombektomi (endovaskul\u00e4r trombektomi)?",
+      "image": null,
+      "options": [
+        {
+          "text": "Symtomdebut f\u00f6r 10 timmar sedan, NIHSS 18 och CT-angio visar proximalt ockluderat M1-segment med synbar penumbra p\u00e5 perfusions-CT.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 proximalt stork\u00e4rlsocklusion med penumbra inom behandlingsf\u00f6nstret indikerar trombektomi."
+        },
+        {
+          "text": "Symtomdebut f\u00f6r 16 timmar sedan, NIHSS 6 och CT normal utan perfusionsdefekt.",
+          "correct": false,
+          "feedback": "Fel \u2014 l\u00e5ng tid fr\u00e5n debut och l\u00e5g NIHSS utan penumbra talar inte f\u00f6r trombektomi."
+        },
+        {
+          "text": "Symtomdebut f\u00f6r 2 timmar sedan, NIHSS 4 och CT-angio visar distal sm\u00e5k\u00e4rlsocklusion i en lob\u00e4r gren.",
+          "correct": false,
+          "feedback": "Fel \u2014 distal sm\u00e5k\u00e4rlsocklusion med l\u00e5g NIHSS \u00e4r generellt inte indikation f\u00f6r trombektomi."
+        },
+        {
+          "text": "Symtomdebut f\u00f6r 8 timmar sedan, patient p\u00e5 warfarin med INR 3,0 och CT visar stor ischemi i hela MCA-territoriet utan penumbra.",
+          "correct": false,
+          "feedback": "Fel \u2014 stor etablerad infarkt utan penumbra och h\u00f6g bl\u00f6dningsrisk g\u00f6r trombektomi ol\u00e4mplig."
+        }
+      ],
+      "explanation": "Mekanisk trombektomi \u00e4r framf\u00f6r allt indicerat vid akut stork\u00e4rlsocklusion i anteriora cirkulationen (t.ex. M1) med uttalad neurologisk p\u00e5verkan och p\u00e5visbar penumbra, \u00e4ven upp till 6\u201324 timmar beroende p\u00e5 imaging. Avsaknad av penumbra, l\u00e5g NIHSS eller distal ocklusion minskar sannolikheten f\u00f6r nytta, och etablerad stor infarkt eller h\u00f6g bl\u00f6dningsrisk \u00e4r kontraindikationer.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0002",
+      "type": "multiple_choice",
+      "tags": [
+        "Stroke",
+        "Neuroanatomi"
+      ],
+      "question": "En patient har pl\u00f6tslig hemianopsi med bevarat pupillreflex och of\u00f6r\u00e4ndrad medvetandeniv\u00e5 \u2014 vilken k\u00e4rlterritoriumsskada \u00e4r mest sannolik?",
+      "image": null,
+      "options": [
+        {
+          "text": "Ockipitalisloben ipsilateralt, oftast PCA-ocklusion.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 PCA-infarkt ger klassiskt homonym hemianopsi med bevarad motorik och pupillreflexer."
+        },
+        {
+          "text": "Basilarisocklusion i pons.",
+          "correct": false,
+          "feedback": "Fel \u2014 basilaris/ponsskada ger ofta hj\u00e4rnstamsm\u00e4rken som p\u00e5verkar medvetande eller kranialnerver."
+        },
+        {
+          "text": "Anterior cerebralarterie-infarkt.",
+          "correct": false,
+          "feedback": "Fel \u2014 ACA-infarkt ger fr\u00e4mst motoriska och frontala symptom, inte isolerad hemianopsi."
+        },
+        {
+          "text": "Subaraknoidalbl\u00f6dning i cirkumferensen.",
+          "correct": false,
+          "feedback": "Fel \u2014 SAH ger oftare akut huvudv\u00e4rk och meningeal status, inte isolerad hemianopsi."
+        }
+      ],
+      "explanation": "Homonym hemianopsi utan p\u00e5verkan av pupillreflexer eller medvetande tyder p\u00e5 lokaliserad occipitalcortex-p\u00e5verkan, oftast orsakad av posterior cerebral artery-ocklusion. Hj\u00e4rnstams- eller cerebell\u00e4ra lesioner brukar ge kranialnervsp\u00e5verkan, medvetsl\u00f6shet eller ataxi snarare \u00e4n isolerad synf\u00e4ltsdefekt.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0003",
+      "type": "multiple_choice",
+      "tags": [
+        "Subaraknoidalbl\u00f6dning",
+        "Neurovaskul\u00e4r"
+      ],
+      "question": "Vilket provfynd efter en lumbalpunktion \u00e4r mest diagnostiskt f\u00f6r subaraknoidalbl\u00f6dning n\u00e4r CT \u00e4r negativ?",
+      "image": null,
+      "options": [
+        {
+          "text": "Xantokromi i cerebrospinalv\u00e4tskan (CSF) utan r\u00f6d blodkroppsnedbrytning vid centr\u00edfugering.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 xantokromi indikerar \u00e4kta subaraknoidalbl\u00f6dning snarare \u00e4n traumatisk punktion."
+        },
+        {
+          "text": "H\u00f6gt antal r\u00f6da blodkroppar som minskar markant efter centr\u00edfugering.",
+          "correct": false,
+          "feedback": "Fel \u2014 minskning efter centrifugering talar f\u00f6r traumatiskt LP, inte SAH."
+        },
+        {
+          "text": "H\u00f6gt albumin utan pleocytos.",
+          "correct": false,
+          "feedback": "Fel \u2014 isolerat f\u00f6rh\u00f6jt albumin \u00e4r icke-specifikt och inte diagnostiskt f\u00f6r SAH."
+        },
+        {
+          "text": "L\u00e5gt glukos i CSF j\u00e4mf\u00f6rt med serum.",
+          "correct": false,
+          "feedback": "Fel \u2014 l\u00e5gt CSF-glukos ses vid bakteriell meningit, inte SAH."
+        }
+      ],
+      "explanation": "N\u00e4r CT inte visar bl\u00f6dning kan xantokromi i CSF (gulbrun f\u00e4rg fr\u00e5n hemoglobinmetaboliter) efter centrifugering bekr\u00e4fta subaraknoidalbl\u00f6dning och skilja detta fr\u00e5n ett blodigt prov p.g.a. traumatisk LP. Andra f\u00f6r\u00e4ndringar som h\u00f6gt RBC-antal utan kvarvarande xantokromi talar f\u00f6r provkontamination snarare \u00e4n SAH.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0004",
+      "type": "multiple_choice",
+      "tags": [
+        "Meningit",
+        "Akutbehandling"
+      ],
+      "question": "Vilket kliniskt scenario kr\u00e4ver att man ger empirisk antibiotikabehandling f\u00f6re bilddiagnostik och lumbalpunktion vid misst\u00e4nkt bakteriell meningit?",
+      "image": null,
+      "options": [
+        {
+          "text": "Patient med h\u00f6g feber, nackstyvhet och snabbt tilltagande medvetandep\u00e5verkan (somnolens) och fokala neurologiska bortfall.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 tecken p\u00e5 \u00f6kat intrakraniellt tryck eller fokalitet motiverar antibiotika f\u00f6re LP och bild. "
+        },
+        {
+          "text": "Patient med feber och endast l\u00e4tt huvudv\u00e4rk utan neurologiska fynd.",
+          "correct": false,
+          "feedback": "Fel \u2014 stabil patient utan fokalitet kan utredas med LP f\u00f6re antibiotika om ingen f\u00f6rdr\u00f6jning i v\u00e5rd uppst\u00e5r."
+        },
+        {
+          "text": "Patient med influensaliknande symtom utan meningeala tecken eller feber.",
+          "correct": false,
+          "feedback": "Fel \u2014 l\u00e5g misstanke f\u00f6r bakteriell meningit och antibiotika f\u00f6re LP \u00e4r inte indicerat."
+        },
+        {
+          "text": "Patient med kronisk huvudv\u00e4rk i flera m\u00e5nader utan feber eller nylig infektion.",
+          "correct": false,
+          "feedback": "Fel \u2014 kronisk presentation talar inte f\u00f6r akut bakteriell meningit och empirisk antibiotika \u00e4r inte motiverad."
+        }
+      ],
+      "explanation": "Vid misstanke om bakteriell meningit ska bilddiagnostik utf\u00f6ras f\u00f6re LP om det finns fokala neurologiska tecken, papill\u00f6dem eller nedsatt medvetande, och om s\u00e5dan bildning f\u00f6rdr\u00f6jer LP ska empirisk antibiotika ges omedelbart. Snabb behandling minskar mortalitet; stabila patienter utan dessa tecken kan genomg\u00e5 LP innan antibiotika.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0005",
+      "type": "multiple_choice",
+      "tags": [
+        "Guillain-Barr\u00e9",
+        "Neuroimmunologi"
+      ],
+      "question": "Vilket av f\u00f6ljande fynd \u00e4r mest karakt\u00e4ristiskt f\u00f6r Guillain\u2013Barr\u00e9-syndrom (GBS) i akutfasen?",
+      "image": null,
+      "options": [
+        {
+          "text": "Snabbt progredierande symmetrisk distal pares med hyporeflexi och albuminocytologisk dissociation i CSF.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 symmetrisk svaghet med nedsatta reflexer och f\u00f6rh\u00f6jt albumin utan pleocytos \u00e4r typiskt f\u00f6r GBS."
+        },
+        {
+          "text": "Asymmetrisk spastisk pares med hyperreflexi och Babinskis tecken.",
+          "correct": false,
+          "feedback": "Fel \u2014 spasticitet och hyperreflexi tyder p\u00e5 central skada, inte GBS."
+        },
+        {
+          "text": "Myoklonier och EEG med generaliserade spike-and-wave-uts\u00e4ndningar.",
+          "correct": false,
+          "feedback": "Fel \u2014 dessa fynd \u00e4r f\u00f6renliga med epilepsi/status, inte perifert demyeliniserande GBS."
+        },
+        {
+          "text": "Fluktuerande muskelsvaghet f\u00f6rb\u00e4ttrad efter repetitiv aktivitetstestning.",
+          "correct": false,
+          "feedback": "Fel \u2014 fluktuerande svaghet f\u00f6rb\u00e4ttrad vid aktivitet beskriver Lambert-Eaton syndrom, inte GBS."
+        }
+      ],
+      "explanation": "GBS \u00e4r ett akut inflammatoriskt demyeliniserande polyneuropatiskt tillst\u00e5nd med snabbt progredierande, symmetrisk nedre > \u00f6vre extremitetssvaghet, minskade/uteslutna reflexer och f\u00f6rh\u00f6jt protein i CSF utan motsvarande cell\u00f6kning (albuminocytologisk dissociation). Elektrofysiologi visar ofta demyeliniserande f\u00f6r\u00e4ndringar som l\u00e5ngsamma ledningshastigheter.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0006",
+      "type": "multiple_choice",
+      "tags": [
+        "Neuromuskul\u00e4r",
+        "Myasthenia gravis"
+      ],
+      "question": "Vilket test \u00e4r mest anv\u00e4ndbart f\u00f6r att differentiera myasthenia gravis (MG) fr\u00e5n Lambert-Eaton myasthetiskt syndrom (LEMS)?",
+      "image": null,
+      "options": [
+        {
+          "text": "Fysiologisk provning med repetitiv nervstimulering och m\u00e4tning av summatorisk muskelrespons (increment vs decrement).",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 LEMS visar increment vid h\u00f6gfrekvent stimulering och MG visar decrement vid l\u00e5gfrekvent stimulering."
+        },
+        {
+          "text": "Serologi med anti-AChR-antikroppar; negativt test utesluter LEMS.",
+          "correct": false,
+          "feedback": "Fel \u2014 anti-AChR-antikroppar \u00e4r ofta positiva vid MG men \u00e4r inte tillf\u00f6rlitliga f\u00f6r att utesluta LEMS."
+        },
+        {
+          "text": "Uttalad pupilldilatation efter edrofoniumtest.",
+          "correct": false,
+          "feedback": "Fel \u2014 edrofoniumtest p\u00e5verkar muskelsvagheten men \u00e4r inte ett bra s\u00e4tt att s\u00e4rskilja MG fr\u00e5n LEMS via pupiller."
+        },
+        {
+          "text": "Motorisk ledningsunders\u00f6kning som visar f\u00f6rl\u00e4ngd distal latens i medianusnerven.",
+          "correct": false,
+          "feedback": "Fel \u2014 s\u00e5dan f\u00f6rl\u00e4ngd latens tyder p\u00e5 perifer neuropati eller entrapment, inte differentiering mellan MG och LEMS."
+        }
+      ],
+      "explanation": "Repetitiv nervstimulering visar klassisk decremental respons vid l\u00e5gfrekvent stimulering i MG, medan LEMS karakt\u00e4riseras av en f\u00f6rb\u00e4ttrad (incremental) respons efter h\u00f6gfrekvent stimulering eller maximal frivillig kontraktion. Serologi och klinik kompletterar diagnostiken men elektrofysiologi \u00e4r oftast avg\u00f6rande f\u00f6r differentiering.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0007",
+      "type": "multiple_choice",
+      "tags": [
+        "Parkinson",
+        "Neurodegeneration"
+      ],
+      "question": "Vilken patologisk f\u00f6r\u00e4ndring i centrala nervsystemet \u00e4r mest direkt kopplad till Parkinsons sjukdoms motoriska k\u00e4rnsymptom?",
+      "image": null,
+      "options": [
+        {
+          "text": "F\u00f6rlust av dopaminerga neuron i substantia nigra pars compacta och Lewy-kroppar best\u00e5ende av alfa-synuklein.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 dopamineri degeneration i SNc och alfa-synuklein-inkorporerade Lewy-kroppar \u00e4r Parkinsons k\u00e4nnetecken."
+        },
+        {
+          "text": "Prionprotein-ackumulering i kortex och basalganglier.",
+          "correct": false,
+          "feedback": "Fel \u2014 prionackumulering ger prionsjukdomar, inte Parkinsons sjukdom."
+        },
+        {
+          "text": "Beta-amyloid plaque och neurofibrill\u00e4ra tangles i hippocampus.",
+          "correct": false,
+          "feedback": "Fel \u2014 detta beskriver Alzheimers patologi snarare \u00e4n Parkinsons."
+        },
+        {
+          "text": "Amyloid angiopati i meningeala k\u00e4rl.",
+          "correct": false,
+          "feedback": "Fel \u2014 amyloid angiopati kopplas till lob\u00e4ra bl\u00f6dningar och demens, inte prim\u00e4rt till Parkinsons motorik."
+        }
+      ],
+      "explanation": "Parkinsons sjukdom inneb\u00e4r selektiv degeneration av dopaminerga neuron i substantia nigra pars compacta med f\u00f6rekomst av Lewy-kroppar inneh\u00e5llande alfa-synuklein. Denna f\u00f6rlust minskar nigrostriatala dopaminerga projektioner och leder till de klassiska extrapyramidala motoriska symptomen.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0008",
+      "type": "multiple_choice",
+      "tags": [
+        "Parkinson",
+        "Differentialdiagnos"
+      ],
+      "question": "Vilket kliniskt tecken talar mest f\u00f6r progressiv supranukle\u00e4r pares (PSP) snarare \u00e4n idiopatisk Parkinsons sjukdom?",
+      "image": null,
+      "options": [
+        {
+          "text": "Tidigt postural instabilitet med \u00e5terkommande fall och vertikal blickpares, s\u00e4rskilt ned\u00e5t.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 tidiga fall och supranukle\u00e4r blickpares \u00e4r typiskt f\u00f6r PSP."
+        },
+        {
+          "text": "God initial respons p\u00e5 levodopa med tydlig f\u00f6rb\u00e4ttring av tremor och rigiditet.",
+          "correct": false,
+          "feedback": "Fel \u2014 god levodoparespons \u00e4r vanligare vid idiopatisk Parkinsons sjukdom \u00e4n vid PSP."
+        },
+        {
+          "text": "Enbart unilateral vilotremor utan tutande g\u00e5ngsv\u00e5righeter.",
+          "correct": false,
+          "feedback": "Fel \u2014 unilateral vilotremor utan tidiga fall talar mer f\u00f6r idiopatisk Parkinsons sjukdom."
+        },
+        {
+          "text": "Prominent autonom dysfunktion med snabb progression till anstr\u00e4ngningssynkope.",
+          "correct": false,
+          "feedback": "Fel \u2014 uttalad autonom dysfunktion i tidigt stadium pekar snarare mot MSA \u00e4n PSP."
+        }
+      ],
+      "explanation": "PSP k\u00e4nnetecknas av tidig postural instabilitet med frekventa fall och supranukle\u00e4ra blickpareser (ofta nedsatt ned\u00e5tblick). Till skillnad fr\u00e5n idiopatisk Parkinsons f\u00e5r PSP-patienter ofta d\u00e5lig eller kortvarig respons p\u00e5 levodopa och visar mer frontala/exekutiva symptom.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0009",
+      "type": "multiple_choice",
+      "tags": [
+        "Epilepsi",
+        "Akutbehandling"
+      ],
+      "question": "Vid generaliserat tonisk-kloniskt status epilepticus som inte svarat p\u00e5 initiala bensodiazepiner, vilket l\u00e4kemedel \u00e4r l\u00e4mpligast som n\u00e4sta steg enligt vanliga riktlinjer?",
+      "image": null,
+      "options": [
+        {
+          "text": "Levetiracetam intraven\u00f6st eller fosfenytoin/fenytoin som andra linjens terapi.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 levetiracetam eller fosfenytoin \u00e4r etablerade andralinjealternativ vid benzodiazepinresistent status."
+        },
+        {
+          "text": "S\u00e4tt patienten i djup hypotermi f\u00f6r att minska cerebralt metabolt behov.",
+          "correct": false,
+          "feedback": "Fel \u2014 hypotermi \u00e4r inte standardbehandling f\u00f6r status epilepticus."
+        },
+        {
+          "text": "Ge enteral valproat via sond som prim\u00e4rt n\u00e4sta steg i akutrummet.",
+          "correct": false,
+          "feedback": "Fel \u2014 enteraltadministration \u00e4r ol\u00e4mpligt i aktivt status och intraven\u00f6st valproat eller andra IV-alternativ anv\u00e4nds ist\u00e4llet."
+        },
+        {
+          "text": "Administrera naloxon som antidot f\u00f6r eventuell opiat\u00f6verdos.",
+          "correct": false,
+          "feedback": "Fel \u2014 naloxon adresserar opiat\u00f6verdos, inte benzodiazepinresistent epileptisk aktivitet."
+        }
+      ],
+      "explanation": "Efter att ett bensodiazepin (t.ex. IV lorazepam) har givits och status kvarst\u00e5r rekommenderas i akut skede intraven\u00f6st antiepileptikum s\u00e5som levetiracetam, fosfenytoin/fenytoin eller valproat beroende p\u00e5 kontraindikationer. Valet styrs av s\u00e4kerhetsprofil, interaktioner och klinisk rutin, men enteral behandling \u00e4r inte l\u00e4mplig i o\u00e5tkomlig luftv\u00e4g eller p\u00e5g\u00e5ende kramper.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0010",
+      "type": "multiple_choice",
+      "tags": [
+        "ICP",
+        "Akutbehandling"
+      ],
+      "question": "Vilken \u00e5tg\u00e4rd har snabbast effekt f\u00f6r att transientt s\u00e4nka f\u00f6rh\u00f6jt intrakraniellt tryck (ICP) hos en patient med akut neurologisk f\u00f6rs\u00e4mring?",
+      "image": null,
+      "options": [
+        {
+          "text": "Intraven\u00f6s mannitol eller hyperton NaCl (3%) som osmotisk behandling.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 osmotiska diuretika s\u00e4nker snabbt ICP genom att dra ut v\u00e4tska fr\u00e5n hj\u00e4rnparenkymet."
+        },
+        {
+          "text": "L\u00e5ngsam infusion av glukos f\u00f6r att f\u00f6rb\u00e4ttra hj\u00e4rnmetabolismen.",
+          "correct": false,
+          "feedback": "Fel \u2014 glukostillf\u00f6rsel p\u00e5verkar inte ICP akut och kan f\u00f6rv\u00e4rra cerebral \u00f6dem i vissa fall."
+        },
+        {
+          "text": "L\u00e5ngsam h\u00f6jning av PaCO2 med minskad ventilation.",
+          "correct": false,
+          "feedback": "Fel \u2014 hyperkapni \u00f6kar cerebralt blodfl\u00f6de och h\u00f6jer ICP, inte s\u00e4nker det."
+        },
+        {
+          "text": "Tidigt intraven\u00f6st steroidbehandlingsprotokoll f\u00f6r alla typer av hj\u00e4rn\u00f6dem.",
+          "correct": false,
+          "feedback": "Fel \u2014 steroider \u00e4r indicerade vid tum\u00f6rrelaterat eller vasogent \u00f6dem men har inte snabb effekt vid cytotoxiskt \u00f6dem eller trauma."
+        }
+      ],
+      "explanation": "Osmotiska medel som mannitol eller hyperton NaCl ger snabb s\u00e4nkning av intrakraniellt tryck genom att skapa en osmotisk gradient som minskar hj\u00e4rnvolym. Hyperkapni \u00f6kar och hypocapni minskar ICP (kortvarigt), men avsiktlig hyperkapni \u00e4r kontraindicerat; steroider har selektiv indikation och \u00e4r inte en akut universal\u00e5tg\u00e4rd.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0011",
+      "type": "multiple_choice",
+      "tags": [
+        "Hydrocefalus",
+        "Geriatrik"
+      ],
+      "question": "Vilken klinisk triad \u00e4r klassisk f\u00f6r normaltryckshydrocefalus (NPH) och vad \u00e4r den diagnostiska utredningen f\u00f6r att f\u00f6rutse ben\u00e4genhet f\u00f6r shuntrespons?",
+      "image": null,
+      "options": [
+        {
+          "text": "G\u00e5ngst\u00f6rning, demens och urininkontinens; diagnostiskt test: stor ventrikelvidgning p\u00e5 CT/MR och f\u00f6rb\u00e4ttring efter l\u00e4gesbetingad spinaltap (stortalpunkt).",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 triaden och spinaltap-test anv\u00e4nds f\u00f6r att selektera shuntkandidater."
+        },
+        {
+          "text": "Ataxi, ljusk\u00e4nslighet och synneds\u00e4ttning; diagnostiskt test: EEG som visar specifika v\u00e5gm\u00f6nster.",
+          "correct": false,
+          "feedback": "Fel \u2014 dessa tecken och EEG \u00e4r inte typiska eller diagnostiska f\u00f6r NPH."
+        },
+        {
+          "text": "Huvudv\u00e4rk, illam\u00e5ende och kr\u00e4kningar; diagnostiskt test: angiografi f\u00f6r att hitta ven\u00f6s obstruktion.",
+          "correct": false,
+          "feedback": "Fel \u2014 dessa symtom beskriver mer f\u00f6rh\u00f6jt ICP eller masslesion, inte NPH."
+        },
+        {
+          "text": "Progredierande perifer neuropati, viktminskning och nattsvettningar; diagnostiskt test: lumbalpunktion som visar bakteriell infektion.",
+          "correct": false,
+          "feedback": "Fel \u2014 detta passar inte med NPH-kliniken eller diagnostiken."
+        }
+      ],
+      "explanation": "Normaltryckshydrocefalus karakteriseras av den klassiska triaden g\u00e5ngst\u00f6rning (vanligtvis bredbasig), kognitiv svikt och urininkontinens tillsammans med ventrikelvidgning p\u00e5 bild. Ett stort tapp (stortalpunkt) eller testspinaltap som ger tempor\u00e4r f\u00f6rb\u00e4ttring i g\u00e5ngfunktion anv\u00e4nds kliniskt f\u00f6r att f\u00f6rutse sannolik shuntrespons.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0012",
+      "type": "multiple_choice",
+      "tags": [
+        "Polyneuropati",
+        "Diabetes"
+      ],
+      "question": "Vilket m\u00f6nster vid nervledningsunders\u00f6kning (ENG) \u00e4r mest f\u00f6renligt med distal symmetrisk sensorimotorisk polyneuropati vid diabetes?",
+      "image": null,
+      "options": [
+        {
+          "text": "Symmetrisk minskad amplitud och f\u00f6rl\u00e4ngd distal latens i nedre extremiteter med axonal dominans.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 diabetisk polyneuropati \u00e4r oftast axonal och b\u00f6rjar distalt med l\u00e4gre amplituder."
+        },
+        {
+          "text": "Markant reduktion i ledningshastighet med block och temporal dispersion \u00f6ver flera nerver, tyder p\u00e5 demyelinisering.",
+          "correct": false,
+          "feedback": "Fel \u2014 uttalad demyeliniserande bild \u00e4r mer typisk f\u00f6r CIDP/\u00e4rftliga demyeliniserande neuropatier."
+        },
+        {
+          "text": "Isolerad mononeuropati i n. peroneus med normal \u00f6vrig konduktion.",
+          "correct": false,
+          "feedback": "Fel \u2014 isolerad mononeuropati talar f\u00f6r kompression eller lokal skada, inte diffus diabetisk polyneuropati."
+        },
+        {
+          "text": "Ren autonom neuropati med normalt sensoriskt och motoriskt ENG.",
+          "correct": false,
+          "feedback": "Fel \u2014 autonom neuropati kan f\u00f6rekomma men klassisk diabetisk polyneuropati ger sensorimotoriska ENG-f\u00f6r\u00e4ndringar."
+        }
+      ],
+      "explanation": "Diabetisk distal symmetrisk polyneuropati \u00e4r oftast en distal axonal neuropati som visar nedsatta amplituder och ibland mild f\u00f6rl\u00e4ngd distal latens, mest uttalat i nedre extremiteter. Demyeliniserande m\u00f6nster med block och kraftig hastighetsminskning pekar ist\u00e4llet mot CIDP eller \u00e4rftliga neuropatier.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0013",
+      "type": "multiple_choice",
+      "tags": [
+        "TIA",
+        "Riskfaktorer"
+      ],
+      "question": "Vilket uttalande om TIA (transitorisk ischemisk attack) och sekund\u00e4rprevention \u00e4r mest korrekt?",
+      "image": null,
+      "options": [
+        {
+          "text": "Patienter med TIA b\u00f6r utredas omedelbart och f\u00e5r ofta ASA + klopidogrel kortvarigt om non-cardioembolic orsak misst\u00e4nks.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 snabba utredningar och dubbel trombocyth\u00e4mning kort tid efter h\u00f6grisk-TIA kan minska \u00e5terfall."
+        },
+        {
+          "text": "Warfarin \u00e4r f\u00f6rstahandsprevention efter alla TIA f\u00f6r att f\u00f6rebygga recidiv.",
+          "correct": false,
+          "feedback": "Fel \u2014 antikoagulantia indikeras fr\u00e4mst vid kardioembolisk etiologi (t.ex. f\u00f6rmaksflimmer), inte rutinm\u00e4ssigt vid alla TIA."
+        },
+        {
+          "text": "Statinbehandling b\u00f6r undvikas efter TIA om LDL \u00e4r normalt.",
+          "correct": false,
+          "feedback": "Fel \u2014 statiner rekommenderas ofta oavsett LDL-niv\u00e5 f\u00f6r sekund\u00e4rprevention av cerebrovaskul\u00e4r sjukdom."
+        },
+        {
+          "text": "Blodtrycksbehandling b\u00f6r uts\u00e4ttas akut efter en TIA f\u00f6r att f\u00f6rhindra hypoperfusion.",
+          "correct": false,
+          "feedback": "Fel \u2014 adekvat blodtryckskontroll \u00e4r viktig f\u00f6r sekund\u00e4rprevention och b\u00f6r normalt inte uts\u00e4ttas utan s\u00e4rskild anledning."
+        }
+      ],
+      "explanation": "Vid TIA kr\u00e4vs snabb diagnostik och riskstratifiering; f\u00f6r non-cardioembolisk h\u00f6g risk kan kortvarig dubbel trombocyth\u00e4mmning (ASA + klopidogrel) \u00f6verv\u00e4gas de f\u00f6rsta veckorna. Antikoagulantia anv\u00e4nds fr\u00e4mst vid p\u00e5visad kardioembolisk k\u00e4lla, statiner rekommenderas f\u00f6r sekund\u00e4rprevention oavsett initialt LDL och blodtrycket b\u00f6r kontrolleras, inte abrupt s\u00e4nkas.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0014",
+      "type": "multiple_choice",
+      "tags": [
+        "Cerebral ven\u00f6s trombos",
+        "Neurovaskul\u00e4r"
+      ],
+      "question": "Vilket kliniskt fynd \u00e4r s\u00e4rskilt suggestivt f\u00f6r cerebral ven\u00f6s sinus-trombos (CVST)?",
+      "image": null,
+      "options": [
+        {
+          "text": "Subakut huvudv\u00e4rk ofta med fokalneurologiska bortfall eller kramper hos en yngre kvinna p\u00e5 p-piller.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 CVST ger ofta huvudv\u00e4rk och kan f\u00f6rena sig med fokala symptom eller epileptiska anfall, s\u00e4rskilt hos unga kvinnor."
+        },
+        {
+          "text": "Pl\u00f6tslig, sv\u00e5r ensidig nacksm\u00e4rta vid rotation och palpabel pulsation \u00f6ver karotisstudie.",
+          "correct": false,
+          "feedback": "Fel \u2014 detta beskriver snarare karotisdissektion-relaterade fynd."
+        },
+        {
+          "text": "Bilaterala handdomningar och sensorisk niv\u00e5 vid br\u00f6stkorgen.",
+          "correct": false,
+          "feedback": "Fel \u2014 detta tyder p\u00e5 cervikal ryggm\u00e4rgsp\u00e5verkan och inte CVST."
+        },
+        {
+          "text": "Isolerad anterograd amnesi utan huvudv\u00e4rk eller krampanfall.",
+          "correct": false,
+          "feedback": "Fel \u2014 isolerad amnesi \u00e4r mindre typisk f\u00f6r CVST."
+        }
+      ],
+      "explanation": "Cerebral ven\u00f6s trombos upptr\u00e4der ofta med subakut, progressiv huvudv\u00e4rk och kan ge fokala neurologiska symptom eller kramper; riskfaktorer inkluderar p-piller, graviditet, postpartumperiod och hyperkoagulabilitet. Diagnosen bekr\u00e4ftas genom MR venografi eller CT venografi.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0015",
+      "type": "multiple_choice",
+      "tags": [
+        "Kranialnerv",
+        "Neuroanatomi"
+      ],
+      "question": "En patient har diplopi och ptos med pupilp\u00e5verkan (stor, ljusstel pupill) och \u00f6gonmotorikspares i alla riktningar \u2014 vilken lesion \u00e4r mest sannolik?",
+      "image": null,
+      "options": [
+        {
+          "text": "Oculomotoriuspares sekund\u00e4rt till aneurysm i posterior communicating-arterien (PCom).",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 aneurysm i PCom kan ge extern oculomotoriuspares inklusive pupilp\u00e5verkan."
+        },
+        {
+          "text": "Facialispares (VII) perifer orsak.",
+          "correct": false,
+          "feedback": "Fel \u2014 facialispares ger inte direkt p\u00e5verkan p\u00e5 \u00f6gonmotoriken eller pupillstorlek i denna omfattning."
+        },
+        {
+          "text": "Lesion i abducensnerven (VI) enkelsidigt.",
+          "correct": false,
+          "feedback": "Fel \u2014 VI-pares ger enbart abduceringssvaghet, inte ptos och pupilp\u00e5verkan."
+        },
+        {
+          "text": "Skada p\u00e5 synnerven (II) intracerebralt.",
+          "correct": false,
+          "feedback": "Fel \u2014 n. II-p\u00e5verkan ger synf\u00e4ltsdefekter men inte ptos och bred pupill med \u00f6gonmotorikspares."
+        }
+      ],
+      "explanation": "En komplett oculomotoriuspares med ptos, ut\u00e5tst\u00e4lld \u00f6gonst\u00e4llning och en dilaterad, ljusstel pupill \u00e4r klassiskt f\u00f6r perifer tredje kranialnervsp\u00e5verkan, och ett posterior communicating-aneurysm kan komprimera parasympatiska fibrer extern till nerven och ge pupillp\u00e5verkan. Centrala lesioner ger ofta andra kombinationer och sparar ibland pupillen.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0016",
+      "type": "multiple_choice",
+      "tags": [
+        "MS",
+        "Neuroimmunologi"
+      ],
+      "question": "Vilket fynd i spinalv\u00e4tskan \u00e4r mest specifikt f\u00f6r multipel skleros (MS)?",
+      "image": null,
+      "options": [
+        {
+          "text": "Oligoklonala IgG-band i CSF som inte finns i serum.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 oligoklonala IgG-band i CSF \u00e4r ett typiskt fynd vid MS."
+        },
+        {
+          "text": "H\u00f6g neutrofilt antal och l\u00e5gt glukos i CSF.",
+          "correct": false,
+          "feedback": "Fel \u2014 s\u00e5dana fynd talar f\u00f6r bakteriell meningit, inte MS."
+        },
+        {
+          "text": "H\u00f6gt antal r\u00f6da blodkroppar utan xantokromi.",
+          "correct": false,
+          "feedback": "Fel \u2014 r\u00f6da blodkroppar utan xantokromi tyder p\u00e5 traumatiskt LP eller bl\u00f6dning i provet."
+        },
+        {
+          "text": "Negativ oligoklonala band men klart f\u00f6rh\u00f6jt Laktat i CSF.",
+          "correct": false,
+          "feedback": "Fel \u2014 f\u00f6rh\u00f6jt laktat och avsaknad av oligoklonala band pekar inte specifikt p\u00e5 MS och kan tyda p\u00e5 mitochondrial metabolismst\u00f6rning."
+        }
+      ],
+      "explanation": "Oligoklonala IgG-band i CSF som saknas i serum \u00e4r ett k\u00e4nnetecken f\u00f6r intratekal immunoglobulinsyntes och ses hos majoriteten av patienter med MS. Detta fynd \u00e4r inte helt patognomontiskt men \u00e4r starkt st\u00f6djande i kombination med klinik och MRI-fynd.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0017",
+      "type": "multiple_choice",
+      "tags": [
+        "Cerebellum",
+        "Neuroanatomi"
+      ],
+      "question": "Vilket kliniskt m\u00f6nster talar fr\u00e4mst f\u00f6r en cerebell\u00e4r hemisf\u00e4rsskada snarare \u00e4n en vermis-lesion?",
+      "image": null,
+      "options": [
+        {
+          "text": "Ipsilateral extremitetsataxi och dysmetri med intakt balans och g\u00e5ng.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 hemisf\u00e4rsskada ger ipsilateral koordinationst\u00f6rning i extremiteter medan vermis p\u00e5verkar balans."
+        },
+        {
+          "text": "Bredsp\u00e5rig g\u00e5ng och truncal ataxi utan uttalad extremitetsdysmetri.",
+          "correct": false,
+          "feedback": "Fel \u2014 dessa symtom \u00e4r typiska f\u00f6r vermis-p\u00e5verkan."
+        },
+        {
+          "text": "Ren vertikal nystagmus utan ataxi.",
+          "correct": false,
+          "feedback": "Fel \u2014 isolerad nystagmus kan komma fr\u00e5n vestibul\u00e4rt system eller flocculonodul\u00e4ra loben, inte enbart cerebell\u00e4r hemisf\u00e4r."
+        },
+        {
+          "text": "Bilaterala handdysmetrier med bevarad finmotorik i benen.",
+          "correct": false,
+          "feedback": "Fel \u2014 bilateral handdysmetri utan benp\u00e5verkan \u00e4r osannolikt vid unilateral hemisf\u00e4rsskada."
+        }
+      ],
+      "explanation": "En cerebell\u00e4r hemisf\u00e4rslokalisation ger oftast ipsilaterala koordinationst\u00f6rningar i arm och ben (dysmetri, dysdiadokokinesi), medan vermis- eller flocculonodul\u00e4r skada fr\u00e4mst p\u00e5verkar balans och g\u00e5ng och ger truncal ataxi. Klinisk unders\u00f6kning av extremitetskoordination och g\u00e5ngprofil hj\u00e4lper lokalisera skadan.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0018",
+      "type": "multiple_choice",
+      "tags": [
+        "Apraxi",
+        "Frontoparietallob"
+      ],
+      "question": "Vilket av f\u00f6ljande fynd tyder mest p\u00e5 ideatorisk apraxi och var sitter lesionen oftast?",
+      "image": null,
+      "options": [
+        {
+          "text": "Of\u00f6rm\u00e5ga att utf\u00f6ra en serie multistegsliga uppgifter (t.ex. f\u00f6rbereda en kopp te) trots intakt motorik och f\u00f6rst\u00e5else; lesion i v\u00e4nster parietallob/inferior parietal lobule.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 ideatorisk apraxi ger problem med sekvenser av handlingar och \u00e4r kopplat till dominant parietallob."
+        },
+        {
+          "text": "Of\u00f6rm\u00e5ga att imitera enkla handr\u00f6relser med b\u00e5da h\u00e4nderna, bed\u00f6ms som ideomotorisk apraxi och lokaliseras till h\u00f6gra frontalloben.",
+          "correct": false,
+          "feedback": "Fel \u2014 ideomotorisk apraxi handlar om imitation/gest och associeras oftare med v\u00e4nster (dominant) parietal/frontal cortex."
+        },
+        {
+          "text": "F\u00f6rlust av proprioception i handen utan apraxi; lesion i bakstr\u00e4ngarna.",
+          "correct": false,
+          "feedback": "Fel \u2014 proprioceptiv f\u00f6rlust \u00e4r sensorisk och skiljer sig fr\u00e5n apraxi som \u00e4r en motorplaneringsst\u00f6rning."
+        },
+        {
+          "text": "Patologisk spegling av r\u00f6relser i den kontra laterala extremiteten; lesion i cerebellum.",
+          "correct": false,
+          "feedback": "Fel \u2014 s\u00e5dan spegling och cerebell\u00e4r patologik \u00e4r inte typisk f\u00f6r ideatorisk apraxi."
+        }
+      ],
+      "explanation": "Ideatorisk apraxi inneb\u00e4r f\u00f6rlust av f\u00f6rm\u00e5gan att planera och genomf\u00f6ra komplexa sekvenser av m\u00e5lmedvetna handlingar trots intakt motorik och f\u00f6rst\u00e5else, och \u00e4r ofta lokaliserad till dominant (v\u00e4nster) parietallob eller temporoparietala \u00f6verg\u00e5ngen. Skillnad mot ideomotorisk apraxi (gest- och imitation) kr\u00e4ver specifika pr\u00f6vningar.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0019",
+      "type": "multiple_choice",
+      "tags": [
+        "Neurotoxikologi",
+        "Toxikologi"
+      ],
+      "question": "Vilken neurologisk komplikation \u00e4r mest sannolik vid kronisk tungmetallf\u00f6rgiftning med bly?",
+      "image": null,
+      "options": [
+        {
+          "text": "Perifer neuropati med motorisk svaghet, ofta i extensorer s\u00e4rskilt i \u00f6vre extremiteter (wrist drop).",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 kronisk blyf\u00f6rgiftning ger ofta motorisk neuropati med wrist drop."
+        },
+        {
+          "text": "Rapid-onset demens med tidig ataxi och myoklonier.",
+          "correct": false,
+          "feedback": "Fel \u2014 dessa fynd \u00e4r mer typiska f\u00f6r prion- eller vissa neurodegenerativa sjukdomar."
+        },
+        {
+          "text": "Isolerad perifer neuropati med ren sensorisk f\u00f6rlust i f\u00f6tterna utan motorisk p\u00e5verkan.",
+          "correct": false,
+          "feedback": "Fel \u2014 bly ger ofta motoriska symtom snarare \u00e4n enbart sensorisk neuropati."
+        },
+        {
+          "text": "Subakut utveckling av neuromuskul\u00e4r junction blockad med f\u00f6rb\u00e4ttring efter kolinesterash\u00e4mmare.",
+          "correct": false,
+          "feedback": "Fel \u2014 detta beskriver farmakologisk p\u00e5verkan vid myastenia gravis/kolinesterasf\u00f6rgiftning, inte blyf\u00f6rgiftning."
+        }
+      ],
+      "explanation": "Kronisk blyf\u00f6rgiftning \u00e4r associerad med en motorisk perifer neuropati som ofta drabbar extensormuskler i \u00f6vre extremiteter och leder till tecken som 'wrist drop'. Sensoriska symtom kan f\u00f6rekomma men motoriska bortfall \u00e4r karakteristiska.",
+      "source": "medical_exam/neurologi"
+    },
+    {
+      "id": "med-gen-65a2-0020",
+      "type": "multiple_choice",
+      "tags": [
+        "Metabol encefalopati",
+        "Delirium"
+      ],
+      "question": "Vilket laboratoriefynd \u00e4r viktigast att \u00e5tg\u00e4rda omedelbart vid en patient med akut f\u00f6rvirring och misst\u00e4nkt metabol encefalopati?",
+      "image": null,
+      "options": [
+        {
+          "text": "Allvarlig hypernatremi eller hyponatremi med snabb f\u00f6r\u00e4ndring i osmolalitet.",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2014 akut stor natriumrubbning kan orsaka eller f\u00f6rv\u00e4rra encefalopati och kr\u00e4ver snabb men kontrollerad \u00e5tg\u00e4rd."
+        },
+        {
+          "text": "L\u00e4tt f\u00f6rh\u00f6jt leverenzym ALAT utan tecken p\u00e5 leversvikt.",
+          "correct": false,
+          "feedback": "Fel \u2014 m\u00e5ttlig ALAT-stegring \u00e4r ofta mindre akut och inte prim\u00e4r orsak till delirium i avsaknad av leversvikt."
+        },
+        {
+          "text": "L\u00e4tt anemi Hb 11 g/dL hos en \u00e4ldre patient utan tecken p\u00e5 bl\u00f6dning.",
+          "correct": false,
+          "feedback": "Fel \u2014 mild anemi \u00e4r osannolikt att orsaka akut f\u00f6rvirring i sig."
+        },
+        {
+          "text": "Kalknormalitet i serology utan elektrolytst\u00f6rningar.",
+          "correct": false,
+          "feedback": "Fel \u2014 normal kalcium \u00e4r inte en akut handlingskr\u00e4vande orsak till encefalopati i detta scenario."
+        }
+      ],
+      "explanation": "Akuta st\u00f6rningar i serumnatrium och osmolalitet kan snabbt p\u00e5verka hj\u00e4rnans volym och medvetandeniv\u00e5; b\u00e5de sv\u00e5r hyper- och hyponatremi \u00e4r viktiga och kr\u00e4ver snabb men kontrollerad korrigering. Andra labbavvikelser kan bidra till encefalopati men \u00e4r oftare sekund\u00e4ra eller mindre omedelbart farliga.",
+      "source": "medical_exam/neurologi"
+    },
+    {
       "type": "multiple_choice",
       "tags": [
         "Postrenal",
@@ -10068,6 +11162,176 @@
       "source": "medical_exam/oron_nasa_hals"
     },
     {
+      "id": "med-gen-orn1-1a2b",
+      "type": "multiple_choice",
+      "tags": [
+        "Otorhinolaryngologi",
+        "Akut"
+      ],
+      "question": "En 78-\u00e5rig man inkommer med kraftig n\u00e4sbl\u00f6dning fr\u00e5n b\u00e5da n\u00e4sborrarna som inte kontrolleras med tryck, lokal vasokonstriktion och anterior tamponad. Han \u00e4r hemodynamiskt stabil men bl\u00f6der fortsatt och bl\u00f6der djupt vid endoskopi. Vilken \u00e5tg\u00e4rd \u00e4r mest indicerad n\u00e4sta steg?",
+      "image": null,
+      "options": [
+        {
+          "text": "Upprepad anterior tamponad och observation ytterligare 24 timmar",
+          "correct": false,
+          "feedback": "Fel \u2013 vid misst\u00e4nkt posterior bl\u00f6dning \u00e4r anterior tamponad ofta otillr\u00e4cklig och f\u00f6rdr\u00f6jning kan f\u00f6rv\u00e4rra situationen."
+        },
+        {
+          "text": "Posterior nasalpackning (bakre tamponad) och samtidig kontakt med \u00f6ron\u2011n\u00e4sa\u2011hals (\u00d6NH) f\u00f6r \u00f6verv\u00e4gande av endoskopisk ligatur",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2013 vid persistent posterior bl\u00f6dning \u00e4r bakre tamponad en effektiv akut\u00e5tg\u00e4rd och \u00d6NH-konsult f\u00f6r endoskopisk ligation b\u00f6r involveras."
+        },
+        {
+          "text": "Intraven\u00f6s tranexamsyra som ensam \u00e5tg\u00e4rd f\u00f6r att stoppa bl\u00f6dningen",
+          "correct": false,
+          "feedback": "Fel \u2013 tranexamsyra kan hj\u00e4lpa som adjuvans men \u00e4r s\u00e4llan tillr\u00e4ckligt utan lokal \u00e5tg\u00e4rd vid kraftig posterior epistaxis."
+        },
+        {
+          "text": "Akut bed-side endoskopisk sphenopalatina art\u00e4rligatur utan f\u00f6rsta tamponad",
+          "correct": false,
+          "feedback": "Fel \u2013 definitiva kirurgiska \u00e5tg\u00e4rder s\u00e5som ligatur \u00f6verv\u00e4gs efter initial hemostas (t.ex. bakre tamponad) och planering med \u00d6NH."
+        }
+      ],
+      "explanation": "Posterior epistaxis hos \u00e4ldre orsakas ofta av grenar fr\u00e5n sphenopalatina art\u00e4ren och svarar d\u00e5 s\u00e4mre p\u00e5 enkel anterior tamponad; bakre tamponad ger tempor\u00e4r hemostas och m\u00f6jligg\u00f6r stabilisering inf\u00f6r endoskopisk ligation eller embolisering. Endoskopisk ligatur av sphenopalatina art\u00e4ren \u00e4r en effektiv definitiv behandling n\u00e4r tamponad inte \u00e4r tillr\u00e4cklig eller bl\u00f6dningen recidiverar.",
+      "source": "medical_exam/oron_nasa_hals"
+    },
+    {
+      "id": "med-gen-orn2-3b7c",
+      "type": "multiple_choice",
+      "tags": [
+        "Infektion",
+        "Pediatrik"
+      ],
+      "question": "Vilket fynd p\u00e5 otoskopi \u00e4r mest specifikt f\u00f6r en f\u00f6rv\u00e4rvad cholesteatom i mellan\u00f6rat hos ett barn med upprepade otiter?",
+      "image": null,
+      "options": [
+        {
+          "text": "Central typ av tympanic membranperforation med kantfri \u00f6ppning",
+          "correct": false,
+          "feedback": "Fel \u2013 central perforation ses vid kronisk otitis media men \u00e4r inte specifik f\u00f6r cholesteatom."
+        },
+        {
+          "text": "Retraktionsficka i pars flaccida med synlig p\u00e4rlvit keratiniserad massa bakom trumhinnan",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2013 en retractionsficka inneh\u00e5llande keratiniserande epitel (p\u00e4rlvit massa) \u00e4r typisk f\u00f6r cholesteatom."
+        },
+        {
+          "text": "Tympaniskt membran med diffus hyperemi och bulning",
+          "correct": false,
+          "feedback": "Fel \u2013 hyperemi och bulning \u00e4r tecken p\u00e5 akut otitis media, inte cholesteatom."
+        },
+        {
+          "text": "Ser\u00f6st v\u00e4tskeutgjutning utan tecken till kronisk inflammation",
+          "correct": false,
+          "feedback": "Fel \u2013 ser\u00f6s otitis media ger v\u00e4tska i mellan\u00f6rat men saknar tecken p\u00e5 keratinbildande massa som vid cholesteatom."
+        }
+      ],
+      "explanation": "F\u00f6rv\u00e4rvad cholesteatom uppst\u00e5r genom retraktion av trumhinnan med ackumulering av keratiniserat epitel i en retractionsficka, ofta i pars flaccida, och kan synas som en p\u00e4rlvit massa eller lateraliserad opacitet. Detta skiljer sig fr\u00e5n enkla perforationer eller ser\u00f6sa effusioner som saknar keratiniserad massa.",
+      "source": "medical_exam/oron_nasa_hals"
+    },
+    {
+      "id": "med-gen-orn3-9d4e",
+      "type": "multiple_choice",
+      "tags": [
+        "Akut",
+        "Behandling"
+      ],
+      "question": "En 22\u2011\u00e5rig patient s\u00f6ker med ensidig sv\u00e5r halsont, feber, svalgsm\u00e4rta, mufflad r\u00f6st och asymmetrisk tonsill\u00e4r svullnad som skjuter uvula bort fr\u00e5n den drabbade sidan. Vilken \u00e4r den mest l\u00e4mpliga initiala handl\u00e4ggningen?",
+      "image": null,
+      "options": [
+        {
+          "text": "Oral peroral amoxicillin i 10 dagar och ambulant uppf\u00f6ljning om >48 timmar",
+          "correct": false,
+          "feedback": "Fel \u2013 antibiotika utan dr\u00e4nering r\u00e4cker inte vid etablerat peritonsill\u00e4rt abscess (quinsy)."
+        },
+        {
+          "text": "Omedelbar n\u00e5ldr\u00e4nage eller incision\u2011dr\u00e4nage av peritonsill\u00e4rt abscess och samtidig antibiotikabehandling samt sm\u00e4rtlindring",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2013 lokal dr\u00e4nering (n\u00e5ladr\u00e4nage eller incision) plus antibiotika \u00e4r f\u00f6rstahandsbehandling vid peritonsill\u00e4rt abscess."
+        },
+        {
+          "text": "Akut tonsillektomi (quinsy\u2011tonsillectomi) som rutinbehandling vid alla peritonsill\u00e4ra abscesser",
+          "correct": false,
+          "feedback": "Fel \u2013 akut tonsillektomi \u00e4r en m\u00f6jlighet i s\u00e4rskilda fall men inte rutin; dr\u00e4nering \u00e4r oftast f\u00f6rstahands\u00e5tg\u00e4rd."
+        },
+        {
+          "text": "CT\u2011skalle med kontrast f\u00f6r att utesluta djupare cervikalt abscess innan n\u00e5gon dr\u00e4nering utf\u00f6rs",
+          "correct": false,
+          "feedback": "Fel \u2013 bilddiagnostik beh\u00f6vs endast vid misstanke om djupare eller komplicerad infektion; enkla peritonsill\u00e4ra abscesser behandlas med dr\u00e4nering i f\u00f6rsta hand."
+        }
+      ],
+      "explanation": "Peritonsill\u00e4rt abscess kr\u00e4ver ofta akut dr\u00e4nering (n\u00e5ldr\u00e4nage eller incision och dr\u00e4nage) f\u00f6r att avlasta och f\u00f6rb\u00e4ttra symtom, kombinerat med adekvat antibiotika och st\u00f6dbehandling. Akut tonsillektomi reserveras f\u00f6r recidiv eller sv\u00e5ra fall, medan CT anv\u00e4nds vid misstanke om djupare spridning.",
+      "source": "medical_exam/oron_nasa_hals"
+    },
+    {
+      "id": "med-gen-orn4-4f6a",
+      "type": "multiple_choice",
+      "tags": [
+        "Diagnostik",
+        "Neurologi"
+      ],
+      "question": "En patient utvecklar pl\u00f6tslig sv\u00e5r rotatorisk yrsel i flera dagar, spontan unidirektionell horizontal nystagmus som \u00f6kar n\u00e4r blicken riktas \u00e5t ena sidan, och nyligen uppkommet ensidigt nedsatt h\u00f6rsel. Vilken diagnos \u00e4r mest sannolik?",
+      "image": null,
+      "options": [
+        {
+          "text": "Vestibul\u00e4r migr\u00e4n",
+          "correct": false,
+          "feedback": "Fel \u2013 vestibul\u00e4r migr\u00e4n ger episodisk yrsel och s\u00e4llan ensidigt nedsatt h\u00f6rsel med ih\u00e5llande spontaneous nystagmus."
+        },
+        {
+          "text": "Perifer vestibulopati (vestibularisneurit) utan cochle\u00e4rt engagemang",
+          "correct": false,
+          "feedback": "Fel \u2013 vestibularisneurit ger akut perifer yrsel men saknar vanligtvis samtidig h\u00f6rselneds\u00e4ttning."
+        },
+        {
+          "text": "Labyrintit (involvering av cochlea och vestibularisorganet)",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2013 kombinationen av ih\u00e5llande perifer yrsel, unidirektionell nystagmus och ny h\u00f6rselneds\u00e4ttning talar f\u00f6r labyrintit."
+        },
+        {
+          "text": "Hj\u00e4rnstamsinfarkt",
+          "correct": false,
+          "feedback": "Fel \u2013 central patologi kan ge nystagmus men ofta med riktningsv\u00e4xling, andra hj\u00e4rnstamsfynd och normalt h\u00f6rselstatus."
+        }
+      ],
+      "explanation": "N\u00e4r cochle\u00e4ra symptom (ny h\u00f6rselneds\u00e4ttning eller tinnitus) ses tillsammans med ih\u00e5llande perifer vertigo och ensidigt unidirektionellt nystagmus, indikerar detta ofta labyrintit med b\u00e5de vestibul\u00e4ra och auditiva strukturer engagerade. Central orsaker m\u00e5ste \u00f6verv\u00e4gas vid atypiska nystagmusm\u00f6nster eller fokala neurologiska tecken, men h\u00e4r pekar fynden p\u00e5 perifer inner\u00f6raengagemang.",
+      "source": "medical_exam/oron_nasa_hals"
+    },
+    {
+      "id": "med-gen-orn5-8c2d",
+      "type": "multiple_choice",
+      "tags": [
+        "Diagnostik",
+        "Behandling"
+      ],
+      "question": "En vuxen patient har purulent snor och n\u00e4st\u00e4ppa sedan 8 dagar, m\u00e5ttlig feber och m\u00e5ttlig ansiktssm\u00e4rta; symtomen debuterade gradvis och har inte f\u00f6rb\u00e4ttrats. Vad \u00e4r den mest evidensbaserade initiala handl\u00e4ggningen?",
+      "image": null,
+      "options": [
+        {
+          "text": "Starta omedelbart peroral antibiotikakur (amoxicillin) utan vidare observation",
+          "correct": false,
+          "feedback": "Fel \u2013 antibiotika indikeras f\u00f6rst vid symtom \u226510 dagar, mycket sv\u00e5ra symtom eller f\u00f6rs\u00e4mring efter initial f\u00f6rb\u00e4ttring."
+        },
+        {
+          "text": "Symtomatisk behandling (analgetika, nasal avsv\u00e4llning kort tid) och v\u00e4ntande strategi med uppf\u00f6ljning om symtom kvarst\u00e5r >10 dagar eller f\u00f6rv\u00e4rras",
+          "correct": true,
+          "feedback": "R\u00e4tt \u2013 vid 7\u201310 dagars f\u00f6rlopp utan sv\u00e5ra tecken rekommenderas initialt konservativ behandling och noggrann uppf\u00f6ljning."
+        },
+        {
+          "text": "Omedelbar CT\u2011sinus f\u00f6r att bekr\u00e4fta bakteriell sinuit och guida behandling",
+          "correct": false,
+          "feedback": "Fel \u2013 bilddiagnostik \u00e4r ej rutin vid okomplicerad sinuit och p\u00e5verkar s\u00e4llan initial behandling."
+        },
+        {
+          "text": "Intranasal kortikosteroid som enda behandling \u00e4r kontraindicerat vid purulent snor",
+          "correct": false,
+          "feedback": "Fel \u2013 intranasala steroider kan vara ett rimligt symtomlindrande alternativ och \u00e4r inte generellt kontraindicerade."
+        }
+      ],
+      "explanation": "Akut bakteriell sinuit b\u00f6r endast behandlas med antibiotika vid l\u00e4ngre \u00e4n 10 dagars ih\u00e5llande symtom, mycket sv\u00e5ra symtom eller f\u00f6rs\u00e4mring efter initial f\u00f6rb\u00e4ttring; annars rekommenderas symtomlindring och kort uppf\u00f6ljning. Rutinm\u00e4ssig bilddiagnostik eller omedelbar antibiotikabehandling saknar st\u00f6d i okomplicerade fall och b\u00f6r reserveras f\u00f6r s\u00e4rskilda indikationer.",
+      "source": "medical_exam/oron_nasa_hals"
+    },
+    {
       "type": "multiple_choice",
       "tags": [
         "HLA-B27",
@@ -10223,6 +11487,686 @@
       ],
       "explanation": "Psoriasisartrit \u00e4r en form av spondyloartrit som kan ge b\u00e5de perifer och axial involvering, inklusive entesit och daktylit. Till skillnad fr\u00e5n RA drabbas ofta DIP-leder och senf\u00e4sten, och inflammatorisk ryggv\u00e4rk f\u00f6rb\u00e4ttras vid aktivitet.",
       "id": "med-ort-c6425c",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0001",
+      "type": "multiple_choice",
+      "tags": [
+        "Osteoporos",
+        "Diagnostik"
+      ],
+      "question": "Vilket fynd talar mest f\u00f6r att en h\u00f6ftfraktur hos en \u00e4ldre patient orsakas av osteoporos snarare \u00e4n h\u00f6genergitrauma?",
+      "image": null,
+      "options": [
+        {
+          "text": "Fraktur efter ett sj\u00e4lvmant fall fr\u00e5n st\u00e5ende h\u00f6jd och en radiologisk l\u00e5g bent\u00e4thet vid kontrallateral h\u00f6ft",
+          "correct": true,
+          "feedback": "Kombinationen av l\u00e5genergifraktur och l\u00e5g bent\u00e4thet pekar mot osteoporosrelaterad fraktur."
+        },
+        {
+          "text": "Fraktur genom en tidigare h\u00f6ftprotesimplanteringskanal",
+          "correct": false,
+          "feedback": "En periprotetisk fraktur antyder implantatrelaterad mekanik snarare \u00e4n prim\u00e4r osteoporos."
+        },
+        {
+          "text": "Multipla revbensfrakturer med h\u00f6genergimekanism",
+          "correct": false,
+          "feedback": "Multipla frakturer vid h\u00f6g energi \u00e4r mer typiskt f\u00f6r trauma \u00e4n osteoporos."
+        },
+        {
+          "text": "Segmentell fraktur med kraftig mjukdelsskada och open wound",
+          "correct": false,
+          "feedback": "\u00d6ppen, h\u00f6genergifraktur med mjukdelsskada talar f\u00f6r trauma snarare \u00e4n fragilitetsfraktur."
+        }
+      ],
+      "explanation": "Fragilitetsfrakturer vid osteoporos uppst\u00e5r ofta efter l\u00e5genergiv\u00e5ld, t.ex. fall fr\u00e5n st\u00e5ende, och \u00e4r associerade med nedsatt bent\u00e4thet. Radiologisk bed\u00f6mning av motsatt sida och DXA ger st\u00f6d f\u00f6r osteoporosdiagnos i denna kontext.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0002",
+      "type": "multiple_choice",
+      "tags": [
+        "Fraktur",
+        "Hand"
+      ],
+      "question": "Vilken \u00e5tg\u00e4rd \u00e4r mest korrekt initialt vid misst\u00e4nkt scaphoidfraktur med normalt r\u00f6ntgenutfall?",
+      "image": null,
+      "options": [
+        {
+          "text": "Immobilisera i tum-gips och omr\u00f6ntgen/uppf\u00f6ljning efter 10\u201314 dagar eller MRI akut om tillg\u00e4ngligt",
+          "correct": true,
+          "feedback": "Tidig immobilisering och uppf\u00f6ljning eller MRI \u00e4r standard f\u00f6r att undvika AVN och sent uppt\u00e4ckt fraktur."
+        },
+        {
+          "text": "Ingen immobilisering beh\u00f6vs om initial r\u00f6ntgen \u00e4r normal",
+          "correct": false,
+          "feedback": "Uteslutning av scaphoidfraktur kr\u00e4ver uppf\u00f6ljning eftersom r\u00f6ntgen initialt kan vara falskt negativ."
+        },
+        {
+          "text": "Operativ fixation omedelbart vid varje misst\u00e4nkt scaphoidfraktur",
+          "correct": false,
+          "feedback": "Operativ behandling \u00e4r inte f\u00f6rstahandsval om frakturen inte p\u00e5visas eller \u00e4r instabil; konservativ behandling \u00e4r vanlig."
+        },
+        {
+          "text": "Ge NSAID och till\u00e5t r\u00f6relse f\u00f6r att snabba p\u00e5 l\u00e4kning",
+          "correct": false,
+          "feedback": "Tidig r\u00f6rlighet utan immobilisering riskerar f\u00f6rdr\u00f6jd l\u00e4kning eller icke-union vid scaphoidfraktur."
+        }
+      ],
+      "explanation": "Scaphoidfrakturer kan vara r\u00f6ntgennegativa initialt och riskerar icke-union och osteonekros om ouppt\u00e4ckta; d\u00e4rf\u00f6r immobiliseras misst\u00e4nkta fall och tas om f\u00f6r kontrollr\u00f6ntgen eller utreds med MRI som har h\u00f6g k\u00e4nslighet. Akut MRI \u00e4r indicerat vid h\u00f6g misstanke f\u00f6r att p\u00e5skynda diagnostik och behandling.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0003",
+      "type": "multiple_choice",
+      "tags": [
+        "Infektion",
+        "Diagnostik"
+      ],
+      "question": "Vilket fynd i ledpunktion \u00e4r mest talande f\u00f6r septisk artrit hos en vuxen patient?",
+      "image": null,
+      "options": [
+        {
+          "text": "Ledv\u00e4tska med glukos <40% av plasmaglukos, leukocyter >50 x10^9/L och neutrofildominans",
+          "correct": true,
+          "feedback": "Mycket h\u00f6g leukocytm\u00e4ngd med neutrofildominans och s\u00e4nkt glukos \u00e4r typiskt f\u00f6r septisk artrit."
+        },
+        {
+          "text": "Ledv\u00e4tska med klar f\u00e4rg och leukocyter 2 x10^9/L",
+          "correct": false,
+          "feedback": "L\u00e5ga leukocyter och klar v\u00e4tska talar snarare f\u00f6r icke-infekti\u00f6s etiologi."
+        },
+        {
+          "text": "Ledv\u00e4tska med h\u00f6g viskositet och kristaller synliga i polariserat ljus",
+          "correct": false,
+          "feedback": "Kristaller tyder mer p\u00e5 kristallartrit (t.ex. gikt) \u00e4n bakteriell septisk artrit."
+        },
+        {
+          "text": "Ledv\u00e4tska med neutrofildominans men normal glukos och l\u00e5g leukocytos",
+          "correct": false,
+          "feedback": "Neutrofildominans med l\u00e5g total leukocytos och normal glukos \u00e4r mindre f\u00f6renligt med akut bakteriell artrit."
+        }
+      ],
+      "explanation": "Bakteriell septisk artrit karakteriseras av h\u00f6g cellhalt i ledv\u00e4tskan (>50 x10^9/L ofta), neutrofildominans och s\u00e4nkt glukos j\u00e4mf\u00f6rt med plasma. Snabb odling och empirisk antibiotikabehandling efter provtagning \u00e4r avg\u00f6rande f\u00f6r prognosen.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0004",
+      "type": "multiple_choice",
+      "tags": [
+        "Kn\u00e4",
+        "Skada"
+      ],
+      "question": "Vilket kliniskt test \u00e4r mest specifikt f\u00f6r fr\u00e4mre korsbandsruptur (ACL)?",
+      "image": null,
+      "options": [
+        {
+          "text": "Lachmans test (slapphet vid 20\u201330\u00b0 flektion)",
+          "correct": true,
+          "feedback": "Lachmans test \u00e4r mest sensitivt och specifikt f\u00f6r ACL-ruptur i klinisk unders\u00f6kning."
+        },
+        {
+          "text": "McMurray-test (sn\u00e4ppning vid rotation och extension)",
+          "correct": false,
+          "feedback": "McMurray-test riktar sig mot meniskskador snarare \u00e4n ACL."
+        },
+        {
+          "text": "Valgusstress-test vid 30\u00b0 (medial kollateralligament)",
+          "correct": false,
+          "feedback": "Valgustest unders\u00f6ker MCL, inte fr\u00e4mre korsbandet."
+        },
+        {
+          "text": "Apleys grinding-test (axial kompression i bukl\u00e4ge)",
+          "correct": false,
+          "feedback": "Apleys test anv\u00e4nds f\u00f6r att bed\u00f6ma menisk- eller kapselskada, inte prim\u00e4rt ACL."
+        }
+      ],
+      "explanation": "Lachmans test bed\u00f6mer anterior translation av tibia i l\u00e4tt flekterad kn\u00e4led och har h\u00f6g sensitivitet och specificitet f\u00f6r ACL-ruptur. Andra tester unders\u00f6ker olika strukturer: McMurray och Apley f\u00f6r menisk, valgus f\u00f6r MCL.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0005",
+      "type": "multiple_choice",
+      "tags": [
+        "Kn\u00e4",
+        "Menisk"
+      ],
+      "question": "Vilket fynd vid MR-unders\u00f6kning av kn\u00e4 \u00e4r mest f\u00f6renligt med en meniskrotisk eller reumatoid degenerativ meniskskada hos en medel\u00e5lders patient?",
+      "image": null,
+      "options": [
+        {
+          "text": "Horizontal skulder- eller komplexa intrameniskiska signallinjer som n\u00e5r ledytan",
+          "correct": true,
+          "feedback": "Horizontella eller komplexa bristningar som n\u00e5r ledytan \u00e4r typiska f\u00f6r degenerativa meniskskador."
+        },
+        {
+          "text": "Vertikal longitudinell fullt genomg\u00e5ende ruptur hos ung idrottare",
+          "correct": false,
+          "feedback": "Vertikal longitudinell ruptur \u00e4r mer typisk f\u00f6r traumatisk meniskskada hos yngre."
+        },
+        {
+          "text": "Normal meniskstruktur utan signallinje men med omfattande benm\u00e4rgs\u00f6dem i femurkondylen",
+          "correct": false,
+          "feedback": "Benm\u00e4rgs\u00f6dem talar mer f\u00f6r kontusion eller osteoartikul\u00e4r skada \u00e4n isolerad meniskskada."
+        },
+        {
+          "text": "Cystisk f\u00f6r\u00e4ndring i meniskhorisonten utan kontakt med ledytan",
+          "correct": false,
+          "feedback": "Intramenisk cysta utan kontakt med ledytan indikerar degenerativ f\u00f6r\u00e4ndring men inte typisk rotisk skada som n\u00e5r ledytan."
+        }
+      ],
+      "explanation": "Degenerativa meniskskador hos medel\u00e5lders patienter ger ofta horizontella eller komplexa bristningar som str\u00e4cker sig till ledytan, vilket p\u00e5verkar behandlingsvalet. Traumatiska longitudinella bristningar hos unga \u00e4r mer amenabla f\u00f6r sutur, medan degenerativa skador ofta hanteras mer konservativt eller med partiel meniskektomi beroende p\u00e5 symtom.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0006",
+      "type": "multiple_choice",
+      "tags": [
+        "H\u00f6ft",
+        "Barnortopedi"
+      ],
+      "question": "Vilket \u00e4r mest karakteristiskt debuttecken vid slipped capital femoral epiphysis (SCFE) hos en ton\u00e5ring?",
+      "image": null,
+      "options": [
+        {
+          "text": "Sm\u00e4rta i l\u00e5ret eller kn\u00e4t med ut\u00e5troterad och kortad extremitet vid g\u00e5ng",
+          "correct": true,
+          "feedback": "SM\u00e4rta som ofta utstr\u00e5lar till kn\u00e4t tillsammans med ut\u00e5trotation och kortning \u00e4r typiskt f\u00f6r SCFE."
+        },
+        {
+          "text": "Pl\u00f6tslig kraftig axelsm\u00e4rta utan tidigare kn\u00e4- eller h\u00f6ftsymtom",
+          "correct": false,
+          "feedback": "Axelsm\u00e4rta \u00e4r inte relevant f\u00f6r SCFE som \u00e4r en h\u00f6ftsjukdom."
+        },
+        {
+          "text": "Intermittent r\u00f6d, svullen och varm h\u00f6ft utan r\u00f6relseinskr\u00e4nkning",
+          "correct": false,
+          "feedback": "Akut inflammatorisk h\u00f6ft (t.ex. septisk artrit) ger ofta v\u00e4rme och utbredd svullnad, inte typiskt SCFE."
+        },
+        {
+          "text": "H\u00f6g feber och allm\u00e4np\u00e5verkan som f\u00f6rsta symtom",
+          "correct": false,
+          "feedback": "Systemisk infektion med feber tyder snarare p\u00e5 infekti\u00f6s orsak \u00e4n SCFE."
+        }
+      ],
+      "explanation": "SCFE presenterar ofta med sm\u00e4rta i h\u00f6ften som refereras till kn\u00e4t och f\u00f6r\u00e4ndrad g\u00e5ngbild med ut\u00e5trotation och relativ f\u00f6rkortning av benet. Tidig r\u00f6ntgen och snabb ortopedisk bed\u00f6mning \u00e4r n\u00f6dv\u00e4ndig f\u00f6r att minska risken f\u00f6r avancerad slipning och samtidiga komplikationer.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0007",
+      "type": "multiple_choice",
+      "tags": [
+        "Tum\u00f6r",
+        "Onkologi"
+      ],
+      "question": "Vilken utredning \u00e4r mest relevant som f\u00f6rsta steg vid misstanke om prim\u00e4r malign benmetastas eller prim\u00e4rt bensarkom?",
+      "image": null,
+      "options": [
+        {
+          "text": "Sl\u00e4tr\u00f6ntgen av hela det drabbade benet inklusive ledniv\u00e5 och lungstatus (thoraxr\u00f6ntgen)",
+          "correct": true,
+          "feedback": "Riktad sl\u00e4tr\u00f6ntgen av lesionen och lung\u00f6versikt \u00e4r f\u00f6rsta steg f\u00f6r att karakt\u00e4risera lesionen och utesluta lungmetastaser."
+        },
+        {
+          "text": "Direkt biopsi utan bildv\u00e4gledning",
+          "correct": false,
+          "feedback": "Biopsi utan adekvat bildv\u00e4gledning och planering kan leda till felplacerade snitt och f\u00f6rsv\u00e5ra senare behandling."
+        },
+        {
+          "text": "Helkropps PET-CT som prim\u00e4r unders\u00f6kning innan lokal r\u00f6ntgen",
+          "correct": false,
+          "feedback": "PET-CT kan vara v\u00e4rdefullt i staging men ers\u00e4tter inte initial lokal radiografi vid f\u00f6rsta misstanke."
+        },
+        {
+          "text": "Laboratoriepanel med SR, CRP och PSA som enda utredning",
+          "correct": false,
+          "feedback": "Blodprover kompletterar men kan inte ers\u00e4tta bilddiagnostik vid f\u00f6rsta misstanke om bensarkom/metastas."
+        }
+      ],
+      "explanation": "Initialt utf\u00f6rs ofta sl\u00e4tr\u00f6ntgen av det drabbade benet f\u00f6r att bed\u00f6ma lesionens karakt\u00e4r (lytic/ sclerotic / periostealreaktion) och en thoraxr\u00f6ntgen f\u00f6r att screena f\u00f6r lungmetastaser. Biopsi planeras d\u00e4refter i samr\u00e5d med ortopedsarkomcentrum och m\u00e5ste g\u00f6ras med bildv\u00e4gledning f\u00f6r att undvika kontamination av friska v\u00e4vnader.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0008",
+      "type": "multiple_choice",
+      "tags": [
+        "Infektion",
+        "Protes"
+      ],
+      "question": "Vilket \u00e4r mest sannolikt etiologiskt agens vid tidig (inom 3 m\u00e5nader) periprotetisk h\u00f6ftinfektion efter operation?",
+      "image": null,
+      "options": [
+        {
+          "text": "Staphylococcus aureus eller gramnegativa tarmbakterier",
+          "correct": true,
+          "feedback": "Tidiga periprotetiska infektioner orsakas ofta av S. aureus eller gramnegativa bakterier introducerade perioperativt."
+        },
+        {
+          "text": "Cutibacterium acnes (Propionibacterium)",
+          "correct": false,
+          "feedback": "Cutibacterium acnes f\u00f6rknippas oftare med sena, l\u00e5gvirulenta periprotetiska infektioner s\u00e4rskilt kring axelproteser."
+        },
+        {
+          "text": "Beta-hemolytiska streptokocker orsakar n\u00e4stan uteslutande sena infektioner",
+          "correct": false,
+          "feedback": "Beta-hemolytiska streptokocker kan orsaka tidiga infektioner men \u00e4r inte exklusiva f\u00f6r sena infektioner."
+        },
+        {
+          "text": "Svampinfektioner (Candida) \u00e4r vanligaste tidiga agens",
+          "correct": false,
+          "feedback": "Svampinfektioner \u00e4r ovanliga och f\u00f6rekommer oftare hos immunosupprimerade och som sena eller komplexa infektioner."
+        }
+      ],
+      "explanation": "Tidiga periprotetiska infektioner (inom 3 m\u00e5nader) orsakas ofta av h\u00f6gvirulenta hud- eller sjukhusbakterier som Staphylococcus aureus och gramnegativa organismer som introducerats vid operation. Senare infektioner kan vara orsakade av l\u00e5gvirulenta organismer s\u00e5som Cutibacterium acnes eller koagulasnegativa stafylokocker.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0009",
+      "type": "multiple_choice",
+      "tags": [
+        "Trombos",
+        "Kirurgi"
+      ],
+      "question": "Vilken profylaktisk strategi minskar mest risken f\u00f6r postoperativ djup ventrombos hos \u00e4ldre patienter efter h\u00f6ftfrakturkirurgi?",
+      "image": null,
+      "options": [
+        {
+          "text": "L\u00e5g-molekyl\u00e4rt heparin (LMWH) startad tidigt och forts\u00e4ttningsvis i minst 28\u201335 dagar postoperativt",
+          "correct": true,
+          "feedback": "LMWH i upp till 4\u20135 veckor efter h\u00f6ftfraktur minskar signifikant risken f\u00f6r DVT och lungemboli."
+        },
+        {
+          "text": "Endast tidig mobilisering utan farmakologisk profylax",
+          "correct": false,
+          "feedback": "Tidigt mobilisering \u00e4r viktigt men otillr\u00e4ckligt som ensam profylax hos h\u00f6griskpatienter."
+        },
+        {
+          "text": "Helplastsockor (TED-strumpor) utan farmaka",
+          "correct": false,
+          "feedback": "Kompression \u00f6kar s\u00e4kerheten men ger inte samma effekt som kombination med farmakologisk profylax hos h\u00f6griskpatienter."
+        },
+        {
+          "text": "Aspirin som ensam profylax direkt post-op f\u00f6r alla patienter",
+          "correct": false,
+          "feedback": "Aspirin anv\u00e4nds i vissa protokoll men LMWH har b\u00e4ttre evidens hos h\u00f6griskgrupper efter h\u00f6ftfraktur."
+        }
+      ],
+      "explanation": "Patienter efter h\u00f6ftfraktur har h\u00f6g trombembolirisk och rekommendationer st\u00f6der tidig start av LMWH eller likv\u00e4rdigt antikoagulans, ofta i 28\u201335 dagar efter operation f\u00f6r att minska DVT/PE. Mekaniska \u00e5tg\u00e4rder och tidig mobilisering kompletterar farmakologisk profylax men ers\u00e4tter den inte hos h\u00f6griskpatienter.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0010",
+      "type": "multiple_choice",
+      "tags": [
+        "Osteonekros",
+        "Riskfaktorer"
+      ],
+      "question": "Vilken kombination av faktorer ger st\u00f6rst risk f\u00f6r avaskul\u00e4r nekros (osteonekros) i caput femoris?",
+      "image": null,
+      "options": [
+        {
+          "text": "H\u00f6gdos glukokortikoidbehandling och alkoholmissbruk",
+          "correct": true,
+          "feedback": "Kortikosteroider och alkohol \u00e4r v\u00e4lk\u00e4nda och synergistiska riskfaktorer f\u00f6r osteonekros i h\u00f6ften."
+        },
+        {
+          "text": "Hypertension och hyperkolesterolemi utan andra riskfaktorer",
+          "correct": false,
+          "feedback": "Dessa \u00e4r kardiovaskul\u00e4ra riskfaktorer men inte de starkaste f\u00f6r osteonekros i caput femoris."
+        },
+        {
+          "text": "Tidigare anterior h\u00f6ftluxation i barndomen utan aktuell steroid- eller alkoholexponering",
+          "correct": false,
+          "feedback": "Trauma kan orsaka osteonekros men kronisk steroidbruk och alkohol \u00e4r vanligare orsaker i vuxna."
+        },
+        {
+          "text": "L\u00e5g fysisk aktivitet och vitamin D-brist ensam",
+          "correct": false,
+          "feedback": "Instruktionsm\u00e4ssiga faktorer som D-vitaminbrist p\u00e5verkar benmassa mer \u00e4n att orsaka osteonekros."
+        }
+      ],
+      "explanation": "Kortikosteroider och tungt alkoholintag \u00e4r de vanligaste icke-traumatiska orsakerna till avaskul\u00e4r nekros i caput femoris och kan verka synergistiskt. Traumatiska orsaker f\u00f6rekommer men i kliniska sammanhang med steroidbruk eller alkohol b\u00f6r osteonekros \u00f6verv\u00e4gas tidigt.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0011",
+      "type": "multiple_choice",
+      "tags": [
+        "Kompartmentsyndrom",
+        "Akut"
+      ],
+      "question": "Vilken parameter anses oftast indikera behov av omedelbar fasciotomi vid misst\u00e4nkt kompartmentsyndrom i underbenet?",
+      "image": null,
+      "options": [
+        {
+          "text": "Delta pressure (diastoliskt tryck minus intracompartmentellt tryck) <30 mmHg tillsammans med kliniska fynd",
+          "correct": true,
+          "feedback": "En delta pressure <30 mmHg i kombination med kliniska tecken \u00e4r en v\u00e4l anv\u00e4nd indikation f\u00f6r fasciotomi."
+        },
+        {
+          "text": "Intracompartmentellt tryck 20 mmHg utan kliniska symtom",
+          "correct": false,
+          "feedback": "Isolerat tryck p\u00e5 ~20 mmHg utan klinik \u00e4r ospecifikt och kr\u00e4ver klinisk korrelation."
+        },
+        {
+          "text": "Endast svag perifer puls som enda fynd",
+          "correct": false,
+          "feedback": "N\u00e4rvaro eller fr\u00e5nvaro av puls \u00e4r sen parameter och otillr\u00e4cklig som ensam indikation."
+        },
+        {
+          "text": "CRP-stegring och feber",
+          "correct": false,
+          "feedback": "Inflammationsv\u00e4rden och feber \u00e4r inte relevanta f\u00f6r diagnostik av kompartmentsyndrom."
+        }
+      ],
+      "explanation": "Beslut om fasciotomi bygger p\u00e5 kliniska tecken (intensiv sm\u00e4rta, \u00f6kad sm\u00e4rta vid passiv stretch, parestesier, svaghet) och m\u00e4tning av intracompartmentellt tryck; en delta pressure <30 mmHg \u00e4r en etablerad tr\u00f6skel d\u00e4r fasciotomi oftast indikeras. Pulsar kan vara bevarade \u00e4ven vid allvarligt kompartmentsyndrom och b\u00f6r inte anv\u00e4ndas ensamt.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0012",
+      "type": "multiple_choice",
+      "tags": [
+        "Axel",
+        "Skada"
+      ],
+      "question": "Vilket kliniskt test har h\u00f6gst specificitet f\u00f6r komplett supraspinatusruptur vid rotatorkuffskada?",
+      "image": null,
+      "options": [
+        {
+          "text": "Drop-arm-test (patient kan inte kontrollera l\u00e5ngsam adduktion fr\u00e5n abduktion)",
+          "correct": true,
+          "feedback": "Drop-arm-test \u00e4r specifikt f\u00f6r stor, komplett supraspinatusruptur med funktionsbortfall."
+        },
+        {
+          "text": "Neers impingement-test (sm\u00e4rta vid passiv flexion)",
+          "correct": false,
+          "feedback": "Neers test p\u00e5visar impingement men \u00e4r mindre specifikt f\u00f6r komplett ruptur."
+        },
+        {
+          "text": "Hawkins-Kennedy test (sm\u00e4rta vid intern rotation i 90\u00b0 flexion)",
+          "correct": false,
+          "feedback": "Hawkins-Kennedy indikerar subakromiellt impingement men inte specifikt fullt genomtr\u00e4ngande supraspinatusruptur."
+        },
+        {
+          "text": "Yergason-test (sm\u00e4rta vid supination mot resistans)",
+          "correct": false,
+          "feedback": "Yergason testar bicepssenan och \u00e4r inte relevant f\u00f6r supraspinatusruptur."
+        }
+      ],
+      "explanation": "Drop-arm-test \u00e4r ett funktionellt test med h\u00f6g specificitet f\u00f6r st\u00f6rre eller kompletta supraspinatusrupturer d\u00e4r patienten inte kan s\u00e4nka armen kontrollerat. Impingementtester ger information om subakromiell irrita\u00adtion men ger inte samma specificitet f\u00f6r fullst\u00e4ndiga rotatorkufft\u00e5r.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0013",
+      "type": "multiple_choice",
+      "tags": [
+        "Nerv",
+        "Hand"
+      ],
+      "question": "Vilka fynd p\u00e5 neurofysiologisk unders\u00f6kning bekr\u00e4ftar karpaltunnelsyndrom (medianuskompression)?",
+      "image": null,
+      "options": [
+        {
+          "text": "F\u00f6rl\u00e4ngd distal latens i medianusmotoriska/nervus medianus sensoriska ledningshastighet \u00f6ver karpaltunneln",
+          "correct": true,
+          "feedback": "F\u00f6rl\u00e4ngd distal latens och nedsatt ledningshastighet \u00f6ver karpaltunneln \u00e4r diagnostiskt f\u00f6r medianuskompression."
+        },
+        {
+          "text": "Normal medianusledningshastighet men f\u00f6rl\u00e4ngd ulnariskomponent",
+          "correct": false,
+          "feedback": "Fynd i ulnarisnerven pekar inte p\u00e5 karpaltunnelsyndrom utan snarare ulnarislesion."
+        },
+        {
+          "text": "Endast EMG-fibrillationspotentialer i bicepsmuskulatur",
+          "correct": false,
+          "feedback": "Fibrillationer i proximala muskulatur reflekterar inte medianuskompression vid karpaltunnel."
+        },
+        {
+          "text": "Allm\u00e4n polyneuropati utan fokal distal f\u00f6rdr\u00f6jning",
+          "correct": false,
+          "feedback": "Polyneuropati ger diffusa f\u00f6r\u00e4ndringar och skiljer sig fr\u00e5n den fokala medianusf\u00f6r\u00e4ndringen i karpaltunneln."
+        }
+      ],
+      "explanation": "Diagnosen karpaltunnelsyndrom st\u00f6djs av nervledningsstudier som visar f\u00f6rl\u00e4ngd distal latens och s\u00e4nkt ledningshastighet f\u00f6r medianusnerven \u00f6ver karpaltunneln. EMG kan komplettera f\u00f6r att bed\u00f6ma graden av axonalt bortfall, medan normal NCS talar emot signifikant kompression.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0014",
+      "type": "multiple_choice",
+      "tags": [
+        "Neoplasma",
+        "Metastaser"
+      ],
+      "question": "Vilken tum\u00f6rtyp \u00e4r statistiskt sett den vanligaste orsaken till osteolytiska benmetastaser hos vuxna m\u00e4n?",
+      "image": null,
+      "options": [
+        {
+          "text": "Prostatacancer ger oftast osteoblastiska snarare \u00e4n osteolytiska lesioner",
+          "correct": false,
+          "feedback": "Prostatacancer karakteriseras vanligen av osteoblastiska (sclerotiska) metastaser, inte prim\u00e4rt osteolytiska."
+        },
+        {
+          "text": "Njurcancer (renal cell carcinoma)",
+          "correct": true,
+          "feedback": "Njurcellscancer ger ofta solit\u00e4ra eller multipla osteolytiska benmetastaser."
+        },
+        {
+          "text": "Kolorektalcancer orsakar prim\u00e4rt mjukdelsmetastaser och \u00e4r ovanlig som osteolytisk k\u00e4lla",
+          "correct": false,
+          "feedback": "Kolorektalcancer metastaserar visserligen till skelett men \u00e4r inte den vanligaste orsaken till osteolytiska lesioner."
+        },
+        {
+          "text": "Br\u00f6stcancer \u00e4r den vanligaste orsaken hos m\u00e4n",
+          "correct": false,
+          "feedback": "Br\u00f6stcancer \u00e4r vanligare hos kvinnor; hos m\u00e4n \u00e4r njurcancer en vanlig orsak till osteolytiska metastaser."
+        }
+      ],
+      "explanation": "Hos m\u00e4n \u00e4r njurcellscancer en av de tum\u00f6rtyper som ofta ger osteolytiska benmetastaser och kan upptr\u00e4da som solit\u00e4ra lesioner i skelettet. Prostatacancer ger i st\u00e4llet ofta osteoblastiska f\u00f6r\u00e4ndringar, vilket skiljer sig radiologiskt och p\u00e5verkar utredning och behandling.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0015",
+      "type": "multiple_choice",
+      "tags": [
+        "Onkologi",
+        "Myelom"
+      ],
+      "question": "Vilket fynd talar mest f\u00f6r multipelt myelom vid utredning av skelettsm\u00e4rta och anemi?",
+      "image": null,
+      "options": [
+        {
+          "text": "Lytiska 'punched-out' lesioner p\u00e5 skelett-r\u00f6ntgen och monoklonal gammopati i serumproteinfraktionering",
+          "correct": true,
+          "feedback": "Kombinationen av lytiska lesioner och monoklonal M-komponent \u00e4r typisk f\u00f6r myelom."
+        },
+        {
+          "text": "Sclerotiska benf\u00f6r\u00e4ndringar och normal serumkalcium",
+          "correct": false,
+          "feedback": "Sclerotiska f\u00f6r\u00e4ndringar \u00e4r mer f\u00f6renliga med metastaser fr\u00e5n prostata \u00e4n med myelom."
+        },
+        {
+          "text": "\u00d6kat antal osteoblaster i biopsi och h\u00f6gt ben-specifikt alkalinfosfatas",
+          "correct": false,
+          "feedback": "Myelom orsakar oftast osteoklastisk aktivitet och lytiska lesioner, inte osteoblast-proliferation."
+        },
+        {
+          "text": "Multipla subkondrala cystor i indirekt MR utan plasmacellsavvikelse i blodet",
+          "correct": false,
+          "feedback": "Subkondrala cystor utan hematologiska fynd \u00e4r icke-specifikt och inte s\u00e4kert myelom."
+        }
+      ],
+      "explanation": "Multipelt myelom ger karakteristiska lytiska 'punched-out' benf\u00f6r\u00e4ndringar samt en monoklonal M-komponent i serum- eller urinproteinfraktionering; hematologiska avvikelser som anemi \u00e4r vanliga. Diagnosen bekr\u00e4ftas med benm\u00e4rgsbiopsi och ytterligare laboratorieprover (kreatinin, kalcium, fria l\u00e4tta kedjor).",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0016",
+      "type": "multiple_choice",
+      "tags": [
+        "Fraktur",
+        "Axel"
+      ],
+      "question": "Vid luxationsfraktur av proximala humerus hos \u00e4ldre med osteoporos, vilket behandlingsm\u00e5l \u00e4r allra viktigast f\u00f6r att optimera funktion?",
+      "image": null,
+      "options": [
+        {
+          "text": "\u00c5teretablera tuberculum major/minor-funktion f\u00f6r att m\u00f6jligg\u00f6ra rotatorkuffens mekanik",
+          "correct": true,
+          "feedback": "Tuberkelrepositionen \u00e4r avg\u00f6rande f\u00f6r rotatorkuffens funktion och d\u00e4rmed axelfunktionen."
+        },
+        {
+          "text": "Endast anatomisk reduction av kirurgiskt halsfrakturen oavsett tuberkelstatus",
+          "correct": false,
+          "feedback": "Anatomisk reduction utan tuberkel\u00e5terst\u00e4llning kan ge kvarst\u00e5ende funktionsneds\u00e4ttning vid rotatorkuffp\u00e5verkan."
+        },
+        {
+          "text": "Prim\u00e4r total axelprotes f\u00f6r alla \u00e4ldre patienter oavsett frakturtyp",
+          "correct": false,
+          "feedback": "Totalprotes \u00e4r inte alltid n\u00f6dv\u00e4ndigt och b\u00f6r \u00f6verv\u00e4gas utifr\u00e5n frakturtyp och patientens funktionskrav."
+        },
+        {
+          "text": "Kort immobilisering och tidig intensiv \u00f6verkroppstr\u00e4ning f\u00f6r maximal r\u00f6relseomf\u00e5ng",
+          "correct": false,
+          "feedback": "Tidiga intensiva r\u00f6relser riskerar icke-l\u00e4kning och f\u00f6rsv\u00e5rar tuberkelreposition och rotatorkuffrehabilitering."
+        }
+      ],
+      "explanation": "I proximala humerusfrakturer \u00e4r tuberculum major/minor och deras relation viktiga f\u00f6r att \u00e5teruppr\u00e4tta rotatorkuffens vridmoment och d\u00e4rmed axelns funktion, s\u00e4rskilt hos osteoporotiska \u00e4ldre. Behandlingsval (konservativ, osteosyntes, hemi- eller reverse-protes) best\u00e4ms utifr\u00e5n frakturtyp, tuberkelstatus och patientens funktionella behov.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0017",
+      "type": "multiple_choice",
+      "tags": [
+        "R\u00e4ttpsykologi",
+        "Sekund\u00e4r"
+      ],
+      "question": "Vilket av f\u00f6ljande p\u00e5st\u00e5enden om sekund\u00e4r frakturprevention efter en distal radiusfraktur hos en 68-\u00e5rig kvinna \u00e4r mest korrekt?",
+      "image": null,
+      "options": [
+        {
+          "text": "Utv\u00e4rdera f\u00f6r osteoporos med DXA och starta behandling enligt FRAX och riskprofil; \u00f6verv\u00e4g kalcium/D-vitamin och antiresorptiva l\u00e4kemedel vid indikationskriterier",
+          "correct": true,
+          "feedback": "Efter fragilitetsfraktur ska patienten utredas f\u00f6r osteoporos och erbjudas sekund\u00e4rprevention enligt riskbed\u00f6mning."
+        },
+        {
+          "text": "Ingen ytterligare utredning eller behandling beh\u00f6vs om patienten redan f\u00e5r NSAID f\u00f6r sm\u00e4rtan",
+          "correct": false,
+          "feedback": "Analgetika ers\u00e4tter inte behovet av osteoporosutredning och sekund\u00e4rprevention efter fragilitetsfraktur."
+        },
+        {
+          "text": "Endast fysioterapi rekommenderas eftersom l\u00e4kemedel inte p\u00e5verkar framtida frakturrisk",
+          "correct": false,
+          "feedback": "Fysioterapi \u00e4r viktig men farmakologisk sekund\u00e4rprevention minskar framtida frakturrisk och b\u00f6r \u00f6verv\u00e4gas."
+        },
+        {
+          "text": "Ange h\u00f6gdos kalcium som ensam behandling f\u00f6r att f\u00f6rebygga nya frakturer",
+          "correct": false,
+          "feedback": "Kalcium/D-vitamin kan komplettera men \u00e4r inte tillr\u00e4ckligt som ensam behandling vid h\u00f6g frakturrisk."
+        }
+      ],
+      "explanation": "En distal radiusfraktur hos en \u00e4ldre kvinna ska betraktas som en fragilitetsfraktur och utl\u00f6sa osteoporosutredning (DXA) samt riskbed\u00f6mning (t.ex. FRAX) f\u00f6r att avg\u00f6ra behov av antiresorptiv eller anabol behandling. B\u00e5de farmakologisk sekund\u00e4rprevention och nondrog\u00e5tg\u00e4rder (vitamin D, fallprevention, fysio) \u00e4r centrala f\u00f6r att minska framtida frakturrisk.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0018",
+      "type": "multiple_choice",
+      "tags": [
+        "Hand",
+        "Nerv"
+      ],
+      "question": "Vid en distal radiusfraktur utvecklar patienten progressiva domningar i tummens radialt lokaliserade fingrar postoperativt \u2014 vilket \u00e4r den mest sannolika f\u00f6rklaringen?",
+      "image": null,
+      "options": [
+        {
+          "text": "Akut karpaltunnelsyndrom p\u00e5 grund av blod- eller svullnadsrelaterad medianuskompression",
+          "correct": true,
+          "feedback": "Svullnad eller hematom efter radiusfraktur kan ge akut medianuskompression i karpaltunneln."
+        },
+        {
+          "text": "Ulnarisnervens kompression i Guyons kanal",
+          "correct": false,
+          "feedback": "Ulnarisnerven p\u00e5verkar ulnara fingrar och tummen p\u00e5verkas inte prim\u00e4rt av Guyons kanal-p\u00e5verkan."
+        },
+        {
+          "text": "Radialisnervens skada vid distal radiusfraktur",
+          "correct": false,
+          "feedback": "Radialisnerven f\u00f6rs\u00f6rjer dorsala extensorer och sensibilitet dorsalt av handryggen, inte volara tummens fingrar."
+        },
+        {
+          "text": "Complex regional pain syndrome utan nervp\u00e5verkan",
+          "correct": false,
+          "feedback": "CRPS kan orsaka sensoriska st\u00f6rningar men upptr\u00e4der typiskt senare och inte som akut fokal medianussymtombild."
+        }
+      ],
+      "explanation": "Efter distal radiusfraktur \u00e4r akut karpaltunnelsyndrom en v\u00e4lk\u00e4nd komplikation till f\u00f6ljd av svullnad eller bl\u00f6dning som \u00f6kar trycket i karpaltunneln och komprimerar medianusnerven, vilket ger dominanta domningar i tummens radialt lokaliserade fingrar. Tidig diagnos och fasciotomi/karpaltunneldekompression kan vara n\u00f6dv\u00e4ndig f\u00f6r att f\u00f6rhindra permanent nervskada.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0019",
+      "type": "multiple_choice",
+      "tags": [
+        "Barnortopedi",
+        "Scolios"
+      ],
+      "question": "Vilken grad av strukturell thorakal idiopatisk skolios (Cobb-vinkel) hos en 14\u2011\u00e5rig flicka indikerar vanligen behov av ortopedisk korsettbehandling?",
+      "image": null,
+      "options": [
+        {
+          "text": "25\u201340\u00b0 med kvarvarande tillv\u00e4xtpotential",
+          "correct": true,
+          "feedback": "Korsetbehandling rekommenderas ofta vid 25\u201340\u00b0 hos v\u00e4xande patienter f\u00f6r att hindra progression."
+        },
+        {
+          "text": "<10\u00b0 som observation endast",
+          "correct": false,
+          "feedback": "Kurvor <10\u00b0 klassificeras som skoliosinsufficiens eller varianter och kr\u00e4ver oftast endast observation."
+        },
+        {
+          "text": ">70\u00b0 d\u00e4r korsettbehandling \u00e4r effektiv och f\u00f6rsta linjens terapi",
+          "correct": false,
+          "feedback": "Kurvor >70\u00b0 \u00e4r ofta kirurgiskt indikativa; korsettbehandling \u00e4r ineffektiv i denna sv\u00e5righetsgrad hos v\u00e4xande patienter."
+        },
+        {
+          "text": "15\u201320\u00b0 alltid kr\u00e4ver omedelbar kirurgi p\u00e5 grund av h\u00f6g progressionsrisk",
+          "correct": false,
+          "feedback": "L\u00e4tta kurvor (15\u201320\u00b0) \u00f6vervakas och korsettbehandling \u00f6verv\u00e4gs ist\u00e4llet f\u00f6r omedelbar kirurgi."
+        }
+      ],
+      "explanation": "Korsetbehandling (bracing) \u00e4r indicerat f\u00f6r v\u00e4xande patienter med Cobb-vinkel vanligen mellan 25\u201340\u00b0 f\u00f6r att f\u00f6rhindra kurvprogression. Mindre kurvor observeras och stora kurvor (>45\u201350\u00b0 beroende p\u00e5 k\u00e4lla) \u00f6verv\u00e4gs f\u00f6r kirurgi beroende p\u00e5 mognad och progression.",
+      "source": "medical_exam/ortopedi"
+    },
+    {
+      "id": "med-gen-c8a7-0020",
+      "type": "multiple_choice",
+      "tags": [
+        "Fraktur",
+        "Barn"
+      ],
+      "question": "Vilken initial handl\u00e4ggning \u00e4r mest l\u00e4mplig vid misst\u00e4nkt 'nursemaid's elbow' (radial head subluxation) hos ett litet barn?",
+      "image": null,
+      "options": [
+        {
+          "text": "Utf\u00f6rning av snabb rekonstruktionsteknik (supination f\u00f6ljt av flexion) eller alternativt hyperpronation, f\u00f6ljt av omedelbar funktionstest",
+          "correct": true,
+          "feedback": "Snabb reponering med supination + flexion eller hyperpronation \u00e4r standard och \u00e5terst\u00e4ller oftast funktionen omedelbart."
+        },
+        {
+          "text": "Immobilisera armen i gips i tv\u00e5 veckor och avvakta spontan reduktion",
+          "correct": false,
+          "feedback": "Gipsning f\u00f6rdr\u00f6jer \u00e5terst\u00e4llning; reponering utf\u00f6rs akut med h\u00f6g framg\u00e5ng."
+        },
+        {
+          "text": "Akut r\u00f6ntgen innan n\u00e5gon reponering eftersom fraktur \u00e4r det vanligaste tillst\u00e5ndet",
+          "correct": false,
+          "feedback": "Fraktur \u00e4r mindre sannolik; klinisk bed\u00f6mning och f\u00f6rs\u00f6k till reponering \u00e4r f\u00f6rstahands\u00e5tg\u00e4rd om presentationen \u00e4r typisk."
+        },
+        {
+          "text": "Ge opioida analgetika och f\u00f6lj upp n\u00e4sta dag f\u00f6r eventuell reponering under narkos",
+          "correct": false,
+          "feedback": "Un\u00f6dig sm\u00e4rta och f\u00f6rdr\u00f6jning; enkel reponering utan narkos brukar vara framg\u00e5ngsrik."
+        }
+      ],
+      "explanation": "Radial head subluxation ('nursemaid's elbow') hos sm\u00e5barn behandlas akut med reponeringsteknik (supination + flexion eller hyperpronation) som ofta \u00e5terst\u00e4ller normal funktion omedelbart. R\u00f6ntgen beh\u00f6vs endast vid atypisk presentation eller om reponering misslyckas eller misstanke om fraktur kvarst\u00e5r.",
       "source": "medical_exam/ortopedi"
     },
     {
@@ -12075,7 +14019,7 @@
     }
   ],
   "meta": {
-    "total_questions": 307,
-    "generated_at": "2026-01-13T13:31:48.005345+00:00"
+    "total_questions": 364,
+    "generated_at": "2026-01-13T13:48:37.248361+00:00"
   }
 }
