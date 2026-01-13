@@ -139,7 +139,7 @@ def main():
     
     try:
         response = client.chat.completions.create(
-            model="gpt-4-turbo-preview", # Using current best avail model
+            model="gpt-5-mini",
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": user_prompt}
