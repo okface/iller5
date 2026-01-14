@@ -1,0 +1,78 @@
+name: Deploy Preview Branch (Subject Picking)
+
+# This workflow deploys the copilot/add-subject-picking-functionality branch
+# to a separate location so it can be tested without affecting the main app.
+# The preview will be accessible at: https://okface.github.io/iller5-preview/
+
+on:
+  push:
+    branches: ["copilot/add-subject-picking-functionality"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  # Base paths for deployment
+  ORIGINAL_BASE: '/iller5/'
+  PREVIEW_BASE: '/iller5-preview/'
+
+jobs:
+  build-and-deploy-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout preview branch
+        uses: actions/checkout@v4
+
+      # 1. Setup Python & Bundle Data
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Python Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Bundler
+        # This generates public/content.json from the YAML files in data/
+        run: python scripts/bundle.py
+
+      # 2. Setup Node & Build Vue App
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build with preview base path
+        run: |
+          # Temporarily modify vite.config.js to use preview base path
+          # This is safe because it only modifies the build environment, not the source
+          cp vite.config.js vite.config.js.backup
+          sed -i "s|base: '${{ env.ORIGINAL_BASE }}'|base: '${{ env.PREVIEW_BASE }}'|g" vite.config.js
+          # Verify the modification worked
+          if ! grep -q "base: '${{ env.PREVIEW_BASE }}'" vite.config.js; then
+            echo "Error: Failed to modify vite.config.js"
+            cat vite.config.js
+            exit 1
+          fi
+          npm run build
+          # Restore original (though not strictly necessary in CI)
+          mv vite.config.js.backup vite.config.js
+
+      # 3. Deploy to gh-pages-preview branch
+      - name: Deploy to GitHub Pages (Preview)
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages-preview
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: >-
+            Deploy preview from copilot/add-subject-picking-functionality

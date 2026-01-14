@@ -113,3 +113,20 @@ We use a lightweight "Bucket System" stored in `localStorage`.
 - **Repo:** GitHub.
 - **Hosting:** GitHub Pages.
 - **Update Workflow:** User pushes new YAML -> GitHub Actions bundles data -> Site updates.
+
+### Production and Preview Deployments
+
+This project supports two parallel deployments:
+
+1. **Production (Main App)**
+   - Branch: `main`
+   - URL: https://okface.github.io/iller5/
+   - Deploy script: `./deploy.ps1` (PowerShell) or `git push origin main`
+
+2. **Preview (Testing New Features)**
+   - Branch: `copilot/add-subject-picking-functionality`
+   - URL: https://okface.github.io/iller5-preview/ (when configured)
+   - Deploy script: `./deploy-preview.ps1` (PowerShell) or `./deploy-preview.sh` (Bash)
+   - See `DEPLOY-PREVIEW.md` for complete setup instructions
+
+The preview deployment allows testing new features without affecting the main production site.
