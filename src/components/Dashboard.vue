@@ -7,19 +7,25 @@ const store = useStudyStore();
 const showCategoryPicker = ref(false);
 const selectedSources = ref(new Set());
 
-// Group subjects for display
+// Group subjects for display - only show selected subject's topics
 // store.subjects is { folder: [file1, file2] }
 const subjectsList = computed(() => {
-  return Object.keys(store.subjects).map(folder => ({
-    name: folder,
-    topics: store.subjects[folder]
-  }));
+  if (!store.selectedSubject) return [];
+  const subject = store.selectedSubject;
+  return [{
+    name: subject,
+    topics: store.subjects[subject] || []
+  }];
 });
 
-const totalQuestions = computed(() => store.questions?.length || 0);
+const hasMultipleSubjects = computed(() => {
+  return Object.keys(store.subjects || {}).length > 1;
+});
+
+const totalQuestions = computed(() => store.filteredQuestions?.length || 0);
 const answeredCount = computed(() => {
   let n = 0;
-  for (const q of store.questions || []) {
+  for (const q of store.filteredQuestions || []) {
     const p = store.progress?.[q.id];
     if (Number(p?.seen || 0) > 0) n += 1;
   }
@@ -28,7 +34,7 @@ const answeredCount = computed(() => {
 
 const correctOnceCount = computed(() => {
   let n = 0;
-  for (const q of store.questions || []) {
+  for (const q of store.filteredQuestions || []) {
     const p = store.progress?.[q.id];
     if (Number(p?.correct || 0) > 0) n += 1;
   }
@@ -40,7 +46,7 @@ const remainingToCorrectOnce = computed(() => Math.max(0, totalQuestions.value -
 
 const incorrectEverCount = computed(() => {
   let n = 0;
-  for (const q of store.questions || []) {
+  for (const q of store.filteredQuestions || []) {
     const p = store.progress?.[q.id];
     if (Number(p?.wrong || 0) > 0) n += 1;
   }
@@ -50,7 +56,7 @@ const incorrectEverCount = computed(() => {
 const totalAccuracy = computed(() => {
   let seen = 0;
   let correct = 0;
-  for (const q of store.questions || []) {
+  for (const q of store.filteredQuestions || []) {
     const p = store.progress?.[q.id];
     seen += Number(p?.seen || 0);
     correct += Number(p?.correct || 0);
@@ -153,10 +159,38 @@ const focusSelected = (count) => {
   store.startSession('focus', sources, count);
   showCategoryPicker.value = false;
 };
+
+const backToSubjects = () => {
+  store.view = 'subjectPicker';
+};
+
+const prettySubject = (subject) => {
+  const overrides = {
+    medical_exam: 'Läkarexamen',
+    korkortsteori: 'Körkortsteori',
+  };
+  if (overrides[subject]) return overrides[subject];
+  // Fallback: format name by replacing underscores and capitalizing
+  return String(subject || '').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+};
 </script>
 
 <template>
   <div class="space-y-8 p-4">
+    <!-- Subject Header with Back Button -->
+    <section v-if="hasMultipleSubjects && store.selectedSubject" class="flex items-center justify-between pb-2 border-b border-stone-200">
+      <div>
+        <h1 class="text-2xl font-extrabold text-slate-900">{{ prettySubject(store.selectedSubject) }}</h1>
+        <p class="text-sm text-slate-500 mt-1">{{ totalQuestions }} frågor</p>
+      </div>
+      <button
+        @click="backToSubjects"
+        class="px-4 py-2 text-sm border border-stone-300 rounded-lg hover:bg-stone-100 transition"
+      >
+        ← Byt ämne
+      </button>
+    </section>
+    
     <!-- Compact stats + quick actions (mobile-first) -->
     <section class="space-y-3">
       <div class="flex gap-2">

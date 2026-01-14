@@ -116,7 +116,7 @@ def build_question_batch_schema():
 # PROMPTS
 # -------------------------------------------------------------------------
 
-SYSTEM_PROMPT = """
+SYSTEM_PROMPT_MEDICAL = """
 Du är en expertlärare som skapar högkvalitativa, avancerade flashcards-frågor.
 Ditt mål är att generera svåra, precisa och pedagogiska flervalsfrågor PÅ SVENSKA.
 
@@ -128,6 +128,29 @@ INNEHÅLLSKRAV:
 2. Explanation MÅSTE vara syntes-orienterad (2-3 meningar).
 3. Svårighetsgrad: Läkarexamen / Specialistnivå.
 """
+
+SYSTEM_PROMPT_KORKORTSTEORI = """
+Du är en expertlärare i svensk körkortsteori som skapar pedagogiska och realistiska övningsfrågor.
+Ditt mål är att generera precisa flervalsfrågor PÅ SVENSKA som förbereder elever för det svenska körkortsprovet (teoriprovet).
+
+Språk: Svenska.
+Ton: Tydlig, pedagogisk och lättförståelig.
+
+INNEHÅLLSKRAV:
+1. Frågor ska baseras på svenska trafikregler och vägmärken enligt Transportstyrelsens regelverk.
+2. Feedback MÅSTE vara koncis och pedagogisk (1-2 meningar).
+3. Explanation MÅSTE förklara regeln tydligt och varför andra alternativ är felaktiga (2-3 meningar).
+4. Svårighetsgrad: Körkortsprovet (B-körkort) - realistiska frågor som kan förekomma på det riktiga provet.
+5. Fokusera på praktisk tillämpning och verkliga trafiksituationer.
+6. När du refererar till vägmärken, beskriv dem tydligt (form, färg, symbol).
+"""
+
+def get_system_prompt(subject):
+    """Returns appropriate system prompt based on subject."""
+    if subject == 'korkortsteori':
+        return SYSTEM_PROMPT_KORKORTSTEORI
+    else:
+        return SYSTEM_PROMPT_MEDICAL
 
 # -------------------------------------------------------------------------
 # FUNCTIONS
@@ -265,6 +288,22 @@ def main():
     # 5. Call LLM
     print(f"\nContacting OpenAI (gpt-5-mini) via Structured Outputs...")
     
+    # Get appropriate system prompt
+    system_prompt = get_system_prompt(subject)
+    
+    # Customize user prompt based on subject
+    if subject == 'korkortsteori':
+        id_prefix = f"kork-{filename.replace('.yaml', '')[:4]}"
+        extra_instructions = """
+    - Fokusera på svenska trafikregler, vägmärken och trafiksäkerhet.
+    - Använd realistiska scenarier från svensk trafik.
+    - Om du hänvisar till vägmärken, beskriv dem tydligt.
+    - Tänk på att frågor ska vara användbara för körkortsprovet (B-körkort).
+        """
+    else:
+        id_prefix = f"med-{filename.replace('.yaml', '')[:4]}"
+        extra_instructions = ""
+    
     user_prompt = f"""
     Ämne: {subject}
     Topic: {filename.replace('.yaml', '')}
@@ -282,7 +321,8 @@ def main():
     Generera {count_req} nya frågor.
     - FYLL LUCKOR i ämnet: skapa frågor som kompletterar det som saknas.
     - Återanvänd gärna existerande taggar när det passar; introducera nya endast om nödvändigt.
-    - Generera unika IDn med format ex: "med-gen-{uuid.uuid4().hex[:4]}-..."
+    - Generera unika IDn med format ex: "{id_prefix}-{uuid.uuid4().hex[:4]}-..."
+    {extra_instructions}
     """
     
     try:
@@ -290,7 +330,7 @@ def main():
         completion = client.chat.completions.create(
             model="gpt-5-mini", 
             messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
             ],
             response_format={
