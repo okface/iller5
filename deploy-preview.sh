@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # Deploy Helper Script for Iller5 Preview Branch
 # Usage: ./deploy-preview.sh "Your commit message"
 
