@@ -169,7 +169,9 @@ const prettySubject = (subject) => {
     medical_exam: 'Läkarexamen',
     korkortsteori: 'Körkortsteori',
   };
-  return overrides[subject] || formatName(subject);
+  if (overrides[subject]) return overrides[subject];
+  // Fallback: format name by replacing underscores and capitalizing
+  return String(subject || '').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
 };
 </script>
 
