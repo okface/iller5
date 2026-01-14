@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -euo pipefail
 # Deploy Helper Script for Iller5 Preview Branch
 # Usage: ./deploy-preview.sh "Your commit message"
 
@@ -19,9 +20,10 @@ fi
 # 2. Run Bundler locally (sanity check)
 echo "1. Running Bundler..."
 python scripts/bundle.py
-if [ $? -ne 0 ]; then
+BUNDLER_EXIT=$?
+if [ $BUNDLER_EXIT -ne 0 ]; then
     echo "Error: Bundler failed. Fix errors before pushing."
-    exit 1
+    exit $BUNDLER_EXIT
 fi
 
 # 3. Git Operations

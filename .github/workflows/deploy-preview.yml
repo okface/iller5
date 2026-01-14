@@ -12,6 +12,11 @@ on:
 permissions:
   contents: write
 
+env:
+  # Base paths for deployment
+  ORIGINAL_BASE: '/iller5/'
+  PREVIEW_BASE: '/iller5-preview/'
+
 jobs:
   build-and-deploy-preview:
     runs-on: ubuntu-latest
@@ -48,9 +53,9 @@ jobs:
           # Temporarily modify vite.config.js to use preview base path
           # This is safe because it only modifies the build environment, not the source
           cp vite.config.js vite.config.js.backup
-          sed -i "s|base: '/iller5/'|base: '/iller5-preview/'|g" vite.config.js
+          sed -i "s|base: '${{ env.ORIGINAL_BASE }}'|base: '${{ env.PREVIEW_BASE }}'|g" vite.config.js
           # Verify the modification worked
-          if ! grep -q "base: '/iller5-preview/'" vite.config.js; then
+          if ! grep -q "base: '${{ env.PREVIEW_BASE }}'" vite.config.js; then
             echo "Error: Failed to modify vite.config.js"
             cat vite.config.js
             exit 1

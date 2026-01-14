@@ -22,7 +22,7 @@ Write-Host "1. Running Bundler..." -ForegroundColor Yellow
 python scripts/bundle.py
 if ($LASTEXITCODE -ne 0) {
     Write-Host "Error: Bundler failed. Fix errors before pushing." -ForegroundColor Red
-    exit 1
+    exit $LASTEXITCODE
 }
 
 # 3. Git Operations
