@@ -1,0 +1,109 @@
+- id: kork-traf-001
+  type: multiple_choice
+  tags:
+  - Hastighet
+  - Skyltning
+  question: Vad är den högsta tillåtna hastigheten på en landsväg om inget annat anges?
+  image: null
+  options:
+  - text: 70 km/h
+    correct: true
+    feedback: Korrekt! På landsvägar gäller 70 km/h som allmän hastighetsbegränsning.
+  - text: 80 km/h
+    correct: false
+    feedback: För högt. 80 km/h gäller endast där det är särskilt angivet.
+  - text: 90 km/h
+    correct: false
+    feedback: För högt. 90 km/h gäller endast på motorvägar och motortrafikled.
+  - text: 50 km/h
+    correct: false
+    feedback: För lågt. 50 km/h gäller i tätbebyggt område.
+  explanation: I Sverige är den allmänna hastighetsbegränsningen på landsvägar 70 km/h om inget annat anges med skylt. Detta gäller vägar utanför tättbebyggt område som inte är motorväg eller motortrafikled.
+
+- id: kork-traf-002
+  type: multiple_choice
+  tags:
+  - Företräde
+  - Korsningar
+  question: Du kommer fram till en korsning med stoppskylt. Vad innebär det?
+  image: null
+  options:
+  - text: Du måste stanna helt innan korsningen och ge företräde åt all trafik
+    correct: true
+    feedback: Korrekt! Stoppskylt innebär att du måste stanna helt och lämna företräde.
+  - text: Du måste bromsa in kraftigt men behöver inte stanna helt
+    correct: false
+    feedback: Fel. Stoppskylt kräver fullständigt stopp.
+  - text: Du har företräde framför trafik från höger
+    correct: false
+    feedback: Fel. Stoppskylt innebär att du ska lämna företräde, inte tvärtom.
+  - text: Du får köra fram om det är fritt
+    correct: false
+    feedback: Fel. Du måste stanna helt oavsett trafiksituation.
+  explanation: Stoppskylt (väjningsplikt mot alla) är den starkaste företrädesregeln. Du måste alltid göra ett fullständigt stopp vid stopplinjen eller där du har siktkontakt, och sedan lämna företräde åt all annan trafik.
+
+- id: kork-traf-003
+  type: multiple_choice
+  tags:
+  - Alkohol
+  - Lag
+  question: Vad är gränsen för rattfylleri i Sverige?
+  image: null
+  options:
+  - text: 0,2 promille
+    correct: true
+    feedback: Korrekt! Gränsen för rattfylleri är 0,2 promille i Sverige.
+  - text: 0,5 promille
+    correct: false
+    feedback: För högt. Det är gränsen för grovt rattfylleri.
+  - text: 0,0 promille
+    correct: false
+    feedback: Inte helt rätt. Det finns en lägre gräns för "påverkan" men rattfylleri börjar vid 0,2.
+  - text: 0,8 promille
+    correct: false
+    feedback: Alldeles för högt. Detta var gränsen förr i tiden i vissa länder.
+  explanation: I Sverige är gränsen för rattfylleri 0,2 promille. För grovt rattfylleri är gränsen 0,5 promille eller om föraren bedöms vara uppenbart påverkad. Det finns också ett brott som heter "olovlig körning under påverkan" för lägre nivåer än 0,2 promille.
+
+- id: kork-traf-004
+  type: multiple_choice
+  tags:
+  - Parkering
+  - Regler
+  question: Hur nära ett vägkorsning får du parkera?
+  image: null
+  options:
+  - text: 10 meter
+    correct: true
+    feedback: Korrekt! Du får inte parkera närmare än 10 meter från en korsning.
+  - text: 5 meter
+    correct: false
+    feedback: För nära. 5 meter är för kort avstånd till korsning.
+  - text: 20 meter
+    correct: false
+    feedback: För långt. Regeln säger 10 meter.
+  - text: 15 meter
+    correct: false
+    feedback: För långt. Regeln säger 10 meter.
+  explanation: Enligt trafikförordningen får du inte parkera närmare än 10 meter från ett vägkorsning. Detta är för att säkerställa god sikt för andra trafikanter som närmar sig korsningen.
+
+- id: kork-traf-005
+  type: multiple_choice
+  tags:
+  - Signaler
+  - Trafiksignaler
+  question: Vad betyder ett gult blinkande ljus i ett trafiksignal?
+  image: null
+  options:
+  - text: Varning - fortsätt med försiktighet och följ väjningsreglerna
+    correct: true
+    feedback: Korrekt! Gult blinkande ljus innebär varning och att du ska följa normala väjningsregler.
+  - text: Stanna omedelbart
+    correct: false
+    feedback: Fel. Det är rött ljus som betyder stopp.
+  - text: Öka farten för att passera snabbt
+    correct: false
+    feedback: Fel. Tvärtom ska du vara extra försiktig.
+  - text: Trafiksignalen är ur funktion, ignorera den
+    correct: false
+    feedback: Delvis sant att den inte fungerar normalt, men du måste fortfarande följa väjningsregler.
+  explanation: Ett gult blinkande ljus i en trafiksignal indikerar varning och att signalen inte är i normal drift. Du ska fortsätta med extra försiktighet och följa de vanliga väjnings- och företrädesreglerna för korsningen.

@@ -32,7 +32,8 @@ export const useStudyStore = defineStore('study', {
   state: () => ({
     loading: true,
     error: null,
-    view: 'dashboard', // dashboard, quiz, summary
+    view: 'subjectPicker', // subjectPicker, dashboard, quiz, summary
+    selectedSubject: useStorage('iller5-selected-subject', null), // Track selected subject
     
     // Data (Loaded from JSON)
     subjects: {}, // Structure: { folder: [ 'filename', ... ] }
@@ -60,6 +61,12 @@ export const useStudyStore = defineStore('study', {
         counts[q.source] = (counts[q.source] || 0) + 1;
       }
       return counts;
+    },
+    
+    // Filter questions by selected subject
+    filteredQuestions: (state) => {
+      if (!state.selectedSubject) return state.questions;
+      return state.questions.filter(q => q.source?.startsWith(`${state.selectedSubject}/`));
     },
   },
 
@@ -108,12 +115,35 @@ export const useStudyStore = defineStore('study', {
         this.subjects = data.subjects;
         this.questions = data.questions;
         
+        // Determine initial view based on subject selection
+        const hasMultipleSubjects = Object.keys(this.subjects).length > 1;
+        if (hasMultipleSubjects && !this.selectedSubject) {
+          this.view = 'subjectPicker';
+        } else if (hasMultipleSubjects && this.selectedSubject) {
+          // Validate that selected subject still exists
+          if (!this.subjects[this.selectedSubject]) {
+            this.selectedSubject = null;
+            this.view = 'subjectPicker';
+          } else {
+            this.view = 'dashboard';
+          }
+        } else {
+          // Only one subject, auto-select it and go to dashboard
+          this.selectedSubject = Object.keys(this.subjects)[0];
+          this.view = 'dashboard';
+        }
+        
         // Sanitize progress (remove IDs that don't exist anymore if needed, or just ignore them)
       } catch (e) {
         this.error = e.message;
       } finally {
         this.loading = false;
       }
+    },
+
+    selectSubject(subjectKey) {
+      this.selectedSubject = subjectKey;
+      this.view = 'dashboard';
     },
 
     startSession(mode, target = null, countOverride = null) {
@@ -128,7 +158,8 @@ export const useStudyStore = defineStore('study', {
         const selected = new Set(target);
         candidateQuestions = this.questions.filter(q => selected.has(q.source));
       } else {
-        candidateQuestions = this.questions;
+        // Use filtered questions based on selected subject
+        candidateQuestions = this.filteredQuestions;
       }
 
       if (candidateQuestions.length === 0) {

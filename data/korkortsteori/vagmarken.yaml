@@ -1,0 +1,109 @@
+- id: kork-skylt-001
+  type: multiple_choice
+  tags:
+  - Vägmärken
+  - Varning
+  question: Vad betyder ett varningsmärke med en svart symbol på gul triangel?
+  image: null
+  options:
+  - text: Varning för en fara på vägen
+    correct: true
+    feedback: Korrekt! Gula trianglar med svart symbol är varningsmärken.
+  - text: Förbud att köra vidare
+    correct: false
+    feedback: Fel. Förbud anges med runda röda skyltar.
+  - text: Påbud som du måste följa
+    correct: false
+    feedback: Fel. Påbud anges med runda blå skyltar.
+  - text: Information om vägen framåt
+    correct: false
+    feedback: Fel. Information anges med blå eller gröna skyltar.
+  explanation: Varningsmärken har alltid formen av en liksidig triangel med gul botten och svart symbol. De varnar för olika faror på vägen, som kurvor, korsningar, djur eller vägarbeten.
+
+- id: kork-skylt-002
+  type: multiple_choice
+  tags:
+  - Vägmärken
+  - Förbud
+  question: Vad innebär en rund skylt med röd kant och vit botten?
+  image: null
+  options:
+  - text: Ett förbud eller begränsning
+    correct: true
+    feedback: Korrekt! Runda skyltar med röd kant anger förbud.
+  - text: En varning för fara
+    correct: false
+    feedback: Fel. Varningar anges med gula trianglar.
+  - text: Ett påbud
+    correct: false
+    feedback: Fel. Påbud anges med blå runda skyltar.
+  - text: Information om resmål
+    correct: false
+    feedback: Fel. Resmål anges på gröna eller blå rektangulära skyltar.
+  explanation: Förbudsmärken är runda med röd kant och vit eller blå botten. De anger olika förbud som hastighetsbegränsningar, förbud mot omkörning, stopplikt eller andra restriktioner.
+
+- id: kork-skylt-003
+  type: multiple_choice
+  tags:
+  - Vägmärken
+  - Påbud
+  question: Vad innebär en rund blå skylt med vit symbol?
+  image: null
+  options:
+  - text: Ett påbud som du måste följa
+    correct: true
+    feedback: Korrekt! Blå runda skyltar anger påbud.
+  - text: Information om service
+    correct: false
+    feedback: Fel. Service anges med kvadratiska blå skyltar med vit symbol.
+  - text: En rekommendation som är frivillig
+    correct: false
+    feedback: Fel. Påbudsmärken är obligatoriska, inte frivilliga.
+  - text: Varning för en fara
+    correct: false
+    feedback: Fel. Varningar anges med gula trianglar.
+  explanation: Påbudsmärken är runda med blå botten och vit symbol. De anger påbud som du är skyldig att följa, till exempel påbjuden färdriktning, cykelbana eller gångbana.
+
+- id: kork-skylt-004
+  type: multiple_choice
+  tags:
+  - Vägmärken
+  - Företräde
+  question: Vilket märke anger att du har väjningsplikt?
+  image: null
+  options:
+  - text: En nedåtvänd vit triangel med röd kant
+    correct: true
+    feedback: Korrekt! Väjningspliktsmärket är en nedåtvänd triangel med röd kant.
+  - text: En åttkant röd skylt med texten STOPP
+    correct: false
+    feedback: Fel. Det är stoppskylt som innebär fullständigt stopp, inte bara väjning.
+  - text: En rund gul skylt
+    correct: false
+    feedback: Fel. Gula skyltar är varningsmärken.
+  - text: En blå rund skylt
+    correct: false
+    feedback: Fel. Blå runda skyltar är påbudsmärken.
+  explanation: Väjningspliktsmärket är en nedåtvänd triangel med röd kant och vit botten. Det innebär att du ska lämna företräde åt korsande trafik men behöver inte stanna helt om det är fritt.
+
+- id: kork-skylt-005
+  type: multiple_choice
+  tags:
+  - Vägmärken
+  - Hastighet
+  question: När upphör en hastighetsbegränsning som angivits med skylt?
+  image: null
+  options:
+  - text: Vid nästa vägkorsning eller när det anges med upphävande skylt
+    correct: true
+    feedback: Korrekt! Hastighetsbegränsningar upphör vid korsning eller upphävande.
+  - text: Efter 1 kilometer
+    correct: false
+    feedback: Fel. Det finns ingen automatisk tidsgräns.
+  - text: När du kör in i ett annat län
+    correct: false
+    feedback: Fel. Länsgränser påverkar inte hastighetsbegränsningar.
+  - text: När du tycker att det är säkert att öka farten
+    correct: false
+    feedback: Fel. Du får inte själv avgöra när begränsningen upphör.
+  explanation: En hastighetsbegränsning som anges med skylt gäller till nästa vägkorsning, eller tills den upphävs med en "upphävande av hastighetsbegränsning"-skylt eller en ny hastighetsbegränsning anges.
