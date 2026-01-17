@@ -50,7 +50,7 @@ class StrictBaseModel(BaseModel):
 class Option(StrictBaseModel):
     text: str = Field(..., description="The text of the option")
     correct: bool = Field(..., description="True if this is the correct answer, else False")
-    feedback: str = Field(..., description="Concise feedback (1 sentence) in Swedish on why this is right or wrong.")
+    feedback: str = Field(..., description="Concise feedback (1 sentence) in Swedish on why this is right or wrong. Do NOT start with 'Rätt' or 'Fel'.")
 
 class QuestionData(StrictBaseModel):
     # ID is generated in Python, not by LLM to ensure collision safety for this import
@@ -74,7 +74,7 @@ I will provide a raw question and a list of options. The raw data likely lacks t
 Your task is to:
 1. Identify the correct answer based on medical knowledge.
 2. Refine the question text if needed (fix typos, make concise).
-3. Generate concise feedback for EACH option (why it is right/wrong).
+3. Generate concise feedback for EACH option (why it is right/wrong). Do NOT start feedback with "Rätt" or "Fel".
 4. Generate 1-3 tags.
 5. Provide a short general explanation.
 6. Classify the question into one of the following categories:
@@ -158,7 +158,7 @@ def build_schema():
             "correct": {"type": "boolean", "description": "True if this is the correct answer, else False"},
             "feedback": {
                 "type": "string",
-                "description": "Concise feedback (1 sentence) in Swedish on why this is right or wrong."
+                "description": "Concise feedback (1 sentence) in Swedish on why this is right or wrong. Do NOT start with 'Rätt' or 'Fel'."
             }
         },
         "required": ["text", "correct", "feedback"]

@@ -25,9 +25,9 @@ onMounted(() => {
       </div>
     </div>
 
-    <div v-else class="max-w-2xl mx-auto min-h-screen bg-stone-50/70 backdrop-blur shadow-xl border border-stone-200 flex flex-col relative">
+    <div v-else class="max-w-2xl mx-auto min-h-screen bg-stone-50/70 backdrop-blur shadow-xl border-x border-stone-200 flex flex-col relative">
       <!-- Main Content Area -->
-      <main class="flex-grow p-4 md:p-6 overflow-y-auto">
+      <main class="flex-grow p-4 md:p-6">
         <transition name="fade" mode="out-in">
           <Dashboard v-if="store.view === 'dashboard'" />
           <Quiz v-else-if="store.view === 'quiz'" />

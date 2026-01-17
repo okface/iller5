@@ -72,7 +72,8 @@ const sourceLabel = computed(() => {
 
 const scrollQuestionIntoView = async () => {
   await nextTick();
-  // Instant jump (no smooth) to avoid weird mid-transition positions.
+  // Scroll to the question text, with a slight offset if possible (or just top)
+  // block: 'start' aligns the top of element with top of viewport
   questionHeaderRef.value?.scrollIntoView({ block: 'start', behavior: 'auto' });
 };
 
@@ -165,30 +166,38 @@ const getOptionClass = (index, option) => {
 </script>
 
 <template>
-  <div v-if="currentQuestion" class="max-w-2xl mx-auto pb-20">
+  <div v-if="currentQuestion" class="max-w-2xl mx-auto pb-32">
     
-    <!-- Top Bar -->
-    <div class="flex justify-between items-center mb-3 text-xs text-stone-600">
-      <button @click="store.view = 'dashboard'" class="hover:text-gray-900">&larr; Quit</button>
-      <span class="font-mono bg-stone-100/70 px-2 py-1 rounded">{{ progressText }}</span>
+    <!-- Top Bar (Quit, Metadata, Counter) - Metadata moved here per request -->
+    <div class="flex flex-wrap justify-between items-center mb-6 pt-2 text-xs font-mono text-stone-500 border-b border-stone-100 pb-2">
+      <!-- Quit -->
+      <button @click="store.view = 'dashboard'" class="hover:text-red-700 underline decoration-stone-200 font-bold mr-3 uppercase tracking-wider text-[10px]">
+        Quit
+      </button>
+
+      <!-- Center: Category / Tags -->
+      <div class="flex-grow flex flex-col md:flex-row items-center justify-center text-[10px] md:text-xs gap-x-2 leading-tight">
+         <span v-if="sourceLabel" class="uppercase tracking-widest text-slate-400 font-semibold">{{ sourceLabel }}</span>
+         <span v-if="sourceLabel && currentQuestion.tags.length" class="hidden md:inline text-slate-200">|</span>
+         <div class="flex flex-wrap justify-center gap-1">
+             <span v-for="tag in currentQuestion.tags" :key="tag" class="text-amber-700 font-medium">
+                 {{ tag }}
+             </span>
+         </div>
+      </div>
+      
+      <!-- Counter -->
+      <span class="ml-3 bg-stone-100 px-2 py-1 rounded text-stone-900 font-bold shadow-sm">{{ progressText }}</span>
     </div>
 
-    <!-- Sticky Question Header -->
-    <div ref="questionHeaderRef" class="sticky top-0 z-10 bg-stone-50/90 backdrop-blur pb-2 border-b border-stone-200">
-      <div class="pt-2">
-        <div v-if="sourceLabel" class="text-sm font-semibold text-slate-800 mb-1">
-          {{ sourceLabel }}
-        </div>
-        <span v-for="tag in currentQuestion.tags" :key="tag" class="inline-block text-[11px] font-bold text-amber-800 bg-amber-50/80 px-2 py-0.5 rounded mr-2 mb-1">
-          {{ tag }}
-        </span>
-      </div>
-      <h2 class="text-lg font-bold text-gray-900 leading-snug">{{ currentQuestion.question }}</h2>
-    </div>
+    <!-- Question Text (Target for Scroll) -->
+    <h2 ref="questionHeaderRef" class="text-lg md:text-xl font-bold text-gray-900 leading-snug mb-6">
+      {{ currentQuestion.question }}
+    </h2>
 
     <!-- Image (if any) -->
-    <div v-if="currentQuestion.image" class="mb-6 rounded-lg overflow-hidden border border-gray-200">
-      <img :src="currentQuestion.image" alt="Question Image" class="w-full h-auto object-cover max-h-64" />
+    <div v-if="currentQuestion.image" class="mb-6 rounded-lg overflow-hidden border border-gray-200 shadow-sm">
+      <img :src="currentQuestion.image" alt="Question Image" class="w-full h-auto object-cover max-h-80" />
     </div>
 
     <!-- Options -->
@@ -200,43 +209,50 @@ const getOptionClass = (index, option) => {
         :class="getOptionClass(idx, opt)"
       >
         <div class="flex items-start">
-            <span class="flex-shrink-0 w-6 h-6 rounded-full border border-gray-300 flex items-center justify-center text-xs mr-3 mt-0.5"
-                :class="{'border-green-500 text-green-700 bg-green-100 font-bold': answered && opt.correct, 'border-red-500 text-red-700 bg-red-100 font-bold': answered && !opt.correct && idx === selectedOptionIndex}">
+            <span class="flex-shrink-0 w-7 h-7 rounded-sm border-2 flex items-center justify-center text-xs mr-3 mt-0.5 font-bold transition-colors"
+                :class="
+                  answered 
+                  ? (opt.correct ? 'border-green-500 bg-green-500 text-white' : (idx === selectedOptionIndex ? 'border-red-500 bg-red-500 text-white' : 'border-gray-300 text-gray-400'))
+                  : 'border-stone-300 text-stone-500 group-hover:border-stone-400'
+                ">
                 {{ String.fromCharCode(65 + idx) }}
             </span>
-            <span class="text-gray-800">{{ opt.text }}</span>
+            <span class="text-stone-800 text-base leading-relaxed">{{ opt.text }}</span>
         </div>
 
         <!-- Post-Answer Feedback (The "Why" Feature) -->
         <!-- Logic: Show if (Answered AND (IsSelected OR IsCorrect OR Revealed)) -->
         <div 
           v-if="answered && (idx === selectedOptionIndex || opt.correct || revealedOptions.has(idx))" 
-          class="mt-2 pl-9 text-sm"
-          :class="opt.correct ? 'text-green-700' : 'text-red-600'"
+          class="mt-3 pl-10 text-sm italic"
+          :class="opt.correct ? 'text-green-700' : 'text-red-700'"
         >
-          <span v-if="opt.correct" class="font-bold">Correct: </span>
-          <span v-else class="font-bold">Wrong: </span>
+          <span v-if="opt.correct" class="font-bold not-italic mr-1">Correct:</span>
+          <span v-else class="font-bold not-italic mr-1">Wrong:</span>
           {{ opt.feedback }}
         </div>
       </button>
     </div>
 
     <!-- General Explanation (Always appears after answer) -->
-    <div v-if="answered" class="p-3 bg-stone-50/70 border border-stone-200 rounded-lg mb-14 animate-fade-in">
-      <h3 class="text-xs font-bold text-stone-700 mb-1 uppercase tracking-wider">Explanation</h3>
+    <div v-if="answered" class="p-4 bg-amber-50/50 border border-amber-100/50 rounded-lg mb-4 animate-fade-in shadow-sm">
+      <h3 class="text-xs font-bold text-amber-900/40 mb-2 uppercase tracking-widest">Explanation</h3>
       <p class="text-stone-800 text-sm leading-relaxed">
         {{ currentQuestion.explanation }}
       </p>
     </div>
 
-    <!-- Next Button (Sticky Bottom) -->
-    <div v-if="answered" class="sticky bottom-0 left-0 right-0 p-2 bg-stone-50/90 backdrop-blur border-t border-stone-200 flex justify-center pb-3">
-      <button 
-        @click="nextQuestion"
-        class="bg-slate-900 text-white px-6 py-2 rounded-lg font-bold shadow hover:bg-slate-950 transition w-full md:w-auto"
-      >
-        {{ store.currentIndex < store.currentSession.length - 1 ? 'Next Question &rarr;' : 'Finish Session' }}
-      </button>
+    <!-- Next Button (Fixed Bottom) -->
+    <div v-if="answered" class="fixed bottom-0 left-0 right-0 p-4 bg-white/95 backdrop-blur-md border-t border-stone-200 z-50 flex justify-center shadow-[0_-5px_15px_-5px_rgba(0,0,0,0.1)]">
+      <div class="w-full max-w-2xl px-4 md:px-6">
+        <button 
+          @click="nextQuestion"
+          class="w-full bg-slate-900 hover:bg-slate-800 text-white text-lg py-3 rounded-lg font-bold shadow-lg transform active:scale-[0.99] transition-all flex items-center justify-center space-x-2"
+        >
+          <span>{{ store.currentIndex < store.currentSession.length - 1 ? 'Next Question' : 'Finish Session' }}</span>
+          <span>&rarr;</span>
+        </button>
+      </div>
     </div>
 
   </div>

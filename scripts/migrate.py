@@ -49,7 +49,7 @@ Formatting Rules:
 1. OUTPUT: Valid JSON only (so I can parse it easily).
 2. Language: Swedish throughout.
 3. Tags: Generate 1-3 concise medical tags (e.g. "Arytmi", "Diagnostik").
-4. Feedback: VERY CONCISE (max 1-2 sentences). Explain WHY the option is wrong/right.
+4. Feedback: VERY CONCISE (max 1-2 sentences). Explain WHY the option is wrong/right. Do NOT start with "Rätt" or "Fel".
 5. Explanation: Concise summary (2-3 sentences max) of the concept.
 6. Category: Choose the SINGLE best fit from this list:
    [Neurologi, Internmedicin, Allmänmedicin, Psykiatri, Ortopedi, Kirurgi, Akutmedicin, Diabetologi, Endokrinologi, Gastroenterologi, Hepatologi, Hematologi, Kardiologi, Lungmedicin, Njurmedicin, Klinisk Farmakologi, Öron-Näsa-Hals]

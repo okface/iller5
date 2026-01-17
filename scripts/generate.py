@@ -32,7 +32,7 @@ class StrictBaseModel(BaseModel):
 class Option(StrictBaseModel):
     text: str = Field(..., description="Svarsalternativets text")
     correct: bool = Field(..., description="True om detta är rätt svar, annars False")
-    feedback: str = Field(..., description="Mycket koncis feedback (1 mening) om varför detta är rätt eller fel")
+    feedback: str = Field(..., description="Mycket koncis feedback (1 mening) om varför detta är rätt eller fel. Börja INTE med 'Rätt' eller 'Fel'.")
 
 class Question(StrictBaseModel):
     id: str = Field(..., description="Ett unikt ID, t.ex 'med-gen-ab12'")
@@ -61,7 +61,7 @@ def build_question_batch_schema():
             "correct": {"type": "boolean", "description": "True om detta är rätt svar, annars False"},
             "feedback": {
                 "type": "string",
-                "description": "Mycket koncis feedback (1 mening) om varför detta är rätt eller fel, i relation till frågan och övriga alternativ.",
+                "description": "Mycket koncis feedback (1 mening) om varför detta är rätt eller fel, i relation till frågan och övriga alternativ. Börja INTE med 'Rätt' eller 'Fel'.",
             },
         },
         "required": ["text", "correct", "feedback"],
@@ -124,7 +124,7 @@ Språk: Svenska.
 Ton: Professionell, akademisk med.
 
 INNEHÅLLSKRAV:
-1. Feedback MÅSTE vara koncis (1 mening).
+1. Feedback MÅSTE vara koncis (1 mening). Börja INTE med "Rätt" eller "Fel", det visas automatiskt.
 2. Explanation MÅSTE vara syntes-orienterad (2-3 meningar).
 3. Svårighetsgrad: Läkarexamen / Specialistnivå.
 """
