@@ -168,30 +168,30 @@ const getOptionClass = (index, option) => {
 <template>
   <div v-if="currentQuestion" class="max-w-2xl mx-auto pb-32">
     
-    <!-- Top Bar (Quit, Metadata, Counter) - Metadata moved here per request -->
-    <div class="flex flex-wrap justify-between items-center mb-6 pt-2 text-xs font-mono text-stone-500 border-b border-stone-100 pb-2">
+    <!-- Top Bar (Quit, Metadata, Counter) -->
+    <div class="flex flex-wrap justify-between items-center mb-6 pt-2 text-xs text-stone-500 border-b border-stone-100 pb-2">
       <!-- Quit -->
-      <button @click="store.view = 'dashboard'" class="hover:text-red-700 underline decoration-stone-200 font-bold mr-3 uppercase tracking-wider text-[10px]">
-        Quit
+      <button @click="store.view = 'dashboard'" class="hover:text-red-700 hover:underline font-bold mr-3 text-xs">
+        &larr; Quit
       </button>
 
       <!-- Center: Category / Tags -->
-      <div class="flex-grow flex flex-col md:flex-row items-center justify-center text-[10px] md:text-xs gap-x-2 leading-tight">
-         <span v-if="sourceLabel" class="uppercase tracking-widest text-slate-400 font-semibold">{{ sourceLabel }}</span>
-         <span v-if="sourceLabel && currentQuestion.tags.length" class="hidden md:inline text-slate-200">|</span>
-         <div class="flex flex-wrap justify-center gap-1">
-             <span v-for="tag in currentQuestion.tags" :key="tag" class="text-amber-700 font-medium">
+      <div class="flex-grow flex flex-col md:flex-row items-center justify-center text-[11px] gap-x-2 leading-tight">
+         <span v-if="sourceLabel" class="font-semibold text-slate-500">{{ sourceLabel }}</span>
+         <span v-if="sourceLabel && currentQuestion.tags.length" class="hidden md:inline text-slate-300">|</span>
+         <div class="flex flex-wrap justify-center gap-1 mt-1 md:mt-0">
+             <span v-for="tag in currentQuestion.tags" :key="tag" class="inline-block text-[10px] font-bold text-amber-800 bg-amber-50/80 px-2 py-0.5 rounded">
                  {{ tag }}
              </span>
          </div>
       </div>
       
       <!-- Counter -->
-      <span class="ml-3 bg-stone-100 px-2 py-1 rounded text-stone-900 font-bold shadow-sm">{{ progressText }}</span>
+      <span class="ml-3 bg-stone-100 px-2 py-1 rounded text-stone-600 font-mono text-[10px]">{{ progressText }}</span>
     </div>
 
     <!-- Question Text (Target for Scroll) -->
-    <h2 ref="questionHeaderRef" class="text-lg md:text-xl font-bold text-gray-900 leading-snug mb-6">
+    <h2 ref="questionHeaderRef" class="text-lg font-bold text-gray-900 leading-snug mb-6">
       {{ currentQuestion.question }}
     </h2>
 
@@ -209,15 +209,15 @@ const getOptionClass = (index, option) => {
         :class="getOptionClass(idx, opt)"
       >
         <div class="flex items-start">
-            <span class="flex-shrink-0 w-7 h-7 rounded-sm border-2 flex items-center justify-center text-xs mr-3 mt-0.5 font-bold transition-colors"
+            <span class="flex-shrink-0 w-6 h-6 rounded-full border flex items-center justify-center text-xs mr-3 mt-0.5 transition-colors"
                 :class="
                   answered 
-                  ? (opt.correct ? 'border-green-500 bg-green-500 text-white' : (idx === selectedOptionIndex ? 'border-red-500 bg-red-500 text-white' : 'border-gray-300 text-gray-400'))
-                  : 'border-stone-300 text-stone-500 group-hover:border-stone-400'
+                  ? (opt.correct ? 'border-green-500 bg-green-500 text-white font-bold' : (idx === selectedOptionIndex ? 'border-red-500 bg-red-500 text-white font-bold' : 'border-gray-300 text-gray-400'))
+                  : 'border-gray-300 text-gray-500 group-hover:border-indigo-400'
                 ">
                 {{ String.fromCharCode(65 + idx) }}
             </span>
-            <span class="text-stone-800 text-base leading-relaxed">{{ opt.text }}</span>
+            <span class="text-stone-800 text-base leading-relaxed text-left">{{ opt.text }}</span>
         </div>
 
         <!-- Post-Answer Feedback (The "Why" Feature) -->
@@ -243,11 +243,11 @@ const getOptionClass = (index, option) => {
     </div>
 
     <!-- Next Button (Fixed Bottom) -->
-    <div v-if="answered" class="fixed bottom-0 left-0 right-0 p-4 bg-white/95 backdrop-blur-md border-t border-stone-200 z-50 flex justify-center shadow-[0_-5px_15px_-5px_rgba(0,0,0,0.1)]">
+    <div v-if="answered" class="fixed bottom-0 left-0 right-0 p-3 bg-white/95 backdrop-blur border-t border-stone-200 z-50 flex justify-center shadow-lg">
       <div class="w-full max-w-2xl px-4 md:px-6">
         <button 
           @click="nextQuestion"
-          class="w-full bg-slate-900 hover:bg-slate-800 text-white text-lg py-3 rounded-lg font-bold shadow-lg transform active:scale-[0.99] transition-all flex items-center justify-center space-x-2"
+          class="w-full bg-slate-900 hover:bg-slate-800 text-white text-base py-3 rounded-lg font-bold shadow transform active:scale-[0.99] transition-all flex items-center justify-center space-x-2"
         >
           <span>{{ store.currentIndex < store.currentSession.length - 1 ? 'Next Question' : 'Finish Session' }}</span>
           <span>&rarr;</span>
