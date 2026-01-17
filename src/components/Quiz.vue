@@ -11,6 +11,25 @@ const revealedOptions = ref(new Set()); // Track which options user clicked AFTE
 const optionOrder = ref([]); // Array of original option indices, shuffled per question
 const questionHeaderRef = ref(null);
 
+const tagColors = [
+  'text-blue-700 bg-blue-50 border-blue-100',
+  'text-emerald-700 bg-emerald-50 border-emerald-100',
+  'text-purple-700 bg-purple-50 border-purple-100',
+  'text-rose-700 bg-rose-50 border-rose-100',
+  'text-amber-700 bg-amber-50 border-amber-100',
+  'text-cyan-700 bg-cyan-50 border-cyan-100',
+  'text-indigo-700 bg-indigo-50 border-indigo-100',
+];
+
+const getTagClass = (tag) => {
+  let hash = 0;
+  for (let i = 0; i < tag.length; i++) {
+    hash = tag.charCodeAt(i) + ((hash << 5) - hash);
+  }
+  const index = Math.abs(hash) % tagColors.length;
+  return tagColors[index];
+};
+
 const randomInt = (maxExclusive) => {
   if (maxExclusive <= 0) return 0;
   if (globalThis.crypto && typeof globalThis.crypto.getRandomValues === 'function') {
@@ -180,7 +199,9 @@ const getOptionClass = (index, option) => {
          <span v-if="sourceLabel" class="font-semibold text-slate-500">{{ sourceLabel }}</span>
          <span v-if="sourceLabel && currentQuestion.tags.length" class="hidden md:inline text-slate-300">|</span>
          <div class="flex flex-wrap justify-center gap-1 mt-1 md:mt-0">
-             <span v-for="tag in currentQuestion.tags" :key="tag" class="inline-block text-[10px] font-bold text-amber-800 bg-amber-50/80 px-2 py-0.5 rounded">
+             <span v-for="tag in currentQuestion.tags" :key="tag" 
+                class="inline-block text-[10px] font-bold px-2 py-0.5 rounded border"
+                :class="getTagClass(tag)">
                  {{ tag }}
              </span>
          </div>
@@ -201,7 +222,7 @@ const getOptionClass = (index, option) => {
     </div>
 
     <!-- Options -->
-    <div class="mb-5">
+    <div class="mb-3">
       <button 
         v-for="(opt, idx) in displayOptions" 
         :key="idx"
@@ -224,7 +245,7 @@ const getOptionClass = (index, option) => {
         <!-- Logic: Show if (Answered AND (IsSelected OR IsCorrect OR Revealed)) -->
         <div 
           v-if="answered && (idx === selectedOptionIndex || opt.correct || revealedOptions.has(idx))" 
-          class="mt-3 pl-10 text-sm italic"
+          class="mt-1 pl-10 text-sm italic"
           :class="opt.correct ? 'text-green-700' : 'text-red-700'"
         >
           <span v-if="opt.correct" class="font-bold not-italic mr-1">Correct:</span>
@@ -235,7 +256,7 @@ const getOptionClass = (index, option) => {
     </div>
 
     <!-- General Explanation (Always appears after answer) -->
-    <div v-if="answered" class="p-4 bg-amber-50/50 border border-amber-100/50 rounded-lg mb-4 animate-fade-in shadow-sm">
+    <div v-if="answered" class="p-3 bg-amber-50/50 border border-amber-100/50 rounded-lg mb-4 animate-fade-in shadow-sm">
       <h3 class="text-xs font-bold text-amber-900/40 mb-2 uppercase tracking-widest">Explanation</h3>
       <p class="text-stone-800 text-sm leading-relaxed">
         {{ currentQuestion.explanation }}
