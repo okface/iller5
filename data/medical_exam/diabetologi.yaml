@@ -891,3 +891,138 @@
     risk för genital svampinfektion och i speciella situationer, särskilt vid kirurgi/fasta
     eller insulinbrist, risk för euglykemisk ketoacidos. Hypoglykemi är ovanligt om
     behandlingen inte kombineras med insulin eller sulfonylurea.
+- type: multiple_choice
+  tags:
+  - Diabetes
+  - Livsstil
+  - Fysisk aktivitet
+  question: Linda, 49 år, typ 2-diabetes och rökare. Vilken livsstilsåtgärd har störst
+    betydelse för att förbättra insulinkänsligheten?
+  image: null
+  options:
+  - text: Minskad saltanvändning
+    correct: false
+    feedback: Fel — minskad saltinmatning sänker blodtrycket men påverkar inte i första
+      hand insulinkänsligheten.
+  - text: Regelbunden fysisk aktivitet
+    correct: true
+    feedback: Rätt — fysisk aktivitet ökar musklernas glukosupptag och förbättrar
+      insulinkänsligheten både akut och långsiktigt.
+  - text: Minskad koffeinkonsumtion
+    correct: false
+    feedback: Fel — koffein kan ha små och kortvariga effekter på glukosmetabolism
+      hos vissa, men har inte störst betydelse för insulinkänslighet.
+  - text: Rökstopp
+    correct: false
+    feedback: Fel — rökstopp förbättrar långsiktigt kardiometabol risk men ger inte
+      lika stor och omedelbar förbättring av insulinkänsligheten som fysisk aktivitet.
+  - text: Ökad proteinandel i kosten
+    correct: false
+    feedback: Fel — högre proteinandel kan hjälpa viktnedgång och mättnad men är inte
+      den mest effektiva åtgärden för att direkt förbättra insulinkänsligheten.
+  explanation: Regelbunden fysisk aktivitet är mest effektiv för att förbättra insulinkänsligheten
+    genom ökat glukosupptag i skelettmuskulatur och förbättrad insulinsignalering.
+    Viktreduktion hjälper också, och rökstopp är viktigt för generell riskminskning,
+    men motion ger störst direkt effekt.
+  id: imp-e2c9b5e8
+- type: multiple_choice
+  tags:
+  - Diabetes
+  - Insulin
+  - Metabolism
+  question: Vilket av följande kliniska tecken förekommer inte vid insulinbrist?
+  image: null
+  options:
+  - text: Låg C-peptid
+    correct: false
+    feedback: Fel — insulinbrist (särskilt vid typ 1) ger låg eller frånvarande C‑peptid
+      eftersom endogent insulin minskar.
+  - text: Viktuppgång
+    correct: true
+    feedback: Rätt — insulinbrist leder vanligen till viktnedgång genom katabolism
+      och glukosförlust, inte viktuppgång.
+  - text: Förlust av muskelmassa
+    correct: false
+    feedback: Fel — insulinbrist ökar proteinnedbrytning och ger muskelförtvining.
+  - text: Högt blodsocker
+    correct: false
+    feedback: Fel — brist på insulin minskar perifer glukosupptag och ökar glukoneogenes
+      vilket ger hyperglykemi.
+  - text: Ketonproduktion
+    correct: false
+    feedback: Fel — insulinbrist ökar lipolys och ketogenes vilket leder till ketonproduktion
+      och risk för ketoacidos.
+  explanation: Insulin är anabolt; vid insulinbrist minskar glukosupptag och ökar
+    glukoneogenes samt lipolys, vilket ger hyperglykemi, ketonbildning, viktnedgång
+    och muskelatrofi samt låg C‑peptid om endogent insulin är lågt. Viktuppgång är
+    inte typiskt vid insulinbrist.
+  id: imp-71d3ca40
+- type: multiple_choice
+  tags:
+  - diabetes
+  - nefropati
+  - RAAS-hämning
+  question: Bengt, 47 år, typ 2-diabetes (metformin + liraglutid). HbA1c 43 mmol/mol,
+    blodtryck 128/72 mmHg, albumin/kreatinin-kvot 27 mg/mmol (förhöjd). Vilken behandling
+    lägger du till?
+  image: null
+  options:
+  - text: Felodipin
+    correct: false
+    feedback: Felodipin (kalciumkanalblockerare) ger inte samma njurprotektiva effekt
+      mot albuminuri som RAAS-hämning och är inte förstahandsval här.
+  - text: Enalapril (ACE-hämmare)
+    correct: true
+    feedback: Rätt — ACE-hämmare minskar albuminuri och fördröjer progression av diabetisk
+      nefropati även vid normotensivt blodtryck.
+  - text: Metoprolol
+    correct: false
+    feedback: Metoprolol (betablockerare) påverkar inte albuminuri på samma sätt som
+      ACE-hämmare/ARB och är inte indicerat enbart för mikroalbuminuri.
+  - text: Insulin i flerdos
+    correct: false
+    feedback: Insulin är onödigt eftersom HbA1c är väl kontrollerat (43 mmol/mol)
+      och nuvarande behandling ej kräver intensifiering för glukos.
+  - text: Ingen, behandlingen är välfungerande.
+    correct: false
+    feedback: Fel — albumin/kreatinin-kvot 27 mg/mmol indikerar mikroalbuminuri och
+      kräver tillsats av RAAS-hämning trots gott HbA1c och normotensivt BT.
+  explanation: En albumin/kreatinin-kvot på 27 mg/mmol visar mikroalbuminuri hos en
+    person med typ 2-diabetes; RAAS-hämning med ACE-hämmare (eller ARB) rekommenderas
+    för att minska albuminuri och skydda njurfunktionen även om blodtrycket är normalt.
+    Andra blodtryckssänkande läkemedel eller insulin är inte prioriterade i detta
+    läge.
+  id: imp-36a3bc66
+- type: multiple_choice
+  tags:
+  - Hypoglykemi
+  - Insulinpump
+  question: Karin, 28 år, typ 1-diabetes med insulinpump. Alkoholpåverkad på fest,
+    oregerlig, kall/fuktig hud (misstänkt hypoglykemi). Vad gör du? (Ett alternativ
+    är fel.)
+  image: null
+  options:
+  - text: Koppla bort insulinpumpen och ge glukagon im
+    correct: true
+    feedback: Rätt — stoppa insulininfusionen för att undvika fortsatt insulinleverans
+      och ge glukagon IM om patienten inte kan ta per os.
+  - text: Om patienten kan svälja så tillför något sött med sked
+    correct: true
+    feedback: Rätt — om patienten är vaken och kan svälja ges snabbverkande kolhydrat
+      per os för att höja blodsockret.
+  - text: Ge glukos/snabb kolhydrat po om möjligt
+    correct: true
+    feedback: Rätt — peroral glukos eller juice är förstahandsåtgärd vid medveten
+      hypoglykemi och möjlig sväljförmåga.
+  - text: Ge 4E direktverkande insulin med hjälp av pumpen
+    correct: false
+    feedback: Fel — vid misstänkt hypoglykemi ska man inte ge insulin, det förvärrar
+      tillståndet.
+  - text: Kontrollera plasma-glukos
+    correct: true
+    feedback: Rätt — verifiera blodsockernivån snabbt för att styra behandlingen.
+  explanation: Symtomen (kall/klibbig hud, oregerlig) hos en insulinpumpburen patient
+    talar för hypoglykemi. Kontrollera glukos, avbryt insulininfusion, ge peroral
+    snabb kolhydrat om säker sväljförmåga, annars glukagon IM eller IV glukos; ge
+    inte mer insulin.
+  id: imp-3810590f

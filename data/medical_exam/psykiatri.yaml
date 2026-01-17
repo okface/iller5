@@ -1621,3 +1621,387 @@
     markant, och ett tidigare försök är en stark prediktor för framtida försök eller
     fullbordat suicid; andra faktorer kan bidra men är ofta mindre specifika.
   id: med-psy-fdfdd8
+- type: multiple_choice
+  tags:
+  - PTSD
+  - trauma
+  - diagnostik
+  question: Vilka fyra symtomkluster ingår i PTSD-diagnosen hos vuxna (enligt DSM-5)?
+  image: null
+  options:
+  - text: Undvikande, negativa tankar/känslor, överspändhet (hyperarousal), återupplevande
+    correct: true
+    feedback: 'Rätt — detta motsvarar DSM‑5:s fyra huvudkluster: återupplevande, undvikande,
+      negativa förändringar i kognitioner/känslor och ökad arousal.'
+  - text: Tvångstankar, dissociation, panikattacker
+    correct: false
+    feedback: Fel — tvångstankar hör till OCD och panikattacker samt dissociation
+      kan förekomma men utgör inte PTSD:s fyra huvudkluster.
+  - text: Dissociation, förföljelseidéer, somatisering
+    correct: false
+    feedback: Fel — förföljelseidéer och somatisering är inte centrala för PTSD och
+      speglar snarare psykos-/somatiska tillstånd.
+  - text: Ångest, tvångssyndrom, nedstämdhet, personlighetsförändring
+    correct: false
+    feedback: Fel — detta är en ospecifik blandning av symtom och diagnostiska enheter
+      som inte motsvarar PTSD:s fyra kluster.
+  - text: Undvikande, social fobi, kroppsliga symtom, automatisk tankeflykt
+    correct: false
+    feedback: Fel — social fobi och kroppsliga symtom ingår inte i PTSD:s fyra definierande
+      symtomkluster.
+  explanation: 'Enligt DSM‑5 består PTSD av fyra huvudkluster: 1) återupplevande (intrusioner),
+    2) undvikande av påminnelser, 3) negativa förändringar i kognitioner och känslor,
+    och 4) förändrad arousal och reaktivitet (hyperarousal). Andra listor blandar
+    symtom från olika störningar och är därför felaktiga.'
+  id: imp-694f3a86
+- type: multiple_choice
+  tags:
+  - Depression
+  - Psykossymtom
+  - Suicidrisk
+  question: Björn, 33 år, är nedstämd och isolerad. Han är övertygad om att han har
+    cancer (säger att han "vet" det), vill ha assisterat suicid men vill egentligen
+    inte dö och förstår inte varför han behöver psykiatrisk vård. Vilken diagnos passar
+    bäst?
+  image: null
+  options:
+  - text: Hypokondriskt syndrom
+    correct: false
+    feedback: Fel — hypokondri innebär överdriven oro för sjukdom utan psykotisk övertygelse
+      och förklarar inte den uttalade nedstämdheten och suicidrisk.
+  - text: Somatiseringssyndrom
+    correct: false
+    feedback: Fel — somatiseringssyndrom innebär multipla kroppsliga symtom över tid,
+      inte en fixerad somatisk vanföreställning i samband med svår depression.
+  - text: Generaliserat ångestsyndrom
+    correct: false
+    feedback: Fel — GAD karakteriseras av utbredd oro och ångest, inte av en fast
+      övertygelse om att ha cancer eller psykotiska depressiva symtom.
+  - text: Schizofreni
+    correct: false
+    feedback: Fel — även om somatiska vanföreställningar förekommer vid schizofreni,
+      talar den uttalade nedstämdheten och suicidala önskan mer för en depressiv störning
+      med psykos.
+  - text: Svår egentlig depression med psykotiska symtom
+    correct: true
+    feedback: Rätt — svår depressiv episod med psykotiska (somatiska) vanföreställningar
+      förklarar nedstämdhet, isolering, fast tro på att ha cancer och ökad suicidrisk.
+  explanation: Patienten har en uttalad depressiv bild med en fixerad somatisk vanföreställning
+    ("vet" att han har cancer) och suicidönskan, vilket är typiskt för svår egentlig
+    depression med psykotiska symtom; detta kräver akut psykiatrisk bedömning och
+    behandling (antidepressiva, antipsykotika eller ECT beroende på allvar).
+  id: imp-d0ee3130
+- type: multiple_choice
+  tags:
+  - litium
+  - njure
+  - tyreoidea
+  question: Vilka två biverkningar vid litiumbehandling bör kontrolleras särskilt
+    noga?
+  image: null
+  options:
+  - text: Hjärnblödning och hjärninfarkt
+    correct: false
+    feedback: Fel — cerebrovaskulära händelser är inte typiska biverkningar av litium.
+  - text: Tromboembolism och njurfunktionspåverkan
+    correct: false
+    feedback: Delvis fel — njurpåverkan är relevant, men tromboembolism är inte en
+      vanlig litiumbiverkning.
+  - text: Ämnesomsättningsrubbning (Tyreoidea) och gikt
+    correct: false
+    feedback: Delvis fel — tyreoidearubbningar är typiska, men gikt är inte en vanlig
+      följd av litium.
+  - text: Leukopeni och tromobytopeni
+    correct: false
+    feedback: Fel — hematologiska cytopenier är inte typiska för litium (litium kan
+      ibland ge leukocytos, inte leukopeni).
+  - text: Njurfunktionspåverkan och ämnesomsättningsrubbning (Tyreoidea)
+    correct: true
+    feedback: Rätt — litium kan ge njurskada (inklusive nefrogen diabetes insipidus)
+      och påverka tyreoideafunktionen, därför ska njurvärden och TSH kontrolleras
+      regelbundet.
+  explanation: Litium ger välkända risker för njurfunktionspåverkan (nefrogen diabetes
+    insipidus och kronisk tubulointerstitiell skada) och förtyreoideapåverkan (fr.a.
+    hypotyreos och struma). Därför kontrolleras kreatinin/eGFR och TSH (med fri T4
+    vid behov) regelbundet tillsammans med litiumkoncentrationer.
+  id: imp-c2b7f776
+- type: multiple_choice
+  tags:
+  - Anpassningsstörning
+  - Stressreaktion
+  - Differentialdiagnos
+  question: Kvinna 24 år, juriststudent. Har prestationsångest efter att ha kuggat
+    tentor; kan inte koncentrera sig, 'krisat'. Tidigare högpresterande. Gråter men
+    har i övrigt normalt stämningsläge. Mest sannolika diagnos?
+  image: null
+  options:
+  - text: Anpassningsstörning
+    correct: true
+    feedback: Rätt — akut maladaptiv reaktion på identifierbar stressor (tentamensmisslyckande)
+      med känslomässig belastning och funktionsnedsättning utan att uppfylla kriterier
+      för egentlig depression.
+  - text: Egentlig depression
+    correct: false
+    feedback: Fel — egentlig depression kräver uthålligt sänkt stämningsläge eller
+      anhedoni i minst två veckor samt flera depressiva symtom, vilket inte framgår
+      här.
+  - text: Intellektuell funktionsnedsättning
+    correct: false
+    feedback: Fel — intellektuell funktionsnedsättning är en livslång nedsättning
+      i intellekt och adaptiva förmågor, inte nydebuterad prestationsångest hos en
+      tidigare högpresterande vuxen.
+  - text: Social ångest
+    correct: false
+    feedback: Fel — social ångest är rädsla för sociala situationer eller att bli
+      bedömd; patientens problem är knappast avgränsat till social framträdande utan
+      följer ett konkret stressmoment.
+  - text: ADHD
+    correct: false
+    feedback: Fel — ADHD är en neurodevelopmental störning med symtom från barndomen
+      och kronisk uppmärksamhetssvikt, medan här är symptomen nydebuterade i samband
+      med stress.
+  explanation: 'Presentation talar för anpassningsstörning: nydebuterade koncentrationssvårigheter
+    och gråt i samband med ett klart stressande livshändelse (kuggade tentor), med
+    bevarat grundstämningsläge och utan kriterier för egentlig depression.'
+  id: imp-1e151ee0
+- type: multiple_choice
+  tags:
+  - Psykiatri
+  - Hallucinationer
+  - Differentialdiagnostik
+  question: Hallucinationer förekommer INTE vid vilket av följande tillstånd?
+  image: null
+  options:
+  - text: 1. Lewykroppsdemens
+    correct: false
+    feedback: Fel — visuella hallucinationer är ett typiskt och ofta tidigt symtom
+      vid Lewykroppsdemens.
+  - text: 2. Delirium tremens
+    correct: false
+    feedback: Fel — delirium tremens ger ofta uttalade visuella (och ibland taktila)
+      hallucinationer.
+  - text: 3. Vanföreställningssyndrom
+    correct: true
+    feedback: Rätt — vanföreställningssyndrom karakteriseras av bestående vanföreställningar;
+      hallucinationer är sällsynta och om de förekommer är de oftast relaterade till
+      vanföreställningen.
+  - text: 4. Schizofreni
+    correct: false
+    feedback: Fel — hallucinationer, särskilt auditive, är vanliga och diagnostiskt
+      viktiga vid schizofreni.
+  - text: 5. Drogutlöst psykos
+    correct: false
+    feedback: Fel — droger kan framkalla livliga hallucinationer (auditiva, visuella
+      eller taktila) beroende på substans.
+  explanation: Vanföreställningssyndrom domineras av långvariga, icke-bizarre vanföreställningar
+    och saknar vanligen uttalade hallucinationer. De andra listade tillstånden är
+    förknippade med frekventa eller typiska hallucinationer.
+  id: imp-42dc554b
+- type: multiple_choice
+  tags:
+  - Vanföreställningssyndrom
+  - Paranoid
+  - Psykiatri
+  question: Man, 28 år. Har blivit misstänksam och personlighetsförändrad under några
+    månader och är nu rädd att anhöriga ska bli kidnappade. Vilken diagnos är mest
+    sannolik?
+  image: null
+  options:
+  - text: 1. Personlighetssyndrom, paranoid
+    correct: false
+    feedback: Fel — paranoid personlighetsstörning är ett långvarigt, genomgripande
+      mönster av misstänksamhet som finns sedan tidig vuxenålder, inte en ny förändring
+      över några månader.
+  - text: 2. Sjukdomsångest
+    correct: false
+    feedback: Fel — sjukdomsångest handlar om överdriven oro för egen fysisk sjukdom,
+      inte paranoida förföljelseidéer om att anhöriga ska kidnappas.
+  - text: 3. Personlighetssyndrom, schizoid
+    correct: false
+    feedback: Fel — schizoid personlighetsstörning karakteriseras av känslomässig
+      avskildhet och begränsade sociala intressen, inte förföljelseidéer.
+  - text: 4. Personlighetssyndrom, schizotyp
+    correct: false
+    feedback: Fel — schizotyp personlighetsstörning ger udda tankar och perceptuella
+      fenomen från tidig ålder; här föreligger en konkret, nytillkommen förföljelseidé.
+  - text: 5. Vanföreställningssyndrom
+    correct: true
+    feedback: Rätt — en nytillkommen, fixerad förföljelseidé (rädsla för att anhöriga
+      ska kidnappas) under flera månader talar för vanföreställningssyndrom (persecutory
+      type).
+  explanation: Fyndet av nyupptagna, fixerade förföljelseidéer och misstänksamhet
+    under några månader är mest förenligt med vanföreställningssyndrom (persecutory
+    type). Personlighetsstörningar är genomgripande och långvariga med debut i tidig
+    vuxenålder, medan sjukdomsångest rör oro för egen kroppssjukdom.
+  id: imp-22064da0
+- type: multiple_choice
+  tags:
+  - LVM
+  - Missbruk
+  - Socialtjänst
+  question: Vilken instans ansvarar för LVM-utredning av en person med substansberoende?
+  image: null
+  options:
+  - text: Socialnämnden
+    correct: true
+    feedback: Rätt — socialnämnden ansvarar för utredning och för att ansöka om LVM
+      till förvaltningsrätten.
+  - text: Chefsöverläkaren vid aktuell psykiatrisk klinik
+    correct: false
+    feedback: Fel — läkare kan lämna medicinskt yttrande men har inte huvudansvaret
+      för LVM‑utredningen.
+  - text: Verksamhetschefen vid aktuell psykiatrisk klinik
+    correct: false
+    feedback: Fel — verksamhetschef ansvarar för vårdenheten, inte för den formella
+      LVM‑utredningen.
+  - text: Socialstyrelsen
+    correct: false
+    feedback: Fel — Socialstyrelsen är nationell tillsyns- och vägledande myndighet,
+      inte handläggare av individuella LVM‑ärenden.
+  - text: Förvaltningsrätten
+    correct: false
+    feedback: Fel — förvaltningsrätten beslutar om tvångsvård efter ansökan men genomför
+      inte själva utredningen.
+  explanation: Enligt lagen är socialnämnden ansvarig för utredning om behov av tvångsvård
+    enligt LVM och för att lämna in ansökan till förvaltningsrätten. Medicinska yttranden
+    från psykiatri eller andra vårdgivare kan underbygga utredningen, och förvaltningsrätten
+    prövar sedan ansökan.
+  id: imp-e468ee8d
+- type: multiple_choice
+  tags:
+  - Ätstörningar
+  - DSM-5
+  question: Vilket av följande är INTE ett diagnostiskt kriterium för anorexia nervosa?
+  image: null
+  options:
+  - text: Störd kroppsupplevelse (t.ex. överdriven betydelse av kroppsvikt/figur eller
+      bristande insikt i allvaret av undervikt).
+    correct: false
+    feedback: Rätt svarsalternativ — detta motsvarar kriterium C i diagnosen anorexia
+      nervosa.
+  - text: Episodisk hetsätning med olämpligt kompensatoriskt beteende (t.ex. självframkallad
+      kräkning, laxantia).
+    correct: true
+    feedback: Fel — detta är ett huvudkriterium för bulimia nervosa; anorexia kan
+      ha en binge–purge-subtyp, men detta är inte ett generellt diagnostiskt kriterium
+      för anorexia.
+  - text: Signifikant låg kroppsvikt i förhållande till ålder, kön, utvecklingsnivå
+      och fysisk hälsa.
+    correct: false
+    feedback: Rätt — signifikant låg kroppsvikt är ett centralt diagnostiskt kriterium
+      för anorexia nervosa.
+  - text: Otillräckligt matintag som leder till undervikt.
+    correct: false
+    feedback: Rätt — restriktion av energiintag som resulterar i låg kroppsvikt utgör
+      kriterium A för anorexia nervosa.
+  - text: Intensiv rädsla att gå upp i vikt eller bli tjock, eller ihållande beteende
+      som hindrar viktuppgång.
+    correct: false
+    feedback: Rätt — intensiv rädsla för viktuppgång eller beteenden som motverkar
+      viktuppgång är kriterium B i anorexia nervosa.
+  explanation: Anorexia nervosa definieras av (A) restriktion av energiintag som leder
+    till betydande undervikt, (B) intensiv rädsla för viktuppgång eller beteenden
+    som hindrar viktuppgång, och (C) störd kroppsupplevelse eller bristande insikt
+    i allvaret av undervikten. Episodisk hetsätning med kompensatoriska beteenden
+    är typiskt för bulimia nervosa, även om en binge–purge-subtyp förekommer inom
+    anorexia.
+  id: imp-e2dab003
+- type: multiple_choice
+  tags:
+  - Psykiatri
+  - Tvångsvård
+  - LPT
+  question: Vilket kriterium är ensamt avgörande för att konvertera psykiatrisk vård
+    från frivillig till tvångsvård?
+  image: null
+  options:
+  - text: 1. Risk att skada sig själv eller andra
+    correct: false
+    feedback: Fel — risk för skada är ett av kraven för tvångsvård men ensam räcker
+      det inte om patienten samtycker till vården.
+  - text: 2. Patienten samtycker inte till erbjuden vård
+    correct: true
+    feedback: Rätt — om patienten inte längre samtycker kan vården endast fortsätta
+      genom beslut om tvångsvård, förutsatt att övriga rättighetskriterier är uppfyllda.
+  - text: 3. Patienten vill bli utskriven från sjukhuset
+    correct: false
+    feedback: Fel — önskan om utskrivning innebär att patienten inte vill fortsätta
+      vården frivilligt, men tvångsvård kräver även att övriga lagkrav är uppfyllda.
+  - text: 4. Allvarlig psykisk störning
+    correct: false
+    feedback: Fel — allvarlig psykisk störning är ett nödvändigt krav för tvångsvård
+      men avgör inte ensam konversion från frivillig vård om patienten samtycker.
+  - text: 5. Oundgängligt behov av dygnetruntvård
+    correct: false
+    feedback: Fel — oumbärligt dygnetruntvård är också ett krav för tvångsvård men
+      räcker inte ensam för att omvandla frivillig vård till tvångsvård.
+  explanation: Konversion från frivillig till tvångsvård kräver att patienten inte
+    samtycker till fortsatt vård och att de ytterligare lagstadgade kriterierna är
+    uppfyllda (allvarlig psykisk störning, oumbärligt behov av dygnetruntvård och
+    riskbedömning). Om patienten samtycker kan vården fortgå som frivillig även vid
+    svår sjukdom.
+  id: imp-38fd31f9
+- type: multiple_choice
+  tags:
+  - Missbruk
+  - Toxikologi
+  question: Vilket symtom är mest typiskt vid amfetaminabstinens?
+  image: null
+  options:
+  - text: Uttalad trötthet, nedstämdhet och ökat sömnbehov
+    correct: true
+    feedback: Rätt — amfetaminabstinens ger ofta kraftig trötthet, depressiv stämning
+      och hypersomni.
+  - text: Kraftigt förhöjt stämningsläge och minskat sömnbehov
+    correct: false
+    feedback: Fel — detta beskriver intoxikation eller maniska/uppvarvade tillstånd
+      vid stimulantia, inte abstinens.
+  - text: Muskelsmärtor, diarré och gåshud
+    correct: false
+    feedback: Fel — dessa symtom är typiska för opioidabstinens, inte amfetaminabstinens.
+  - text: Tremor, svettningar och perifera hallucinationer
+    correct: false
+    feedback: Fel — sådana autonoma överaktivitets- och hallucinationssymtom ses oftare
+      vid alkohol- eller sedativa abstinens.
+  - text: Kraftig salivation, illamående och kräkningar
+    correct: false
+    feedback: Fel — uttalad salivation och kräkning är mer typiskt vid kolinerg överstimulering
+      eller annan toxisk exponering, inte amfetaminabstinens.
+  explanation: Amfetaminabstinens kännetecknas framför allt av kraftig trötthet, nedstämdhet
+    och ökat sömnbehov efter att drogbruk upphört. Psykiska symptom som irritabilitet
+    och sug kan förekomma, medan autonoma och gastrointestina abstinenssymtom är mer
+    förknippade med andra substanser som opioider eller alkohol.
+  id: imp-11e1fe7b
+- type: multiple_choice
+  tags:
+  - LPT
+  - psykiatri
+  - rättspsykiatri
+  question: Kan samma läkare som upprättar vårdintyg också fatta intagningsbeslut
+    enligt lagen om psykiatrisk tvångsvård (LPT)?
+  image: null
+  options:
+  - text: Ja, om hen är specialistläkare inom psykiatri.
+    correct: true
+    feedback: Rätt — om läkaren är specialist i psykiatri får hen både upprätta vårdintyg
+      och fatta intagningsbeslut enligt LPT.
+  - text: Ja, om hen är specialistläkare inom psykiatri och är ansvarig bakjour.
+    correct: false
+    feedback: Fel — bakjoursstatus är inte ett lagkrav för undantaget; det som krävs
+      är specialistkompetens i psykiatri.
+  - text: Ja, om hen har minst fem års erfarenhet.
+    correct: false
+    feedback: Fel — antal års erfarenhet anges inte i lagen; undantaget grundas på
+      specialistkompetens, inte tjänsteår.
+  - text: Nej, ett tvåläkarförfarande krävs.
+    correct: false
+    feedback: Fel — normalt krävs två olika läkare, men det finns undantag när samma
+      läkare är specialist i psykiatri.
+  - text: Ja, om hen har svensk läkarlegitimation.
+    correct: false
+    feedback: Fel — svensk legitimation krävs för att verksamhetsutöva men i sig ger
+      den inte rätt att ensamt fatta intagningsbeslut enligt LPT.
+  explanation: 'I regel gäller ett tvåläkarförfarande enligt LPT: ett vårdintyg och
+    ett separat intagningsbeslut. Undantaget är om samma läkare är specialist i psykiatri
+    — då kan hen även fatta intagningsbeslutet.'
+  id: imp-15642078

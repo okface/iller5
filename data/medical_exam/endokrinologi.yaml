@@ -533,3 +533,107 @@
     efter klinisk återhämtning; immunologiska tester och bilddiagnostik görs först
     om avvikelsen kvarstår eller om klinisk misstanke om primär tyreotoxikos finns.
   id: med-end-d1f020
+- type: multiple_choice
+  tags:
+  - hypertoni
+  - hypokalemi
+  - aldosteron
+  question: Man 55 år med svårbehandlad hypertoni och hypokalemi (K+ 3,2 mmol/L) trots
+    peroral kaliumsupplement. Ingen diuretika. Vad bör utredas i första hand?
+  image: null
+  options:
+  - text: Cushings syndrom
+    correct: false
+    feedback: Cushing kan ge hypertension men ger oftast inte uttalad hypokalemi och
+      är mindre sannolik än primär hyperaldosteronism i detta scenario.
+  - text: njurartärstenos
+    correct: false
+    feedback: Njurartärstenos ger reninberoende hypertoni men associeras normalt inte
+      med hypokalemi i frånvaro av sekundär hyperaldosteronism; kliniken talar mer
+      för aldosteronöverskott.
+  - text: feokromocytom
+    correct: false
+    feedback: Feokromocytom ger paroxysmala symtom och adrenerg hypertension snarare
+      än kronisk hypokalemi, därför mindre sannolikt här.
+  - text: primär hyperaldosteronism
+    correct: true
+    feedback: Primär hyperaldosteronism (Conns syndrom) orsakar resistent hypertoni
+      och hypokalemi och bör utredas först, initialt med aldosteron/renin-kvot.
+  - text: tyreotoxikos
+    correct: false
+    feedback: Tyreotoxikos kan ge ökad blodtryck men leder inte typiskt till uttalad
+      hypokalemi och är mindre sannolik för denna bild.
+  explanation: Kombinationen svårbehandlad hypertoni och persistenta låga kaliumvärden
+    utan diuretika är klassisk för primär hyperaldosteronism. Utredningen inleds med
+    mätning av serumaldosteron och plasma reninaktivitet (aldosteron/renin-kvot) följt
+    av bekräftande tester och bilddiagnostik vid indikation.
+  id: imp-a37b2959
+- type: multiple_choice
+  tags:
+  - Hypotyreos
+  - Levotyroxin
+  - Geriatrik
+  question: Elsa, 78 år, har uttalad hypotyreos och ska starta Levaxin (levotyroxin).
+    Vilket påstående är mest korrekt vid insättning?
+  image: null
+  options:
+  - text: Snabb upptrappning minskar risken för biverkningar
+    correct: false
+    feedback: Fel — snabb upptrappning ökar risken för biverkningar som hjärtarytmier
+      och ischemiska episoder, särskilt hos äldre.
+  - text: Levotyroxin bör kombineras med kalciumtillskott
+    correct: false
+    feedback: Fel — kalcium minskar absorptionen av levotyroxin och bör inte ges samtidigt;
+      tillskott är inte rutin vid insättning.
+  - text: Vid upptrappning bör patienten vara restriktiv med jodberikat salt
+    correct: false
+    feedback: Fel — det finns normalt ingen generell rekommendation att undvika jodberikat
+      salt vid levotyroxininsättning.
+  - text: Äldre och hjärtsjuka bör starta med låg dos och långsam upptrappning
+    correct: true
+    feedback: Rätt — hos äldre eller vid hjärtsjukdom startas låg dos och titreras
+      långsamt för att undvika kardiovaskulära biverkningar.
+  - text: Vid uttalad hypotyreos bör T4 kombineras med T3 direkt.
+    correct: false
+    feedback: Fel — standardbehandling är T4-monoterapi; kombination med T3 rekommenderas
+      inte rutinmässigt.
+  explanation: Hos äldre och personer med hjärtsjukdom rekommenderas "start low, go
+    slow" med levotyroxin för att undvika hjärtkomplikationer. Levotyroxin ges vanligen
+    som monoterapi; absorption påverkas av kalcium (separera dosering) och dosjustering
+    görs med TSH-kontroller var 6–8 vecka.
+  id: imp-66f26af8
+- type: multiple_choice
+  tags:
+  - tyreotoxikos
+  - amiodaron
+  - klinisk kemi
+  question: 'Man 70 år med förmaksflimmer och hjärtsvikt, behandlad med amiodaron
+    (Cordarone). Lab: TSH 0,08 (lågt), fT4 22 (förhöjt). Trolig diagnos?'
+  image: null
+  options:
+  - text: Graves tyreotoxikos
+    correct: false
+    feedback: Mindre sannolikt — Graves ger visserligen tyreotoxikos men amiodaronbehandlingen
+      gör amiodaron‑utlöst tyreotoxikos mer trolig.
+  - text: Hashimotos tyreoidit
+    correct: false
+    feedback: Fel — Hashimoto leder oftast till hypotyreos; transient hyperfunktion
+      förekommer men är ovanligt och inte kopplat till amiodaron.
+  - text: Cordarone-utlöst tyreotoxikos
+    correct: true
+    feedback: Rätt — amiodaron kan inducera tyreotoxikos (amiodaron‑utlöst tyreotoxikos)
+      och förklarar lågt TSH och förhöjt fT4.
+  - text: Subakut tyreoidit
+    correct: false
+    feedback: Mindre sannolikt — subakut tyreoidit ger ofta smärta i tyreoidea och
+      föregående infektion, inte typiskt kopplat till amiodaron.
+  - text: Non thyreoideal illness
+    correct: false
+    feedback: Fel — NTI ger oftast lågt T3 och normalt/lågt fT4, inte ett tydligt
+      förhöjt fT4 som här.
+  explanation: Amiodaron innehåller mycket jod och kan ge amiodaron‑utlöst tyreotoxikos
+    (AIT, typ 1 eller 2). Hos en patient på amiodaron med undertryckt TSH och förhöjt
+    fT4 är amiodaron‑inducerad tyreotoxikos mest sannolik; utredning med antikroppar,
+    ultraljud och internationell uptake/testr är ofta nästa steg för att skilja typ
+    1 från typ 2.
+  id: imp-569cd851

@@ -532,3 +532,69 @@
     SNRI påverkar både serotonin och noradrenalin, medan sedativa antihistaminer och
     antibiotika tillhör andra läkemedelsklasser.
   id: med-kli-bb3773
+- type: multiple_choice
+  tags:
+  - Elektrolytrubbningar
+  - Hjärtsvikt
+  - Diuretika
+  question: Vid vilket av följande tillstånd kan låg plasmakaliumkoncentration (hypokalemi)
+    ses?
+  image: null
+  options:
+  - text: Acidos
+    correct: false
+    feedback: Fel — acidos ger vanligen hyperkalemi eftersom kalium förskjuts ut ur
+      cellerna vid pH-sänkning.
+  - text: Behandling med betablockerare
+    correct: false
+    feedback: Fel — betablockerare blockerar β2‑medierat cellupptag av kalium och
+      tenderar att ge hyperkalemi, medan β2‑agonister ger hypokalemi.
+  - text: Njursvikt
+    correct: false
+    feedback: Fel — njursvikt leder oftast till hyperkalemi på grund av nedsatt utsöndring
+      av kalium.
+  - text: Hjärtsvikt
+    correct: true
+    feedback: Rätt — patienter med hjärtsvikt behandlas ofta med loop‑ eller thiaziddiuretika
+      som kan orsaka hypokalemi.
+  - text: Muskelskada
+    correct: false
+    feedback: Fel — muskelskada (rhabdomyolys) frisätter intracellulärt kalium och
+      ger i regel hyperkalemi.
+  explanation: Hypokalemi är vanligen läkemedelsorsakad, särskilt av diuretika som
+    används vid hjärtsvikt (loop‑ och thiaziddiuretika). De andra angivna tillstånden
+    leder i regel till hyperkalemi eller påverkar kaliumbalansen åt andra hållet.
+  id: imp-7b84abae
+- type: multiple_choice
+  tags:
+  - Elektrolyter
+  - Hyponatremi
+  - Vätskebalans
+  question: Vilket av följande påståenden om hyponatremi stämmer inte?
+  image: null
+  options:
+  - text: För snabb korrigering av hyponatremi kan orsaka osmotiskt demyeliniseringssyndrom
+    correct: false
+    feedback: Rätt — för snabb natriumhöjning kan leda till osmotiskt demyeliniseringssyndrom
+      (t.ex. central pontin demyelinisering).
+  - text: Kronisk hyponatremi är vanligare än akut hyponatremi
+    correct: false
+    feedback: Rätt — i klinisk praxis är kronisk hyponatremi (>48 timmar) oftare förekommande
+      än akut.
+  - text: Hyponatremi ses oftast i samband med uttorkningstillstånd som kraftiga svettningar/diarré
+    correct: true
+    feedback: Fel — även om uttorkning kan orsaka hyponatremi i vissa fall, är de
+      vanligaste orsakerna SIADH, diuretika, hjärtsvikt och leversvikt snarare än
+      primära svettningar/diarréer.
+  - text: Akut hyponatremi definieras som hyponatremi som utvecklats inom 48 timmar
+    correct: false
+    feedback: Rätt — den vanliga gränsen för akut är utveckling inom 48 timmar.
+  - text: Kronisk hyponatremi bör generellt korrigeras långsamt
+    correct: false
+    feedback: Rätt — kronisk hyponatremi korrigeras långsamt för att minimera risken
+      för osmotisk demyelinisering.
+  explanation: Hyponatremi orsakas oftast av relativt vattenöverskott (t.ex. SIADH,
+    diuretika, hjärtsvikt, leversvikt) snarare än rena vätskeförluster som svett/diarré.
+    Akut hyponatremi (<48 h) kan kräva snabbare åtgärd, medan kronisk hyponatremi
+    bör korrigeras långsamt för att undvika osmotiskt demyeliniseringssyndrom.
+  id: imp-1319de35

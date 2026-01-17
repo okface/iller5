@@ -42,7 +42,16 @@ Each question typically has 4 options. One is correct. VERY CONCISE feedback, fe
 
 ## 4. The "Factory" (Local Python Script)
 
-File: `scripts/generate(Targeting GPT-5.2 or equivalent), `pyyaml`.
+File: `scripts/generate.py`
+Dependencies: `openai` (v2.0+), `pyyaml`.
+
+**AI Standards (2026):**
+- **Model**: `gpt-5-mini` (strictly required). Do not use legacy models like gpt-4o.
+- **Client**: Standard `client = OpenAI()`.
+- **Params**: 
+  - `temperature` is forbidden.
+  - `verbosity="low"` (concise output).
+  - `reasoning_effort="medium"` (balanced depth).
 
 **Workflow Logic:**
 

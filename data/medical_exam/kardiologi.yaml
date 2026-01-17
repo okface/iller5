@@ -1710,3 +1710,346 @@
     och snabb diures med furosemid; intubation krävs endast vid svårare respiratorisk
     eller cirkulatorisk svikt.
   id: med-kar-1d1a04
+- type: multiple_choice
+  tags:
+  - Hypertoni
+  - Vänsterkammarhypertrofi
+  - Patofysiologi
+  question: Maria, 65 år, har nyupptäckt hypertoni och vänsterkammarhypertrofi på
+    EKG. Vilken är den huvudsakliga bakomliggande mekanismen till hypertrofin?
+  image: null
+  options:
+  - text: Kronisk volymbelastning
+    correct: false
+    feedback: Fel — kronisk volymbelastning ger oftast excentrisk hypertrofi med dilatation,
+      inte den typiska koncentriska LV-hypertrofin vid hypertension.
+  - text: Förhöjd hjärtfrekvens
+    correct: false
+    feedback: Fel — takykardi ökar arbetsbelastningen men är inte huvudorsaken till
+      strukturell vänsterkammarhypertrofi vid hypertoni.
+  - text: Ökat perifert motstånd
+    correct: true
+    feedback: Rätt — förhöjt systemiskt kärlmotstånd (efterload) vid hypertoni leder
+      till koncentrisk vänsterkammarhypertrofi.
+  - text: Hypokalemi
+    correct: false
+    feedback: Fel — lågt kalium ger främst arytmier och muskelsymtom, inte kronisk
+      kammarförtjockning.
+  - text: Kronisk njursvikt
+    correct: false
+    feedback: Fel — njursvikt kan bidra till hypertension och volymbelastning men
+      är inte den direkta, huvudsakliga mekanismen för hypertrofin i denna situation.
+  explanation: Hypertoni ger ökat systemiskt perifer motstånd (efterload), vilket
+    kräver högre tryckarbete av vänster kammare och utlöser koncentrisk hypertrofi
+    genom tillväxt av myocyters parallella sarkomerer. Volymbelastning ger istället
+    excentrisk hypertrofi.
+  id: imp-175c3f4a
+- type: multiple_choice
+  tags:
+  - Hjärtsvikt
+  - Diagnostik
+  - Ekokardiografi
+  question: Ulla, 67 år, med misstänkt hjärtsvikt (orkeslöshet, dyspné, ödem). Vilken
+    undersökning är viktigast för att fastställa diagnosen och klassificera typen
+    av hjärtsvikt?
+  image: null
+  options:
+  - text: Långtids-EKG
+    correct: false
+    feedback: Kan visa arytmier (t.ex. förmaksflimmer) som bidrar till symtomen, men
+      diagnostiserar inte eller klassificerar hjärtsvikten.
+  - text: NT-proBNP
+    correct: false
+    feedback: Mycket användbart som screenings- eller uteslutningstest (sänkt sannolikhet
+      vid låga värden) men kan inte ensamt bestämma typ av hjärtsvikt.
+  - text: EKG
+    correct: false
+    feedback: EKG ger viktig kompletterande information (ischemi, kammarhypertrofi)
+      men är ospecifikt för att fastställa eller klassificera hjärtsvikt.
+  - text: Arbetsprov
+    correct: false
+    feedback: Arbetsprov bedömer ischemi och arbetskapacitet men används inte för
+      primär diagnostik eller klassifikation av hjärtsvikt.
+  - text: Ekokardiografi
+    correct: true
+    feedback: Rätt svar — ekokardiografi visar vänsterkammarfunktion (LVEF), diastolisk
+      funktion, klaffsjukdom och strukturella orsaker och är central för diagnos och
+      klassificering.
+  explanation: Ekokardiografi är förstahandsundersökningen för att bekräfta hjärtsvikt
+    och skilja mellan nedsatt (HFrEF) och bevarad (HFpEF) systolisk funktion samt
+    för att identifiera strukturella orsaker. NT‑proBNP och EKG är viktiga kompletterande
+    tester men ersätter inte ekokardiografin.
+  id: imp-402aa690
+- type: multiple_choice
+  tags:
+  - Kardiologi
+  - Klinisk Farmakologi
+  question: Vilket av följande alternativ beskriver vanliga biverkningar av kalciumkanalblockerare
+    (t.ex. amlodipin)?
+  image: null
+  options:
+  - text: Bradykardi och trötthet
+    correct: false
+    feedback: Fel — bradykardi är mer typiskt för icke-dihydropyridin CCB (verapamil/diltiazem);
+      trötthet kan förekomma men är inte karaktäristisk för amlodipin.
+  - text: Impotens och depression
+    correct: false
+    feedback: Fel — impotens och depression är inte vanliga eller typiska biverkningar
+      av kalciumkanalblockerare.
+  - text: Hyponatremi och urinsyrahöjning
+    correct: false
+    feedback: Fel — dessa effekter ses snarare vid tiaziddiuretika, inte vid kalciumkanalblockerare.
+  - text: Ankelödem och värmekänsla i ansiktet
+    correct: true
+    feedback: Rätt — perifert ödem och flushing/värmekänsla från vasodilatation är
+      vanliga biverkningar av dihydropyridin kalciumkanalblockerare som amlodipin.
+  - text: Torrhosta och hyperkalemi
+    correct: false
+    feedback: Fel — torrhosta är typisk för ACE-hämmare och hyperkalemi för vissa
+      andra läkemedel, inte för kalciumkanalblockerare.
+  explanation: Dihydropyridin-kalciumkanalblockerare (t.ex. amlodipin) ger arteriell
+    vasodilatation vilket ofta ger perifert ödem och flushing/ värmekänsla; huvudvärk
+    och rodnad förekommer också. Icke-dihydropyridiner kan istället ge bradykardi/AV-block.
+  id: imp-9eae96bd
+- type: multiple_choice
+  tags:
+  - hypertoni
+  - fysisk aktivitet
+  question: Vad är sant om fysisk aktivitet vid hypertoni?
+  image: null
+  options:
+  - text: Tung styrketräning är viktigaste träningen vid hypertoni
+    correct: false
+    feedback: Fel — tung styrketräning är inte det viktigaste; både aerob träning
+      och måttlig styrketräning ger blodtryckssänkande effekter.
+  - text: Promenad är alltid av för låg intensitet för att ha effekt på blodtrycket
+    correct: false
+    feedback: Fel — rask eller regelbunden promenad kan sänka blodtrycket; intensitet
+      och regelbundenhet spelar roll.
+  - text: Bara konditionsträning har effekt på blodtrycket
+    correct: false
+    feedback: Fel — konditionsträning har störst evidens men styrketräning ger också
+      blodtryckssänkning och kombination är fördelaktigt.
+  - text: Effekten av regelbunden fysisk aktivitet motsvarar ungefär ett läkemedel
+    correct: true
+    feedback: Rätt — regelbunden fysisk aktivitet ger i genomsnitt en systolisk sänkning
+      på flera mmHg, ungefär jämförbar med en antihypertensiv läkemedelsdos.
+  - text: Gåfotboll är fel aktivitet för att sänka blodtrycket
+    correct: false
+    feedback: Fel — gåfotboll är en måttligt intensiv aktivitet som kan bidra till
+      blodtryckssänkning om den utförs regelbundet.
+  explanation: Regelbunden fysisk aktivitet, särskilt aerob träning (t.ex. rask promenad,
+    cykling), sänker blodtrycket med i genomsnitt ca 5–10 mmHg. Styrketräning ger
+    också positiva effekter och kombinationsträning rekommenderas; den totala effekten
+    kan vara jämförbar med en läkemedelsdos.
+  id: imp-b864b79b
+- type: multiple_choice
+  tags:
+  - Kardiomyopati
+  - Alkohol
+  - Hjärtsvikt
+  question: 'Man 52 år med trötthet och andfåddhet. Alkoholmissbruk. EKG: sinustakykardi.
+    Ekokardiografi: dilaterade hjärtrum och nedsatt systolisk funktion. Mest sannolika
+    diagnos?'
+  image: null
+  options:
+  - text: Restriktiv kardiomyopati
+    correct: false
+    feedback: Fel — restriktiv kardiomyopati ger oftast normal kammardimension och
+      främst diastolisk dysfunktion, inte dilatation med nedsatt systolisk funktion.
+  - text: Alkoholinducerad dilaterad kardiomyopati
+    correct: true
+    feedback: Rätt — långtvarigt alkoholmissbruk kan ge dilatation av kamrarna och
+      global nedsatt systolisk funktion i en dilaterad kardiomyopati.
+  - text: Hypertrof kardiomyopati
+    correct: false
+    feedback: Fel — hypertrof kardiomyopati karakteriseras av förtjockade väggar och
+      ofta bevarad eller hyperkontraktil systolisk funktion, inte dilatation.
+  - text: Ischemisk hjärtsjukdom
+    correct: false
+    feedback: Fel — ischememi kan ge dilatation sekundärt, men fyndet av global dilatation
+      hos en person med uttalat alkoholmissbruk gör alkoholorsakad dilaterad kardiomyopati
+      mer sannolik.
+  - text: Perimyokardit
+    correct: false
+    feedback: Fel — perimyokardit ger ofta akuta symtom och ST-T-förändringar; det
+      är mindre sannolikt som förklaring till kronisk dilatation utan annan akut klinik.
+  explanation: Den kliniska bilden med långtgående alkoholmissbruk tillsammans med
+    ekokardiografiska fynd av dilaterade kamrar och nedsatt systolisk funktion är
+    typisk för alkoholinducerad dilaterad kardiomyopati, vilket leder till hjärtsviktssymtom.
+    Andra diagnoser ger oftast andra ekofynd eller en annan klinisk tidsbild.
+  id: imp-f008c3d2
+- type: multiple_choice
+  tags:
+  - Förmaksflimmer
+  - Arytmi
+  - Akutmedicin
+  question: Man 56 år, nyupptäckt förmaksflimmer sedan igår kväll (<24 h). Vilken
+    behandling används oftast för att återställa sinusrytmen om den inte gått över
+    spontant?
+  image: null
+  options:
+  - text: El-konvertering
+    correct: true
+    feedback: Rätt — synkron DC-konvertering är en snabb och effektiv metod för att
+      återställa sinusrytmen vid nyupptäckt AF som inte konverterar spontant.
+  - text: Antikoagulantia
+    correct: false
+    feedback: Fel — antikoagulantia förebygger tromboemboli men återställer inte sinusrytmen;
+      de övervägs beroende på AF-duration och stroke-risk.
+  - text: Pacemakerinläggning
+    correct: false
+    feedback: Fel — pacemaker används för bradyarytmier eller AV-block, inte för att
+      återställa förmaksflimmer i första hand.
+  - text: Kateterablation
+    correct: false
+    feedback: Fel — ablation är en invasiv behandling för återkommande eller persisterande
+      AF, inte en akut åtgärd för att omedelbart konvertera nyupptäckt AF.
+  - text: Betablockad
+    correct: false
+    feedback: Fel — betablockerare ger frekvenskontroll och symtomlindring men konverterar
+      normalt inte till sinusrytm.
+  explanation: Vid nyupptäckt förmaksflimmer <24–48 timmar är synkron elektrisk konvertering
+    en vanlig och effektiv metod för att återställa sinusrytmen. Antikoagulation handlar
+    om stroke-prevention och kateterablation eller pacemaker är inte förstahandsval
+    för akut konversion; betablockad används för frekvenskontroll.
+  id: imp-0c1fd680
+- type: multiple_choice
+  tags:
+  - Kardiologi
+  - Klaffsjukdom
+  question: Kvinna 65 år med hjärtsviktssymtom. Holosystoliskt blåsljud och bifasisk
+    P‑våg i EKG (tecken på förstorad vänster förmak). Vilket klaffvitium är mest sannolikt?
+  image: null
+  options:
+  - text: Trikuspidisinsufficiens
+    correct: false
+    feedback: Fel — trikuspidalinsufficiens ger ett holosystoliskt blåsljud men påverkar
+      höger förmak/atria, inte vänster förmak.
+  - text: Ventrikelseptumdefekt
+    correct: false
+    feedback: Fel — VSD ger också ett holosystoliskt blåsljud men är oftast medfött/juvenilt
+      och är mindre typiskt samband med isolerad vänster förmaksförstoring hos en
+      äldre patient.
+  - text: Mitralisinsufficiens
+    correct: true
+    feedback: Rätt — mitralisinsufficiens ger ett holosystoliskt blåsljud och leder
+      till volymöverbelastning och förstorning av vänster förmak.
+  - text: Mitralistenos
+    correct: false
+    feedback: Fel — mitralisstenos ger ett diastoliskt, rumlande blåsljud (ofta med
+      öppningsknäpp) och kan ge vänster förmaksförstoring men inte holosystoliskt
+      blåsljud.
+  - text: Aortainsufficiens
+    correct: false
+    feedback: Fel — aortainsufficiens ger ett diastoliskt decrescendo‑blåsljud och
+      påverkar i första hand vänster kammare, inte ett holosystoliskt blåsljud med
+      primär vänster förmaksförstoring.
+  explanation: Ett holosystoliskt blåsljud vid apex som ofta utstrålar mot axillen
+    är typiskt för mitralisinsufficiens. Mitralisinsufficiens ger volymöverbelastning
+    av vänster förmak, vilket förklarar bifasisk P‑våg som tecken på vänster förmaksförstoring.
+  id: imp-b535c58b
+- type: multiple_choice
+  tags:
+  - Pleurautredning
+  - Hjärtsvikt
+  - Diagnostik
+  question: Svea, 84 år, tidigare bosatt i Kongo, har bilateral pleuravätska. Pleuraprotein
+    27 g/L (transudat) och svullna fötter. Vilken är troligaste orsak och lämplig
+    utredning?
+  image: null
+  options:
+  - text: Empyem. Remiss lungklinik.
+    correct: false
+    feedback: Fel — empyem är vanligtvis ett exsudat associerat med infektion och
+      unilateral förlopp, inte transudat.
+  - text: Kollagenos. Reumaprover.
+    correct: false
+    feedback: Fel — kollagenoser brukar ge exsudativa effusioner och andra systemiska
+      tecken, inte typiskt transudat med perifer ödem.
+  - text: Tuberkulos. Remiss infektion.
+    correct: false
+    feedback: Fel — tuberkulos ger oftast exsudativ, ofta unilateral eller lokalt
+      dominerande pleuravätska, inte ett transudat.
+  - text: Hjärtsvikt. Remiss EKO och NT-proBNP.
+    correct: true
+    feedback: Rätt — bilateral transudativ pleuravätska tillsammans med pittingödem
+      talar för hjärtsvikt; EKO och NT‑proBNP är lämpliga utredningar.
+  - text: Malignitet. Thorakoskopi.
+    correct: false
+    feedback: Fel — malign pleurautgjutning är oftast exsudativ och ofta ensidig;
+      thorakoskopi är överdrivet som första åtgärd vid transudat.
+  explanation: Transudativa pleuravätskor (lågt pleuraprotein) orsakas vanligen av
+    systemiska tillstånd, främst hjärtsvikt, särskilt när effusionen är bilateral
+    och perifer ödem förekommer. Därför är hjärtutredning med ekokardiografi och NT‑proBNP
+    indicerat; infektion, malignitet och kollagenoser ger vanligen exsudat.
+  id: imp-3c320f9b
+- type: multiple_choice
+  tags:
+  - Hjärtsvikt
+  - Akut behandling
+  - Diuretika
+  question: Bertil 65 år, ex-rökare, tidigare infarkt. Han har dyspné, ortopné, rassel
+    bilateralt, tredje hjärtton och vänstersidigt skänkelblock. Vilken är första åtgärd?
+  image: null
+  options:
+  - text: Remittera för poliklinisk ekokardiografi.
+    correct: false
+    feedback: Fel — ekokardiografi är viktig men ska inte vänta; patienten behöver
+      akut behandling först.
+  - text: Ordinera metoprolol iv.
+    correct: false
+    feedback: Fel — IV betablocker är olämpligt vid akut lungödem/hjärtsvikt eftersom
+      det kan förvärra cirkulationen.
+  - text: Remittera för subakut pacemakerimplantation.
+    correct: false
+    feedback: Fel — vänstersidigt skänkelblock kräver inte rutinmässig akut pacemaker
+      om inte höggradigt AV‑block eller hemodynamisk påverkan föreligger.
+  - text: Ordinera furosemid 40 mg intravenöst.
+    correct: true
+    feedback: Rätt — IV loopdiuretika är förstahandsåtgärd vid akut lungödem för att
+      snabbt minska preload och förbättra andningen.
+  - text: Skriva akut remiss till sjukhus för kranskärlsröntgen.
+    correct: false
+    feedback: Fel — akut koronarangiografi indikeras vid pågående infarkt eller instabil
+      ischemisk smärta; först ska hjärtsvikten stabiliseras.
+  explanation: Kliniken är typisk för akut vänstersidig hjärtsvikt/pulmonellt ödem
+    (dyspné, ortopné, rassel, S3). Akut behandling innefattar syrgas vid behov och
+    framför allt IV loopdiuretika för att snabbt avlasta vänster kammare; diagnostiska
+    åtgärder som ekokardiografi eller koronarangio planeras efter initial stabilisering.
+  id: imp-f5dba2ca
+- type: multiple_choice
+  tags:
+  - Förmaksflimmer
+  - Frekvensreglering
+  question: Medelålders man med nyupptäckt förmaksflimmer, tidigare frisk och opåverkad.
+    Vilken åtgärd bör UNDVIKAS?
+  image: null
+  options:
+  - text: Akut elkonvertering
+    correct: false
+    feedback: Fel — akut elkonvertering är indicerat vid hemodynamisk instabilitet
+      eller svåra symtom, men behöver inte undvikas generellt.
+  - text: Insättning av oral antikoagulation (OAK)
+    correct: false
+    feedback: Fel — OAK bedöms efter CHA2DS2-VASc och ska övervägas vid adekvat strokefaktor;
+      det är inte per automatik fel att ordinera.
+  - text: Frekvensreglering med betablockad
+    correct: false
+    feedback: Fel — betablockad är ett lämpligt förstahandsval för frekvenskontroll
+      hos hemodynamiskt stabila patienter.
+  - text: Remiss till hjärtmottagning för elektiv elkonvertering
+    correct: false
+    feedback: Fel — elektiv elkonvertering är ett rimligt alternativ för rytmkontroll
+      efter bedömning och eventuell antikoagulation.
+  - text: Frekvensreglering med digitalis
+    correct: true
+    feedback: Rätt — digitalis bör undvikas som förstahandsval hos medelålders, aktiv
+      och hemodynamiskt stabil patient eftersom den är mindre effektiv vid aktivitet
+      och har snäv terapeutisk bredd.
+  explanation: Digitalis är inte förstahandsval för frekvenskontroll hos medelålders
+    eller fysiskt aktiva patienter eftersom effekten är mest uttalad i vila och risk
+    för toxicitet finns. Betablockerare eller icke-dihydropyridin Ca‑blockerare är
+    vanliga förstaval; OAK beslutas utifrån CHA2DS2‑VASc och elkonvertering används
+    vid instabilitet eller elektivt efter utredning.
+  id: imp-e49252bd

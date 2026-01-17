@@ -121,7 +121,9 @@ def process_question(raw_q):
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": user_prompt}
             ],
-            response_format={ "type": "json_object" }
+            response_format={ "type": "json_object" },
+            verbosity="low",
+            reasoning_effort="medium"
         )
         
         result = json.loads(response.choices[0].message.content)

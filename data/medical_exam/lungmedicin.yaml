@@ -561,3 +561,262 @@
     exponering; sekundära infektioner kan förekomma men är inte definierande och profylax
     mot svamp/mykobakterier är inte rutin.
   id: med-lun-706b54
+- type: multiple_choice
+  tags:
+  - KOL
+  - Rehabilitering
+  - Fysisk aktivitet
+  question: Cecilia, 68 år, KOL stadium 2 med tilltagande dyspné vid ansträngning.
+    Hon har slutat röka och har bra inhalationsteknik. Vilken icke-farmakologisk åtgärd
+    är viktigast?
+  image: null
+  options:
+  - text: Undvika pulsstegring som motsvarar högintensiv fysisk aktivitet
+    correct: false
+    feedback: Fel — kontrollerad aerob träning är viktig och högintensiv träning kan
+      vara lämplig under övervakning; undvikande av pulsstegring är inte rekommenderat
+      som huvudåtgärd.
+  - text: Utprovning av lämpligt gånghjälpmedel
+    correct: false
+    feedback: Fel — gånghjälpmedel kan underlätta vid nedsatt gångförmåga men är inte
+      den viktigaste icke-farmakologiska åtgärden för dyspné vid måttlig KOL.
+  - text: Utprovning av nebulisator att använda i hemmet
+    correct: false
+    feedback: Fel — nebulisator är en form av läkemedelsadministration och inte en
+      primär icke-farmakologisk åtgärd för förbättrad kondition eller dyspnéhantering.
+  - text: Undvika aerob fysisk aktivitet och endast utföra muskelstärkande fysisk
+      aktivitet
+    correct: false
+    feedback: Fel — endast styrketräning är otillräckligt; både uthållighets- och
+      styrketräning behövs för bästa effekt.
+  - text: Kombination av aerob fysisk aktivitet och muskelstärkande fysisk aktivitet
+    correct: true
+    feedback: Rätt — pulmonär rehabilitering med både aerob och styrketräning förbättrar
+      dyspné, kondition och livskvalitet vid KOL.
+  explanation: Vid KOL rekommenderas pulmonär rehabilitering som inkluderar både
+    aerob uthållighetsträning och muskelstärkande träning; detta förbättrar dyspné,
+    fysisk kapacitet och livskvalitet mer än ensidig träning eller andra icke-farmakologiska
+    åtgärder.
+  id: imp-888305c5
+- type: multiple_choice
+  tags:
+  - Astma
+  - Diagnostik
+  - Inflammation
+  question: Vilket av följande påståenden om astma stämmer fullt ut?
+  image: null
+  options:
+  - text: Metakolintest utlöser bronkospasm hos alla men vid lägre dos om astma föreligger.
+      Typ-2 astma kännetecknas av låga eosinofiler.
+    correct: false
+    feedback: Första delen är korrekt men typ-2 astma kännetecknas av höga (eosinofila)
+      eosinofiler, inte låga.
+  - text: Metakolintest utlöser bronkospasm hos alla men vid lägre dos om astma föreligger.
+      Typ-2 astma kännetecknas av höga eosinofiler.
+    correct: true
+    feedback: 'Korrekt: metakolintest ger bronkospasm även hos friska vid höga doser,
+      och typ-2 astma är eosinofil.'
+  - text: Metakolintest utlöser bronkospasm hos alla men vid lägre dos om astma föreligger.
+      Typ-1 astma kännetecknas av höga eosinofiler.
+    correct: false
+    feedback: 'Felaktigt: begreppet ''typ-1 astma'' används inte i denna kontext;
+      eosinofil inflammation hör till typ-2 astma.'
+  - text: Metakolintest utlöser bronkospasm enbart hos dem med astma. Typ-2 astma
+      kännetecknas av låga eosinofiler.
+    correct: false
+    feedback: 'Felaktigt: metakolintest kan utlösa bronkospasm även hos friska vid
+      högre doser, och typ-2 astma har höga eosinofiler.'
+  - text: Metakolintest utlöser bronkospasm enbart hos dem med astma. Typ-2 astma
+      kännetecknas av höga eosinofiler.
+    correct: false
+    feedback: 'Delvis fel: typ-2-delen är rätt men metakolintest ger bronkospasm även
+      hos icke-asthmatiker vid högre doser.'
+  explanation: Metakolintest är en bronchial provokation där även friska kan få bronkospasm
+    vid höga doser, medan personer med astma reagerar vid betydligt lägre doser. Typ-2
+    astma associeras med eosinofil inflammation (höga eosinofiler) och medierande
+    cytokiner som IL-4/IL-5/IL-13.
+  id: imp-ae8d6572
+- type: multiple_choice
+  tags:
+  - Sarkoidos
+  - Lungmedicin
+  question: Vad kännetecknar kronisk lungsarkoidos? Vilket alternativ är helt rätt?
+  image: null
+  options:
+  - text: Bilaterala hiluslymfom. Bilateral fotledsartrit. Knölros.
+    correct: false
+    feedback: Fel — detta är typiska fynd vid Lofgrens syndrom (akut sarkoidos), inte
+      karaktäristiskt för kronisk lungsarkoidos.
+  - text: Oftast en multiorgansjukdom där lungorna drabbas. Restriktiv spirometri.
+    correct: true
+    feedback: Rätt — sarkoidos är vanligen multiorgansjukdom med ofta pulmonellt engagemang
+      och vanligtvis restriktivt spår vid spirometri.
+  - text: Lungröntgenbilden korrelerar alltid med svårighetsgraden. Knölros.
+    correct: false
+    feedback: Fel — lungröntgengrad korrelerar inte alltid med klinisk svårighetsgrad,
+      och knölros är oftare ett tecken på akut sjukdom.
+  - text: Enbart lungorna drabbas. Nedsatt gasutbytesförmåga.
+    correct: false
+    feedback: Fel — sarkoidos är vanligen multiorgansjukdom; nedsatt gasutbyte (sänkt
+      DLCO) förekommer dock ofta.
+  - text: Obstruktiv spirometri. Oftast en multiorgansjukdom där lungorna vanligtvis
+      drabbas
+    correct: false
+    feedback: Fel — även om obstruktiva mönster kan förekomma vid luftvägsengagemang,
+      är restriktiv spirometri och nedsatt diffusionskapacitet vanligare vid pulmonell
+      sarkoidos.
+  explanation: Sarkoidos är en granulomatös multiorgansjukdom som oftast engagerar
+    lungorna. Pulmonell sarkoidos ger ofta restriktivt ventilationsmönster och nedsatt
+    diffusionskapacitet; röntgenfynd och symtom korrelerar inte alltid väl med sjukdomens
+    förlopp.
+  id: imp-5cfa05c5
+- type: multiple_choice
+  tags:
+  - pneumothorax
+  - dykning
+  - flygning
+  question: Ung man med stor spontanpneumothorax behandlad med drän utan komplikationer.
+    Vilka två råd ger du vid utskrivning?
+  image: null
+  options:
+  - text: Flygförbud samt dykförbud med tuber/fridykning kommande månad.
+    correct: false
+    feedback: Fel — dykning (både tubdykning och fridykning) rekommenderas normalt
+      som livslångt förbud efter spontanpneumothorax, inte endast en månad.
+  - text: Flygförbud samt dykförbud med tuber/fridykning som båda är livslånga.
+    correct: false
+    feedback: Fel — dykning kan vara livsligt förbjudet, men ett livslångt flygförbud
+      är inte aktuellt; flygning rekommenderas undvikas en begränsad tid (vanligen
+      ~1 månad).
+  - text: Ingen fysisk ansträngning kommande månad samt livslångt dykförbud med tuber/fridykning.
+    correct: false
+    feedback: Delvis fel — livslångt dykförbud är korrekt, men huvudrådet brukar vara
+      flygförbud i cirka en månad snarare än generellt förbjuda all fysisk ansträngning.
+  - text: Flygförbud kommande månad samt livslångt förbud att snorkla från ytan i
+      samband med bad.
+    correct: false
+    feedback: Fel — snorkling från ytan är inte huvudproblemet; det är dykning (scuba
+      och fridykning) med tryckförändringar som är kontraindicerat livslångt.
+  - text: Flygförbud kommande månad samt livslångt dykförbud med tuber/fridykning.
+    correct: true
+    feedback: Rätt — rekommendationen är i allmänhet att undvika flygning under cirka
+      en månad efter pneumothorax samt att avstå från all form av dykning livslångt
+      på grund av hög risk för recidiv och barotrauma.
+  explanation: Efter spontanpneumothorax bör patienten undvika luftresor under en
+    överenskommen tid (ofta cirka en månad) eftersom kabintryckförändringar kan förvärra
+    en kvarvarande pneumothorax. Dykning (både scuba och fri-/tubdykning) är generellt
+    kontraindicerat livslångt på grund av risken för tryckrelaterad lungskada och
+    recidiv, om inte särskild utredning och eventuell kirurgisk åtgärd gjorts.
+  id: imp-6d396420
+- type: multiple_choice
+  tags:
+  - KOL
+  - hyperkapni
+  - NIV
+  question: '70-årig man med KOL. Första blodgas: pH 7,30, pCO2 8,4 kPa, pO2 6,7 kPa.
+    Två timmar senare efter 5 L O2: pH 7,19, pCO2 9,8 kPa, pO2 7,0 kPa. Patienten
+    är trött. Tolkning och lämplig handläggning?'
+  image: null
+  options:
+  - text: Patienten hyperventilerar - minska syrgasflödet
+    correct: false
+    feedback: 'Fel: Hyperventilation ger låg pCO2 och alkalos, här ses stigande pCO2
+      och försämrad acidos, alltså hypoventilation/koldioxidretention.'
+  - text: Patienten har respiratorisk alkalos - öka syrgasflödet
+    correct: false
+    feedback: 'Fel: pH är sjunkande och pCO2 stiger, vilket visar respiratorisk acidos,
+      inte alkalos.'
+  - text: Patienten har koldioxidretention - starta NIV (BIPAP)
+    correct: true
+    feedback: 'Rätt: Stigande pCO2 och fallande pH hos en trött KOL-patient tyder
+      på akut på kronisk respiratorisk insufficiens; NIV (BiPAP) är indicerat för
+      att förbättra ventilationen.'
+  - text: Patienten har metabol acidos - ge bikarbonat
+    correct: false
+    feedback: 'Fel: Förändringarna förklaras av respiratorisk acidos (höjt pCO2),
+      inte primär metabol acidos, så bikarbonat är inte rätt initial åtgärd.'
+  - text: Patienten är överventilerad - ge sedering
+    correct: false
+    feedback: 'Fel: Överventilation skulle ge lågt pCO2; här ses koldioxidretention
+      och trötthet, så sedering vore olämpligt.'
+  explanation: Försämrad pH med stigande pCO2 visar akut på kronisk respiratorisk
+    acidos/koldioxidretention, ofta utlöst av hypoventilation vid syrgasbehandling
+    eller muskeltrötthet hos KOL-patienter. Patienten är trött och behöver ventilationsstöd
+    — starta NIV (BiPAP); om detta misslyckas eller patienten blir medvetslös krävs
+    intubation och invasiv ventilering.
+  id: imp-88a96148
+- type: multiple_choice
+  tags:
+  - KOL
+  - akutbehandling
+  - syrgas
+  question: Anna, KOL-patient med latent respiratorisk insufficiens och njursvikt
+    inkommer med uttalat obstruktiv exacerbation och SpO2 83 %. Vilken akut behandling
+    är mest lämplig?
+  image: null
+  options:
+  - text: Salbutamol 2,5 mg, ipratropiumbromid 2,5 mg, inhalationssteroider (högdos)
+      och syrgas 5 liter.
+    correct: false
+    feedback: Fel — syrgas 5 l är för hög för KOL med risk för hyperkapni och inhalationssteroider
+      i högdos är inte förstahand vid akut exacerbation.
+  - text: Syrgas 1,5 liter, salbutamol 5 mg, ipratropiumbromid 0,5 mg och inhalationssteroider
+      (högdos).
+    correct: false
+    feedback: Fel — bronkdilaterare är bra men systemisk steroid rekommenderas vid
+      exacerbation istället för enbart högdos inhalationssteroid.
+  - text: Syrgas 1 liter, salbutamol 5 mg, ipratropiumbromid 0,5 mg och Betapredtabletter.
+    correct: true
+    feedback: Rätt — kontrollerad lågflödes-syrgas för att nå mål-SaO2 (≈88–92%),
+      kombinerade nebuliserade bronkdilaterare och systemisk steroid är korrekt akut
+      behandling.
+  - text: Salbutamol 2,5 mg, ipratropiumbromid 10 mg, Prednisolontabletter och syrgas
+      2 liter.
+    correct: false
+    feedback: Fel — prednisolon och måttlig syrgas är lämpligt men ipratropium 10
+      mg är en orimligt hög dos.
+  - text: Syrgas 5 liter, salbutamol 2,5 mg, ipratropiumbromid 2,5 mg och Betapredtabletter.
+    correct: false
+    feedback: Fel — syrgas 5 l är för hög vid risk för koldioxidsjuka och ipratropium
+      2,5 mg är ovanligt hög dos.
+  explanation: Vid akut KOL-exacerbation med hypoxemi ska syrgas ges målinriktat (ungefär
+    88–92 %) med lågflöde för att undvika hyperkapni. Snabbverkande bronkdilaterare
+    (β2-agonist + antikolinergikum) och systemisk kortikosteroid (oral eller IV) är
+    förstahandsbehandling; höga syrgasmängder och osakliga doser av inhalationsmedel
+    ska undvikas.
+  id: imp-9c9ea63c
+- type: multiple_choice
+  tags:
+  - lungemboli
+  - riskstratifiering
+  question: Vid lungemboli är det viktigt att riskstratifiera patienten. Vilka delar
+    ingår i riskstratifieringen?
+  image: null
+  options:
+  - text: Hemodynamisk instabilitet och högerkammarpåverkan
+    correct: true
+    feedback: Rätt — chock/hypotension (hemodynamisk instabilitet) och högerkammarpåverkan
+      (RV-dysfunktion/myokardiell påverkan) är centrala för att avgöra hög risk respektive
+      intermediate-risk.
+  - text: Ålder och förekomst av hormonbehandling
+    correct: false
+    feedback: Fel — ålder ingår i PESI för mortalitetsrisk, men hormonbehandling är
+      inte en huvudkomponent i akut riskstratifiering.
+  - text: Radiologisk utbredning av lungembolin och blödningsrisk
+    correct: false
+    feedback: Fel — radiologisk utbredning används inte som huvudkriterium för prognostisk
+      riskindelning; blödningsrisk bedöms för behandlingsval men är inte primär riskklassificering.
+  - text: Radiologisk utbredning av lungembolin och hemodynamisk instabilitet
+    correct: false
+    feedback: Fel — hemodynamisk instabilitet är korrekt som riskmarkör, men radiologisk
+      utbredning är inte en standardkomponent i prognostisk riskstratifiering.
+  - text: Tid sedan insjuknande och hemodynamisk instabilitet
+    correct: false
+    feedback: Fel — tid sedan insjuknande påverkar inte huvudklassificeringen; hemodynamisk
+      instabilitet är däremot relevant.
+  explanation: Riskstratifiering enligt riktlinjer baseras främst på hemodynamisk
+    status (chock/hypotension) och tecken på högerkammarpåverkan/myokardskada (t.ex.
+    RV-dysfunktion på ekokardiografi eller förhöjt troponin). För normotensiva patienter
+    används även klinisk poängsättning (PESI/sPESI) för prognos; blödningsrisk utvärderas
+    separat inför trombolys.
+  id: imp-ae659dd3

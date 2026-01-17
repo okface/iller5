@@ -300,7 +300,9 @@ def main():
                     "schema": build_question_batch_schema(),
                     "strict": True
                 }
-            }
+            },
+            verbosity="low",
+            reasoning_effort="medium"
         )
         
         # Manually parse the strict JSON response

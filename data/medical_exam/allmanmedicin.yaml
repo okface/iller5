@@ -1004,3 +1004,370 @@
     Många konjunktiviter och blefariter handläggs i primärvården, medan korneala främmande
     kroppar ofta kan bedömas snabbt men inte alltid är lika brådskande ur specialistperspektiv.
   id: med-all-e87b85
+- type: multiple_choice
+  tags:
+  - Rökning
+  - Prevention
+  - Kardiovaskulär risk
+  question: Gällande tobaksrökning, vilket av nedanstående påståenden är felaktigt?
+  image: null
+  options:
+  - text: Tobaksrökning under graviditet ökar risken för låg födelsevikt
+    correct: false
+    feedback: Sant — rökning under graviditet ökar risken för låg födelsevikt, prematuritet
+      och andra graviditetskomplikationer.
+  - text: Rökstopp efter många års rökning har ingen hälsovinst eftersom skadorna
+      redan skett
+    correct: true
+    feedback: Fel — rökstopp ger betydande hälsovinster även efter lång tids rökning,
+      med minskad risk för hjärt-kärlsjukdomar, förbättrad lungfunktion och lägre
+      mortalitet över tid.
+  - text: Tobaksrökning ger ökad risk för komplikationer vid operation
+    correct: false
+    feedback: Sant — rökning ökar risken för postoperativa komplikationer som sårinfektion,
+      dålig sårläkning och pulmonella problem.
+  - text: Tobaksrökning ger ökad risk för hjärt-kärlsjukdomar
+    correct: false
+    feedback: Sant — rökning är en stark och väl etablerad riskfaktor för ateroskleros,
+      hjärtinfarkt och stroke.
+  - text: Tobaksrökning är den enskilt främsta riskfaktorn för sjukdom och framtida
+      död
+    correct: false
+    feedback: Sant — globalt är tobaksrökning en av de största enskilda orsakerna
+      till sjukdom och förtida död.
+  explanation: Rökning orsakar många sjukdomar (kardiovaskulära, respiratoriska, cancer)
+    och är en ledande orsak till förtida död. Hälsovinster börjar kort efter rökstopp
+    och fortsätter långsiktigt, även för långvariga rökare.
+  id: imp-6399f49e
+- type: multiple_choice
+  tags:
+  - Sömnapné
+  - Hypertoni
+  - Stroke
+  question: Bagare Bengtsson är överviktig, snarkar och är trött — troligen obstruktivt
+    sömnapnésyndrom. Vilken sjukdomsrisk är förhöjd förutom diabetes?
+  image: null
+  options:
+  - text: Förmaksflimmer och bältros.
+    correct: false
+    feedback: Fel — OSA ökar visserligen risken för förmaksflimmer men inte för bältros
+      (herpes zoster).
+  - text: Arteriell hypertoni och stroke.
+    correct: true
+    feedback: Rätt — OSA är starkt kopplat till arteriell hypertoni och ökar risken
+      för cerebrovaskulära händelser som stroke.
+  - text: Ulcerös kolit och stroke.
+    correct: false
+    feedback: Fel — Stroke kan vara associerat med OSA men ulcerös kolit har ingen
+      etablerad koppling till sömnapné.
+  - text: Arteriell hypertoni och ulcerös kolit.
+    correct: false
+    feedback: Fel — Arteriell hypertoni är korrekt förknippat med OSA, men ulcerös
+      kolit är inte det.
+  - text: Bältros och arteriell hypertoni.
+    correct: false
+    feedback: Fel — Arteriell hypertoni är vanlig vid OSA men bältros (herpes zoster)
+      är inte en känd följdsjukdom av sömnapné.
+  explanation: Obstruktivt sömnapnésyndrom leder till intermittent hypoxi, ökad sympatikusaktivitet
+    och inflammation som främjar utveckling av arteriell hypertoni och ökar risken
+    för stroke och andra kardiovaskulära komplikationer.
+  id: imp-66f1d6f8
+- type: multiple_choice
+  tags:
+  - Sömnapné
+  - Resistent hypertoni
+  - Polysomnografi
+  question: Man 54 år med svårbehandlat blodtryck (165/95) trots tre antihypertensiva.
+    Överviktig, snarkar med misstänkta andningsuppehåll och är trött. Prover normala.
+    Lämplig handläggning?
+  image: null
+  options:
+  - text: Insomningstablett
+    correct: false
+    feedback: Fel — sömnmedel kan förvärra obstruktiv sömnapné och behandlar inte
+      orsaken till förhöjt blodtryck.
+  - text: Lägg till betablockerare
+    correct: false
+    feedback: Fel — att lägga till betablockerare är inte första åtgärd vid misstänkt
+      sömnapné som orsak till resistent hypertoni; utred orsaken först.
+  - text: Öka tiaziddiuretikum
+    correct: false
+    feedback: Fel — upptrappning av diuretikum kan ibland hjälpas vid resistent hypertoni
+      men adresserar inte den sannolika bakomliggande sömnapnén i detta fall.
+  - text: Misstänkt sömnapné - remiss polysomnografi
+    correct: true
+    feedback: Rätt — obstruktiv sömnapné är en vanlig orsak till resistent hypertoni
+      och ska utredas med sömnapnéscreening/polysomnografi.
+  - text: Misstänkt primär hyperaldosteronism - beställ aldosteron/reninkvot
+    correct: false
+    feedback: Fel — primär hyperaldosteronism kan ge resistent hypertoni men finns
+      oftast vid hypokalemi eller andra fynd; här talar anamnesen mer för sömnapné.
+  explanation: Obstruktiv sömnapné är en vanlig sekundär orsak till svårbehandlad
+    hypertoni, särskilt hos överviktiga män med snarkning och dagtrötthet. Polysomnografi
+    bekräftar diagnosen och behandling med CPAP kan förbättra blodtrycket; andra sekundära
+    orsaker utreds vid misstanke.
+  id: imp-4117173e
+- type: multiple_choice
+  tags:
+  - Kommunikation
+  - Narrativ medicin
+  - Patientcentrerad vård
+  question: Vad innebär narrativ kompetens?
+  image: null
+  options:
+  - text: Ingen av ovanstående
+    correct: false
+    feedback: Fel — det finns ett korrekt alternativ bland de givna svaren (alternativ
+      5).
+  - text: Att man inte skall lura patienten
+    correct: false
+    feedback: Fel — ärlig kommunikation är viktig men det beskriver inte narrativ
+      kompetens.
+  - text: Att kunna ta en strukturerat anamnes
+    correct: false
+    feedback: Fel — strukturerad anamnes är en klinisk färdighet, men narrativ kompetens
+      handlar om att ta tillvara patientens berättelse.
+  - text: En förmåga att se hela patienten
+    correct: false
+    feedback: Delvis rätt men otillräckligt — att se hela patienten är bredare; narrativ
+      kompetens fokuserar på patientens berättelse.
+  - text: En förmåga att lyssna och ta vara på patientens berättelse
+    correct: true
+    feedback: Rätt — narrativ kompetens innebär att kunna uppfatta, tolka och använda
+      patientens berättelse i vården.
+  explanation: Narrativ kompetens är förmågan att lyssna på, förstå och använda patientens
+    berättelse för att förbättra diagnostik, empati och vårdrelationen. Det handlar
+    om att uppmärksamma patientens perspektiv och erfarenheter snarare än bara symptomlistor.
+  id: imp-e37b762d
+- type: multiple_choice
+  tags:
+  - UVI
+  - Graviditet
+  - Antibiotika
+  question: Jamila, 28 år, gravid v.17, har sveda och trängningar (misstänkt nedre
+    urinvägsinfektion) och är feberfri. Vilken åtgärd är mest korrekt?
+  image: null
+  options:
+  - text: Tempa, om >38 till gyn.
+    correct: false
+    feedback: Fel — enbart tempkontroll och remiss vid feber är för passivt eftersom
+      graviditet kräver odling och tidig behandling vid symtom.
+  - text: Urinsticka, odling, antibiotika direkt.
+    correct: true
+    feedback: Rätt — vid symtom på UVI i graviditet tas urinsticka och framför allt
+      urinodling och antibiotika påbörjas tidigt efter provtagning.
+  - text: Ta CRP, om >50 behandla pyelonefrit.
+    correct: false
+    feedback: Fel — CRP är inte avgörande för beslut om behandling av nedre UVI i
+      graviditet och pyelonefrit behandlas utifrån klinik, inte enbart CRP.
+  - text: Urinsticka, odling, avvakta svar.
+    correct: false
+    feedback: Fel — man ska inte avvakta odlingssvaret i graviditet utan börja behandling
+      efter provtagning vid klinisk misstanke.
+  - text: Urinsticka, behandla om positiv.
+    correct: false
+    feedback: Fel — urinsticka kan misslyckas med att fånga infektion; odling bör
+      tas och behandling ges även vid stark klinisk misstanke även om stickan är negativ.
+  explanation: Vid symtom på UVI under graviditet ska urinodling alltid tas och antibiotikabehandling
+    påbörjas tidigt eftersom risken för ascenderande infektion och komplikationer
+    är större. Urinsticka är ett snabbt hjälpmedel men ersätter inte odling; man bör
+    inte avvakta odlingssvaret innan behandling.
+  id: imp-7fbdfbe7
+- type: multiple_choice
+  tags:
+  - Evidensbaserad medicin
+  - Kliniskt beslutsfattande
+  question: Vad är evidensbaserad medicin?
+  image: null
+  options:
+  - text: Att endast basera behandling på expertutlåtanden
+    correct: false
+    feedback: Fel — expertutlåtanden är en del men ensamstående expertis utgör inte
+      evidensbaserad medicin.
+  - text: Att främst använda läkemedelsföretagens rekommendationer
+    correct: false
+    feedback: Fel — industrirekommendationer kan vara partiska och ersätter inte oberoende
+      vetenskaplig evidens.
+  - text: Att enbart använda läkarens kliniska erfarenhet
+    correct: false
+    feedback: Fel — klinisk erfarenhet är viktig men måste kombineras med vetenskaplig
+      evidens och patientens värderingar.
+  - text: Att alltid följa riktlinjer utan att ta hänsyn till patientens önskemål
+    correct: false
+    feedback: Fel — evidensbaserad medicin inkluderar patientens preferenser och kontext
+      i beslutsfattandet.
+  - text: Att kombinera bästa tillgängliga vetenskapliga evidens, klinisk expertis
+      och patientens värderingar
+    correct: true
+    feedback: Rätt — detta är den vedertagna definitionen av evidensbaserad medicin.
+  explanation: Evidensbaserad medicin innebär att integrera bästa tillgängliga forskning
+    med klinisk erfarenhet och patientens värderingar för att fatta informerade vårdbeslut.
+    Den prioriterar högkvalitativa studier (t.ex. randomiserade kontrollerade studier
+    och systematiska översikter) men anpassas alltid till den enskilde patientens
+    situation.
+  id: imp-f3b65cfd
+- type: multiple_choice
+  tags:
+  - Svalginfektion
+  - Centor-kriterier
+  question: 'Märta, 5 år: halsont, feber 38,9 °C, ingen hosta, ömmande käkvinklar
+    och svullna tonsiller. Hur många Centorkriterier uppfylls?'
+  image: null
+  options:
+  - text: '2'
+    correct: false
+    feedback: Fel — fler kriterier är uppfyllda (feber, avsaknad av hosta, ömande
+      lymfkörtlar och tonsillförändringar).
+  - text: '3'
+    correct: false
+    feedback: Fel — det är inte bara tre; hon har även tonsillpåverkan utöver de andra
+      tre kriterierna.
+  - text: '0'
+    correct: false
+    feedback: Fel — flera typiska Centorkriterier föreligger vid detta tillstånd.
+  - text: '4'
+    correct: true
+    feedback: Rätt — feber >38 °C, avsaknad av hosta, ömmande anteriora cervikala
+      lymfkörtlar och tonsillförändringar ger 4 Centorkriterier.
+  - text: '1'
+    correct: false
+    feedback: Fel — fler än ett kriterium är uppfyllt vid patientens symtom.
+  explanation: 'De klassiska Centorkriterierna är: feber >38 °C, avsaknad av hosta,
+    ömmande anteriora cervikala lymfkörtlar och tonsillpåverkan (exsudat/svullnad).
+    Märta uppfyller alla fyra. (Obs: McIsaac-modifieraren lägger till ålder, men originala
+    Centor ger här 4 poäng.)'
+  id: imp-5409a033
+- type: multiple_choice
+  tags:
+  - Medicinhistoria
+  - Hippokrates
+  question: Vem var den förste moderna läkaren som hävdade att sjukdomar inte är ett
+    gudomligt straff (associerat med Hippokrates‑eden)?
+  image: null
+  options:
+  - text: Galenos
+    correct: false
+    feedback: Fel — Galenos (Galen) var en inflytelserik läkare på 100–200‑talet e.Kr.,
+      men inte den första som förklarade sjukdomar som naturliga.
+  - text: Aristoteles
+    correct: false
+    feedback: Fel — Aristoteles var en filosof, inte den första moderna läkaren som
+      formulerade medicinska förklaringar av sjukdom.
+  - text: Platon
+    correct: false
+    feedback: Fel — Platon var filosof och inte känd för att ha formulerat den Hippokratiska
+      synen på sjukdomars naturliga orsaker.
+  - text: Hippokrates
+    correct: true
+    feedback: Rätt — Hippokrates betraktas som medicinens fader och förknippas med
+      idén att sjukdomar har naturliga orsaker och med Hippokrateseden.
+  - text: Sokrates
+    correct: false
+    feedback: Fel — Sokrates var filosof och inte den som introducerade den medicinska
+      idén att sjukdomar inte är gudomliga straff.
+  explanation: Hippokrates (ca 460–370 f.Kr.) ses som grundaren av vetenskaplig medicin
+    och betonade naturliga orsaker till sjukdomar, vilket ligger bakom Hippokrates‑eden.
+    De andra namnen är huvudsakligen filosofer eller en senare läkare (Galen).
+  id: imp-a34e65f4
+- type: multiple_choice
+  tags:
+  - beroende
+  - abstinens
+  - opioider
+  question: Vilket symtomkluster är mest typiskt vid opiatabstinens?
+  image: null
+  options:
+  - text: Synhallucinationer, ataxi, nystagmus och aggressivitet
+    correct: false
+    feedback: Fel — detta beskriver snarare intoxikation med PCP eller vissa dissociativa/hallucinogena
+      substanser, inte opiatabstinens.
+  - text: Feber, nackstelhet, fotofobi och medvetandesänkning
+    correct: false
+    feedback: Fel — dessa tecken talar för meningit/encefalit snarare än opiatabstinens.
+  - text: Eufori, små pupiller, klåda och andningsdepression
+    correct: false
+    feedback: Fel — detta är typiska tecken på opiatintoxikation (eufori, mios, andningsdepression),
+      inte abstinens.
+  - text: Bradykardi, hypotermi, hypersomni och förstoppning
+    correct: false
+    feedback: Fel — dessa är effekter av opioidpåverkan; abstinens ger istället sympatikusaktivering
+      (t.ex. takykardi, mydriasis).
+  - text: Oro/rastlöshet, muskelvärk, svettningar, rinnande näsa och diarré
+    correct: true
+    feedback: Rätt — detta är typiska symtom vid opiatabstinens med autonom hyperaktivitet
+      och influensaliknande besvär.
+  explanation: 'Opiatabstinens kännetecknas av autonom hyperaktivitet och influensaliknande
+    symtom: ångest, rastlöshet, muskelvärk, svettningar, rinorré, tårflöde, gäspningar
+    och diarré. Detta skiljer sig från opiatintoxikation som ger mios, sedering och
+    andningsdepression.'
+  id: imp-bda21c56
+- type: multiple_choice
+  tags:
+  - Infektion
+  - CRP
+  - Allmänmedicin
+  question: 'Pablo, 45 år: hosta, snuva och halsont. Temp 38,3°C, lungor auskulteras
+    utan anmärkning. Behövs snabb-CRP?'
+  image: null
+  options:
+  - text: CRP behöver inte tas hos en opåverkad patient med typiskt virala symtom
+    correct: true
+    feedback: Rätt — opåverkade patienter med typiska virala övre luftvägssymtom behöver
+      oftast inte CRP.
+  - text: CRP kan skilja på om Pablo har en viral eller bakteriell infektion
+    correct: false
+    feedback: Fel — CRP kan ge stöd i bedömningen men kan inte entydigt skilja mellan
+      viral och bakteriell infektion.
+  - text: CRP kan ersätta lungröntgen
+    correct: false
+    feedback: Fel — CRP visar systemisk inflammation men kan inte ersätta lungröntgen
+      vid misstanke om pneumoni.
+  - text: CRP bör tas, behandla om >50.
+    correct: false
+    feedback: Fel — även om värden >50 mg/L kan tala för bakteriell infektion används
+      CRP inte rutinmässigt utan tolkas i klinisk kontext.
+  - text: CRP ska alltid tas vid symptom från luftvägarna
+    correct: false
+    feedback: Fel — CRP tas inte rutinmässigt vid alla luftvägssymtom, utan vid klinisk
+      osäkerhet eller allmänpåverkan.
+  explanation: Patienten är opåverkad med typiska förkylningssymtom, varför snabb-CRP
+    i regel inte behövs. CRP kan däremot vara användbart vid klinisk osäkerhet eller
+    misstanke om nedre luftvägsinfektion, men det skiljer inte entydigt viral från
+    bakteriell orsak och ersätter inte röntgen.
+  id: imp-3865cffe
+- type: multiple_choice
+  tags:
+  - Pediatrik
+  - Infektion
+  - Antibiotika
+  question: 'Emil, 4 år, har feber och ont i höger öra. Status: akut mediaotit höger
+    (buktande trumhinna, nedsatt rörlighet), vänster ua. Opåverkad i övrigt. Åtgärd?'
+  image: null
+  options:
+  - text: Förskriv antibiotika direkt.
+    correct: false
+    feedback: Fel — hos opåverkade barn över 1 år med ensidig, icke-komplicerad AOM
+      rekommenderas inte rutinmässig omedelbar antibiotikabehandling.
+  - text: Förskriv PcV i reserv.
+    correct: false
+    feedback: Delvis korrekt men inte förstahandsval — en reserveringsrecept (delayed
+      prescription) kan övervägas i vissa situationer, men primärt rekommenderas aktiv
+      exspektans och smärtlindring.
+  - text: Remiss öronläkare.
+    correct: false
+    feedback: Fel — remiss till öronläkare behövs inte vid enkel, opåverkad AOM utan
+      komplikationer.
+  - text: Förskriv amoxicillin i reserv.
+    correct: false
+    feedback: Fel — antibiotika (om indicerat) ges vanligen som PcV i Sverige; dessutom
+      är antibiotika inte indicerat direkt hos opåverkade barn i detta fall.
+  - text: Avvakta med antibiotika, ge smärtlindring (aktiv exspektans).
+    correct: true
+    feedback: Rätt — för opåverkade barn >1 år med ensidig, icke-komplicerad AOM rekommenderas
+      aktiv exspektans med adekvat smärtlindring och uppföljning.
+  explanation: Enskild, icke-komplicerad akut mediaotit hos ett opåverkat barn över
+    1 år behandlas i första hand med smärtlindring och aktiv exspektans i 2–3 dygn.
+    Antibiotika ges vid försämring eller utebliven förbättring; PcV är förstahandsval
+    om behandling blir nödvändig. Öronläkarbedömning krävs vid komplikationer eller
+    recidiv.
+  id: imp-2bbe8287

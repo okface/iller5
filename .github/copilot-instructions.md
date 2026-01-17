@@ -31,6 +31,13 @@
 ## Local content generation scripts (OpenAI)
 - `scripts/generate.py` is an interactive generator that appends new questions to a selected YAML file using OpenAI Structured Outputs (strict JSON schema) and expects `OPENAI_API_KEY` to be set.
 - `scripts/migrate.py` is a one-off migrator from `data/medical_exam/incorrectly_formatted_questions/questions.yaml` into per-topic YAML files.
+- **IMPORTANT**: When modifying or creating new AI scripts, ALWAYS use modern (2026+) OpenAI standards:
+  - Use `gpt-5-mini` or newer. **NEVER** use `gpt-4o`, `gpt-4`, or `gpt-3.5`.
+  - Use the `client = OpenAI()` pattern.
+  - Use `response_format` with JSON Schema for structured outputs.
+  - Do NOT use the `temperature` parameter (defaults are strictly enforced).
+  - ALWAYS use `verbosity="low"` for concise outputs and `reasoning_effort="medium"` for logic depth.
+  - Use verbosity/print statements to show progress.
 
 ## When changing things
 - If you move/rename the bundled JSON, update both `scripts/bundle.py` (output path) and `store.loadContent()` (fetch path).

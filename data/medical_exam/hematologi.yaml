@@ -522,3 +522,211 @@
     Andra differentialdiagnoser som TTP, leukemi, leversvikt och förvärvad hemofili
     har typiska laboratoriefynd som skiljer dem från ITP.
   id: med-hem-401c04
+- type: multiple_choice
+  tags:
+  - Hematologi
+  - Diagnostik
+  question: Jan, 76 år, med KLL. Nu uttalad trötthet och andfåddhet — misstanke om
+    hemolytisk anemi. Vilka prover beställer du för att påvisa autoimmun hemolytisk
+    anemi?
+  image: null
+  options:
+  - text: 1. Kreatinin, beta2-mikroglobulin, fragmentocyter, M-komponent, SR
+    correct: false
+    feedback: Fel — dessa prover bedömer njurfunktion, tumörbörda eller monoklonalitet;
+      saknar viktiga hemolysmarkörer och DAT.
+  - text: 2. LD, haptoglobin, retikulocyter, bilirubin, DAT
+    correct: true
+    feedback: Rätt — kombinationen visar hemolys (förhöjt LD, bilirubin, lågt haptoglobin,
+      retikulocytos) och DAT påvisar autoantikroppar.
+  - text: 3. LD, transferrin, retikulocyter, ferritin, DAT
+    correct: false
+    feedback: Fel — transferrin och ferritin bedömer järnstatus och är inte centrala
+      för att påvisa hemolys; haptoglobin/bilirubin saknas.
+  - text: 4. ANCA, haptoglobin, SR, retikulocyter, FACS
+    correct: false
+    feedback: Fel — ANCA och SR är för inflammations-/vaskulitutredning, FACS är ej
+      standard för AIHA; DAT och bilirubin/LD saknas.
+  - text: 5. ALP, haptoglobin, schistocyter, bilirubin, FACS
+    correct: false
+    feedback: Fel — ALP och schistocyter pekar mot hepatobiliär eller mikroangiopatisk
+      hemolys; DAT och LD saknas för att påvisa autoimmun hemolys.
+  explanation: Autoimmun hemolytisk anemi visar förhöjt LD och indirekt bilirubin,
+    lågt haptoglobin och retikulocytos; direkt antiglobulintest (DAT) är diagnostiskt
+    för att påvisa autoantikroppar. KLL är en känd utlösande orsak till varm AIHA.
+  id: imp-9b92dc2b
+- type: multiple_choice
+  tags:
+  - Kronisk lymfatisk leukemi
+  - Behandlingsindikationer
+  - Anemi
+  question: Vilket av följande är en behandlingsindikation vid kronisk lymfatisk leukemi
+    (KLL)?
+  image: null
+  options:
+  - text: B-lymfocyter > 300 x 10^9/L
+    correct: false
+    feedback: Fel — isolerad hög lymfocytos är vanligtvis ingen behandlingsindikation
+      i KLL; leukostas är ovanligt.
+  - text: B-lymfocyter > 100 x 10^9/L
+    correct: false
+    feedback: Fel — ett visst absolut lymfocytantal utan symtom eller progression
+      motiverar i regel inte behandling.
+  - text: Hb < 100 g/L pga KLL
+    correct: true
+    feedback: Rätt — anemi orsakad av KLL (Hb <100 g/L) är en etablerad indikation
+      för behandling.
+  - text: Buksmärtor
+    correct: false
+    feedback: Felformulerat — buksmärta som uttryck för symtomgivande splenomegali
+      är indikation, men ospecificerad buksmärta ensam är inte.
+  - text: Förstorade lymfkörtlar < 10 cm utan symtom
+    correct: false
+    feedback: Fel — asymptomatiska förstorade körtlar (och icke-progressiva) ger normalt
+      inte behandling; indikation vid stora (>5 cm), progressiva eller symtomgivande
+      noder.
+  explanation: Behandlingsindikationer i KLL enligt etablerade kriterier inkluderar
+    progressiv benmärgsinsufficiens (t.ex. Hb <100 g/L eller trombocytopeni <100×10^9/L),
+    symtomgivande eller progressiv spleno-/lymfadenopati, konstitutionella symtom
+    och snabb lymfocytökning (doublingstid <6 månader). Isolerad lymfocytos utan symtom
+    behandlas inte.
+  id: imp-99f4a1ed
+- type: multiple_choice
+  tags:
+  - venös tromboembolism
+  - riskfaktorer
+  question: Vilket av följande förknippas inte med ökad risk för venös tromboembolism?
+  image: null
+  options:
+  - text: Hög ålder
+    correct: false
+    feedback: Fel — hög ålder är en välkänd riskfaktor för VTE på grund av ökad koagulationsbenägenhet
+      och komorbiditet.
+  - text: Central venkateter
+    correct: false
+    feedback: Fel — central venkateter ger endotelpåverkan och stas lokalt och ökar
+      risken för venös trombos.
+  - text: Kongenital trombocytopeni
+    correct: true
+    feedback: Rätt — medfödd låg trombocytantalassocieras generellt med blödningsrisk,
+      inte ökad venös trombosrisk.
+  - text: Cancer
+    correct: false
+    feedback: Fel — cancer ger ett hyperkoagulabelt tillstånd och är en stark riskfaktor
+      för VTE.
+  - text: Nefrotiskt syndrom
+    correct: false
+    feedback: Fel — nefrotiskt syndrom leder till förlust av antikoagulanter (t.ex.
+      antitrombin) i urinen och ökad trombosrisk.
+  explanation: Kongenital trombocytopeni innebär låg antal blodplättar och är i regel
+    kopplat till blödningsbenägenhet snarare än ökad venös trombosrisk. De andra alternativen
+    (hög ålder, central venkateter, cancer och nefrotiskt syndrom) är etablerade riskfaktorer
+    för venös tromboembolism via stas, endotelpåverkan eller hyperkoagulabilitet.
+  id: imp-d0d3b730
+- type: multiple_choice
+  tags:
+  - Myelom
+  - M-komponent
+  - Utredning
+  question: Man 65 år med IgG kappa M‑komponent 15 g/L. Misstanke om MGUS men man
+    vill utesluta multipelt myelom. Vilka undersökningar krävs för diagnostik och
+    bedömning av behandlingsindikation?
+  image: null
+  options:
+  - text: Blodprov (blodstatus, elstatus, fria lätta kedjor), benmärgsundersökning
+      och PET‑CT
+    correct: false
+    feedback: Fel — PET‑CT kan vara användbart i vissa fall men är inte förstahandsval
+      för rutinmässig skelettutredning; helkropps lågdos‑CT eller helkropps‑MRI är
+      rekommenderade och benmärgsprov krävs vanligtvis.
+  - text: Blodprov samt CT hals, thorax och buk
+    correct: false
+    feedback: Fel — CT hals/thorax/buk utreder inte skelettet systematiskt för myelomrelaterade
+      lytiska förändringar och saknar benmärgsanalys.
+  - text: Blodprov samt MR helkropp
+    correct: false
+    feedback: Fel — helkropps‑MRI är en lämplig bildmodalitet men saknar benmärgsbiopsi;
+      benmärgsundersökning behövs för att kvantifiera klonala plasmaceller vid diagnostik.
+  - text: Blodprov, benmärgsundersökning och CT lågdos myelomskelett
+    correct: true
+    feedback: Rätt — kombinationen av riktade blodprover (inklusive fria lätta kedjor),
+      benmärgsbiopsi och helkropps lågdos‑CT (eller helkropps‑MRI) är standard för
+      att ställa diagnos och avgöra behandlingsindikation.
+  - text: Endast blodprov då patienten är symptomfri.
+    correct: false
+    feedback: Fel — även asymtomatiska patienter med M‑komponent behöver kompletterande
+      utredning (bilddiagnostik och ofta benmärgsprov) för att utesluta myelom eller
+      andra myeloproliferativa tillstånd.
+  explanation: Vid misstanke om myelom krävs riktade blodprover (blodstatus, kalcium,
+    njurfunktion, albumin, S‑elektrofores/IFE, fria lätta kedjor), benmärgsbiopsi
+    för att kvantifiera klonal plasmacellandel och helkroppsbildgivning (lågdos‑CT
+    eller helkropps‑MRI; PET‑CT i särskilda fall) för att påvisa myelom‑definierande
+    förändringar som lytiska lesioner eller extramedullär sjukdom.
+  id: imp-cd32609a
+- type: multiple_choice
+  tags:
+  - B12-brist
+  - järnbrist
+  - atrofisk gastrit
+  question: 'Anna, 25 år, trötthet. Hb 77 g/L. Lab: B12-brist, högt folat, järnbrist.
+    Atrofisk gastrit. Vilken är bästa initiala behandling?'
+  image: null
+  options:
+  - text: Börjar med järn, tar om prover.
+    correct: false
+    feedback: Fel — att prioritera järn och fördröja B12 kan riskera irreversibel
+      neurologisk skada från obehandlad B12-brist.
+  - text: Ger B12 först, tar om folat sen.
+    correct: true
+    feedback: Rätt — B12 bör ersättas först (vanligen parenteralt vid atrofisk gastrit)
+      för att förebygga neurologisk komplikation; järn kan behandlas därefter.
+  - text: Folat och järn först.
+    correct: false
+    feedback: Fel — att ge folat innan B12 kan förvärra eller maskera neurologiska
+      symtom och folat är redan förhöjt här.
+  - text: Börjar med B12 och folat, tar om järn sen.
+    correct: false
+    feedback: Delvis fel — B12 ska ges men extra folat är onödigt och kan vara riskabelt
+      om B12 inte etablerats; folatnivån är redan hög.
+  - text: Ger B12, folat och järn samtidigt.
+    correct: false
+    feedback: Fel — B12 och järn kan behöva behandlas, men rutinmässig tillsats av
+      folat är onödig här och kan dölja B12-bristens effekter.
+  explanation: Vid B12-brist, särskilt vid atrofisk gastrit, ska B12 ersättas snarast
+    (ofta parenteralt) för att förhindra neurologisk skada. Folat bör inte ges före
+    eller rutinmässigt om inte brist påvisats (här är folat förhöjt). Järnbrist behandlas
+    också, men B12-prioritering är viktigast initialt.
+  id: imp-4d822d3b
+- type: multiple_choice
+  tags:
+  - Polycytemi
+  - Polycytemia vera
+  question: 65-årig kvinna, rökare, med klåda efter dusch. Hb 165 g/L, EVF 0,49. Vad
+    är nästa steg?
+  image: null
+  options:
+  - text: 1. Kompletterar med diff, järnpaket, s-erytropoetin.
+    correct: false
+    feedback: Delvis korrekt — diff, järnstatus och s-erytropoetin är rimliga initiala
+      prover, men misstanke om polycytemia vera kräver även JAK2-analys och hematologbedömning.
+  - text: 2. Storrökare, ingen utredning, men UL buk.
+    correct: false
+    feedback: Fel — rökning kan ge sekundär erytrocytos men patienten uppfyller tröskelvärden
+      för polycytemi och behöver utredas vidare, inte endast bukultraljud.
+  - text: 3. Remiss Hematologen (frågeställning polycytemia vera).
+    correct: true
+    feedback: Rätt — Hb och EVF når gränsvärden för polycytemi och aquagen klåda stödjer
+      misstanke om PV; hematologremiss för JAK2-test och vidare handläggning är indicerat.
+  - text: 4. DT hals/thorax/buk (lymfom?).
+    correct: false
+    feedback: Fel — lymfom ger sällan isolerad förhöjd Hb/EVF med aquagen klåda; DT
+      är inte första steget vid misstanke om polycytemia vera.
+  - text: 5. Diuretika-effekt (pseudopolycytemi).
+    correct: false
+    feedback: Fel — diuretika kan ge hemokoncentration men patientens symtom och värden
+      talar för verklig polycytemi som kräver vidare utredning.
+  explanation: Hb 165 g/L och EVF 0,49 uppfyller WHO:s tröskelvärden för polycytemi
+    hos kvinna. Aquagen klåda och eventuell splenomegali talar för polycytemia vera
+    — utredning bör inkludera JAK2-mutation, s-erytropoetin, syremättnad för att utesluta
+    sekundära orsaker och remiss till hematolog.
+  id: imp-c0816cf1

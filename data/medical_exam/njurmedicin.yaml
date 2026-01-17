@@ -524,3 +524,267 @@
     blank urinsticka. Differentielldiagnoser (prerenal, ATN, glomerulonefrit, AIN)
     bedöms utifrån anamnes, status och typiska urinfynd.'
   id: med-nju-7a995b
+- type: multiple_choice
+  tags:
+  - Njurartärstenos
+  - Hypertoni
+  - Diagnostik
+  question: Vilket påstående om njurartärstenos är felaktigt?
+  image: null
+  options:
+  - text: Den vanligaste orsaken är ateroskleros
+    correct: false
+    feedback: Rätt — ateroskleros hos äldre är den vanligaste orsaken till njurartärstenos.
+  - text: Typiskt vid njurartärstenos är förekomst av erytrocyturi och ökad albuminuri
+    correct: true
+    feedback: Fel — signifikant erytrocyturi eller uttalad albuminuri är inte typiska
+      fynd vid RAS; proteinuri är oftast låg till måttlig.
+  - text: Njurdoppler är en bra screening-undersökning
+    correct: false
+    feedback: Rätt — duplexnjurdoppler är en lämplig icke-invasiv screeningmetod för
+      RAS vid erfaren operatör.
+  - text: En stegring av p-kreatinin >50% efter start av ACE-hämmare kan tyda på njurartärstenos
+    correct: false
+    feedback: Rätt — ett markant kreatininstegring efter ACE-hämmare talar för bilateral
+      RAS eller RAS i ensam fungerande njure.
+  - text: Unga individer utan ateroskleros kan drabbas av njurartärstenos
+    correct: false
+    feedback: Rätt — fibromuskulär dysplasi ger RAS hos yngre personer, särskilt kvinnor.
+  explanation: Ateroskleros är vanligast hos äldre medan fibromuskulär dysplasi orsakar
+    RAS hos yngre. Njurdoppler är ett bra förstahandsval för screening och en >50%
+    stegring av kreatinin efter ACE-hämmare bör väcka misstanke om bilateral RAS eller
+    RAS i ensam fungerande njure. Uttalad erytrocyturi eller albuminuri är däremot
+    inte typiska för RAS.
+  id: imp-7f29d50d
+- type: multiple_choice
+  tags:
+  - Nefrotiskt syndrom
+  - Proteinuri
+  question: Vilket av följande påståenden är felaktigt om nefrotiskt syndrom?
+  image: null
+  options:
+  - text: Patienterna har som regel pittingödem
+    correct: false
+    feedback: Rätt — hypoalbuminemi och vätskeansamling ger oftast generaliserat pittingödem.
+  - text: Patienterna har höggradig albuminuri
+    correct: false
+    feedback: Rätt — nefrotiskt syndrom definieras av massiv proteinuri (vanligtvis
+      >3,5 g/dygn), huvudsakligen albumin.
+  - text: Patienterna kan behöva behandling med antikoagulantia
+    correct: false
+    feedback: Rätt — förlust av antikoagulanter som antitrombin III ger ökad trombosrisk
+      och kan motivera antikoagulation.
+  - text: Patienterna har ökad infektionsrisk
+    correct: false
+    feedback: Rätt — förlust av immunglobuliner i urinen och ödem ökar risken för
+      infektioner, till exempel pneumokockperitonit.
+  - text: Patienterna har som regel erytrocytcylindrar i urinen
+    correct: true
+    feedback: Fel — erytrocytcylindrar är typiska för nefritiskt syndrom/aktiv glomerulonefrit
+      och förekommer inte i typisk nefros.
+  explanation: Nefrotiskt syndrom karakteriseras av massiv proteinuri, hypoalbuminemi,
+    hyperlipidemi och ödem. Komplikationer inkluderar trombos och ökad infektionskänslighet
+    på grund av urinförluster av antikoagulanter och immunglobuliner. Hematuri med
+    erytrocytcylindrar är typiskt för nefritiskt snarare än nefrotiskt syndrom.
+  id: imp-78ad7cbc
+- type: multiple_choice
+  tags:
+  - Diabetes typ 2
+  - Njurskydd
+  - SGLT2-hämmare
+  question: Ibrahim har hypertoni och typ 2‑diabetes. eGFR 53 ml/min/1,73 m2 och U-alb/krea
+    70 (mikroalbuminuri). Medicinerar metformin, atorvastatin, candesartan/hydroklortiazid
+    och amlodipin. Vilket läkemedel lägger du till för att minska risken för njursvikt?
+  image: null
+  options:
+  - text: insulin
+    correct: false
+    feedback: Fel — insulin förbättrar glykemin men har inte visat sig specifikt minska
+      risken för progress av njursvikt jämfört med SGLT2‑hämmare.
+  - text: SGLT2-hämmare
+    correct: true
+    feedback: Rätt — SGLT2‑hämmare minskar risken för progression av kronisk njursjukdom
+      och njursvikt hos T2D‑patienter med albuminuri, utöver RAS‑blockad.
+  - text: MRA
+    correct: false
+    feedback: Fel — nonsteroida MRA (t.ex. finerenon) kan ge njur- och kardiovaskulär
+      nytta vid kvarstående albuminuri men används oftast som tillägg efter RAS‑blockad
+      och är inte förstaval här.
+  - text: GLP-1 receptor agonist
+    correct: false
+    feedback: Fel — GLP‑1‑agonister minskar kardiovaskulär risk och kan sänka albuminuri,
+      men evidensen för att förebygga njursvikt är svagare än för SGLT2‑hämmare.
+  - text: ACE-hämmare
+    correct: false
+    feedback: Fel — patienten står redan på en ARB (candesartan); att kombinera ACE‑hämmare
+      med ARB är kontraindicerat på grund av ökad risk för hyperkalemi och njurskada.
+  explanation: SGLT2‑hämmare har i stora studier visat minskad progression av kronisk
+    njursjukdom och lägre risk för terminal njursvikt hos personer med typ 2‑diabetes
+    och albuminuri, och rekommenderas som tillägg till RAS‑blockad. Patienten står
+    redan på ARB, varför ACE‑hämmare inte ska kombineras; nonsteroid MRA kan övervägas
+    vid kvarstående albuminuri.
+  id: imp-5b01517d
+- type: multiple_choice
+  tags:
+  - akut njurskada
+  - proteinuri
+  - glomerulonefrit
+  question: Bengt, 78 år. Tidigare BT 125/75 och kreatinin 100 µmol/L. Nu BT 165/90,
+    kreatinin 170 µmol/L, urinsticka 3+ albumin/hemoglobin och perifera ödem. Vilken
+    är den mest sannolika orsaken till sänkt GFR?
+  image: null
+  options:
+  - text: 1. akut interstitiell nefrit
+    correct: false
+    feedback: Osannolikt — AIN ger oftare feber, hudutslag, eosinofili och pyuri snarare
+      än kraftig albuminuri/hematuri och ödem.
+  - text: 2. glomerulonefrit
+    correct: true
+    feedback: Rätt — Akut försämring med markant albumin- och blodreaktion på urinsticka
+      tillsammans med ödem talar för en glomerulär sjukdom.
+  - text: 3. prerenal njurskada
+    correct: false
+    feedback: Fel — Prerenal njurskada ger vanligen liten eller ingen proteinuri och
+      koncentrerad urin, och förbättras ofta snabbt med volymåterställande.
+  - text: 4. hypertoni-orsakad njurskada
+    correct: false
+    feedback: Fel — Hypertensiv njurskada utvecklas vanligen långsamt och ger inte
+      plötsligt höggradig albuminuri och hematuri.
+  - text: 5. avflödeshinder
+    correct: false
+    feedback: Fel — Avflödeshinder (postrenal) ger oftast hydronefros och varierande
+      urinfynd men inte typiskt massiv albuminuri och akut ödembildning.
+  explanation: Kombinationen av snabbt stigande kreatinin, uttalad albumin/hemoglobin
+    på urinsticka och perifera ödem är mest förenlig med en glomerulär sjukdom (glomerulonefrit).
+    Andra orsaker (prerenal, AIN, kronisk hypertensiv njurskada eller postrenal obstruktion)
+    ger vanligen ett annat kliniskt mönster.
+  id: imp-1358f012
+- type: multiple_choice
+  tags:
+  - Hyperkalemi
+  - Akutbehandling
+  question: Vilket läkemedel sänker plasmakalium snabbast vid kronisk njursvikt med
+    acidos och K+ 7,8 mmol/L?
+  image: null
+  options:
+  - text: furosemid intravenöst
+    correct: false
+    feedback: Fel — loopdiuretika ökar renal utsöndring men kräver fungerande diures
+      och verkar långsammare, särskilt vid njursvikt.
+  - text: pulver Resonium per os
+    correct: false
+    feedback: Fel — jonbytare i tarmen verkar över timmar till dygn och sänker inte
+      snabbt plasmakalium.
+  - text: insulin-glukos-infusion
+    correct: true
+    feedback: Rätt — insulin (med glukos) förflyttar snabbt kalium in i cellerna,
+      med effekt inom 10–20 minuter.
+  - text: natriumbikarbonat-infusion
+    correct: false
+    feedback: Fel — kan hjälpa vid uttalad acidos men effekten på plasmakalium är
+      variabel och långsammare än insulin.
+  - text: kalcium-glukonat i.v.
+    correct: false
+    feedback: Fel — kalcium stabiliserar hjärtcellernas membran men sänker inte plasmakalium.
+  explanation: Insulin med glukos är snabbast för att sänka plasmakalium genom att
+    öka intracellulärt upptag av kalium (effekt inom 10–20 minuter). Kalcium ges för
+    att stabilisera hjärtat utan att påverka kaliumkoncentrationen, medan diuretika,
+    jonbytare och bikarbonat har långsammare eller variabel effekt.
+  id: imp-8755229a
+- type: multiple_choice
+  tags:
+  - Njurmedicin
+  - Akutmedicin
+  question: Vilket fynd ses inte vid pre-renal akut njurskada?
+  image: null
+  options:
+  - text: U-sediment med akantocyter och röda blodkroppscylindrar
+    correct: true
+    feedback: Rätt — akantocyter och RBC-cylindrar tyder på glomerulär (intrarenal)
+      skada, inte pre-renal azotemi.
+  - text: U-Natrium < 10 mmol/L
+    correct: false
+    feedback: Fel — lågt urin-natrium (<10–20 mmol/L) är typiskt för pre-renal skada
+      pga avid natriumretention.
+  - text: normal U-albumin/kreatinin-kvot
+    correct: false
+    feedback: Fel — normalt eller endast lätt förhöjt albumin/kreatinin ses ofta vid
+      pre-renal då glomerulär läckage saknas.
+  - text: blodtryck 90/55 mmHg
+    correct: false
+    feedback: Fel — hypotoni är en vanlig orsak till pre-renal njurskada och förekommer
+      ofta.
+  - text: systoliskt blodtryck sjunker >20 mmHg efter 3 minuter i stående
+    correct: false
+    feedback: Fel — ortostatisk blodtrycksfall tyder på hypovolemi och stödjer en
+      pre-renal orsak.
+  explanation: 'Pre-renal akut njurskada karakteriseras av hypoperfusion: lågt urin-natrium,
+    koncentrerat urin och ett relativt blajjinkande sediment utan betydande proteinuri.
+    Förekomst av akantocyter och röda blodkroppscylindrar talar för intrarenal/glomerulär
+    skada och utesluter i praktiken en ren pre-renal orsak.'
+  id: imp-fbbe0004
+- type: multiple_choice
+  tags:
+  - njurfunktion
+  - kreatinin
+  question: Vilket påstående beskriver bäst vad eGFR är?
+  image: null
+  options:
+  - text: GFR beräknat från ålder, kön, kroppsyta och vikt
+    correct: false
+    feedback: Fel — eGFR beräknas inte primärt från vikt/kroppsyta; vanliga ekvationer
+      använder endogena markörer plus ålder och kön.
+  - text: GFR beräknat från endogena filtrationsmarkörer som kreatinin
+    correct: true
+    feedback: Rätt — eGFR är en uppskattning av njurens filtrationshastighet baserat
+      på endogena markörer (t.ex. kreatinin eller cystatin C) i ekvationer.
+  - text: En uppskattning av GFR baserad på iohexolnivåer
+    correct: false
+    feedback: Fel — iohexol är en exogen markör som används för mätning av GFR (mGFR),
+      inte för eGFR.
+  - text: En uppskattning baserad på kön, muskelmassa och ålder
+    correct: false
+    feedback: Fel — ålder och kön ingår i ekvationer, men muskelmassa används inte
+      direkt som indata även om den påverkar kreatinin.
+  - text: En direkt mätning av GFR
+    correct: false
+    feedback: Fel — eGFR är en uppskattning, medan direkt mätning (mGFR) kräver exogena
+      markörer och clearance-mätning.
+  explanation: eGFR (estimated glomerular filtration rate) är en uppskattning av njurens
+    filtrationshastighet beräknad från endogena markörer såsom serumkreatinin och/eller
+    cystatin C med hjälp av standardiserade formler (t.ex. CKD-EPI). Exakt mätning
+    av GFR kräver exogena markörer som iohexol eller inulin.
+  id: imp-1380c950
+- type: multiple_choice
+  tags:
+  - njurfunktion
+  - åldrande
+  - läkemedelsomsättning
+  question: Vilket alternativ är mest korrekt beträffande äldre och njurfunktion?
+  image: null
+  options:
+  - text: Njurfunktionen (GFR) är ofta halverad vid 80 års ålder
+    correct: true
+    feedback: Rätt — GFR minskar med åldern och är hos många 80‑åringar på ungefär
+      halva värdet jämfört med ung vuxen på grund av minskat antal nefron.
+  - text: Läkemedel elimineras i ökad omfattning via levern
+    correct: false
+    feedback: Fel — leverns läkemedelsmetabolism minskar ofta eller förändras med
+      åldern, den ökar inte generellt.
+  - text: Måttligt nedsatt njurfunktion ger hög risk för grav njursvikt
+    correct: false
+    feedback: Fel — måttlig nedsättning är vanligt hos äldre och leder inte nödvändigtvis
+      till svår njursvikt; progression är oftast långsam och varierande.
+  - text: S-kreatinin är ett bra mått på njurfunktion
+    correct: false
+    feedback: Fel — S‑kreatinin kan vara normalt hos äldre pga minskad muskelmassa;
+      eGFR är ett bättre mått.
+  - text: Risken för förgiftning minskar med åldern.
+    correct: false
+    feedback: Fel — risken för läkemedelsansamling och förgiftning ökar med åldern
+      pga nedsatt elimination och polyfarmaci.
+  explanation: Njurfunktionen minskar normalt med åldern och många 80‑åringar har
+    en GFR som är markant lägre än hos unga vuxna (ofta cirka halverad). S‑kreatinin
+    är missvisande ensam i äldre på grund av minskad muskelmassa, och risk för läkemedelsansamling
+    ökar snarare än minskar.
+  id: imp-e871e462

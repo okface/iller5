@@ -310,3 +310,39 @@
     konfusion, somnolens och asterixis. Behandling riktas mot att identifiera precipitans
     och minska ammoniakproduktionen (t.ex. laktulos, antibiotika).
   id: med-hep-14901d
+- type: multiple_choice
+  tags:
+  - Primär biliär kolangit
+  - AMA
+  - Kolestatiska levervärden
+  question: Kvinna 79 år med trötthet och klåda. Förhöjt ALP (5,2× övre normalgräns),
+    normal bilirubin, ASAT och ALAT, samt rivmärken. Vilket prov bekräftar sannolik
+    diagnos?
+  image: null
+  options:
+  - text: Antinukleära antikroppar (ANA) och IgG
+    correct: false
+    feedback: Fel — ANA och förhöjt IgG talar snarare för autoimmun hepatit, inte
+      det typiska mönstret vid primär biliär kolangit.
+  - text: Magnetresonanstomografi av gallvägar (MRC)
+    correct: false
+    feedback: Fel — MRC visar biliära stenos/obstruktion men bekräftar inte autoimmun
+      primär biliär kolangit.
+  - text: Antimitokondrieantikroppar (AMA) och IgM
+    correct: true
+    feedback: Rätt — AMA förekommer hos majoriteten med primär biliär kolangit och
+      förhöjt IgM stödjer diagnosen.
+  - text: Ultraljud av lever och gallvägar
+    correct: false
+    feedback: Fel — ultraljud är bra för att utesluta extrahepatisk obstruktion men
+      bekräftar inte primär biliär kolangit.
+  - text: HFE-mutationstest
+    correct: false
+    feedback: Fel — HFE-mutation utreds vid hemokromatos, som ger annan laboratoriebild
+      (järnöverskott), inte typisk kolestas med klåda.
+  explanation: Kliniken med markant ALP-stegring, klåda och rivmärken är typisk för
+    kolestatisk leversjukdom; primär biliär kolangit (PBC) bekräftas i första hand
+    med antimitokondrieantikroppar (AMA) och ofta förhöjt IgM. Avbildning (ultraljud/MRC)
+    används för att utesluta extrahepatisk obstruktion, och ANA/IgG pekar istället
+    mot autoimmun hepatit medan HFE är för hemokromatos.
+  id: imp-995ac1ec

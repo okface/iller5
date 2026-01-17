@@ -667,3 +667,214 @@
     medan CT är mindre lämplig för små stenar och ERCP är en invasiv, terapeutisk
     procedur.
   id: med-gas-c8e064
+- type: multiple_choice
+  tags:
+  - diarré
+  - mikroskopisk kolit
+  - gastroenterologi
+  question: 'Kvinna, 75 år, med ettårig tilltagande vattentunn diarré: började med
+    2 dagsfärska avföringar, nu 6–8 per dag och ibland även på natten. Inget blod
+    i avföringen. Vilken diagnos är mest sannolik?'
+  image: null
+  options:
+  - text: Mikroskopisk kolit
+    correct: true
+    feedback: Rätt — typisk presentation hos äldre kvinnor med kronisk icke-blodig
+      vattentunn diarré som ofta är nattlig; diagnostiseras med koloskopi + biopsier.
+  - text: Ulcerös kolit
+    correct: false
+    feedback: Fel — ulcerös kolit ger oftast blod och slem i avföringen och mer tydliga
+      inflammatoriska tecken.
+  - text: Infektiös gastroenterit
+    correct: false
+    feedback: Fel — infektiös gastroenterit är vanligtvis akut med plötslig debut
+      och ofta feber, inte ett års progressiv diarré.
+  - text: IBS-D (IBS med diarrédominans)
+    correct: false
+    feedback: Fel — IBS debuterar ofta tidigare och ger sällan nattliga symptom eller
+      progressiv försämring i hög ålder.
+  - text: Kolorektal cancer
+    correct: false
+    feedback: Fel — cancer kan ge avföringsförändring men ger ofta blod, viktnedgång
+      eller alarmtecken; ändå bör äldre utredas noga vid nya förändringar.
+  explanation: Klinisk bild med kronisk, icke-blodig vattentunn diarré hos en äldre
+    kvinna, ofta nattliga tarmtömningar, är typisk för mikroskopisk kolit. Koloskopi
+    ser ofta normal ut makroskopiskt, diagnos säkerställs genom histologiska biopsier;
+    behandling kan inkludera budesonid.
+  id: imp-d824940c
+- type: multiple_choice
+  tags:
+  - Ulcerös kolit
+  - Inflammatorisk tarmsjukdom
+  question: Man 29 år med ulcerös kolit sedan 17 års ålder söker för 3–4 veckor med
+    lösa avföringar (≈4/dygn) och blod. Hb och CRP är normala. Rektoskopi visar måttlig
+    inflammation upp till 10 cm. Vilken handläggning är korrekt?
+  image: null
+  options:
+  - text: Sätter in lokalbehandling med 5-ASA suppositorier och skriver remiss till
+      mag-tarmmottagning för uppföljning.
+    correct: true
+    feedback: Rätt — för distal mild–måttlig skov är topikal 5‑ASA förstahandsbehandling
+      och uppföljning på gastroenterologisk mottagning är lämplig.
+  - text: Remiss till koloskopi enligt SVF för cancer i tjock- och ändtarm
+    correct: false
+    feedback: Fel — akut cancerutredning enligt SVF är inte indikerad här; surveillance-koloskopi
+      styrs av sjukdomslängd och utbredning, inte detta fynd.
+  - text: Sätter in Prednisolon per oralt och skriver remiss för koloskopi.
+    correct: false
+    feedback: Fel — systemiska kortikosteroider är inte förstahandsval vid begränsat
+      distal skov; koloskopi behövs inte akut.
+  - text: Sätter in Prednisolon per oralt och skriver remiss till mag-tarmmottagning
+      för uppföljning.
+    correct: false
+    feedback: Fel — oral prednisolon är för mer utbredda eller svårare skov; initial
+      topikal 5‑ASA är att föredra vid distal inflammation.
+  - text: Remiss till akutmottagning för snabb handläggning av misstänkt akut skov
+      av ulcerös kolit.
+    correct: false
+    feedback: Fel — patienten visar inte tecken på akut svårt skov (få avföringar,
+      normal Hb och CRP), så akutremiss är inte motiverad.
+  explanation: Patienten har ett mild–måttligt, distalt skov (rektal inflammation
+    upp till 10 cm) utan systemisk påverkan; topikal 5‑ASA (suppositorier eller lavemang
+    beroende på nivå) är förstahandsbehandling. Systemiska steroider och akut sjukhusvård
+    reserveras för mer uttalade eller systemiska skov, och koloskopisk cancerutredning
+    följer surveillancerekommendationer beroende på sjukdomslängd och utbredning.
+  id: imp-4142ebc9
+- type: multiple_choice
+  tags:
+  - Inflammatorisk tarmsjukdom
+  - Crohns sjukdom
+  - Ulcerös kolit
+  question: Vilket av följande påståenden om inflammatorisk tarmsjukdom är korrekt?
+  image: null
+  options:
+  - text: Ulcerös kolit kan ha segmentell utbredning i kolon med så kallade skip lesions.
+    correct: false
+    feedback: Fel — Ulcerös kolit ger vanligen kontinuerlig inflammation från rektum
+      proximalt; skip-lesions är typiska för Crohns sjukdom.
+  - text: Behandlingsalternativen för Crohns sjukdom och ulcerös kolit skiljer sig
+      inte åt.
+    correct: false
+    feedback: Fel — Behandlingarna skiljer sig, t.ex. 5-ASA är effektivare vid UC
+      och kirurgi kan vara botande vid UC men inte vid Crohn.
+  - text: Crohns sjukdom kan orsaka fistlar och stenosering i mag-tarmkanalen
+    correct: true
+    feedback: Rätt — Crohns ger transmural inflammation som kan leda till fistlar
+      och strikturer/stenoser.
+  - text: Det finns en ökad risk för koloncancer vid Crohns sjukdom men inte vid ulcerös
+      kolit
+    correct: false
+    feedback: Fel — Ulcerös kolit har en väldokumenterad ökad risk för kolorektalcancer;
+      Crohn med kolonengagemang ökar också risken.
+  - text: Ulcerös kolit har alltid värst inflammationsgrad längst oralt i kolon.
+    correct: false
+    feedback: Fel — UC är oftast värst distalt (rektum) och sprider sig kontinuerligt
+      proximalt, inte kraftigast oralt.
+  explanation: Crohns sjukdom är transmural och kan drabba hela GI‑kanalen med skip-lesions,
+    fistlar och stenosering. Ulcerös kolit drabbar endast kolon och är kontinuerlig
+    från rektum; både långvarig UC och Crohn med kolonengagemang ökar risken för kolorektalcancer,
+    och behandlingsstrategier skiljer sig mellan sjukdomarna.
+  id: imp-18ad1bf7
+- type: multiple_choice
+  tags:
+  - Celiaki
+  - Dermatitis herpetiformis
+  question: Vilken hudåkomma bör få en att misstänka celiaki?
+  image: null
+  options:
+  - text: Psoriasis
+    correct: false
+    feedback: Fel — psoriasis är inte typiskt för celiaki och saknar den starka associationen
+      som dermatitis herpetiformis har.
+  - text: Akne
+    correct: false
+    feedback: Fel — akne är vanligtvis hormonellt eller folliculärt betingat och inte
+      kopplat till celiaki.
+  - text: Allergiskt eksem
+    correct: false
+    feedback: Fel — allergiskt eller atopiskt eksem är inte specifikt för celiaki.
+  - text: Dermatitis herpetiformis
+    correct: true
+    feedback: Rätt — dermatitis herpetiformis är en IgA‑medierad blåsande/pruriginös
+      hudsjukdom starkt associerad med celiaki.
+  - text: Recidiverande hudinfektioner
+    correct: false
+    feedback: Fel — återkommande hudinfektioner tyder snarare på immunbrist eller
+      lokal störning, inte typiskt celiaki.
+  explanation: Dermatitis herpetiformis är den klassiska hudmanifestationen vid celiaki
+    och kännetecknas av täta IgA‑avlagringar i dermala papiller samt intensiv klåda
+    och blåsbildning. Diagnos av celiaki bör övervägas vid denna hudbild och bekräftas
+    med serologi och tunntarmsbiopsi; glutenfri kost är effektiv behandling.
+  id: imp-d184c35a
+- type: multiple_choice
+  tags:
+  - IBS
+  - diagnostik
+  - inflammationsmarkörer
+  question: Kvinna 21 år med magknip och periodvis hård avföring (IBS-misstanke).
+    Hb och CRP är normala. Vilket ytterligare prov/undersökning måste vara normal
+    för att kunna ställa IBS-diagnos?
+  image: null
+  options:
+  - text: Koloskopi
+    correct: false
+    feedback: Koloskopi krävs inte rutinmässigt vid typiska IBS-symptom utan alarmtecken
+      om inflammationsmarkörer (t.ex. f-calprotectin) är normala.
+  - text: Antikroppar mot transglutaminas
+    correct: false
+    feedback: Celiakiutredning (anti-tTG) rekommenderas vid diarrédominans eller misstanke
+      om celiaki men är inte alltid obligatorisk för IBS-diagnos i avsaknad av sådana
+      fynd.
+  - text: F-Hb
+    correct: false
+    feedback: Fekalt hemoglobin kan upptäcka blödning men har lägre känslighet för
+      att utesluta inflammatorisk tarmsjukdom än f-calprotectin.
+  - text: F-Calprotectin
+    correct: true
+    feedback: F-calprotectin måste vara normal för att med hög sannolikhet utesluta
+      inflammatorisk tarmsjukdom och därmed stödja en IBS-diagnos.
+  - text: Laktas-gen polymorfism
+    correct: false
+    feedback: Laktasbrist utreds vid misstänkt laktosintolerans men en normal laktas-gen
+      är inte ett krav för IBS-diagnos.
+  explanation: För att ställa IBS behövs uteslutande av organiska inflammatoriska
+    sjukdomar; f-calprotectin är en känslig fecal markör för tarminflammation och
+    bör vara normal. Koloskopi och anti-tTG utförs vid indikation eller alarmtecken,
+    medan F-Hb och laktas-gen inte är avgörande för att bekräfta IBS.
+  id: imp-e6a9b219
+- type: multiple_choice
+  tags:
+  - rektalblödning
+  - anorektal undersökning
+  question: Kvinna 32 år med förstoppning och nu blod på toalettpapper. Hb är normalt.
+    Vad är nästa steg i utredningen?
+  image: null
+  options:
+  - text: Kontroll av F-Hb
+    correct: false
+    feedback: F-Hb söker occulta blödningar i faeces men är inte prioriterat vid synligt
+      färskt ytligt blod och misstanke om anorektal orsak.
+  - text: Koloskopi
+    correct: false
+    feedback: Koloskopi är indicerat vid alarmtecken, anemi eller kvarstående/blodig
+      avföring eller hos äldre, men inte första steg hos en ung patient med ytliga
+      blödningar.
+  - text: DT-kolografi
+    correct: false
+    feedback: CT-kolografi är ett alternativ vid kontraindikation mot koloskopi för
+      kolonundersökning, inte lämpligt som initial utredning vid misstänkt anorektal
+      blödning.
+  - text: Rekto-/Proktoskopi
+    correct: true
+    feedback: Rätt — direkt visuell undersökning av anus och distala rektum (anoskop/proktoskop)
+      är lämplig förstahandsåtgärd vid färskt blod på papper hos ung patient.
+  - text: Gastroskopi
+    correct: false
+    feedback: Gastroskopi utreds misstanke om övre GIS-blödning (melena, hematemes)
+      och är inte indicerat vid färskt perianalt blod utan övre GI-symtom.
+  explanation: Färskt blod på toalettpapper hos en ung person talar oftast för en
+    lokal anorektal orsak (t.ex. fissur eller hemorrojd). En enkel rekto-/proktoskopi
+    eller anoskopi är lämplig först för att visualisera och behandla dessa orsaker;
+    koloskopi eller andra undersökningar övervägs vid fortsatta symtom, positiv F-Hb
+    eller alarmtecken.
+  id: imp-52dbbc18

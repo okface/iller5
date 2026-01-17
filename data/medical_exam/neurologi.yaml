@@ -965,3 +965,416 @@
     hjärnans volym och medvetandenivå; både svår hyper- och hyponatremi är viktiga
     och kräver snabb men kontrollerad korrigering. Andra labbavvikelser kan bidra
     till encefalopati men är oftare sekundära eller mindre omedelbart farliga.
+- type: multiple_choice
+  tags:
+  - akut huvudvärk
+  - subaraknoidalblödning
+  - neurologisk akutvård
+  question: En 23‑årig kvinna söker akut för plötslig, svår "thunderclap"-huvudvärk
+    under träning. Hon är nackstyv och ljuskänslig men vaken och utan fokala bortfall.
+    Vilken diagnos måste övervägas i första hand?
+  image: null
+  options:
+  - text: Subaraknoidalblödning
+    correct: true
+    feedback: Rätt — plötslig 'thunderclap'-huvudvärk med nackstyvhet och fotofobi
+      är typiskt för subaraknoidalblödning och kräver omedelbar utredning (CT ± LP).
+  - text: Viral meningit
+    correct: false
+    feedback: Fel — viral meningit ger ofta nackstyvhet och fotofobi men debuterar
+      vanligen subakut snarare än som en plötslig 'thunderclap'.
+  - text: Hjärntumör
+    correct: false
+    feedback: Fel — hjärntumörer ger vanligen gradvis insättande huvudvärk och ofta
+      fokala neurologiska symtom, inte akut 'thunderclap'-debut.
+  - text: Spänningshuvudvärk
+    correct: false
+    feedback: Fel — spänningshuvudvärk är vanligtvis diffus, tryckande och gradvis,
+      inte en plötslig, extrem 'thunderclap'-smärta med nackstyvhet.
+  - text: Migrän
+    correct: false
+    feedback: Fel — migrän kan ge svår huvudvärk och fotofobi men debuterar sällan
+      som en plötslig, maximal smärta under ansträngning såsom vid 'thunderclap'.
+  explanation: Misstanke om subaraknoidalblödning ska komma först vid plötslig maximal
+    huvudvärk ('thunderclap') särskilt med nackstyvhet och fotofobi. Akut CT utan
+    kontrast är initial utredning (hög känslighet tidigt); om CT är normal och misstanken
+    kvarstår görs lumbalpunktion.
+  id: imp-ac65da1b
+- type: multiple_choice
+  tags:
+  - Vestibularisneurit
+  - Klinisk undersökning
+  question: Vilket av följande fynd är typiskt vid vestibularisneurit?
+  image: null
+  options:
+  - text: Dystaxi vid test av finger-näs
+    correct: false
+    feedback: Fel — finger-näs-dysmetri tyder på cerebellär (central) påverkan, inte
+      perifer vestibular dysfunktion.
+  - text: Riktningsväxlande nystagmus
+    correct: false
+    feedback: Fel — riktningsväxlande nystagmus är ett tecken på central lesion, medan
+      perifer vestibulär skada ger unidirektionell nystagmus.
+  - text: Hörselnedsättning
+    correct: false
+    feedback: Fel — hörselnedsättning talar för labyrintit eller annan inneröronspåverkan,
+      medan vestibularisneurit oftast har bevarad hörsel.
+  - text: Positivt impulstest
+    correct: true
+    feedback: Rätt — ett patologiskt head-impulse-test (abnormal VOR) är typiskt för
+      perifer vestibulär dysfunktion som vestibularisneurit.
+  - text: Positiv test of skew
+    correct: false
+    feedback: Fel — skew deviation är mer förenligt med central skada i hjärnstam
+      eller cerebellum än med perifer vestibulär sjukdom.
+  explanation: Vestibularisneurit är en perifer vestibulopati som ger akut långvarig
+    perifer vertigo med unidirektionell nystagmus och ett positivt head-impulse-test;
+    hörseln är vanligen intakt och centrala tecken (riktningsväxling, skew, cerebellära
+    ataxi) saknas.
+  id: imp-58283027
+- type: multiple_choice
+  tags:
+  - Wernicke
+  - Tiamin
+  - Alkohol
+  question: Vid misstanke om akut Wernicke-Korsakoff-syndrom, vilken akut behandling
+    rekommenderas och hur ges den?
+  image: null
+  options:
+  - text: Karbamazepin peroralt
+    correct: false
+    feedback: Fel — karbamazepin är ett antiepileptikum och har ingen indikationen
+      som akut behandling vid Wernicke-encefalopati.
+  - text: Tiamin, parenteralt
+    correct: true
+    feedback: Rätt — akut behandling är parenteral tiamin (vitamin B1) i hög dos (IV/IM)
+      för att snabbt korrigera bristen och förebygga progression.
+  - text: Multivitaminpreparat i högdos peroralt
+    correct: false
+    feedback: Fel — perorala multivitaminer ger inte tillräcklig och snabb tiamintillförsel
+      vid akut Wernicke.
+  - text: Bensodiazepiner, t ex diazepam parenteralt
+    correct: false
+    feedback: Fel — bensodiazepiner kan behandla alkoholabstinens eller agitation
+      men behandlar inte den underliggande tiaminbristen i Wernicke.
+  - text: Cyanokobalamin, parenteralt
+    correct: false
+    feedback: Fel — cyanokobalamin (B12) behandlar B12-brist, vilket är en annan entitet
+      och inte lämplig som akut behandling för Wernicke.
+  explanation: Wernicke-encefalopati orsakas av akut tiaminbrist och kräver omedelbar
+    parenteral tiamintillförsel (högdos IV/IM) för att förhindra permanent skada (Korsakoff).
+    Tiamin bör ges före glukos eftersom glukosadministration kan förvärra tiaminbristens
+    effekter; andra läkemedel som karbamazepin, bensodiazepiner eller B12 är inte
+    adekvata akuta åtgärder.
+  id: imp-992731c0
+- type: multiple_choice
+  tags:
+  - Stroke
+  - Karotis
+  - Neurologisk status
+  question: Vilka av följande neurologiska bortfallssymtom är tydligast för kärlengagemang
+    i karotisområdet?
+  image: null
+  options:
+  - text: Dysartri utan dysfasi
+    correct: false
+    feedback: Kan ses vid olika lesioner (inklusive hjärnstam eller lacunära infarkter)
+      och är inte specifikt för karotisdominerad hemisfärsskada.
+  - text: Perifer facialispares
+    correct: false
+    feedback: Tyder på perifer nerv- eller kärnskada i facialisnerven, inte på supratentoriellt
+      karotisengagemang.
+  - text: Svaghet och ryckigt rörelsemönster i ena armen och benet
+    correct: false
+    feedback: Kan förenliggöra med contralateral hemisfärspåverkan och förekomma vid
+      karotisengagemang, men är mindre komplett och mindre typisk än fullständiga
+      hemisymtom.
+  - text: Bortfall av motorik och sensorik i ena kroppshalvan (s k hemisymtom)
+    correct: true
+    feedback: Korrekt — kontralateralt motoriskt och sensoriskt bortfall är klassiskt
+      vid karotisförsörjda hemisfärslesioner.
+  - text: Balansstörningar
+    correct: false
+    feedback: Mer typiskt för bakre cirkulationen (vertebrobasilaris) och cerebellära
+      lesioner, inte för karotisområdet.
+  explanation: Karotisförsörjningen täcker stora delar av cerebral hemisfär; därför
+    är kontralaterala hemisymtom med motoriskt och sensoriskt bortfall mest karakteristiska
+    för karotisengagemang. Posterior cirkulation ger i stället balans- och hjärnstams-/cerebellära
+    symtom, och perifer facialispares indikerar perifer nervskada.
+  id: imp-43115170
+- type: multiple_choice
+  tags:
+  - TIA
+  - Stroke
+  - Akut utredning
+  question: Kvinna 83 år fick plötsliga bortfall i arm/ben och sluddrigt tal kl 10:13.
+    Vid ambulansankomst kl 11:40 var bortfallen försvunna. Vad är rätt beträffande
+    TIA/AIS?
+  image: null
+  options:
+  - text: Detta är en AIS oavsett förbättringen. Snabbt till sjukhus (trombolys).
+    correct: false
+    feedback: Fel — om symtomen har helt försvunnit är trombolys normalt inte indicerat;
+      man måste utreda akut men AIS är inte automatisk.
+  - text: Detta kan vara en TIA - utredas fort men kan lämnas hemma och söka nästa
+      dag.
+    correct: false
+    feedback: Fel — TIA har hög risk för tidig recidiv och ska utredas och bedömas
+      omedelbart, inte skjutas upp till nästa dag.
+  - text: Detta kan vara en TIA som måste utredas akut och patienten bör följa med
+      ambulansen direkt till sjukhus.
+    correct: true
+    feedback: Rätt — övergående fokala neurologiska bortfall kräver akut sjukhusutredning
+      (imaging, kardiell utredning, sekundärprevention).
+  - text: Det måste vara en AIS och kan inte vara en intracerebral blödning med så
+      lindriga symtom.
+    correct: false
+    feedback: Fel — intracerebral blödning kan också ge lindriga eller övergående
+      symtom; endast bilddiagnostik kan skilja ischemisk stroke från blödning.
+  - text: Det är så typiska bortfall att det inte kan vara något annat än TIA eller
+      stroke.
+    correct: false
+    feedback: Fel — många mimics finns (t.ex. hypoglykemi, epileptisk postiktal pares,
+      migrän, funktionella störningar) som måste övervägas och uteslutas.
+  explanation: Plötsliga fokala neurologiska bortfall som har försvunnit talar för
+    TIA, men risken för tidig stroke är hög och patienten ska bedömas akut på sjukhus
+    med hjärnavbildning, kärlutredning och kardiell utredning. Trombolys ges i regel
+    bara om kvarstående neurologiska bortfall finns och inga kontraindikationer föreligger.
+  id: imp-8636bea0
+- type: multiple_choice
+  tags:
+  - Näringsbrist
+  - Neurologi
+  - Alkohol
+  question: Vilket tillstånd kan förekomma till följd av tiaminbrist (vitamin B1)?
+  image: null
+  options:
+  - text: Postpartum psykos
+    correct: false
+    feedback: Fel — postpartumpsykos är relaterat till postpartum hormonella/psykiska
+      faktorer, inte typiskt orsakad av tiaminbrist.
+  - text: Wernickes encefalopati
+    correct: true
+    feedback: Rätt — Wernickes encefalopati är klassiskt orsakad av tiaminbrist, särskilt
+      hos patienter med alkoholmissbruk.
+  - text: Alkoholpsykos
+    correct: false
+    feedback: Fel — alkoholpsykos (alkoholhallucinos) beror på alkoholens effekter;
+      tiaminbrist kan bidra till vissa encefalopatier men är inte den primära orsaken.
+  - text: Abstinenssyndrom
+    correct: false
+    feedback: Fel — abstinenssyndrom orsakas av plötslig upphörande av alkohol/benzos,
+      inte direkt av tiaminbrist.
+  - text: Autism i barndomen
+    correct: false
+    feedback: Fel — autism är en neuropsykiatrisk utvecklingsstörning, inte en konsekvens
+      av tiaminbrist.
+  explanation: 'Tiaminbrist ger nedsatt cerebral glukosmetabolism och kan leda till
+    Wernickes encefalopati (triad: konfussion, ataxi, ögonmotorikstörningar). Obehandlad
+    kan detta utvecklas till Korsakoffs amnesisyndrom; akut behandling är parenteralt
+    tiamin.'
+  id: imp-6a3a4a63
+- type: multiple_choice
+  tags:
+  - demens
+  - MMSE
+  - diagnostik
+  question: Vilket stämmer bäst om MMSE vid misstänkt demens?
+  image: null
+  options:
+  - text: MMSE är avgörande för att ställa diagnosen demens
+    correct: false
+    feedback: Fel — MMSE är ett screeningtest och kan inte ensam fastställa en demensdiagnos.
+  - text: MMSE poäng under 24 tyder på demenssjukdom
+    correct: true
+    feedback: Rätt — Ett vanligt gränsvärde är <24/30 vilket tyder på kognitiv nedsättning,
+      men det bekräftar inte ensam demens.
+  - text: MMSE poäng påverkas inte av utbildningsnivå
+    correct: false
+    feedback: Fel — Poängen påverkas av utbildningsnivå, ålder och språklig bakgrund.
+  - text: MMSE kan användas för urskilja demens från pseudodemens
+    correct: false
+    feedback: Fel — MMSE kan ge indikationer men kan inte pålitligt skilja demens
+      från pseudodemens (t.ex. depression).
+  - text: MMSE måste genomföras av läkare
+    correct: false
+    feedback: Fel — MMSE kan utföras av utbildad sjukvårdspersonal (t.ex. sjuksköterska
+      eller psykolog), inte nödvändigtvis läkare.
+  explanation: MMSE är ett kort screeninginstrument för kognitiv funktion; ett vanligt
+    cut-off är <24 som indikerar kognitiv nedsättning men inte ensam bekräftar demens.
+    Resultaten påverkas av ålder, utbildning och språk och kan inte säkert skilja
+    demens från pseudodemens, varför vidare utredning krävs.
+  id: imp-d27d18a6
+- type: multiple_choice
+  tags:
+  - Motorneuronsjukdom
+  - ALS
+  - Neurologisk status
+  question: Vilken kombination av statusfynd är typisk för klassisk ALS?
+  image: null
+  options:
+  - text: Känselnedsättning och atrofi.
+    correct: false
+    feedback: Fel — sensorisk bortfall är inte typiskt för ALS även om muskelatrofi
+      förekommer.
+  - text: Pares, känselnedsättning, reflexstegring.
+    correct: false
+    feedback: Fel — reflexstegring kan förekomma men förekomst av känselnedsättning
+      talar emot ALS.
+  - text: Pareser i alla extremiteter, reflexer som är blandat starka (central skada)
+      och svaga (perifer skada), muskelatrofi.
+    correct: true
+    feedback: Rätt — ALS ger kombinerade övre och nedre motorneuronsymtom (spasticitet/hyperreflexi
+      + atrofi/fascikulationer) med bevarad känsel.
+  - text: Pares, känselnedsättning, svaga reflexer.
+    correct: false
+    feedback: Fel — enbart perifer motorisk bild med sensorisk påverkan stämmer inte
+      med klassisk ALS.
+  - text: Pares, känselnedsättning.
+    correct: false
+    feedback: Fel — avsaknad av sensorisk påverkan är karakteristisk för ALS, så känselnedsättning
+      talar emot diagnosen.
+  explanation: Klassisk ALS innebär samtidig påverkan på övre och nedre motorneuron
+    vilket ger pareser, spasticitet/hyperreflexi och samtidigt muskelförtvining med
+    svaga reflexer i de regioner där nedre motorneuron är drabbade. Sensorisk funktion
+    är vanligtvis sparad, vilket skiljer ALS från många perifera neuropatier.
+  id: imp-604dfada
+- type: multiple_choice
+  tags:
+  - autoimmunitet
+  - immunmodulering
+  question: MS behandlas med immundämpande behandling. Vilken annan neurologisk sjukdom
+    behandlas också med immundämpande behandling mot orsaken?
+  image: null
+  options:
+  - text: ALS
+    correct: false
+    feedback: Fel — ALS är en neurodegenerativ sjukdom utan etablerad orsaksriktad
+      immundämpande behandling.
+  - text: Stroke
+    correct: false
+    feedback: Fel — Stroke är en vaskulär händelse; behandling är akut reperfusion
+      och sekundär prevention, inte immundämpning.
+  - text: Myastenia gravis
+    correct: true
+    feedback: Rätt — Myastenia gravis är en autoimmun sjukdom mot neuromuskulära synapsen
+      och behandlas med immundämpande läkemedel (t.ex. kortison, azatioprin, rituximab)
+      och ibland thymektomi.
+  - text: Parkinsons sjukdom
+    correct: false
+    feedback: Fel — Parkinson är en neurodegenerativ sjukdom med dopaminbrist; behandling
+      är huvudsakligen dopaminerg och inte immundämpande.
+  - text: Epilepsi
+    correct: false
+    feedback: Fel — Epilepsi behandlas med antiepileptika, kirurgi eller neuromodulation;
+      immundämpning är inte standard för de flesta epilepsier.
+  explanation: Myastenia gravis är en autoimmun sjukdom där antikroppar riktas mot
+    komponenter i den postsynaptiska neuromuskulära junctionen, varför immunmodulerande/immundämpande
+    behandling är en grundpelare. De andra alternativen är huvudsakligen neurodegenerativa
+    eller vaskulära till sin natur och behandlas inte med immundämpning som orsaksriktad
+    terapi.
+  id: imp-de7264d0
+- type: multiple_choice
+  tags:
+  - Optikusneurit
+  - Multipel skleros
+  - Demyelinisering
+  question: Man 25 år med synnedsättning i höger öga och smärta vid ögonrörelse. Tidigare
+    haft övergående domningar i armar/ben. Troligaste diagnos?
+  image: null
+  options:
+  - text: Dystoni
+    correct: false
+    feedback: Fel — dystoni är en rörelsestörning med ofrivilliga muskelkontraktioner
+      och förklarar varken optisk smärta eller övergående sensoriska bortfall.
+  - text: ALS
+    correct: false
+    feedback: Fel — ALS är en motorneuronsjukdom utan tidiga sensoriska symptom eller
+      optikusneurit.
+  - text: Retinalartärocklusion och diskbråck
+    correct: false
+    feedback: Fel — retinal artärocklusion ger plötslig, oftast smärtfri, monoculär
+      synförlust och diskbråck förklarar inte smärta vid ögonrörelse eller tidigare
+      övergående parestesier.
+  - text: Multipel skleros
+    correct: true
+    feedback: Rätt — optikusneurit (synnedsättning + smärta vid ögonrörelse) hos ung
+      vuxen tillsammans med tidigare övergående neurologiska symtom är typiskt för
+      MS.
+  - text: Fabrys sjukdom
+    correct: false
+    feedback: Fel — Fabry ger småfiberneuropati, angiokeratom och njur/kärlpåverkan,
+      men inte typisk optikusneurit och övergående fokala CNS-episoder i ung ålder.
+  explanation: Symtomen (synnedsättning med smärta vid ögonrörelse) är typiska för
+    optikusneurit, ofta ett tidigt tecken på multipel skleros hos unga vuxna. Tidigare
+    övergående domningar talar för multipla demyeliniserande episoder; utredning med
+    MR-hjärna och lumbalpunktion bekräftar diagnosen.
+  id: imp-329f4902
+- type: multiple_choice
+  tags:
+  - Yrsel
+  - HINTS
+  - Stroke-diagnostik
+  question: Kvinna 53 år med svår yrsel. NIHSS u.a. förutom nystagmus. Nystagmus ökar
+    vid blickriktning men ses spontant. Vilken statusmall är tillämplig?
+  image: null
+  options:
+  - text: HINTS, för att nystagmusen ses vid huvudvridning.
+    correct: false
+    feedback: Fel — HINTS används vid spontan nystagmus i akut vestibulärt syndrom,
+      inte när nystagmus enbart framkallas av huvudvridning/position.
+  - text: HINTS, för nystagmusen ses spontant.
+    correct: true
+    feedback: Rätt — HINTS (Head impulse, Nystagmus, Test of Skew) är lämpligt vid
+      akut vestibulärt syndrom med spontan nystagmus för att skilja central från perifer
+      orsak.
+  - text: Rutinnervstatus, för den skiljer mellan central och perifer vestibularispares.
+    correct: false
+    feedback: Fel — Ett vanligt neurologstatus är viktigt men HINTS har högre sensitivitet/specificitet
+      för att särskilja central vs perifer orsak vid akut vestibulärt syndrom.
+  - text: Ingen - NIHSS är positiv för strokesymtom.
+    correct: false
+    feedback: Fel — NIHSS kan vara normal vid bakre cirkulationens stroke; här är
+      HINTS indikerat eftersom nystagmus är spontan.
+  - text: Rutinnervstatus...
+    correct: false
+    feedback: Fel — Ofullständig/oklar formulering och rutinnervstatus ersätter inte
+      det riktade HINTS-beslutet vid spontan nystagmus.
+  explanation: HINTS används vid akut vestibulärt syndrom med kontinuerlig yrsel och
+    spontan nystagmus för att skilja perifer vestibularispares från central orsakat
+    (stroke). Ett fyndskombination med normalt head‑impulse, riktningförändrande nystagmus
+    eller skew deviation talar för central genes; HINTS kan vara mer känsligt än tidig
+    CT/MR.
+  id: imp-da8044b0
+- type: multiple_choice
+  tags:
+  - Parkinsons sjukdom
+  - rörelsestörningar
+  question: Vilka tre huvuddrag utgör den klassiska triaden vid Parkinsons sjukdom?
+  image: null
+  options:
+  - text: Tremor, bradykinesi och spasticitet
+    correct: false
+    feedback: Fel — spasticitet är ett tecken på övre motorneuronskada och inte typiskt
+      för Parkinsons sjukdom.
+  - text: Tremor, ataxi, hyporeflexitet
+    correct: false
+    feedback: Fel — ataxi och hyporeflexi tyder på cerebellär eller perifer nervpåverkan,
+      inte Parkinsons sjukdom.
+  - text: Tremor, hyperkinesi och rigiditet
+    correct: false
+    feedback: Fel — hyperkinesi (överdrivna oavsiktliga rörelser) ses inte som en
+      del av Parkinsons klassiska triad.
+  - text: Tremor, hyperkinesi och spasticitet
+    correct: false
+    feedback: Fel — varken hyperkinesi eller spasticitet är karaktäristiska för Parkinsons
+      sjukdom.
+  - text: Tremor, bradykinesi och rigiditet
+    correct: true
+    feedback: Rätt — vilotremor, bradykinesi (rörelseseghet) och muskelrigiditet utgör
+      den klassiska triaden vid Parkinsons sjukdom.
+  explanation: Den klassiska triaden är vilotremor, bradykinesi och rigiditet; postural
+    instabilitet räknas ofta som ett fjärde tecken. Dessa motoriska symtom beror framför
+    allt på förlust av dopaminerga neuron i substantia nigra och dysregulation i basala
+    ganglierna.
+  id: imp-0dc0fad6

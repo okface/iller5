@@ -1650,3 +1650,303 @@
     litium har fördröjd insättande effekt och IV-aripiprazol används inte rutinmässigt
     i detta sammanhang.
   id: med-aku-1c9929
+- id: med-gen-ac58-001
+  type: multiple_choice
+  tags:
+  - Ventilation
+  - Akutmedicin
+  question: En 62-årig patient med svår ARDS är intuberad och satt på volymkontrollerad
+    ventilation med tidalvolym 6 ml/kg PBW, PEEP 8 cmH2O och inspiratoriskt plateautryck
+    (Pplat) 34 cmH2O. PaO2/FiO2 är <100. Vilken åtgärd minskar mest risken för ventilatorinducerad
+    lungskada i detta läge?
+  image: null
+  options:
+  - text: Öka PEEP till 14 cmH2O för att förbättra rekrytering och minska atelectrauma.
+    correct: false
+    feedback: Fel — ökad PEEP kan förbättra syresättning men ökar inte Pplat och kan
+      förvärra överdistension om Pplat redan är hög.
+  - text: Sänka tidalvolym till 4–5 ml/kg PBW för att sänka plateautrycket under 30
+      cmH2O.
+    correct: true
+    feedback: Rätt — reducerat tidalvolym minskar Pplat och minimerar volymskade vid
+      svår ARDS.
+  - text: Byta till tryckkontrollerad ventilation med oförändrat måltidalvolym för
+      att begränsa peak-trycket.
+    correct: false
+    feedback: Fel — byte till tryckkontroll påverkar inte den alveolära överdistensionen
+      om plateautrycket och tidalvolymen förblir höga.
+  - text: Utföra en rekryteringsmanöver följt av högre PEEP och bibehållen tidalvolym.
+    correct: false
+    feedback: Fel — rekrytering + högre PEEP kan förbättra syresättning men adresserar
+      inte det höga plateautrycket och risken för överdistension.
+  explanation: Vid svår ARDS är lungprotective ventilation med lågt tidalvolym prioriterad
+    för att minska ventilatorinducerad lungskada; målet är att hålla plateautryck
+    <30 cmH2O. Om Pplat är för högt minskar man först tidalvolym (till ~4–6 ml/kg
+    PBW) och accepterar permissiv hyperkapni innan man ökar PEEP som kan öka överdistension.
+- id: med-gen-ac58-002
+  type: multiple_choice
+  tags:
+  - Variceal blödning
+  - Transfusionsstrategi
+  - Akutmedicin
+  question: En 55-årig man med cirros och aktiv esofagusvaricesblödning anländer till
+    akuten. Vilken hemoglobintröskel rekommenderas i akut skede för transfusion av
+    erytrocytkoncentrat enligt modern evidens vid variceal blödning?
+  image: null
+  options:
+  - text: Transfusion om Hb <9 g/dl (restriktiv men måttligt hög nivå).
+    correct: false
+    feedback: Fel — 9 g/dl är högre än vad randomiserade studier visat som optimal
+      tröskel vid variceal blödning.
+  - text: Transfusion om Hb <7 g/dl (restriktiv strategi).
+    correct: true
+    feedback: Rätt — en restriktiv transfusionsstrategi med målnivå omkring 7 g/dl
+      rekommenderas vid variceal blödning.
+  - text: Transfusion om Hb <5 g/dl (mycket restriktiv nivå).
+    correct: false
+    feedback: Fel — denna nivå är farligt låg och inte rekommenderad i akutblödning
+      med cirros.
+  - text: Transfusion rutinmässigt oavsett Hb vid aktiv varicealblödning för att säkerställa
+      cirkulationen.
+    correct: false
+    feedback: Fel — rutintransfusion utan tröskel ökar portaltryck och risk för återblödning
+      och rekommenderas inte.
+  explanation: Evidence från randomiserade studier visar att en restriktiv transfusionsstrategi
+    med transfusion vid Hb <7 g/dl är associerad med lägre mortalitet och färre återblödningar
+    vid variceal blödning. Övertransfusion höjer portaltrycket och kan förvärra blödningsrisken.
+- id: med-gen-ac58-003
+  type: multiple_choice
+  tags:
+  - Sepsis
+  - Akutbehandling
+  question: En hypotensiv patient med misstänkt sepsisutlöstad chock har fått 20 ml/kg
+    kristalloid utan adekvat respons och visar tecken till lungödem. Vad är nästa
+    mest korrekt initiala åtgärd enligt överlevnadsriktlinjerna för sepsis?
+  image: null
+  options:
+  - text: Fortsätta vätsketerapin tills ett totalt 30 ml/kg uppnåtts innan vasopressorer.
+    correct: false
+    feedback: Fel — om tecken på vätsödem föreligger bör fortsatt obegränsad vätsketillförsel
+      undvikas och vasopressor övervägas tidigare.
+  - text: Påbörja noradrenalin tidigt, även via perifer venkateter, samtidigt som
+      centralvenkateter förbereds.
+    correct: true
+    feedback: Rätt — tidig noradrenalin ska övervägas vid kvarstående hypotension
+      eller tecken på vätsöverskott och kan ges perifert kortvarigt medan central
+      access ordnas.
+  - text: Administrera en extra bolus albumin 5% för snabbare intravaskulär effekt.
+    correct: false
+    feedback: Fel — albumin kan användas senare men är inte förstahandsåtgärd vid
+      persistent hypotension med vätsödem.
+  - text: Ge bolus med kortikosteroid intravenöst som primär åtgärd för att förbättra
+      blodtrycket.
+    correct: false
+    feedback: Fel — steroider övervägs först vid vasopressorberoende chock som inte
+      svarar tillfredsställande, inte som initial ersättning för vasopressorer.
+  explanation: Om patienten inte svarar på initial vätsketerapi och visar tecken på
+    vätseregeleringsproblem bör vasopressorer (vanligen noradrenalin) initieras tidigt
+    för att säkra perfusion. Noradrenalin kan ges via perifer ven i väntan på centralvenös
+    access och minskar risken för vätselastighetsskada och organhypoperfusion.
+- id: med-gen-ac58-004
+  type: multiple_choice
+  tags:
+  - Pneumothorax
+  - Akutmedicin
+  question: Vid misstänkt spänd pneumothorax i en vuxen patient med cirkulationspåverkan
+    i fältsituation, vilket ställe ger bäst chans till framgångsrik akut avlastning
+    med nåldekompression?
+  image: null
+  options:
+  - text: 2:a interkostalrummet i medioklavikulärlinjen på den drabbade sidan.
+    correct: false
+    feedback: Fel — 2:a ICS MCL är klassiskt men kan misslyckas vid tjock bröstkorg
+      och har fallande framgångsrater.
+  - text: 5:e interkostalrummet i mid-axillärlinjen på den drabbade sidan (lateralt).
+    correct: true
+    feedback: Rätt — lateralt i 5:e ICS är ofta mer framgångsrikt hos vuxna p.g.a.
+      tunnare vägg och större chans att nå pleuran.
+  - text: 4:e interkostalrummet i sternallinjen (parasternalt).
+    correct: false
+    feedback: Fel — parasternalt är inte en etablerad plats för akut nåldekompression
+      av pneumothorax.
+  - text: Högt subklavikulärt, strax under nyckelbenet medialt om den drabbade sidan.
+    correct: false
+    feedback: Fel — subklavikulär introduktion är inte rekommenderad för akut nåldekompression
+      och riskerar skador på kärl och nerv.
+  explanation: Vid akut spänd pneumothorax är snabb dekompression nödvändig; hos vuxna
+    visar modern praxis att lateralt vid 4:e–5:e interkostalrummet i mid-axillärlinjen
+    ofta ger bättre genomträngning än 2:a ICS medialt. Efter initial nåldekompression
+    ska thoraxdrän om möjligt läggas in definitive.
+- id: med-gen-ac58-005
+  type: multiple_choice
+  tags:
+  - Syra-bas
+  - Metabolacidos
+  - Diagnostik
+  question: 'En patient har följande laboratorievärden: Na+ 140 mmol/l, Cl- 105 mmol/l
+    och HCO3- 8 mmol/l. Beräkna anjongap (AG) och delta-ratio (delta AG / delta HCO3)
+    och tolka fyndet. (Ange approximativa värden; referens-AG 12, normal HCO3 24.)'
+  image: null
+  options:
+  - text: AG ≈ 27 mmol/l, delta-ratio ≈ 0,5 — indikerar samtidig normal anjongap-metabolisk
+      acidos.
+    correct: false
+    feedback: Fel — beräkningarna ger inte dessa värden; delta-ratio nära 0,5 skulle
+      kräva annan HCO3-skillnad.
+  - text: 'AG ≈ 27 mmol/l, delta-ratio ≈ 0,94 — tolkning: huvudsaklig hög anjongapmetabolisk
+      acidos utan samtidig metabolisk alkalos.'
+    correct: true
+    feedback: Rätt — beräknat AG och delta-ratio ligger nära dessa värden och tolkningen
+      följer etablerade cut-offs.
+  - text: 'AG ≈ 27 mmol/l, delta-ratio ≈ 2,5 — tolkning: hög anjongapacidos med samtidig
+      metabolisk alkalos.'
+    correct: false
+    feedback: Fel — delta-ratio ≈2,5 skulle kräva ett mycket större AG-relaterat HCO3-fall
+      än i detta fall.
+  - text: 'AG ≈ 27 mmol/l, delta-ratio ≈ 0,2 — tolkning: blandad hög AG-metabolisk
+      acidos och samtidig normal AG-metabolisk acidos.'
+    correct: false
+    feedback: Fel — de aritmetiska värdena i patientens data ger inte en så låg delta-ratio.
+  explanation: AG = 140 − (105 + 8) ≈ 27 mmol/l, delta AG ≈ 15; delta HCO3 = 24 −
+    8 = 16, vilket ger delta-ratio ≈15/16 ≈ 0,94. Ett delta-ratio kring 0,8–1,0 talar
+    för en ren hög anjongapmetabolisk acidos utan betydande samtidig metabolisk alkalos
+    eller normal-AG-acidos.
+- type: multiple_choice
+  tags:
+  - intoxikation
+  - opioider
+  - andningsdepression
+  question: En 23‑årig man hittas i en trappuppgång, svarar inte på tilltal, andas
+    långsamt (8/min) och ytligt. Pupillerna är miotiska, huden kall och fuktig, puls
+    52, SpO2 84%. Färska nålstick ses. Vilken diagnos är mest sannolik?
+  image: null
+  options:
+  - text: Alkoholintoxikation
+    correct: false
+    feedback: Alkohol kan ge medvetslöshet men ger typiskt inte uttalad miotisk pupillbild
+      eller de karakteristiska andningsdepressionen med nålstick som talar för opioid.
+  - text: Hypoglykemi
+    correct: false
+    feedback: Hypoglykemi orsakar medvetslöshet eller kramper men ger inte typiskt
+      miotiska pupiller och förklarar inte färska nålstick och uttalad andningsdepression.
+  - text: Opioidintoxikation
+    correct: true
+    feedback: Klassisk presentation med nedsatt medvetande, kraftig respirationsdepression
+      och miotiska pupiller; färska nålstick stödjer intravenöst opioidbruk.
+  - text: Sepsis
+    correct: false
+    feedback: Sepsis ger oftast takykardi och takypné samt varm/rodnad hud initialt,
+      inte miotiska pupiller eller uttalad andningsdepression som här.
+  - text: Subarachnoidalblödning
+    correct: false
+    feedback: SAH ger oftast plötslig svår huvudvärk och kan ge fokala bortfall eller
+      dilaterade pupiller, men inte typiskt miotiska pupiller eller bild som talar
+      för intravenöst droganvändande.
+  explanation: 'Bildens triad av medvetslöshet, miotiska pupiller och andningsdepression
+    är typisk för opioidöverdos; färska nålstick stärker misstanken. Akut behandling:
+    säkra luftväg, syrgas och naloxon.'
+  id: imp-f46159c6
+- type: multiple_choice
+  tags:
+  - ABCDE
+  - Andningssvikt
+  - Akutvård
+  question: En 68-årig man kommer med plötslig andfåddhet. Han är blek, svettig, andas
+    snabbt och har SpO2 82% på luft. Vilket steg i ABCDE ska prioriteras först?
+  image: null
+  options:
+  - text: Ta blodgas
+    correct: false
+    feedback: Fel — blodgas kan ge information men är inte prioriterat före att säkra
+      luftväg/andning i en akut hypoxisk patient.
+  - text: Säkerställa fri luftväg
+    correct: true
+    feedback: Rätt — ABCDE börjar med Airway; en fri luftväg måste säkerställas innan
+      man går vidare.
+  - text: Beställa EKG
+    correct: false
+    feedback: Fel — EKG kan vara viktigt men bör komma efter initiala A- och B-åtgärder
+      vid akut andningspåverkan.
+  - text: Kontrollera medvetandegrad
+    correct: false
+    feedback: Fel — medvetandegrad hör till D (disability) och undersöks efter att
+      luftväg och andning bedömts/säkrats.
+  - text: Kontrollera cirkulation och blodtryck
+    correct: false
+    feedback: Fel — cirkulation (C) är viktig men kommer efter A (airway) och B (breathing)
+      i ABCDE-sekvensen.
+  explanation: ABCDE-principen föreskriver att man först bedömer och säkrar Airway
+    (A) innan man går vidare till Breathing och övriga steg. Vid en patient med låg
+    syrgasmättnad och andningspåverkan ska luftvägen kontrolleras och åtgärdas om
+    behövligt, därefter ges syrgas och behandlas andningen.
+  id: imp-063949c1
+- type: multiple_choice
+  tags:
+  - perikardtamponad
+  - perikardiocentes
+  - akutbehandling
+  question: 50‑årig kvinna med perikardit som utvecklar hypotension, halsvenstas och
+    dämpade hjärtljud. Vilken åtgärd är bäst?
+  image: null
+  options:
+  - text: Observation
+    correct: false
+    feedback: Fel — kliniska tecken på tamponad kräver omedelbar åtgärd, inte väntande
+      observation.
+  - text: Kirurgisk perikardial resektion
+    correct: false
+    feedback: Fel — perikardiektomi är inte akut första åtgärd vid tamponad utan övervägs
+      vid kronisk/recidiverande sjukdom.
+  - text: Perikardiocentes
+    correct: true
+    feedback: Rätt — akut perikardiocentesis avlastar hjärtat vid tamponad och är
+      livräddande.
+  - text: Start av betablockerare
+    correct: false
+    feedback: Fel — betablockerare kan förvärra hypotension genom att hämma kompensatorisk
+      takykardi.
+  - text: Infusion av diuretika
+    correct: false
+    feedback: Fel — diuretika minskar preload och kan försämra cirkulationen vid tamponad.
+  explanation: Symtomen (hypotension, halsvenstas, dämpade hjärtljud) utgör Becks
+    triad och indikerar hjärttamponad. Akut behandling är perikardiocentes för att
+    avlasta hjärtat; andra åtgärder kan vara skadliga eller är reserverade för icke-akuta
+    situationer.
+  id: imp-d65337aa
+- type: multiple_choice
+  tags:
+  - Diabetes typ 1
+  - DKA
+  - Akut omhändertagande
+  question: 18-årig kvinna med typ 1‑diabetes (HbA1c 48) inkommer med buksmärtor,
+    kräkningar och högt glukos på CGM; kan inte behålla mat eller dryck. Vilken är
+    viktigast som första åtgärd?
+  image: null
+  options:
+  - text: Minska insulindoserna eftersom hon inte får i sig någon mat
+    correct: false
+    feedback: Fel — vid misstanke på DKA ska insulin inte reduceras utan ofta ges
+      kontinuerlig insulinbehandling trots att patienten inte äter.
+  - text: CT buk för att utesluta tarmvred
+    correct: false
+    feedback: Fel — CT kan bli aktuell vid misstanke på kirurgisk buk men är inte
+      första åtgärd vid hög glukos och kräkningar där metabol dysbalans bör utredas
+      först.
+  - text: Blodgas för bedömning av syra‑basbalans och blodsocker
+    correct: true
+    feedback: Rätt — blodgas (venös är oftast tillräcklig) snabbbedömer pH/bikarbonat
+      och tillsammans med glukos/ketoner avgör misstanke om DKA och styr initial behandling.
+  - text: Blodstatus och CRP
+    correct: false
+    feedback: Fel — blodstatus/CRP kan vara relevanta men är inte prioriterade för
+      att avgöra metabol status vid misstänkt DKA.
+  - text: Avföringsprov för att utesluta gastroenterit
+    correct: false
+    feedback: Fel — avföringsprov har låg akutprioritet och fördröjer nödvändig snabb
+      metabol bedömning och behandling.
+  explanation: Presentation med typ 1‑diabetes, kräkningar och högt glukos talar för
+    risk för DKA; första åtgärd är snabb bedömning av syra‑basstatus och blodsocker
+    (blodgas, ketoner) för att avgöra behov av vätska, insulin och elektrolytbehandling.
+    Andra prover och bilddiagnostik kan planeras efter stabilisering eller vid misstanke
+    om alternativ orsak.
+  id: imp-15cc0984
